@@ -268,8 +268,8 @@
 \begin{block}{}
 Estimator for the minimal number of players with the best counters at level 30, with "best friends" boost, and extreme weather. Raid bosses are considered to have their worst attack (WA). All bosses are tier 5 (they have 15000 HP), except Mewtwo which has 22500 HP.
 \begin{itemize}
-  \item If boss raid has only simple weakness: minimal number of players = floor(Base DEF/80)
-  \item If boss raid has only double weakness: minimal number of players = floor(Base DEF/108)
+  \item If boss raid has only simple weakness: minimal number of players = ceil(Base DEF/80)
+  \item If boss raid has only double weakness: minimal number of players = ceil(Base DEF/108)
 \end{itemize}
 These formula do not take the base ATT into account, that influences the number of deaths and indirectly the number of deaths 
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.21)  7 JUN 2019 16:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.21)  7 JUN 2019 21:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1378,55 +1378,55 @@ LaTeX Info: Redefining \includegraphics on input line 243.
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 243.
  (./Raid_bosses.nav)
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 316
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 317
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 316.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 317.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 316
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 317
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 316
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 317
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 316.
-LaTeX Font Info:    Try loading font information for U+msa on input line 316.
+(Font)              <5> on input line 317.
+LaTeX Font Info:    Try loading font information for U+msa on input line 317.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 316.
+LaTeX Font Info:    Try loading font information for U+msb on input line 317.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 316.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 317.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 316.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 317.
 
 <../../images/type/full/Ice.png, id=13, 32.12pt x 14.0525pt>
 File: ../../images/type/full/Ice.png Graphic file (type png)
 
 <use ../../images/type/full/Ice.png>
-Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 316.
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 317.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
@@ -1435,7 +1435,7 @@ File: ../../images/type/full/Flying.png Graphic file (type png)
 
 <use ../../images/type/full/Flying.png>
 Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 3
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Electric.png, id=16, 32.12pt x 14.0525pt>
@@ -1443,26 +1443,26 @@ File: ../../images/type/full/Electric.png Graphic file (type png)
 
 <use ../../images/type/full/Electric.png>
 Package pdftex.def Info: ../../images/type/full/Electric.png used on input line
- 316.
+ 317.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Flying.png Graphic file (type png)
 
 <use ../../images/type/full/Flying.png>
 Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 3
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Fire.png, id=17, 32.12pt x 14.0525pt>
 File: ../../images/type/full/Fire.png Graphic file (type png)
 
 <use ../../images/type/full/Fire.png>
-Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 316
+Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 317
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Flying.png Graphic file (type png)
  <use ../../images/type/full/Flying.png>
 Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 3
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Psychic.png, id=18, 32.12pt x 14.0525pt>
@@ -1470,7 +1470,7 @@ File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-316.
+317.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/pokemon/Articuno.png, id=19, 192.72pt x 192.72pt>
@@ -1478,14 +1478,14 @@ File: ../../images/pokemon/Articuno.png Graphic file (type png)
 
 <use ../../images/pokemon/Articuno.png>
 Package pdftex.def Info: ../../images/pokemon/Articuno.png used on input line 3
-16.
+17.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/Zapdos.png, id=20, 192.72pt x 192.72pt>
 File: ../../images/pokemon/Zapdos.png Graphic file (type png)
 
 <use ../../images/pokemon/Zapdos.png>
-Package pdftex.def Info: ../../images/pokemon/Zapdos.png used on input line 316
+Package pdftex.def Info: ../../images/pokemon/Zapdos.png used on input line 317
 .
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -1494,14 +1494,14 @@ File: ../../images/pokemon/Moltres.png Graphic file (type png)
 
 <use ../../images/pokemon/Moltres.png>
 Package pdftex.def Info: ../../images/pokemon/Moltres.png used on input line 31
-6.
+7.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/Mewtwo.png, id=22, 192.72pt x 192.72pt>
 File: ../../images/pokemon/Mewtwo.png Graphic file (type png)
 
 <use ../../images/pokemon/Mewtwo.png>
-Package pdftex.def Info: ../../images/pokemon/Mewtwo.png used on input line 316
+Package pdftex.def Info: ../../images/pokemon/Mewtwo.png used on input line 317
 .
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -1509,19 +1509,19 @@ Package pdftex.def Info: ../../images/pokemon/Mewtwo.png used on input line 316
 File: ../../images/type/full/Rock.png Graphic file (type png)
 
 <use ../../images/type/full/Rock.png>
-Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 316
+Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 317
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fire.png Graphic file (type png)
  <use ../../images/type/full/Fire.png>
-Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 316
+Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 317
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Electric.png Graphic file (type png)
 
 <use ../../images/type/full/Electric.png>
 Package pdftex.def Info: ../../images/type/full/Electric.png used on input line
- 316.
+ 317.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Steel.png, id=24, 32.12pt x 14.0525pt>
@@ -1529,29 +1529,29 @@ File: ../../images/type/full/Steel.png Graphic file (type png)
 
 <use ../../images/type/full/Steel.png>
 Package pdftex.def Info: ../../images/type/full/Steel.png used on input line 31
-6.
+7.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Rock.png Graphic file (type png)
  <use ../../images/type/full/Rock.png>
-Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 316
+Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 317
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ice.png Graphic file (type png)
 
 <use ../../images/type/full/Ice.png>
-Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 316.
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 317.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Rock.png Graphic file (type png)
  <use ../../images/type/full/Rock.png>
-Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 316
+Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 317
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Electric.png Graphic file (type png)
 
 <use ../../images/type/full/Electric.png>
 Package pdftex.def Info: ../../images/type/full/Electric.png used on input line
- 316.
+ 317.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Water.png, id=25, 32.12pt x 14.0525pt>
@@ -1559,7 +1559,7 @@ File: ../../images/type/full/Water.png Graphic file (type png)
 
 <use ../../images/type/full/Water.png>
 Package pdftex.def Info: ../../images/type/full/Water.png used on input line 31
-6.
+7.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Ghost.png, id=26, 32.12pt x 14.0525pt>
@@ -1567,14 +1567,14 @@ File: ../../images/type/full/Ghost.png Graphic file (type png)
 
 <use ../../images/type/full/Ghost.png>
 Package pdftex.def Info: ../../images/type/full/Ghost.png used on input line 31
-6.
+7.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Dark.png, id=27, 32.12pt x 14.0525pt>
 File: ../../images/type/full/Dark.png Graphic file (type png)
 
 <use ../../images/type/full/Dark.png>
-Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 316
+Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 317
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
@@ -1582,54 +1582,54 @@ Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 316
 File: ../../images/type/full/Bug.png Graphic file (type png)
 
 <use ../../images/type/full/Bug.png>
-Package pdftex.def Info: ../../images/type/full/Bug.png used on input line 316.
+Package pdftex.def Info: ../../images/type/full/Bug.png used on input line 317.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Electric.png Graphic file (type png)
  <use ../../images/type/full/Electric.png>
 Package pdftex.def Info: ../../images/type/full/Electric.png used on input line
- 316.
+ 317.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fire.png Graphic file (type png)
 
 <use ../../images/type/full/Fire.png>
-Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 316
+Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 317
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Water.png Graphic file (type png)
  <use ../../images/type/full/Water.png>
 Package pdftex.def Info: ../../images/type/full/Water.png used on input line 31
-6.
+7.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-316.
+317.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Flying.png Graphic file (type png)
 
 <use ../../images/type/full/Flying.png>
 Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 3
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fire.png Graphic file (type png)
  <use ../../images/type/full/Fire.png>
-Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 316
+Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 317
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Flying.png Graphic file (type png)
 
 <use ../../images/type/full/Flying.png>
 Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 3
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/pokemon/Raikou.png, id=29, 192.72pt x 192.72pt>
 File: ../../images/pokemon/Raikou.png Graphic file (type png)
 
 <use ../../images/pokemon/Raikou.png>
-Package pdftex.def Info: ../../images/pokemon/Raikou.png used on input line 316
+Package pdftex.def Info: ../../images/pokemon/Raikou.png used on input line 317
 .
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -1637,7 +1637,7 @@ Package pdftex.def Info: ../../images/pokemon/Raikou.png used on input line 316
 File: ../../images/pokemon/Entei.png Graphic file (type png)
 
 <use ../../images/pokemon/Entei.png>
-Package pdftex.def Info: ../../images/pokemon/Entei.png used on input line 316.
+Package pdftex.def Info: ../../images/pokemon/Entei.png used on input line 317.
 
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -1646,14 +1646,14 @@ File: ../../images/pokemon/Suicune.png Graphic file (type png)
 
 <use ../../images/pokemon/Suicune.png>
 Package pdftex.def Info: ../../images/pokemon/Suicune.png used on input line 31
-6.
+7.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/Lugia.png, id=32, 192.72pt x 192.72pt>
 File: ../../images/pokemon/Lugia.png Graphic file (type png)
 
 <use ../../images/pokemon/Lugia.png>
-Package pdftex.def Info: ../../images/pokemon/Lugia.png used on input line 316.
+Package pdftex.def Info: ../../images/pokemon/Lugia.png used on input line 317.
 
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -1661,7 +1661,7 @@ Package pdftex.def Info: ../../images/pokemon/Lugia.png used on input line 316.
 File: ../../images/pokemon/Ho-oh.png Graphic file (type png)
 
 <use ../../images/pokemon/Ho-oh.png>
-Package pdftex.def Info: ../../images/pokemon/Ho-oh.png used on input line 316.
+Package pdftex.def Info: ../../images/pokemon/Ho-oh.png used on input line 317.
 
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -1670,23 +1670,23 @@ File: ../../images/type/full/Ground.png Graphic file (type png)
 
 <use ../../images/type/full/Ground.png>
 Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 3
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Water.png Graphic file (type png)
  <use ../../images/type/full/Water.png>
 Package pdftex.def Info: ../../images/type/full/Water.png used on input line 31
-6.
+7.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Rock.png Graphic file (type png)
 
 <use ../../images/type/full/Rock.png>
-Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 316
+Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 317
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ground.png Graphic file (type png)
  <use ../../images/type/full/Ground.png>
 Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 3
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Grass.png, id=35, 32.12pt x 14.0525pt>
@@ -1694,67 +1694,70 @@ File: ../../images/type/full/Grass.png Graphic file (type png)
 
 <use ../../images/type/full/Grass.png>
 Package pdftex.def Info: ../../images/type/full/Grass.png used on input line 31
-6.
+7.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Electric.png Graphic file (type png)
 
 <use ../../images/type/full/Electric.png>
 Package pdftex.def Info: ../../images/type/full/Electric.png used on input line
- 316.
+ 317.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dark.png Graphic file (type png)
 
 <use ../../images/type/full/Dark.png>
-Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 316
+Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 317
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ice.png Graphic file (type png)
  <use ../../images/type/full/Ice.png>
-Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 316.
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 317.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Rock.png Graphic file (type png)
 
 <use ../../images/type/full/Rock.png>
-Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 316
+Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 317
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Electric.png Graphic file (type png)
 
 <use ../../images/type/full/Electric.png>
 Package pdftex.def Info: ../../images/type/full/Electric.png used on input line
- 316.
+ 317.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ghost.png Graphic file (type png)
 
 <use ../../images/type/full/Ghost.png>
 Package pdftex.def Info: ../../images/type/full/Ghost.png used on input line 31
-6.
+7.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Rock.png Graphic file (type png)
  <use ../../images/type/full/Rock.png>
-Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 316
+Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 317
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Electric.png Graphic file (type png)
 
 <use ../../images/type/full/Electric.png>
 Package pdftex.def Info: ../../images/type/full/Electric.png used on input line
- 316.
+ 317.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Water.png Graphic file (type png)
 
 <use ../../images/type/full/Water.png>
 Package pdftex.def Info: ../../images/type/full/Water.png used on input line 31
-6.
+7.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+
+Overfull \vbox (0.89282pt too high) detected at line 317
+ []
 
 <../../images/type/background/lobby.png, id=36, 770.88pt x 770.88pt>
 File: ../../images/type/background/lobby.png Graphic file (type png)
 
 <use ../../images/type/background/lobby.png>
 Package pdftex.def Info: ../../images/type/background/lobby.png used on input l
-ine 316.
+ine 317.
 (pdftex.def)             Requested size: 455.24408pt x 455.23872pt.
  [1
 
@@ -1773,19 +1776,19 @@ png>]
 File: ../../images/type/full/Ice.png Graphic file (type png)
 
 <use ../../images/type/full/Ice.png>
-Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 373.
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 374.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Rock.png Graphic file (type png)
  <use ../../images/type/full/Rock.png>
-Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 373
+Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 374
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Steel.png Graphic file (type png)
 
 <use ../../images/type/full/Steel.png>
 Package pdftex.def Info: ../../images/type/full/Steel.png used on input line 37
-3.
+4.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Dragon.png, id=70, 32.12pt x 14.0525pt>
@@ -1793,32 +1796,32 @@ File: ../../images/type/full/Dragon.png Graphic file (type png)
 
 <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 3
-73.
+74.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-373.
+374.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dragon.png Graphic file (type png)
 
 <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 3
-73.
+74.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-373.
+374.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/pokemon/Regice.png, id=71, 192.72pt x 192.72pt>
 File: ../../images/pokemon/Regice.png Graphic file (type png)
 
 <use ../../images/pokemon/Regice.png>
-Package pdftex.def Info: ../../images/pokemon/Regice.png used on input line 373
+Package pdftex.def Info: ../../images/pokemon/Regice.png used on input line 374
 .
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -1827,7 +1830,7 @@ File: ../../images/pokemon/Regirock.png Graphic file (type png)
 
 <use ../../images/pokemon/Regirock.png>
 Package pdftex.def Info: ../../images/pokemon/Regirock.png used on input line 3
-73.
+74.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/Registeel.png, id=73, 192.72pt x 192.72pt>
@@ -1835,14 +1838,14 @@ File: ../../images/pokemon/Registeel.png Graphic file (type png)
 
 <use ../../images/pokemon/Registeel.png>
 Package pdftex.def Info: ../../images/pokemon/Registeel.png used on input line 
-373.
+374.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/Latios.png, id=74, 192.72pt x 192.72pt>
 File: ../../images/pokemon/Latios.png Graphic file (type png)
 
 <use ../../images/pokemon/Latios.png>
-Package pdftex.def Info: ../../images/pokemon/Latios.png used on input line 373
+Package pdftex.def Info: ../../images/pokemon/Latios.png used on input line 374
 .
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -1850,19 +1853,19 @@ Package pdftex.def Info: ../../images/pokemon/Latios.png used on input line 373
 File: ../../images/pokemon/Latias.png Graphic file (type png)
 
 <use ../../images/pokemon/Latias.png>
-Package pdftex.def Info: ../../images/pokemon/Latias.png used on input line 373
+Package pdftex.def Info: ../../images/pokemon/Latias.png used on input line 374
 .
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 File: ../../images/type/full/Fire.png Graphic file (type png)
  <use ../../images/type/full/Fire.png>
-Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 373
+Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 374
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Steel.png Graphic file (type png)
 
 <use ../../images/type/full/Steel.png>
 Package pdftex.def Info: ../../images/type/full/Steel.png used on input line 37
-3.
+4.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Fighting.png, id=76, 32.12pt x 14.0525pt>
@@ -1870,84 +1873,84 @@ File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 373.
+ 374.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Rock.png Graphic file (type png)
 
 <use ../../images/type/full/Rock.png>
-Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 373
+Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 374
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Steel.png Graphic file (type png)
  <use ../../images/type/full/Steel.png>
 Package pdftex.def Info: ../../images/type/full/Steel.png used on input line 37
-3.
+4.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Water.png Graphic file (type png)
 
 <use ../../images/type/full/Water.png>
 Package pdftex.def Info: ../../images/type/full/Water.png used on input line 37
-3.
+4.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Grass.png Graphic file (type png)
  <use ../../images/type/full/Grass.png>
 Package pdftex.def Info: ../../images/type/full/Grass.png used on input line 37
-3.
+4.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 373.
+ 374.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ground.png Graphic file (type png)
 
 <use ../../images/type/full/Ground.png>
 Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 3
-73.
+74.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fire.png Graphic file (type png)
  <use ../../images/type/full/Fire.png>
-Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 373
+Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 374
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 373.
+ 374.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ground.png Graphic file (type png)
 
 <use ../../images/type/full/Ground.png>
 Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 3
-73.
+74.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ghost.png Graphic file (type png)
  <use ../../images/type/full/Ghost.png>
 Package pdftex.def Info: ../../images/type/full/Ghost.png used on input line 37
-3.
+4.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dark.png Graphic file (type png)
 
 <use ../../images/type/full/Dark.png>
-Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 373
+Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 374
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Bug.png Graphic file (type png)
  <use ../../images/type/full/Bug.png>
-Package pdftex.def Info: ../../images/type/full/Bug.png used on input line 373.
+Package pdftex.def Info: ../../images/type/full/Bug.png used on input line 374.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dragon.png Graphic file (type png)
 
 <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 3
-73.
+74.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ice.png Graphic file (type png)
  <use ../../images/type/full/Ice.png>
-Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 373.
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 374.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
@@ -1956,37 +1959,37 @@ File: ../../images/type/full/Fairy.png Graphic file (type png)
 
 <use ../../images/type/full/Fairy.png>
 Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 37
-3.
+4.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Water.png Graphic file (type png)
  <use ../../images/type/full/Water.png>
 Package pdftex.def Info: ../../images/type/full/Water.png used on input line 37
-3.
+4.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ground.png Graphic file (type png)
 
 <use ../../images/type/full/Ground.png>
 Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 3
-73.
+74.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dragon.png Graphic file (type png)
 
 <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 3
-73.
+74.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Flying.png Graphic file (type png)
 
 <use ../../images/type/full/Flying.png>
 Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 3
-73.
+74.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/pokemon/Kyogre.png, id=78, 192.72pt x 192.72pt>
 File: ../../images/pokemon/Kyogre.png Graphic file (type png)
 
 <use ../../images/pokemon/Kyogre.png>
-Package pdftex.def Info: ../../images/pokemon/Kyogre.png used on input line 373
+Package pdftex.def Info: ../../images/pokemon/Kyogre.png used on input line 374
 .
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -1995,7 +1998,7 @@ File: ../../images/pokemon/Groudon.png Graphic file (type png)
 
 <use ../../images/pokemon/Groudon.png>
 Package pdftex.def Info: ../../images/pokemon/Groudon.png used on input line 37
-3.
+4.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/Rayquaza.png, id=80, 192.72pt x 192.72pt>
@@ -2003,81 +2006,81 @@ File: ../../images/pokemon/Rayquaza.png Graphic file (type png)
 
 <use ../../images/pokemon/Rayquaza.png>
 Package pdftex.def Info: ../../images/pokemon/Rayquaza.png used on input line 3
-73.
+74.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 File: ../../images/type/full/Grass.png Graphic file (type png)
  <use ../../images/type/full/Grass.png>
 Package pdftex.def Info: ../../images/type/full/Grass.png used on input line 37
-3.
+4.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Electric.png Graphic file (type png)
 
 <use ../../images/type/full/Electric.png>
 Package pdftex.def Info: ../../images/type/full/Electric.png used on input line
- 373.
+ 374.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Water.png Graphic file (type png)
 
 <use ../../images/type/full/Water.png>
 Package pdftex.def Info: ../../images/type/full/Water.png used on input line 37
-3.
+4.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Grass.png Graphic file (type png)
  <use ../../images/type/full/Grass.png>
 Package pdftex.def Info: ../../images/type/full/Grass.png used on input line 37
-3.
+4.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ice.png Graphic file (type png)
 
 <use ../../images/type/full/Ice.png>
-Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 373.
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 374.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ice.png Graphic file (type png)
  <use ../../images/type/full/Ice.png>
-Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 373.
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 374.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dragon.png Graphic file (type png)
 
 <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 3
-73.
+74.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Rock.png Graphic file (type png)
  <use ../../images/type/full/Rock.png>
-Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 373
+Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 374
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fairy.png Graphic file (type png)
 
 <use ../../images/type/full/Fairy.png>
 Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 37
-3.
+4.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-373.
+374.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-373.
+374.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-373.
+374.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-373.
+374.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/pokemon/Deoxys_n.png, id=81, 192.72pt x 192.72pt>
@@ -2085,7 +2088,7 @@ File: ../../images/pokemon/Deoxys_n.png Graphic file (type png)
 
 <use ../../images/pokemon/Deoxys_n.png>
 Package pdftex.def Info: ../../images/pokemon/Deoxys_n.png used on input line 3
-73.
+74.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/Deoxys_a.png, id=82, 192.72pt x 192.72pt>
@@ -2093,7 +2096,7 @@ File: ../../images/pokemon/Deoxys_a.png Graphic file (type png)
 
 <use ../../images/pokemon/Deoxys_a.png>
 Package pdftex.def Info: ../../images/pokemon/Deoxys_a.png used on input line 3
-73.
+74.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/Deoxys_d.png, id=83, 192.72pt x 192.72pt>
@@ -2101,7 +2104,7 @@ File: ../../images/pokemon/Deoxys_d.png Graphic file (type png)
 
 <use ../../images/pokemon/Deoxys_d.png>
 Package pdftex.def Info: ../../images/pokemon/Deoxys_d.png used on input line 3
-73.
+74.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/Deoxys_s.png, id=84, 192.72pt x 192.72pt>
@@ -2109,32 +2112,32 @@ File: ../../images/pokemon/Deoxys_s.png Graphic file (type png)
 
 <use ../../images/pokemon/Deoxys_s.png>
 Package pdftex.def Info: ../../images/pokemon/Deoxys_s.png used on input line 3
-73.
+74.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 File: ../../images/type/full/Ghost.png Graphic file (type png)
  <use ../../images/type/full/Ghost.png>
 Package pdftex.def Info: ../../images/type/full/Ghost.png used on input line 37
-3.
+4.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dark.png Graphic file (type png)
 
 <use ../../images/type/full/Dark.png>
-Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 373
+Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 374
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Bug.png Graphic file (type png)
  <use ../../images/type/full/Bug.png>
-Package pdftex.def Info: ../../images/type/full/Bug.png used on input line 373.
+Package pdftex.def Info: ../../images/type/full/Bug.png used on input line 374.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
-Overfull \vbox (7.45111pt too high) detected at line 373
+Overfull \vbox (7.45111pt too high) detected at line 374
  []
 
 File: ../../images/type/background/lobby.png Graphic file (type png)
 <use ../../images/type/background/lobby.png>
 Package pdftex.def Info: ../../images/type/background/lobby.png used on input l
-ine 373.
+ine 374.
 (pdftex.def)             Requested size: 455.24408pt x 455.23872pt.
  [2
 
@@ -2148,53 +2151,53 @@ s/pokemon/Deoxys_d.png> <../../images/pokemon/Deoxys_s.png>]
 File: ../../images/type/full/Dragon.png Graphic file (type png)
  <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 4
-14.
+15.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Water.png Graphic file (type png)
 
 <use ../../images/type/full/Water.png>
 Package pdftex.def Info: ../../images/type/full/Water.png used on input line 41
-4.
+5.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Steel.png Graphic file (type png)
  <use ../../images/type/full/Steel.png>
 Package pdftex.def Info: ../../images/type/full/Steel.png used on input line 41
-4.
+5.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dragon.png Graphic file (type png)
 
 <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 4
-14.
+15.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ghost.png Graphic file (type png)
  <use ../../images/type/full/Ghost.png>
 Package pdftex.def Info: ../../images/type/full/Ghost.png used on input line 41
-4.
+5.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dragon.png Graphic file (type png)
 
 <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 4
-14.
+15.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ghost.png Graphic file (type png)
  <use ../../images/type/full/Ghost.png>
 Package pdftex.def Info: ../../images/type/full/Ghost.png used on input line 41
-4.
+5.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dragon.png Graphic file (type png)
 
 <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 4
-14.
+15.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/pokemon/Palkia.png, id=105, 192.72pt x 192.72pt>
 File: ../../images/pokemon/Palkia.png Graphic file (type png)
 
 <use ../../images/pokemon/Palkia.png>
-Package pdftex.def Info: ../../images/pokemon/Palkia.png used on input line 414
+Package pdftex.def Info: ../../images/pokemon/Palkia.png used on input line 415
 .
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -2202,7 +2205,7 @@ Package pdftex.def Info: ../../images/pokemon/Palkia.png used on input line 414
 File: ../../images/pokemon/Dialga.png Graphic file (type png)
 
 <use ../../images/pokemon/Dialga.png>
-Package pdftex.def Info: ../../images/pokemon/Dialga.png used on input line 414
+Package pdftex.def Info: ../../images/pokemon/Dialga.png used on input line 415
 .
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -2211,7 +2214,7 @@ File: ../../images/pokemon/Giratina_a.png Graphic file (type png)
 
 <use ../../images/pokemon/Giratina_a.png>
 Package pdftex.def Info: ../../images/pokemon/Giratina_a.png used on input line
- 414.
+ 415.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/Giratina_o.png, id=108, 192.72pt x 192.72pt>
@@ -2219,74 +2222,74 @@ File: ../../images/pokemon/Giratina_o.png Graphic file (type png)
 
 <use ../../images/pokemon/Giratina_o.png>
 Package pdftex.def Info: ../../images/pokemon/Giratina_o.png used on input line
- 414.
+ 415.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 File: ../../images/type/full/Fairy.png Graphic file (type png)
 
 <use ../../images/type/full/Fairy.png>
 Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 41
-4.
+5.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dragon.png Graphic file (type png)
  <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 4
-14.
+15.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 414.
+ 415.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ground.png Graphic file (type png)
 
 <use ../../images/type/full/Ground.png>
 Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 4
-14.
+15.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ghost.png Graphic file (type png)
  <use ../../images/type/full/Ghost.png>
 Package pdftex.def Info: ../../images/type/full/Ghost.png used on input line 41
-4.
+5.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dark.png Graphic file (type png)
 
 <use ../../images/type/full/Dark.png>
-Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 414
+Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 415
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dragon.png Graphic file (type png)
  <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 4
-14.
+15.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ice.png Graphic file (type png)
 
 <use ../../images/type/full/Ice.png>
-Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 414.
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 415.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fairy.png Graphic file (type png)
  <use ../../images/type/full/Fairy.png>
 Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 41
-4.
+5.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-414.
+415.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fire.png Graphic file (type png)
  <use ../../images/type/full/Fire.png>
-Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 414
+Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 415
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Steel.png Graphic file (type png)
 
 <use ../../images/type/full/Steel.png>
 Package pdftex.def Info: ../../images/type/full/Steel.png used on input line 41
-4.
+5.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Normal.png, id=109, 32.12pt x 14.0525pt>
@@ -2294,13 +2297,13 @@ File: ../../images/type/full/Normal.png Graphic file (type png)
 
 <use ../../images/type/full/Normal.png>
 Package pdftex.def Info: ../../images/type/full/Normal.png used on input line 4
-14.
+15.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-414.
+415.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/pokemon/Mesprit.png, id=110, 192.72pt x 192.72pt>
@@ -2308,7 +2311,7 @@ File: ../../images/pokemon/Mesprit.png Graphic file (type png)
 
 <use ../../images/pokemon/Mesprit.png>
 Package pdftex.def Info: ../../images/pokemon/Mesprit.png used on input line 41
-4.
+5.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/Heatran.png, id=111, 192.72pt x 192.72pt>
@@ -2316,7 +2319,7 @@ File: ../../images/pokemon/Heatran.png Graphic file (type png)
 
 <use ../../images/pokemon/Heatran.png>
 Package pdftex.def Info: ../../images/pokemon/Heatran.png used on input line 41
-4.
+5.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/Regigigas.png, id=112, 192.72pt x 192.72pt>
@@ -2324,7 +2327,7 @@ File: ../../images/pokemon/Regigigas.png Graphic file (type png)
 
 <use ../../images/pokemon/Regigigas.png>
 Package pdftex.def Info: ../../images/pokemon/Regigigas.png used on input line 
-414.
+415.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/Cresselia.png, id=113, 192.72pt x 192.72pt>
@@ -2332,70 +2335,70 @@ File: ../../images/pokemon/Cresselia.png Graphic file (type png)
 
 <use ../../images/pokemon/Cresselia.png>
 Package pdftex.def Info: ../../images/pokemon/Cresselia.png used on input line 
-414.
+415.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 File: ../../images/type/full/Ghost.png Graphic file (type png)
 
 <use ../../images/type/full/Ghost.png>
 Package pdftex.def Info: ../../images/type/full/Ghost.png used on input line 41
-4.
+5.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dark.png Graphic file (type png)
  <use ../../images/type/full/Dark.png>
-Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 414
+Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 415
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Bug.png Graphic file (type png)
 
 <use ../../images/type/full/Bug.png>
-Package pdftex.def Info: ../../images/type/full/Bug.png used on input line 414.
+Package pdftex.def Info: ../../images/type/full/Bug.png used on input line 415.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ground.png Graphic file (type png)
  <use ../../images/type/full/Ground.png>
 Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 4
-14.
+15.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 414.
+ 415.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Water.png Graphic file (type png)
 
 <use ../../images/type/full/Water.png>
 Package pdftex.def Info: ../../images/type/full/Water.png used on input line 41
-4.
+5.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 414.
+ 415.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ghost.png Graphic file (type png)
 
 <use ../../images/type/full/Ghost.png>
 Package pdftex.def Info: ../../images/type/full/Ghost.png used on input line 41
-4.
+5.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dark.png Graphic file (type png)
  <use ../../images/type/full/Dark.png>
-Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 414
+Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 415
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Bug.png Graphic file (type png)
 
 <use ../../images/type/full/Bug.png>
-Package pdftex.def Info: ../../images/type/full/Bug.png used on input line 414.
+Package pdftex.def Info: ../../images/type/full/Bug.png used on input line 415.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/background/lobby.png Graphic file (type png)
 
 <use ../../images/type/background/lobby.png>
 Package pdftex.def Info: ../../images/type/background/lobby.png used on input l
-ine 414.
+ine 415.
 (pdftex.def)             Requested size: 455.24408pt x 455.23872pt.
  [3
 
@@ -2409,14 +2412,14 @@ File: ../../images/pokemon/cresselia.png Graphic file (type png)
 
 <use ../../images/pokemon/cresselia.png>
 Package pdftex.def Info: ../../images/pokemon/cresselia.png used on input line 
-455.
+456.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/kyogre.png, id=129, 192.72pt x 192.72pt>
 File: ../../images/pokemon/kyogre.png Graphic file (type png)
 
 <use ../../images/pokemon/kyogre.png>
-Package pdftex.def Info: ../../images/pokemon/kyogre.png used on input line 455
+Package pdftex.def Info: ../../images/pokemon/kyogre.png used on input line 456
 .
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -2425,7 +2428,7 @@ File: ../../images/pokemon/groudon.png Graphic file (type png)
 
 <use ../../images/pokemon/groudon.png>
 Package pdftex.def Info: ../../images/pokemon/groudon.png used on input line 45
-5.
+6.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/regigigas.png, id=131, 192.72pt x 192.72pt>
@@ -2433,14 +2436,14 @@ File: ../../images/pokemon/regigigas.png Graphic file (type png)
 
 <use ../../images/pokemon/regigigas.png>
 Package pdftex.def Info: ../../images/pokemon/regigigas.png used on input line 
-455.
+456.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/raikou.png, id=132, 192.72pt x 192.72pt>
 File: ../../images/pokemon/raikou.png Graphic file (type png)
 
 <use ../../images/pokemon/raikou.png>
-Package pdftex.def Info: ../../images/pokemon/raikou.png used on input line 455
+Package pdftex.def Info: ../../images/pokemon/raikou.png used on input line 456
 .
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -2448,7 +2451,7 @@ Package pdftex.def Info: ../../images/pokemon/raikou.png used on input line 455
 File: ../../images/pokemon/entei.png Graphic file (type png)
 
 <use ../../images/pokemon/entei.png>
-Package pdftex.def Info: ../../images/pokemon/entei.png used on input line 455.
+Package pdftex.def Info: ../../images/pokemon/entei.png used on input line 456.
 
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -2457,7 +2460,7 @@ File: ../../images/pokemon/suicune.png Graphic file (type png)
 
 <use ../../images/pokemon/suicune.png>
 Package pdftex.def Info: ../../images/pokemon/suicune.png used on input line 45
-5.
+6.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/rayquaza.png, id=135, 192.72pt x 192.72pt>
@@ -2465,14 +2468,14 @@ File: ../../images/pokemon/rayquaza.png Graphic file (type png)
 
 <use ../../images/pokemon/rayquaza.png>
 Package pdftex.def Info: ../../images/pokemon/rayquaza.png used on input line 4
-55.
+56.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/mewtwo.png, id=136, 192.72pt x 192.72pt>
 File: ../../images/pokemon/mewtwo.png Graphic file (type png)
 
 <use ../../images/pokemon/mewtwo.png>
-Package pdftex.def Info: ../../images/pokemon/mewtwo.png used on input line 455
+Package pdftex.def Info: ../../images/pokemon/mewtwo.png used on input line 456
 .
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -2481,14 +2484,14 @@ File: ../../images/pokemon/heatran.png Graphic file (type png)
 
 <use ../../images/pokemon/heatran.png>
 Package pdftex.def Info: ../../images/pokemon/heatran.png used on input line 45
-5.
+6.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/dialga.png, id=138, 192.72pt x 192.72pt>
 File: ../../images/pokemon/dialga.png Graphic file (type png)
 
 <use ../../images/pokemon/dialga.png>
-Package pdftex.def Info: ../../images/pokemon/dialga.png used on input line 455
+Package pdftex.def Info: ../../images/pokemon/dialga.png used on input line 456
 .
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -2496,7 +2499,7 @@ Package pdftex.def Info: ../../images/pokemon/dialga.png used on input line 455
 File: ../../images/pokemon/palkia.png Graphic file (type png)
 
 <use ../../images/pokemon/palkia.png>
-Package pdftex.def Info: ../../images/pokemon/palkia.png used on input line 455
+Package pdftex.def Info: ../../images/pokemon/palkia.png used on input line 456
 .
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -2505,14 +2508,14 @@ File: ../../images/pokemon/regirock.png Graphic file (type png)
 
 <use ../../images/pokemon/regirock.png>
 Package pdftex.def Info: ../../images/pokemon/regirock.png used on input line 4
-55.
+56.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/regice.png, id=141, 192.72pt x 192.72pt>
 File: ../../images/pokemon/regice.png Graphic file (type png)
 
 <use ../../images/pokemon/regice.png>
-Package pdftex.def Info: ../../images/pokemon/regice.png used on input line 455
+Package pdftex.def Info: ../../images/pokemon/regice.png used on input line 456
 .
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -2521,14 +2524,14 @@ File: ../../images/pokemon/registeel.png Graphic file (type png)
 
 <use ../../images/pokemon/registeel.png>
 Package pdftex.def Info: ../../images/pokemon/registeel.png used on input line 
-455.
+456.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/lugia.png, id=143, 192.72pt x 192.72pt>
 File: ../../images/pokemon/lugia.png Graphic file (type png)
 
 <use ../../images/pokemon/lugia.png>
-Package pdftex.def Info: ../../images/pokemon/lugia.png used on input line 455.
+Package pdftex.def Info: ../../images/pokemon/lugia.png used on input line 456.
 
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -2536,7 +2539,7 @@ Package pdftex.def Info: ../../images/pokemon/lugia.png used on input line 455.
 File: ../../images/pokemon/ho-oh.png Graphic file (type png)
 
 <use ../../images/pokemon/ho-oh.png>
-Package pdftex.def Info: ../../images/pokemon/ho-oh.png used on input line 455.
+Package pdftex.def Info: ../../images/pokemon/ho-oh.png used on input line 456.
 
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -2544,7 +2547,7 @@ Package pdftex.def Info: ../../images/pokemon/ho-oh.png used on input line 455.
 File: ../../images/pokemon/latias.png Graphic file (type png)
 
 <use ../../images/pokemon/latias.png>
-Package pdftex.def Info: ../../images/pokemon/latias.png used on input line 455
+Package pdftex.def Info: ../../images/pokemon/latias.png used on input line 456
 .
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -2552,7 +2555,7 @@ Package pdftex.def Info: ../../images/pokemon/latias.png used on input line 455
 File: ../../images/pokemon/latios.png Graphic file (type png)
 
 <use ../../images/pokemon/latios.png>
-Package pdftex.def Info: ../../images/pokemon/latios.png used on input line 455
+Package pdftex.def Info: ../../images/pokemon/latios.png used on input line 456
 .
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
@@ -2561,7 +2564,7 @@ File: ../../images/pokemon/giratina_a.png Graphic file (type png)
 
 <use ../../images/pokemon/giratina_a.png>
 Package pdftex.def Info: ../../images/pokemon/giratina_a.png used on input line
- 455.
+ 456.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/giratina_o.png, id=148, 192.72pt x 192.72pt>
@@ -2569,7 +2572,7 @@ File: ../../images/pokemon/giratina_o.png Graphic file (type png)
 
 <use ../../images/pokemon/giratina_o.png>
 Package pdftex.def Info: ../../images/pokemon/giratina_o.png used on input line
- 455.
+ 456.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/deoxys_s.png, id=149, 192.72pt x 192.72pt>
@@ -2577,7 +2580,7 @@ File: ../../images/pokemon/deoxys_s.png Graphic file (type png)
 
 <use ../../images/pokemon/deoxys_s.png>
 Package pdftex.def Info: ../../images/pokemon/deoxys_s.png used on input line 4
-55.
+56.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/darkrai.png, id=150, 192.72pt x 192.72pt>
@@ -2585,13 +2588,13 @@ File: ../../images/pokemon/darkrai.png Graphic file (type png)
 
 <use ../../images/pokemon/darkrai.png>
 Package pdftex.def Info: ../../images/pokemon/darkrai.png used on input line 45
-5.
+6.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 File: ../../images/type/background/lobby.png Graphic file (type png)
 
 <use ../../images/type/background/lobby.png>
 Package pdftex.def Info: ../../images/type/background/lobby.png used on input l
-ine 455.
+ine 456.
 (pdftex.def)             Requested size: 455.24408pt x 455.23872pt.
  [4
 
@@ -2610,47 +2613,47 @@ File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 485.
+ 486.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Steel.png Graphic file (type png)
 
 <use ../../images/type/full/Steel.png>
 Package pdftex.def Info: ../../images/type/full/Steel.png used on input line 48
-5.
+6.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 485.
+ 486.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Rock.png Graphic file (type png)
 
 <use ../../images/type/full/Rock.png>
-Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 485
+Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 486
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 485.
+ 486.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Grass.png Graphic file (type png)
 
 <use ../../images/type/full/Grass.png>
 Package pdftex.def Info: ../../images/type/full/Grass.png used on input line 48
-5.
+6.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dragon.png Graphic file (type png)
  <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 4
-85.
+86.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ice.png Graphic file (type png)
 
 <use ../../images/type/full/Ice.png>
-Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 485.
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 486.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
@@ -2658,7 +2661,7 @@ Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 485.
 File: ../../images/pokemon/generation_5/Cobalion.png Graphic file (type png)
 <use ../../images/pokemon/generation_5/Cobalion.png>
 Package pdftex.def Info: ../../images/pokemon/generation_5/Cobalion.png used on
- input line 485.
+ input line 486.
 (pdftex.def)             Requested size: 36.80794pt x 56.9055pt.
 
 <../../images/pokemon/generation_5/Terrakion.png, id=180, 120.45pt x 102.3825pt
@@ -2666,14 +2669,14 @@ Package pdftex.def Info: ../../images/pokemon/generation_5/Cobalion.png used on
 File: ../../images/pokemon/generation_5/Terrakion.png Graphic file (type png)
  <use ../../images/pokemon/generation_5/Terrakion.png>
 Package pdftex.def Info: ../../images/pokemon/generation_5/Terrakion.png used o
-n input line 485.
+n input line 486.
 (pdftex.def)             Requested size: 50.21187pt x 42.67912pt.
 
 <../../images/pokemon/generation_5/Virizion.png, id=181, 120.45pt x 169.3527pt>
 File: ../../images/pokemon/generation_5/Virizion.png Graphic file (type png)
 <use ../../images/pokemon/generation_5/Virizion.png>
 Package pdftex.def Info: ../../images/pokemon/generation_5/Virizion.png used on
- input line 485.
+ input line 486.
 (pdftex.def)             Requested size: 36.42566pt x 51.21504pt.
 
 <../../images/pokemon/generation_5/Kyurem.png, id=182, 90.3375pt x 81.84578pt>
@@ -2681,57 +2684,57 @@ File: ../../images/pokemon/generation_5/Kyurem.png Graphic file (type png)
 
 <use ../../images/pokemon/generation_5/Kyurem.png>
 Package pdftex.def Info: ../../images/pokemon/generation_5/Kyurem.png used on i
-nput line 485.
+nput line 486.
 (pdftex.def)             Requested size: 56.52971pt x 51.21504pt.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 485.
+ 486.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fire.png Graphic file (type png)
 
 <use ../../images/type/full/Fire.png>
-Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 485
+Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 486
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ground.png Graphic file (type png)
  <use ../../images/type/full/Ground.png>
 Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 4
-85.
+86.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Grass.png Graphic file (type png)
 
 <use ../../images/type/full/Grass.png>
 Package pdftex.def Info: ../../images/type/full/Grass.png used on input line 48
-5.
+6.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Water.png Graphic file (type png)
  <use ../../images/type/full/Water.png>
 Package pdftex.def Info: ../../images/type/full/Water.png used on input line 48
-5.
+6.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 485.
+ 486.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ground.png Graphic file (type png)
 
 <use ../../images/type/full/Ground.png>
 Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 4
-85.
+86.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fire.png Graphic file (type png)
  <use ../../images/type/full/Fire.png>
-Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 485
+Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 486
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ice.png Graphic file (type png)
 
 <use ../../images/type/full/Ice.png>
-Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 485.
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 486.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
@@ -2740,76 +2743,76 @@ File: ../../images/type/full/Poison.png Graphic file (type png)
 
 <use ../../images/type/full/Poison.png>
 Package pdftex.def Info: ../../images/type/full/Poison.png used on input line 4
-85.
+86.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 485.
+ 486.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Rock.png Graphic file (type png)
 
 <use ../../images/type/full/Rock.png>
-Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 485
+Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 486
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dragon.png Graphic file (type png)
  <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 4
-85.
+86.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-485.
+486.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Steel.png Graphic file (type png)
 
 <use ../../images/type/full/Steel.png>
 Package pdftex.def Info: ../../images/type/full/Steel.png used on input line 48
-5.
+6.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fairy.png Graphic file (type png)
  <use ../../images/type/full/Fairy.png>
 Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 48
-5.
+6.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Flying.png Graphic file (type png)
 
 <use ../../images/type/full/Flying.png>
 Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 4
-85.
+86.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-485.
+486.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fairy.png Graphic file (type png)
 
 <use ../../images/type/full/Fairy.png>
 Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 48
-5.
+6.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Steel.png Graphic file (type png)
  <use ../../images/type/full/Steel.png>
 Package pdftex.def Info: ../../images/type/full/Steel.png used on input line 48
-5.
+6.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fairy.png Graphic file (type png)
 
 <use ../../images/type/full/Fairy.png>
 Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 48
-5.
+6.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/background/lobby.png Graphic file (type png)
 
 <use ../../images/type/background/lobby.png>
 Package pdftex.def Info: ../../images/type/background/lobby.png used on input l
-ine 485.
+ine 486.
 (pdftex.def)             Requested size: 455.24408pt x 455.23872pt.
  [5
 
@@ -2820,54 +2823,54 @@ File: ../../images/type/full/Dragon.png Graphic file (type png)
 
 <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 5
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fire.png Graphic file (type png)
  <use ../../images/type/full/Fire.png>
-Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 516
+Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 517
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dragon.png Graphic file (type png)
 
 <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 5
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Electric.png Graphic file (type png)
 
 <use ../../images/type/full/Electric.png>
 Package pdftex.def Info: ../../images/type/full/Electric.png used on input line
- 516.
+ 517.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Flying.png Graphic file (type png)
 
 <use ../../images/type/full/Flying.png>
 Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 5
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Flying.png Graphic file (type png)
 
 <use ../../images/type/full/Flying.png>
 Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 5
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Electric.png Graphic file (type png)
 
 <use ../../images/type/full/Electric.png>
 Package pdftex.def Info: ../../images/type/full/Electric.png used on input line
- 516.
+ 517.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Flying.png Graphic file (type png)
 
 <use ../../images/type/full/Flying.png>
 Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 5
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ground.png Graphic file (type png)
 
 <use ../../images/type/full/Ground.png>
 Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 5
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/pokemon/generation_5/Reshiram.png, id=195, 501.875pt x 552.0625pt
@@ -2875,7 +2878,7 @@ Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 5
 File: ../../images/pokemon/generation_5/Reshiram.png Graphic file (type png)
  <use ../../images/pokemon/generation_5/Reshiram.png>
 Package pdftex.def Info: ../../images/pokemon/generation_5/Reshiram.png used on
- input line 516.
+ input line 517.
 (pdftex.def)             Requested size: 51.72969pt x 56.9055pt.
 
 <../../images/pokemon/generation_5/Zekrom.png, id=196, 501.875pt x 664.4825pt>
@@ -2883,14 +2886,14 @@ File: ../../images/pokemon/generation_5/Zekrom.png Graphic file (type png)
 
 <use ../../images/pokemon/generation_5/Zekrom.png>
 Package pdftex.def Info: ../../images/pokemon/generation_5/Zekrom.png used on i
-nput line 516.
+nput line 517.
 (pdftex.def)             Requested size: 42.97661pt x 56.9055pt.
 
 <../../images/pokemon/generation_5/Tornadus.png, id=197, 120.45pt x 174.6525pt>
 File: ../../images/pokemon/generation_5/Tornadus.png Graphic file (type png)
 <use ../../images/pokemon/generation_5/Tornadus.png>
 Package pdftex.def Info: ../../images/pokemon/generation_5/Tornadus.png used on
- input line 516.
+ input line 517.
 (pdftex.def)             Requested size: 39.24503pt x 56.9055pt.
 
 <../../images/pokemon/generation_5/Thundurus.png, id=198, 120.45pt x 160.1985pt
@@ -2898,112 +2901,112 @@ Package pdftex.def Info: ../../images/pokemon/generation_5/Tornadus.png used on
 File: ../../images/pokemon/generation_5/Thundurus.png Graphic file (type png)
  <use ../../images/pokemon/generation_5/Thundurus.png>
 Package pdftex.def Info: ../../images/pokemon/generation_5/Thundurus.png used o
-n input line 516.
+n input line 517.
 (pdftex.def)             Requested size: 42.78668pt x 56.9055pt.
 
 <../../images/pokemon/generation_5/Landorus.png, id=199, 120.45pt x 145.0218pt>
 File: ../../images/pokemon/generation_5/Landorus.png Graphic file (type png)
 <use ../../images/pokemon/generation_5/Landorus.png>
 Package pdftex.def Info: ../../images/pokemon/generation_5/Landorus.png used on
- input line 516.
+ input line 517.
 (pdftex.def)             Requested size: 47.26385pt x 56.9055pt.
 File: ../../images/type/full/Ground.png Graphic file (type png)
 
 <use ../../images/type/full/Ground.png>
 Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 5
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Rock.png Graphic file (type png)
  <use ../../images/type/full/Rock.png>
-Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 516
+Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 517
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dragon.png Graphic file (type png)
 
 <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 5
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ground.png Graphic file (type png)
 
 <use ../../images/type/full/Ground.png>
 Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 5
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ice.png Graphic file (type png)
  <use ../../images/type/full/Ice.png>
-Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 516.
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 517.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dragon.png Graphic file (type png)
 
 <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 5
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fairy.png Graphic file (type png)
  <use ../../images/type/full/Fairy.png>
 Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 51
-6.
+7.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ice.png Graphic file (type png)
 
 <use ../../images/type/full/Ice.png>
-Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 516.
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 517.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Electric.png Graphic file (type png)
  <use ../../images/type/full/Electric.png>
 Package pdftex.def Info: ../../images/type/full/Electric.png used on input line
- 516.
+ 517.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Rock.png Graphic file (type png)
 
 <use ../../images/type/full/Rock.png>
-Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 516
+Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 517
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ice.png Graphic file (type png)
  <use ../../images/type/full/Ice.png>
-Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 516.
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 517.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Rock.png Graphic file (type png)
 
 <use ../../images/type/full/Rock.png>
-Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 516
+Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 517
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ice.png Graphic file (type png)
  <use ../../images/type/full/Ice.png>
-Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 516.
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 517.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Water.png Graphic file (type png)
 
 <use ../../images/type/full/Water.png>
 Package pdftex.def Info: ../../images/type/full/Water.png used on input line 51
-6.
+7.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 516--516
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
 \T1/lmss/m/n/5 (bet-ter than Moltres).
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 516--516
+Underfull \hbox (badness 10000) in paragraph at lines 517--517
 []\T1/lmss/m/n/5 Excellent fly-ing type
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 516--516
+Underfull \hbox (badness 2418) in paragraph at lines 517--517
 \T1/lmss/m/n/5 Poké-mon de-pend-ing on
  []
 
 File: ../../images/type/background/lobby.png Graphic file (type png)
 <use ../../images/type/background/lobby.png>
 Package pdftex.def Info: ../../images/type/background/lobby.png used on input l
-ine 516.
+ine 517.
 (pdftex.def)             Requested size: 455.24408pt x 455.23872pt.
  [6
 
@@ -3020,18 +3023,18 @@ us.png>]
 \tf@snm=\write8
 \openout8 = `Raid_bosses.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 518.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 518.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 519.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 519.
  (./Raid_bosses.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 518.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 518.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 519.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 519.
 Package rerunfilecheck Info: File `Raid_bosses.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  22156 strings out of 492995
  435618 string characters out of 6132704
- 555809 words of memory out of 5000000
+ 555911 words of memory out of 5000000
  25085 multiletter control sequences out of 15000+600000
  25936 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3044,7 +3047,7 @@ ype1/public/lm/lmss8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
 /lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy
 5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/m
 sam5.pfb>
-Output written on Raid_bosses.pdf (6 pages, 4780249 bytes).
+Output written on Raid_bosses.pdf (6 pages, 4780319 bytes).
 PDF statistics:
  235 PDF objects out of 1000 (max. 8388607)
  55 compressed objects within 1 object stream
