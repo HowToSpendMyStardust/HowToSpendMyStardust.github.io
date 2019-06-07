@@ -144,7 +144,7 @@
 
 \newcommand*{\colorbar}[2]{
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
-\draw [line width=4.pt,color=#1] (0.,0.)-- (#2/180,0.);
+\draw [line width=4.pt,color=#1] (0.,0.)-- (#2/220,0.);
 \draw[color=white] (0.2,0.) node {\scriptsize{$#2$}};
 \end{tikzpicture}
 }
@@ -256,52 +256,59 @@
     \usebeamertemplate{block end}%
   \end{actionenv}}
 
-\renewcommand{\baselinestretch}{1.1}
+\renewcommand{\baselinestretch}{1.05}
 
 
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/lobby}}
 \begin{frame}
 \begin{tiny}
-\frametitle{Raid boss difficulty}
+\frametitle{Raid boss difficulty (generations 1 and 2)}
 
 \begin{block}{}
-\textbf{Methodology}
+Estimator for the minimal number of players with the best counters at level 30, with "best friends" boost, and extreme weather. Raid bosses are considered to have their worst attack (WA). All bosses are tier 5 (they have 15000 HP), except Mewtwo which has 22500 HP.
 \begin{itemize}
-\item Estimator for the minimal number of players with the best counters at level 30.
-\item Raid bosses are considered to have their worst attack (WA).
-\item Best friends, and extreme weather.
-\item Tier 5 = 15000 HP, Tier 6 (for Mewtwo only) = 22500 HP
+  \item If boss raid has only simple weakness: minimal number of players = floor(Base DEF/80)
+  \item If boss raid has only double weakness: minimal number of players = floor(Base DEF/108)
 \end{itemize}
+These formula do not take the base ATT into account, that influences the number of deaths and indirectly the number of deaths 
 
-\bigskip
+\medskip
 
-\textbf{Generation 1}
 \begin{center}
-\begin{tabular}{cccc}
-\includegraphics[width=1cm]{../../images/pokemon/Articuno} & 
+\begin{tabular}{ccccc}
+&\textbf{Articuno} \hfill \icefull~\flyingfull & 
+\textbf{Zapdos} \hfill \electricfull~\flyingfull &
+\textbf{Moltres} \hfill \firefull~\flyingfull &
+\textbf{Mewtwo} \hfill \psychicfull \\
+&\includegraphics[width=1cm]{../../images/pokemon/Articuno} & 
 \includegraphics[width=1cm]{../../images/pokemon/Zapdos} & 
 \includegraphics[width=1cm]{../../images/pokemon/Moltres} & 
-\includegraphics[width=1cm]{../../images/pokemon/Mewtwo} \\
-3 players & 3 players & 2 players & 4 players \\
-(2.13) & (2.53) & (1.63) & (3.77) \\
-& & & (WA: Ice Beam) \\
+\includegraphics[width=1cm]{../../images/pokemon/Mewtwo} \\ \hline
+Base ATT & \attack{192} & \attack{253} & \attack{251} &  \attack{300} \\
+Base DEF & \defense{236} & \defense{185} & \defense{207} &\defense{182} \\ \hline
+Weaknesses  & \rockfull~\firefull~\electricfull~\steelfull & \rockfull~\icefull &\rockfull~\electricfull~\waterfull & \ghostfull~\darkfull~\bugfull \\ 
+Estimator & 3 players (2.13) & 3 players (2.53) & 2 players (1.63) & 4 players (3.77) \\
+Worst Attack & $-$ &  $-$ &  $-$ & Ice Beam \\
 \end{tabular}
 \end{center}
 
-\bigskip
+\medskip
 
-\textbf{Generation 2}
 \begin{center}
-\begin{tabular}{ccccc}
+\begin{tabular}{cccccc}
+& \textbf{Raikou} \hfill \electricfull  & \textbf{Entei} \hfill \firefull &  \textbf{Suicune} \hfill \waterfull & \textbf{Lugia} \hfill \psychicfull~\flyingfull & \textbf{Ho-oh} \hfill \firefull~\flyingfull \\
+& 
 \includegraphics[width=1cm]{../../images/pokemon/Raikou} & 
 \includegraphics[width=1cm]{../../images/pokemon/Entei} & 
 \includegraphics[width=1cm]{../../images/pokemon/Suicune} & 
 \includegraphics[width=1cm]{../../images/pokemon/Lugia} & 
-\includegraphics[width=1cm]{../../images/pokemon/Ho-oh} \\
-4 players & 3 players & 4 players & 4 players & 3 players \\
-(3.05) & (2.20) & (3.05) & (3.72) & (2.94) \\
-(WA: Shadow Ball) &  (WA: Iron Head) & (WA: Ice Beam) &  (WA: Sky Attack) &  (WA: Solar Beam) \\
+\includegraphics[width=1cm]{../../images/pokemon/Ho-oh} \\ \hline
+Base ATT & \attack{241} & \attack{235} & \attack{180} & \attack{193}& \attack{239} \\
+Base DEF & \defense{195} & \defense{171} & \defense{235}  & \defense{310}& \defense{244} \\  \hline
+Weaknesses & \groundfull & \waterfull~\rockfull~\groundfull & \grassfull~\electricfull & \darkfull~\icefull~\rockfull~\electricfull~\ghostfull & \rockfull~\electricfull~\waterfull  \\
+Estimator & 4 players (3.05) & 3 players (2.20) & 4 players (3.05) & 4 players (3.72) & 3 players (2.94) \\
+Worst attack & Shadow Ball & Iron Head & Ice Beam & Sky Attack & Solar Beam \\
 \end{tabular}
 \end{center}
 \end{block}
@@ -313,54 +320,93 @@
 
 \begin{frame}
 \begin{tiny}
-\frametitle{Raid boss difficulty}
+\frametitle{Raid boss difficulty (generation 3)}
 
 \begin{block}{}
-\textbf{Generation 3}
-
 \begin{center}
-\begin{tabular}{cccccccc}
-\includegraphics[width=1cm]{../../images/pokemon/Regice} & 
+\begin{tabular}{cccccc}
+& \textbf{Regice} \hfill \icefull & \textbf{Regirock} \hfill \rockfull & \textbf{Registeel} \hfill \steelfull & \textbf{Latios} \hfill \dragonfull~\psychicfull & \textbf{Latias} \hfill \dragonfull~\psychicfull \\
+& \includegraphics[width=1cm]{../../images/pokemon/Regice} & 
 \includegraphics[width=1cm]{../../images/pokemon/Regirock} & 
 \includegraphics[width=1cm]{../../images/pokemon/Registeel} & 
 \includegraphics[width=1cm]{../../images/pokemon/Latios} &
-\includegraphics[width=1cm]{../../images/pokemon/Latias} &
-\includegraphics[width=1cm]{../../images/pokemon/Kyogre} &
-\includegraphics[width=1cm]{../../images/pokemon/Groudon} &
-\includegraphics[width=1cm]{../../images/pokemon/Rayquaza}  \\
-4 players & 4 players & 4 players & 3 players & 4 players & 4 players & 4 players & 2 players \\
-(3.60) & (3.56) & (3.45) & (2.79) & (3.01) & (3.25) & (3.14) & (1.76) \\
-(WA: Earthquake) & & & (WA: Dragon Claw) & (WA: Outrage) & (WA: Blizzard) & (WA: Solar Beam) & (WA: Outrage) \\
+\includegraphics[width=1cm]{../../images/pokemon/Latias}  \\ \hline
+Base ATT & \attack{179} & \attack{179}& \attack{143}& \attack{268}& \attack{228} \\
+Base DEF & \defense{309} & \defense{309} & \defense{285} & \defense{212} & \defense{246}   \\ \hline
+Weaknesses & \firefull~\steelfull~\fightingfull~\rockfull & \steelfull~\waterfull~\grassfull~\fightingfull~\groundfull & \firefull~\fightingfull~\groundfull  & \multicolumn{2}{c}{\ghostfull~\darkfull~\bugfull~\dragonfull~\icefull~\fairyfull } \\ 
+Estimator & 4 players (3.60)  & 4 players (3.56) & 4 players (3.45) & 3 players (2.79) & 4 players (3.01)  \\
+Worst Attack & Earthquake & $-$ & $-$ & Dragon Claw & Outrage \\
 \end{tabular}
 \end{center}
 
 \begin{center}
 \begin{tabular}{cccc}
-\includegraphics[width=1cm]{../../images/pokemon/Deoxys_n} & 
-\includegraphics[width=1cm]{../../images/pokemon/Deoxys_a} & 
-\includegraphics[width=1cm]{../../images/pokemon/Deoxys_d} & 
-\includegraphics[width=1cm]{../../images/pokemon/Deoxys_s} \\
-2 players & 1 players & 4 players & 3 players \\
-(1.66) & (0.98) & (3.99) &(2.80) \\
+& \textbf{Kyogre} \hfill \waterfull & 
+\textbf{Groudon} \hfill \groundfull &
+\textbf{Rayquaza} \hfill \dragonfull~\flyingfull \\
+& \includegraphics[width=1cm]{../../images/pokemon/Kyogre} &
+\includegraphics[width=1cm]{../../images/pokemon/Groudon} &
+\includegraphics[width=1cm]{../../images/pokemon/Rayquaza}  \\ \hline
+Base ATT & \attack{270}& \attack{270}& \attack{284} \\
+Base DEF &  \defense{228}&  \defense{228}&  \defense{170} \\ \hline
+Weaknesses & \grassfull~\electricfull & \waterfull~\grassfull~\icefull & \icefull~\dragonfull~\rockfull~\fairyfull \\ 
+Estimator & 4 players (3.25) & 4 players (3.14) & 2 players (1.76) \\ 
+Worst Attack & Hydropump & Earthquake & Outrage \\
 \end{tabular}
 \end{center}
 
+\begin{center}
+\begin{tabular}{ccccc}
+& \textbf{Deoxys (N)} \hfill \psychicfull & \textbf{Deoxys (A)} \hfill \psychicfull & \textbf{Deoxys (D)} \hfill \psychicfull & \textbf{Deoxys (S)} \hfill \psychicfull \\
+& \includegraphics[width=1cm]{../../images/pokemon/Deoxys_n} & 
+\includegraphics[width=1cm]{../../images/pokemon/Deoxys_a} & 
+\includegraphics[width=1cm]{../../images/pokemon/Deoxys_d} & 
+\includegraphics[width=1cm]{../../images/pokemon/Deoxys_s} \\ \hline
+Base ATT & \attack{345}& \attack{414}& \attack{144} & \attack{230}\\
+Base DEF &  \defense{115}&  \defense{46}&  \defense{330} & \defense{218} \\ \hline
+Weaknesses & \multicolumn{4}{c}{\ghostfull~\darkfull~\bugfull} \\ 
+Estimator & 2 players (1.66) & 1 player (0.98) & 4 players (3.99) & 3 players (2.80) \\
+\end{tabular}
+\end{center}
+\end{block}
 
-\textbf{Generation 4}
+\end{tiny}
+\end{frame}
+
+
+
+\begin{frame}
+\begin{tiny}
+\frametitle{Raid boss difficulty (generation 4)}
+
+\begin{block}{}
+\begin{center}
+\begin{tabular}{ccccc} 
+& \textbf{Palkia} \hfill\dragonfull~\waterfull & \textbf{Dialga} \hfill \steelfull~\dragonfull & \textbf{Giratina (A)} \hfill \ghostfull~\dragonfull & \textbf{Giratina (O)} \hfill \ghostfull~\dragonfull \\
+&\includegraphics[width=1cm]{../../images/pokemon/Palkia} &
+\includegraphics[width=1cm]{../../images/pokemon/Dialga} &
+\includegraphics[width=1cm]{../../images/pokemon/Giratina_a} &
+\includegraphics[width=1cm]{../../images/pokemon/Giratina_o} \\ \hline
+Base ATT & \attack{280} &  \attack{275} &  \attack{187} &  \attack{225} \\
+Base DEF & \defense{215} & \defense{211} & \defense{225} & \defense{187} \\ \hline
+Weaknesses & \fairyfull~\dragonfull & \fightingfull~\groundfull &\multicolumn{2}{c}{\ghostfull~\darkfull~\dragonfull~\icefull~\fairyfull }  \\ 
+Estimator & 4 players (3.05) & 4 players (3.20) & 3 players (2.71) & 3 players (2.45)  \\
+Worst Attack & Draco Meteor & Draco Meteor & $-$ & Dragon Pulse \\
+\end{tabular}
+\end{center}
 
 \begin{center}
-\begin{tabular}{cccccccccc} 
-\includegraphics[width=1cm]{../../images/pokemon/Mesprit} &  
-\includegraphics[width=1cm]{../../images/pokemon/Palkia} &
-\includegraphics[width=1cm]{../../images/pokemon/Dialga} &
+\begin{tabular}{cccccc} 
+&\textbf{Mesprit} \hfill \psychicfull& \textbf{Heatran} \hfill \firefull~\steelfull & \textbf{Regigigas} \hfill \normalfull & \textbf{Cresselia} \hfill \psychicfull \\
+& \includegraphics[width=1cm]{../../images/pokemon/Mesprit} &  
 \includegraphics[width=1cm]{../../images/pokemon/Heatran} &
 \includegraphics[width=1cm]{../../images/pokemon/Regigigas} &
-\includegraphics[width=1cm]{../../images/pokemon/Giratina_a} &
-\includegraphics[width=1cm]{../../images/pokemon/Giratina_o} &
-\includegraphics[width=1cm]{../../images/pokemon/Cresselia} \\
-3 players & 4 players & 4 players & 3 players & 4 players & 3 players & 3 players & 4 players \\
-(2.81) & (3.05) & (3.20) & (2.19) & (3.12) & (2.71) & (2.45) & (3.23) \\
-(WA: Blizzard) & (WA: Draco Meteor) &  (WA: Draco Meteor) & (WA: Iron Head) &  &  &  & (WA: Moonblast) \\
+\includegraphics[width=1cm]{../../images/pokemon/Cresselia} \\ \hline
+Base ATT & \attack{212} &  \attack{251} &  \attack{287} &  \attack{152} \\
+Base DEF & \defense{212} & \defense{213} & \defense{210} & \defense{258} \\ \hline
+Weaknesses & \ghostfull~\darkfull~\bugfull & \groundfull~\fightingfull~\waterfull & \fightingfull & \ghostfull~\darkfull~\bugfull \\ 
+Estimator & 3 players (2.81) &  3 players (2.19) & 4 players (3.12) &  4 players (3.23) \\
+Worst Attack & Blizzard & Iron Head & Avalanche &  Moonblast \\
 \end{tabular}
 \end{center}
 
@@ -471,3 +517,10 @@ Remarks &  Best Fire type Pokémon (better than Moltres). Excellent Dragon & Bes
 \end{frame}
 
 \end{document}
+
+
+import csv
+with open('/Users/pascal.lu/Desktop/Classeur1.csv', 'r') as csvFile:
+     reader = csv.reader(csvFile)
+...     for row in reader:
+...         print(row)
