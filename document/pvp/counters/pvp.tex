@@ -1,0 +1,544 @@
+\documentclass[8pt,aspectratio=169,compress]{beamer}
+
+\usepackage{beamerbasethemes}
+\usepackage{calc}
+\usepackage{ifthen}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+%\usepackage[no-math]{fontspec}
+\usepackage{ragged2e}
+\usepackage{graphics}
+\usepackage[english]{babel}
+\usepackage{nicefrac}
+\usepackage{xcolor}
+\usepackage{calc}
+\usepackage{tikz}
+
+
+\mode<presentation>
+
+\makeatletter
+\renewcommand\beamerboxesrounded[2][]{%
+  \pgfsetfillopacity{0.5}
+  \global\let\beamer@firstlineitemizeunskip=\relax%
+  \vbox\bgroup%
+  \setkeys{beamerboxes}{upper=block title,lower=block body,width=\textwidth,shadow=false}%
+  \setkeys{beamerboxes}{#1}%
+  {%
+    \usebeamercolor{\bmb@lower}%
+    \globalcolorstrue%
+    \colorlet{lower.bg}{bg}%
+  }%
+  {%
+    \usebeamercolor{\bmb@upper}%
+    \globalcolorstrue%
+    \colorlet{upper.bg}{bg}%
+  }%
+  %
+  % Typeset head
+  %
+  \vskip4bp
+  \setbox\bmb@box=\hbox{%
+    \begin{minipage}[b]{\bmb@width}%
+      \usebeamercolor[fg]{\bmb@upper}%
+      #2%
+    \end{minipage}}%
+    \ifdim\wd\bmb@box=0pt%
+    \setbox\bmb@box=\hbox{}%
+    \ht\bmb@box=1.5pt%
+    \bmb@prevheight=-4.5pt%
+    \else%
+    \wd\bmb@box=\bmb@width%
+    \bmb@temp=\dp\bmb@box%
+    \ifdim\bmb@temp<1.5pt%
+    \bmb@temp=1.5pt%
+    \fi%
+    \setbox\bmb@box=\hbox{\raise\bmb@temp\hbox{\box\bmb@box}}%
+    \dp\bmb@box=0pt%
+    \bmb@prevheight=\ht\bmb@box%
+    \fi%
+    \bmb@temp=\bmb@width%
+    \bmb@dima=\bmb@temp\advance\bmb@dima by2.2bp%
+    \bmb@dimb=\bmb@temp\advance\bmb@dimb by4bp%
+    \hbox{%
+      \begin{pgfpicture}{0bp}{+-\ht\bmb@box}{0bp}{+-\ht\bmb@box}
+        \ifdim\wd\bmb@box=0pt%
+        \color{lower.bg}%
+        \else%
+        \color{upper.bg}%
+        \fi%
+        %        \pgfsetfillopacity{\opacitylevel}%NEW
+        \pgfpathqmoveto{-4bp}{-1bp}
+        \pgfpathqcurveto{-4bp}{1.2bp}{-2.2bp}{3bp}{0bp}{3bp}
+        \pgfpathlineto{\pgfpoint{\bmb@temp}{3bp}}
+        \pgfpathcurveto%
+        {\pgfpoint{\bmb@dima}{3bp}}%
+        {\pgfpoint{\bmb@dimb}{1.2bp}}%
+        {\pgfpoint{\bmb@dimb}{-1bp}}%
+        \bmb@dima=-\ht\bmb@box%
+        \advance\bmb@dima by0.95pt%NEW
+        \pgfpathlineto{\pgfpoint{\bmb@dimb}{\bmb@dima}}
+        \pgfpathlineto{\pgfpoint{-4bp}{\bmb@dima}}
+        \pgfusepath{fill}
+      \end{pgfpicture}%
+      \copy\bmb@box%
+    }%
+    \nointerlineskip%
+    \vskip-1pt%
+    \ifdim\wd\bmb@box=0pt%
+    \else%
+    \hbox{%
+      \begin{pgfpicture}{0pt}{0pt}{\bmb@width}{6pt}
+        \bmb@dima=\bmb@width%
+        \advance\bmb@dima by8bp%
+        \pgfpathrectangle{\pgfpoint{-4bp}{-1bp}}{\pgfpoint{\bmb@dima}{8bp}}
+        \pgfusepath{clip}
+        {\pgftransformshift{\pgfpoint{-4bp}{0bp}}\pgftext[left,base]{\pgfuseshading{bmb@transition}}}%
+      \end{pgfpicture}%
+    }%
+    \nointerlineskip%
+    \vskip-0.5pt%
+    \fi%
+    \ifbmb@shadow%
+    \setbox\bmb@boxshadow=\hbox{\pgfuseshading{bmb@shadow}}%
+    \setbox\bmb@boxshadowball=\hbox{\pgfuseshading{bmb@shadowball}}%
+    \setbox\bmb@boxshadowballlarge=\hbox{\pgfuseshading{bmb@shadowballlarge}}%
+    \fi%
+    \setbox\bmb@colorbox=\hbox{{\pgfpicturetrue\pgfsetcolor{lower.bg}}}%
+    \setbox\bmb@box=\hbox\bgroup\begin{minipage}[b]{\bmb@width}%
+      \vskip2pt%
+      \usebeamercolor[fg]{\bmb@lower}%
+      \colorlet{beamerstructure}{upper.bg}%
+      \colorlet{structure}{upper.bg}%
+      %\color{.}%
+    }
+\makeatother
+
+
+\setbeamertemplate{blocks}[rounded][shadow=false]
+%\addtobeamertemplate{block begin}{\pgfsetfillopacity{0.75}}{\pgfsetfillopacity{1}}
+
+
+\usepackage{lmodern}
+%\usepackage[english]{babel}
+%\usepackage[latin1]{inputenc}
+%\usepackage[T1]{fontenc}
+\usepackage{graphicx} 
+\usepackage{textpos} 
+\usepackage{multirow}
+
+\setbeamercolor{block title}{fg=structure,bg=white}
+%gets rid of bottom navigation bars
+\setbeamertemplate{footline}[frame number]{}
+%gets rid of bottom navigation symbols
+\setbeamertemplate{navigation symbols}{}
+%gets rid of footer
+\setbeamertemplate{footline}{}
+\setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.5}{$\blacktriangleright$}}}
+
+\usepackage{pgf,tikz}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+\pagestyle{empty}
+\renewcommand{\baselinestretch}{1.1}
+
+\newcommand*{\colorbar}[2]{
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
+\draw [line width=4.pt,color=#1] (0.,0.)-- (#2/180,0.);
+\draw[color=white] (0.2,0.) node {\scriptsize{$#2$}};
+\end{tikzpicture}
+}
+\definecolor{lightgreen}{rgb}{0.,0.6,0.}
+\definecolor{lightblue}{rgb}{0.,0.3,1}
+\newcommand*{\attack}[1]{\colorbar{red}{#1}}
+\newcommand*{\defense}[1]{\colorbar{lightblue}{#1}}
+\newcommand*{\stamina}[1]{\colorbar{lightgreen}{#1}}
+
+\newcommand*{\dps}[1]{
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
+\draw [line width=4.pt,color=black] (0.,0.)-- (#1/12.,0.);
+\draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
+\end{tikzpicture}
+}
+\newcommand*{\survival}[1]{
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
+\draw [line width=4.pt,color=black] (0.,0.)-- (#1/10000,0.);
+\draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
+\end{tikzpicture}
+}
+\newcommand*{\tdo}[1]{
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
+\draw [line width=4.pt,color=black] (0.,0.)-- (#1/390.,0.);
+\draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
+\end{tikzpicture}
+}
+
+\newcommand{\fightingfull}{\includegraphics[height=0.15cm]{../../images/type/full/Fighting.png}}
+\newcommand{\bugfull}{\includegraphics[height=0.15cm]{../../images/type/full/Bug.png}}
+\newcommand{\darkfull}{\includegraphics[height=0.15cm]{../../images/type/full/Dark.png}}
+\newcommand{\electricfull}{\includegraphics[height=0.15cm]{../../images/type/full/Electric.png}}
+\newcommand{\fairyfull}{\includegraphics[height=0.15cm]{../../images/type/full/Fairy.png}}
+\newcommand{\firefull}{\includegraphics[height=0.15cm]{../../images/type/full/Fire.png}}
+\newcommand{\flyingfull}{\includegraphics[height=0.15cm]{../../images/type/full/Flying.png}}
+\newcommand{\ghostfull}{\includegraphics[height=0.15cm]{../../images/type/full/Ghost.png}}
+\newcommand{\dragonfull}{\includegraphics[height=0.15cm]{../../images/type/full/Dragon.png}}
+\newcommand{\grassfull}{\includegraphics[height=0.15cm]{../../images/type/full/Grass.png}}
+\newcommand{\groundfull}{\includegraphics[height=0.15cm]{../../images/type/full/Ground.png}}
+\newcommand{\icefull}{\includegraphics[height=0.15cm]{../../images/type/full/Ice.png}}
+\newcommand{\normalfull}{\includegraphics[height=0.15cm]{../../images/type/full/Normal.png}}
+\newcommand{\psychicfull}{\includegraphics[height=0.15cm]{../../images/type/full/Psychic.png}}
+\newcommand{\rockfull}{\includegraphics[height=0.15cm]{../../images/type/full/Rock.png}}
+\newcommand{\waterfull}{\includegraphics[height=0.15cm]{../../images/type/full/Water.png}}
+\newcommand{\poisonfull}{\includegraphics[height=0.15cm]{../../images/type/full/Poison.png}}
+\newcommand{\steelfull}{\includegraphics[height=0.15cm]{../../images/type/full/Steel.png}}
+
+\newcommand{\fightingrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Fighting.png}}
+\newcommand{\bugrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Bug.png}}
+\newcommand{\darkrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Dark.png}}
+\newcommand{\electricrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Electric.png}}
+\newcommand{\fairyrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Fairy.png}}
+\newcommand{\firerev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Fire.png}}
+\newcommand{\flyingrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Flying.png}}
+\newcommand{\ghostrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Ghost.png}}
+\newcommand{\dragonrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Dragon.png}}
+\newcommand{\grassrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Grass.png}}
+\newcommand{\groundrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Ground.png}}
+\newcommand{\icerev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Ice.png}}
+\newcommand{\normalrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Normal.png}}
+\newcommand{\psychicrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Psychic.png}}
+\newcommand{\rockrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Rock.png}}
+\newcommand{\waterrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Water.png}}
+\newcommand{\poisonrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Poison.png}}
+\newcommand{\steelrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Steel.png}}
+
+\newcommand{\fightingsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/fighting.png}}
+\newcommand{\dragonsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/dragon.png}}
+\newcommand{\darksimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/dark.png}}
+\newcommand{\ghostsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/ghost.png}}
+\newcommand{\psysimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/psy.png}}
+\newcommand{\icesimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/ice.png}}
+\newcommand{\rocksimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/rock.png}}
+\newcommand{\groundsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/ground.png}}
+\newcommand{\electricsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/electric.png}}
+\newcommand{\watersimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/water.png}}
+\newcommand{\grasssimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/grass.png}}
+\newcommand{\firesimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/fire.png}}
+\newcommand{\steelsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/steel.png}}
+\newcommand{\fairysimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/fairy.png}}
+\newcommand{\flyingsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/flying.png}}
+\newcommand{\poisonsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/poison.png}}
+\newcommand{\bugsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/bug.png}}
+
+
+\newcommand{\megaevol}{\includegraphics[width=0.2cm]{../../images/megaevolve}}
+\newcommand{\twice}{{\tiny{($\times$2)}}}
+
+%\setbeamertemplate{frametitle}[default][center]
+\setbeamerfont{frametitle}{size=\normalsize,series=\bfseries}
+\setbeamercolor{frametitle}{fg=white}
+%\setbeamercolor*{frametitle}{fg=black}
+
+\usepackage{ulem}
+
+\begin{document}
+
+\setbeamertemplate{blocks}[rounded][shadow=false]
+
+\addtobeamertemplate{block begin}{\pgfsetfillopacity{0.5}}{\pgfsetfillopacity{1}}
+
+\newenvironment<>{varblock}[2][\textwidth]{%
+ \setlength{\textwidth}{#1}
+ \begin{actionenv}#3%
+  \def\insertblocktitle{#2}%
+  \par%
+  \usebeamertemplate{block begin}}
+ {\par%
+  \usebeamertemplate{block end}%
+ \end{actionenv}}
+
+\renewcommand{\baselinestretch}{1}
+
+
+\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/lobby}}
+\begin{frame}
+\frametitle{Best Pok\'emon for PvP \hspace{10.3cm} \today}
+
+\begin{block}{}
+\begin{tiny}
+\begin{itemize}
+ \item \textbf{Moves}: They are all defined differently from PvE. In PvP, a move is defined by its power (the amount of damage it deals), its energy (the amount of energy it generates or uses) and its duration (the number of turns the move lasts, each turn lasts for 0.5s).
+ 
+ Three measures can be defined:
+ \begin{itemize} 
+ \item \tiny DPT stands for Damage per turn. Equivalent to DPS in non-PvP scenarios. Higher is better. Only for fast moves.
+ \item \tiny EPT stands for Energy per turn. Equivalent to EPS in non-PvP scenarios. Higher is better. Only for fast moves.
+\item \tiny DPE stands for Damage per energy. DPE describes how efficiently you deal damage in comparison to the energy spent. Higher is better. Only for charged moves.
+\end{itemize}
+
+ Examples of PvP stats for fast moves are:
+\begin{center}
+\begin{tabular}{cccccc}
+Move & Power & Energy & Duration (s) & DPT & EPT \\ \hline
+\groundsimp~Mud Shot & 3& 9 &2 & 1.50 &4.50 \\
+\psysimp~Psycho Cut & 3 & 9& 2 &1.50& 4.50 \\
+\electricsimp~Thunder Shock & 3 & 9& 2 &1.50 &4.5 \\
+\end{tabular}
+\end{center}
+
+Examples of PvP stats for charged moves are:
+\begin{center}
+\begin{tabular}{cccc}
+Move & Power & Energy & DPE \\ \hline
+\watersimp~Hydro Cannon &90& 40 &2.25\\
+\grasssimp~Frenzy Plant &100& 45 &2.22\\
+\firesimp~Blast Burn & 110& 50 &2.20\\
+\icesimp~Avalanche & 90 &45& 2.00\\
+\dragonsimp~Draco Meteor &150& 75 &2.00\\
+%\fightingsimp~Focus Blast &150 &75 &2.00\\
+\end{tabular}
+\end{center}
+
+ For more details: \texttt{https://pokemongohub.net/post/pvp/pvp-move-stats-in-pokemon-go/}
+ 
+ \item The \textbf{Effective Health} (EH) measures the bulkiness of a Pok\'emon and is computed via the formula:
+\begin{center}
+EH $=$ (DEF at considered level) $\times$ (HP at considered level)
+\end{center}
+
+where DEF at considered level $=$ (Base DEF + IV DEF) $\times$ $\text{coeff}\_\text{level}$
+
+Example of coefficients are
+
+\begin{center}
+\begin{tabular}{cccccc} 
+Level &   Level 20 &  Level 25 &  Level 30 &  Level 35 &  Level 40 \\ \hline
+$\text{coeff}\_\text{level}$ &   0.5974 & 0.667934 & 0.7317 & 0.76156384 & 0.7903 \\
+\end{tabular}   
+\end{center}
+
+At level 40 (Master league),
+
+\begin{center}
+\begin{tabular}{rl}
+EH$\leq$22,500  & very fragile \\
+22,500$<$EH$\leq$27,000  & fragile but viable \\
+27,000$<$EH$\leq$31,500  & bulky \\
+EH$>$31,500  & very bulky \\
+\end{tabular}
+\end{center}
+
+\end{itemize}
+\end{tiny}
+\end{block}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Best Pok\'emon for PvP}
+
+\begin{block}{}
+\begin{tiny}
+\begin{itemize}
+  \item \textbf{Leagues}: Great league (CP $\leq$ 1500), Ultra league (CP $\leq$ 2500), Master league (no CP limit).
+ \item \textbf{Optimal IV and level (only for Great and Ultra leagues)} (read \texttt{https://pokemongohub.net/post/pvp/getting-ready-for-pvp/}) 
+ 
+ We would like to compare Moltres and Charizard 
+ \begin{center}
+\begin{tabular}{rcc}
+& \textbf{Moltres} \hfill \firefull~\flyingfull & \textbf{Charizard} \hfill \firefull~\flyingfull \\
+& \includegraphics[width=1.25cm]{../../images/pokemon/moltres.png}
+& \includegraphics[width=1.25cm]{../../images/pokemon/charizard.png} \\ \hline
+ATT  &  \attack{251} &  \attack{223} \\
+DEF  & \defense{181} & \defense{173}  \\
+HP  & \stamina{207} & \stamina{186}  \\
+\end{tabular}
+\end{center}
+
+For Moltres, the effective stats are
+ 
+ \begin{center}
+ \begin{tabular}{cccccccccc}
+ ATT IV & DEF IV & HP IV & LVL & CP & ATT & DEF & HP & SUM& EH \\ \hline
+ 15 & 15 & 15 & 25 & 2475 & 177 & 130 & 148 & 455 & 19240\\
+13 & 15 & 14 & 25.5 & 2500 & 178 & 132 & 149 & 459 & 19668\\
+%0 & 14 & 12 & 27 & 2499 & 174 & 135 & 152 & 461 & 20520\\
+%15 & 1 & 2 & 27 & 2499 & 184 & 126 & 145 & 455 & 18270\\
+%15 & 2 & 1 & 27 & 2500 & 184 & 127 & 144 & 455 & 18288\\
+0 & 15 & 3 & 27.5 & 2499 & 175 & 137 & 147 & 459 & 20139\\
+%0 & 4 & 15 & 27.5 & 2496 & 175 & 129 & 155 & 459 & 19995\\
+1 & 3 & 15 & 27.5 & 2499 & 176 & 128 & 155 & 459 & 19840\\
+\end{tabular}
+ \end{center}
+ 
+ For Charizard, the effective stats are:
+ 
+ \begin{center}
+ \begin{tabular}{cccccccccc}
+ ATT IV & DEF IV & HP IV & LVL & CP & ATT & DEF & HP & SUM& EH \\ \hline
+15 & 15 & 15 & 30.5 & 2497 & 174 & 138 & 147 & 459 & 20286 \\
+%0 & 13 & 15 & 35 & 2500 & 169 & 141 & 153 & 463 & 21573 \\
+15 & 0 & 0 & 35.5 & 2495 & 181 & 132 & 142 & 455 & 18744 \\
+%0 & 15 & 1 & 37 & 2499 & 172 & 145 & 144 & 461 & 20880  \\
+%0 & 2 & 15 & 37 & 2500 & 172 & 135 & 155 & 462 & 20925 \\
+0 & 15 & 15 & 34.5 & 2494 & 169 & 142 & 152 & 463 & 21584 \\
+15 & 13 & 14 & 31 & 2498 & 175 & 137 & 147 & 459 & 20139 \\
+\end{tabular}
+ \end{center}
+ 
+Moltres (13, 15, 14) has better statistics for Ultra league than Moltres (15, 15, 15). For each league, there is an optimal IV set and level that maximises  attack, defence and HP statistics. For Master league, the optimal IV set is (15, 15, 15) and optimal level is 40. Furthermore, Charizard (15, 13, 14) at level 31 and Moltres (0, 15, 3) at level 27.5 have exactly same statistics. To determine which one is most interesting in PvP, we must look at their moves. 
+
+% For more details, read: \texttt{https://pokemongohub.net/post/pvp/getting-ready-for-pvp/}
+
+% \item Base Statistics: \texttt{https://pokemongo.gamepress.gg/pokemon-list\#1}, \texttt{https://pokegocomplete.com} 
+
+ \item Battle simulator: \texttt{https://www.pokebattler.com}, \texttt{https://pvpoke.com}
+% \item Sheets "Best Pok\'emon in Pok\'emon Go": \texttt{https://imgur.com/a/2HVx6LX}%https://imgur.com/a/XcHwt3h
+\end{itemize}
+\end{tiny}
+\end{block}
+
+\end{frame}
+
+
+\renewcommand{\baselinestretch}{1.1}
+
+\begin{frame}
+\frametitle{\includegraphics[width=0.3cm]{../../pve/guide/great_league.png} ~Great league (CP $\leq$ 1500)}
+
+\begin{tiny}
+\begin{block}{}
+\begin{center}
+
+\begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}p{2cm}} 
+  & \textbf{Medicham} \hfill \fightingfull~\psychicfull& \textbf{Deoxys (D)} \hfill \psychicfull & \textbf{Azumarill} \hfill\waterfull~\fairyfull &\textbf{Altaria} \hfill\dragonfull~\flyingfull &\textbf{Bastiodon} \hfill\rockfull~\steelfull  \\ 
+  & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/medicham}} &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/deoxys_d} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/azumarill} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/altaria} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/bastiodon} }  \\ \hline 
+   \multirow{3}{*}{Ideal moveset}  & \fightingsimp~Counter & \fightingsimp~Counter & \watersimp~Bubble & \dragonsimp~Dragon Breath & \rockfull~Smack Down \\
+  &\fightingsimp~Power Up Punch &\psysimp~Psycho Boost  & \icesimp~Ice Beam& \dragonsimp~Dragon Pulse & \rockfull~Stone Edge  \\ 
+  &\icesimp~Ice Punch &\rocksimp~Rock Slide & \fairysimp~Play Rough& \flyingsimp~Sky Attack  & \firefull~Flamethrower \\ \hline
+ ATT & \attack{121} &\attack{144} &\attack{112}&\attack{141} & \attack{94} \\
+ DEF & \defense{152} & \defense{330} & \defense{152} &\defense{201} &\defense{286} \\
+ HP & \stamina{155} & \stamina{137} & \stamina{225}& \stamina{181} & \stamina{155} \\ \hline
+ Optimal IV / Level & (15,15,15), level 40 & (0,15,15), level 25.5  &  (8,15,15), level 40 & (0,14,15), level 29 & (8,15,15), level 40 \\ 
+ %Effective Health &\survival{17732} &\survival{23863} & \survival{25033} & 21809 \\
+ Weaknesses &\fairyfull~\ghostfull~\flyingfull & \ghostfull~\darkfull~\bugfull & \electricfull~\grassfull~\poisonfull & \icefull~\rockfull~\dragonfull~\fairyfull & \fightingfull~\groundfull~\waterfull\\ \hline
+  Comments &  & & \\ 
+\end{tabular}  
+\end{center}
+
+\textbf{Other alternatives}:
+\begin{itemize}
+  \item \textbf{Skarmory}: Air Slash, Sky Attack, Flash Cannon
+  \item \textbf{Venusaur}: Vine Whip, Frenzy Plant, Sludge Bomb
+  \item \textbf{Umbreon}: Snarl, Foul Play, Last Resort
+  \item \textbf{Cresselia}: Psycho Cut, Future Sight, Moonblast
+\end{itemize}
+
+\end{block}
+
+\end{tiny}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{\includegraphics[width=0.3cm]{../../pve/guide/ultra_league.png} ~Ultra league (CP $\leq$ 2500)}
+
+\begin{tiny}
+\begin{block}{}
+\begin{center}
+
+\begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}p{2cm}} 
+  & \textbf{Giratina (A)} \hfill \ghostfull~\dragonfull& \textbf{Cresselia} \hfill \psychicfull & \textbf{Blastoise} \hfill\waterfull &\textbf{Lucario} \hfill\fightingfull~\steelfull & \textbf{Steelix} \hfill \steelfull~\groundfull \\ 
+  & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/giratina_a}} &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/cresselia} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/blastoise} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/lucario} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/steelix} }  \\ \hline 
+   \multirow{3}{*}{Ideal moveset}  & \ghostsimp~Shadow Claw & \psysimp~Psycho Cut & \watersimp~Water Gun & \fightingsimp~Counter & \dragonfull~Dragon Tail \\
+  &\dragonsimp~Dragon Claw &\psysimp~Future Sight & \icesimp~Ice Beam&\fightingsimp~Power Up Punch & \groundfull~Earthquake \\ 
+  &\rocksimp~Ancient Power &\fairysimp~Moonblast & \watersimp~Hydro Cannon&\ghostsimp~Shadow Ball & \darkfull~Crunch \\ \hline
+ ATT & \attack{187} &\attack{152} &\attack{171}&\attack{236} & \attack{148}  \\
+ DEF & \defense{225} & \defense{258} & \defense{207} &\defense{144} & \defense{272} \\
+ HP & \stamina{284} & \stamina{260} & \stamina{188}& \stamina{172} & \stamina{181} \\ \hline
+ Optimal IV / Level & (0,15,15), level 28 & (0,13,15), level 37.5  &  (15,15,15), level 40 & (1,15,15), level 38.5 & (15,15,15), level 40 \\ 
+ %Effective Health &\survival{17732} &\survival{23863} & \survival{25033} & 21809 \\
+ Weaknesses &\fairyfull~\ghostfull~\darkfull~\dragonfull~\icefull & \ghostfull~\darkfull~\bugfull & \electricfull~\grassfull & \fightingfull~\firefull~\groundfull & \firefull~\groundfull~\waterfull~\fightingfull \\ \hline
+  Comments &  & & \\ 
+\end{tabular}  
+
+\end{center}
+
+
+\textbf{Other alternatives}:
+\begin{itemize}
+  \item \textbf{Giratina (Origin)}: Shadow Claw, Shadow Ball, Ominous Wind
+  \item \textbf{Venusaur}: Vine Whip, Frenzy Plant, Sludge Bomb
+  \item \textbf{Typhlosion}: Shadow Claw, Blast Burn, Solar Beam
+  \item \textbf{Kingdra}: Dragon Breath, Outrage, Hydro Pump
+\end{itemize}
+
+
+\end{block}
+
+\end{tiny}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{\includegraphics[width=0.3cm]{../../pve/guide/master_league.png} ~Master league (no CP limit)}
+
+\begin{tiny}
+\begin{block}{}
+\begin{center}
+
+\begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}p{2cm}} 
+  & \textbf{Giratina (O)} \hfill \ghostfull~\dragonfull& \textbf{Dialga} \hfill \steelfull~\dragonfull & \textbf{Lugia} \hfill\psychicfull~\flyingfull &\textbf{Garchomp} \hfill\dragonfull~\groundfull&\textbf{Metagross} \hfill\steelfull~\psychicfull \\ 
+  & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/giratina_o}} &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/dialga} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/lugia} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/garchomp} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/metagross} }  \\ \hline 
+   \multirow{3}{*}{Ideal moveset}  & \ghostsimp~Shadow Claw & \dragonsimp~Dragon Breath & \dragonsimp~Dragon Tail & \groundsimp~Mud Shot& \steelsimp~Bullet Punch \\
+  &\ghostsimp~Shadow Ball &\steelsimp~Iron Head & \flyingsimp~Sky Attack&\groundsimp~Earthquake & \steelsimp~Meteor Mash \\ 
+  &\dragonsimp~Dragon Pulse &\electricsimp~Thunder & \watersimp~Hydropump&\dragonsimp~Outrage &\groundsimp~Earthquake  \\ \hline
+ ATT & \attack{225} &\attack{275} &\attack{193}&\attack{261} & \attack{257}  \\
+ DEF & \defense{187} & \defense{211} & \defense{310} &\defense{193}&\defense{228} \\
+ HP & \stamina{284} & \stamina{205} & \stamina{235}& \stamina{239} & \stamina{190} \\ \hline
+ %Effective Health &\survival{17732} &\survival{23863} & \survival{25033} & 21809 \\
+ Weaknesses &\fairyfull~\ghostfull~\darkfull~\dragonfull~\icefull & \fightingfull~\groundfull & \electricfull~\rockfull~\icefull~\ghostfull~\darkfull & \icefull~\dragonfull~\fairyfull & \ghostfull~\darkfull~\firefull~\groundfull \\ \hline
+  Comments &  & & \\ 
+\end{tabular}  
+\end{center}
+
+
+\textbf{Other alternatives}:
+\begin{itemize}
+  \item \textbf{Melmetal}: Thunder Shock, Rock Slide, Flash Cannon
+  \item \textbf{Mewtwo}: Psycho Cut, Shadow Ball, Focus Blast
+  \item \textbf{Tyranitar}: Smack Down, Crunch, Stone Edge
+  \item \textbf{Dragonite}: Dragon Breath, Dragon Claw, Outrage
+\end{itemize}
+
+\end{block}
+
+\end{tiny}
+\end{frame}
+
+\begin{frame}
+\frametitle{Steal their look}
+
+\begin{tiny}
+\begin{block}{}
+\begin{center}
+Once you got your three medals, you can steal their look:
+
+\vspace{0.2cm}
+
+\includegraphics[width=4.2cm]{../../outfit/Alola_Ace_Trainer_2.jpg}~~
+\includegraphics[width=4.2cm]{../../outfit/Kalos_Veteran_2.jpg}~~
+\includegraphics[width=4.2cm]{../../outfit/Unova_Ace_Trainer_2.jpg}
+
+\vspace{0.2cm}
+\end{center}
+\end{block}
+
+
+\end{tiny}
+\end{frame}
+
+\end{document}
+
+
+def eh(defense,stamina,ivdef=15,ivsta=15):
+   return ((defense+ivdef)*(stamina+ivsta)*0.7903**2/900.)

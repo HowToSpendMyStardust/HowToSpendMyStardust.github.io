@@ -240,6 +240,7 @@
 %\setbeamercolor*{frametitle}{fg=black}
 
 \usepackage{ulem}
+\setbeamerfont{caption}{size=\scriptsize}
 
 \begin{document}
 
@@ -267,8 +268,18 @@
 \frametitle{Which moves for Mewtwo?}
 
 \begin{block}{}
-\textbf{Neutral DPS}
 
+%Confusion	Shadow Ball	18.068
+%Confusion	Thunderbolt	16.994
+%Confusion	Hyper Beam	16.877
+%Confusion	Focus Blast	16.705
+%Confusion	Psychic	16.555
+%Confusion	Flamethrower	16.528
+%Confusion	Ice Beam	16.279
+
+\textbf{For raids}
+
+\begin{table}[ht!]
 \begin{center}
 \begin{tabular}{ccc}
 %\hline
@@ -281,35 +292,28 @@ Fast move & Charged move & DPS \\ \hline
 \psysimp~Psycho Cut&\icesimp~Ice Beam&	15.463 \\ 
 \end{tabular}
 \end{center}
+\caption{\tiny Neutral DPS}
+\end{table}
 
-%Confusion	Shadow Ball	18.068
-%Confusion	Thunderbolt	16.994
-%Confusion	Hyper Beam	16.877
-%Confusion	Focus Blast	16.705
-%Confusion	Psychic	16.555
-%Confusion	Flamethrower	16.528
-%Confusion	Ice Beam	16.279
-
-\textbf{For raids}:
+\vspace{-0.5cm}
 \begin{itemize}
-  \item \ghostfull~ Giratina is better and has more life than Mewtwo. However, Giratina has two weaknesses \icefull~\fairyfull~than Mewtwo doesn't have.
-  \item \psychicfull~ Mewtwo is the best \psychicfull~Pokémon, although this has no utility until gen 5.
-  \item \fightingfull~ Machamp is better than Mewtwo. Although Mewtwo is not weak to \psychicfull, making it usefull versus bosses having \psychicfull~moves (Arceus, Regigigas).
-  \item \electricfull~ Raikou and Magnezone are better than Mewtwo.
+  \item \ghostfull~Giratina is better than Mewtwo. However, Giratina has two weaknesses \icefull~\fairyfull~than Mewtwo doesn't have.
+  \item \psychicfull~Mewtwo is the best \psychicfull~Pokémon, although Psychic has no utility until gen 5.
+  \item \fightingfull~Machamp is better than Mewtwo. However, Mewtwo is not weak to \psychicfull, making it usefull versus bosses having \psychicfull~moves (Arceus, Regigigas).
+  \item \electricfull~Raikou and Magnezone are better than Mewtwo.
   \item \normalfull~Hyper Beam is not optimal.
-  \item \icefull~ Mamoswine, Glaceon and Weawile are better than Mewtwo. However, Mewtwo doesn't have \firefull~\grassfull~weakness, which makes it usefull versus Groudon.
-  \item \firefull~ Moltres and Entei are better than Mewtwo.
+  \item \icefull~Mamoswine, Glaceon and Weawile are better than Mewtwo. However, Mewtwo doesn't have \firefull~\grassfull~weakness, which makes it usefull versus Groudon.
+  \item \firefull~Moltres and Entei are better than Mewtwo.
 \end{itemize}
 
-\textbf{For gyms}:
+\textbf{Against other Pok\'emon}
 \begin{itemize}
-  \item \fightingfull~ Mewtwo can counter Blissey, Snorlax, Chansey, Rhyperior and all \normalfull~\rockfull~Pok\'emon.
-  \item \ghostfull~ Mewtwo can counter Espeon, Gardevoir, Metagross.
-  \item \icefull~ Mewtwo can counter Dragonite, Salamence, Togekiss.
+  \item \fightingfull~Mewtwo can counter Blissey, Snorlax, Chansey, Rhyperior, Tyranitar and all \normalfull~\rockfull~Pok\'emon.
+  \item \ghostfull~Mewtwo can counter Espeon, Gardevoir, Metagross.
+  \item \icefull~Mewtwo can counter Dragonite, Salamence, Togekiss, Groudon.
 \end{itemize}
 
-
-\textbf{Conclusion}: 
+\textbf{Conclusion}
 
 \begin{center}
 \begin{tabular}{rp{2cm}} 
@@ -321,8 +325,19 @@ Fast move & Charged move & DPS \\ \hline
 %  DEF & \defense{182} \\
 % HP &\stamina{214} \\  \hline
 \end{tabular}   
+\quad\quad
+\begin{tabular}{rp{2cm}} 
+%  &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/mewtwo.png} } \\ \hline
+\multirow{2}{*}{Ideal moveset for PvP}   & \psysimp~Psycho Cut (5) \\
+    & \ghostsimp~Shadow Ball$^{\dag}$(100) \\
+    & \icesimp~Ice Beam (90) \\  
+%  ATT &  \attack{300} \\
+%  DEF & \defense{182} \\
+% HP &\stamina{214} \\  \hline
+\end{tabular}   
 \end{center}
 
+Read also: \texttt{https://pokemongo.gamepress.gg/pokemon/150}
 
 \end{block}
 
