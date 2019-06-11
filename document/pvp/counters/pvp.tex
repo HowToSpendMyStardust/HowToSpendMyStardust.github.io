@@ -228,6 +228,7 @@
 \newcommand{\flyingsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/flying.png}}
 \newcommand{\poisonsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/poison.png}}
 \newcommand{\bugsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/bug.png}}
+\newcommand{\normalsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/normal.png}}
 
 
 \newcommand{\megaevol}{\includegraphics[width=0.2cm]{../../images/megaevolve}}
@@ -302,10 +303,10 @@ Move & Power & Energy & DPE \\ \hline
  
  \item The \textbf{Effective Health} (EH) measures the bulkiness of a Pok\'emon and is computed via the formula:
 \begin{center}
-EH $=$ (DEF at considered level) $\times$ (HP at considered level)
+EH $= \frac{1}{900} \times$ (DEF at considered level) $\times$ (HP at considered level) 
 \end{center}
 
-where DEF at considered level $=$ (Base DEF + IV DEF) $\times$ $\text{coeff}\_\text{level}$
+where DEF at considered level $=$ (Base DEF + IV DEF) $\times$ $\text{coeff}\_\text{level}$ and HP at considered level $=$ (Base HP + IV HP) $\times$ $\text{coeff}\_\text{level}$
 
 Example of coefficients are
 
@@ -391,7 +392,7 @@ Moltres (13, 15, 14) has better statistics for Ultra league than Moltres (15, 15
 
 % \item Base Statistics: \texttt{https://pokemongo.gamepress.gg/pokemon-list\#1}, \texttt{https://pokegocomplete.com} 
 
- \item Battle simulator: \texttt{https://www.pokebattler.com}, \texttt{https://pvpoke.com}
+ \item \textbf{Battle simulator}: \texttt{https://www.pokebattler.com}, \texttt{https://pvpoke.com}
 % \item Sheets "Best Pok\'emon in Pok\'emon Go": \texttt{https://imgur.com/a/2HVx6LX}%https://imgur.com/a/XcHwt3h
 \end{itemize}
 \end{tiny}
@@ -411,7 +412,7 @@ Moltres (13, 15, 14) has better statistics for Ultra league than Moltres (15, 15
 
 \begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}p{2cm}} 
   & \textbf{Medicham} \hfill \fightingfull~\psychicfull& \textbf{Deoxys (D)} \hfill \psychicfull & \textbf{Azumarill} \hfill\waterfull~\fairyfull &\textbf{Altaria} \hfill\dragonfull~\flyingfull &\textbf{Bastiodon} \hfill\rockfull~\steelfull  \\ 
-  & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/medicham}} &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/deoxys_d} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/azumarill} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/altaria} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/bastiodon} }  \\ \hline 
+  & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/medicham}} &  \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/deoxys_d} } & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/azumarill} } & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/altaria} } & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/bastiodon} }  \\ \hline 
    \multirow{3}{*}{Ideal moveset}  & \fightingsimp~Counter & \fightingsimp~Counter & \watersimp~Bubble & \dragonsimp~Dragon Breath & \rocksimp~Smack Down \\
   &\fightingsimp~Power Up Punch &\psysimp~Psycho Boost  & \icesimp~Ice Beam& \dragonsimp~Dragon Pulse & \rocksimp~Stone Edge  \\ 
   &\icesimp~Ice Punch &\rocksimp~Rock Slide & \fairysimp~Play Rough& \flyingsimp~Sky Attack  & \firesimp~Flamethrower \\ \hline
@@ -421,17 +422,25 @@ Moltres (13, 15, 14) has better statistics for Ultra league than Moltres (15, 15
  Optimal IV / Level & (15,15,15), level 40 & (0,15,15), level 25.5  &  (8,15,15), level 40 & (0,14,15), level 29 & (8,15,15), level 40 \\ 
  %Effective Health &\survival{17732} &\survival{23863} & \survival{25033} & 21809 \\
  Weaknesses &\fairyfull~\ghostfull~\flyingfull & \ghostfull~\darkfull~\bugfull & \electricfull~\grassfull~\poisonfull & \icefull~\rockfull~\dragonfull~\fairyfull & \fightingfull~\groundfull~\waterfull\\ \hline
-  Comments &  & & \\ 
+%  Comments &  & & \\ 
+\end{tabular}  
+
+
+\begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}p{2cm}} 
+  & \textbf{Skarmory} \hfill \steelfull~\flyingfull& \textbf{Venusaur} \hfill \grassfull~\poisonfull & \textbf{Umbreon} \hfill\darkfull &\textbf{Cresselia} \hfill \psychicfull &\textbf{Lucario} \hfill\fightingfull~\steelfull  \\ 
+  & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/skarmory}} &  \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/venusaur} } & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/umbreon} } & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/cresselia} } & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/lucario} }  \\ \hline 
+   \multirow{3}{*}{Ideal moveset}  & \flyingsimp~Air Slash & \grasssimp~Vine Whip & \darksimp~Snarl & \psysimp~Psycho Cut & \fightingsimp~Counter \\
+  &\flyingsimp~Sky Attac &\grasssimp~Frenzy Plant  & \darksimp~Foul Play& \psysimp~Future Sight & \fightingsimp~Power Up Punch  \\ 
+  &\steelsimp~Flash Cannon &\poisonsimp~Sludge Bomb & \normalsimp~Last Resort& \fairysimp~Moonblast  & \ghostsimp~Shadow Ball \\ \hline
+ ATT & \attack{148} &\attack{198} &\attack{126}&\attack{152} & \attack{236} \\
+ DEF & \defense{226} & \defense{189} & \defense{240} &\defense{258} &\defense{144} \\
+ HP & \stamina{163} & \stamina{190} & \stamina{216}& \stamina{260} & \stamina{172} \\ \hline
+ Optimal IV / Level & (0,14,15), level 27.5 & (0,14,15), level 21  &  (0,15,15), level 27.5 & (2,15,13), level 20 & (1,15,15), level 20.5 \\ 
+ %Effective Health &\survival{17732} &\survival{23863} & \survival{25033} & 21809 \\
+ Weaknesses &\firefull~\electricfull & \icefull~\firefull~\psychicfull~\groundfull  & \electricfull~\grassfull~\poisonfull & \icefull~\rockfull~\dragonfull~\fairyfull & \fightingfull~\groundfull~\waterfull\\ \hline
+%  Comments &  & & \\ 
 \end{tabular}  
 \end{center}
-
-\textbf{Other alternatives}:
-\begin{itemize}
-  \item \textbf{Skarmory}: Air Slash, Sky Attack, Flash Cannon
-  \item \textbf{Venusaur}: Vine Whip, Frenzy Plant, Sludge Bomb
-  \item \textbf{Umbreon}: Snarl, Foul Play, Last Resort
-  \item \textbf{Cresselia}: Psycho Cut, Future Sight, Moonblast
-\end{itemize}
 
 \end{block}
 
@@ -448,29 +457,36 @@ Moltres (13, 15, 14) has better statistics for Ultra league than Moltres (15, 15
 
 \begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}p{2cm}} 
   & \textbf{Giratina (A)} \hfill \ghostfull~\dragonfull& \textbf{Cresselia} \hfill \psychicfull & \textbf{Blastoise} \hfill\waterfull &\textbf{Lucario} \hfill\fightingfull~\steelfull & \textbf{Steelix} \hfill \steelfull~\groundfull \\ 
-  & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/giratina_a}} &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/cresselia} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/blastoise} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/lucario} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/steelix} }  \\ \hline 
+  & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/giratina_a}} &  \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/cresselia} } & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/blastoise} } & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/lucario} } & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/steelix} }  \\ \hline 
    \multirow{3}{*}{Ideal moveset}  & \ghostsimp~Shadow Claw & \psysimp~Psycho Cut & \watersimp~Water Gun & \fightingsimp~Counter & \dragonsimp~Dragon Tail \\
   &\dragonsimp~Dragon Claw &\psysimp~Future Sight & \icesimp~Ice Beam&\fightingsimp~Power Up Punch & \groundsimp~Earthquake \\ 
   &\rocksimp~Ancient Power &\fairysimp~Moonblast & \watersimp~Hydro Cannon&\ghostsimp~Shadow Ball & \darksimp~Crunch \\ \hline
  ATT & \attack{187} &\attack{152} &\attack{171}&\attack{236} & \attack{148}  \\
  DEF & \defense{225} & \defense{258} & \defense{207} &\defense{144} & \defense{272} \\
  HP & \stamina{284} & \stamina{260} & \stamina{188}& \stamina{172} & \stamina{181} \\ \hline
- Optimal IV / Level & (0,15,15), level 28 & (0,13,15), level 37.5  &  (15,15,15), level 40 & (1,15,15), level 38.5 & (15,15,15), level 40 \\ 
+ Optimal IV / Level & (0,14,15), level 28 & (0,13,15), level 37.5  &  (15,15,15), level 40 & (1,15,15), level 38.5 & (15,15,15), level 40 \\ 
  %Effective Health &\survival{17732} &\survival{23863} & \survival{25033} & 21809 \\
  Weaknesses &\fairyfull~\ghostfull~\darkfull~\dragonfull~\icefull & \ghostfull~\darkfull~\bugfull & \electricfull~\grassfull & \fightingfull~\firefull~\groundfull & \firefull~\groundfull~\waterfull~\fightingfull \\ \hline
-  Comments &  & & \\ 
+ % Comments &  & & \\ 
+\end{tabular}  
+
+
+\begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}p{2cm}} 
+  & \textbf{Giratina (O)} \hfill \ghostfull~\dragonfull& \textbf{Venusaur} \hfill \grassfull~\poisonfull& \textbf{Lapras} \hfill\waterfull~\icefull &\textbf{Snorlax} \hfill \normalfull&\textbf{Poliwrath} \hfill\waterfull~\fightingfull \\ 
+  & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/giratina_o}} &  \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/venusaur} } & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/lapras} } & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/snorlax} } & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/poliwrath} }  \\ \hline 
+   \multirow{3}{*}{Ideal moveset}  & \ghostsimp~Shadow Claw & \grasssimp~Vine Whip  & \icesimp~Ice Shard & \ghostsimp~Lick & \watersimp~Bubble \\
+  &\ghostsimp~Shadow Ball &\grasssimp~Frenzy Plant  & \icesimp~Ice Beam & \normalsimp~Body Slam & \fightingsimp~Power Up Punch \\ 
+  &\dragonsimp~Dragon Pulse &\poisonsimp~Sludge Bomb & \watersimp~Surf &\icesimp~Ice Punch \\ \hline
+ ATT & \attack{225} &\attack{198} &\attack{165}&\attack{190} & \attack{182}  \\
+ DEF & \defense{187} & \defense{189} & \defense{174} &\defense{169}&\defense{184} \\
+ HP & \stamina{284} & \stamina{190} & \stamina{277}& \stamina{330} & \stamina{207} \\ \hline
+ %Effective Health &\survival{17732} &\survival{23863} & \survival{25033} & 21809 \\
+ Optimal IV / Level & (0,13,14), level 25.5 & (1,15,14), level 39  &  (6,15,13), level 40 & (0,12,15), level 29.5 & (8,15,15), level 40 \\ 
+ Weaknesses &\fairyfull~\ghostfull~\darkfull~\dragonfull~\icefull & \icefull~\firefull~\psychicfull~\groundfull & \electricfull~\rockfull~\grassfull~\fightingfull & \fightingfull &  \electricfull~\fairyfull~\grassfull~\psychicfull~\flyingfull \\ \hline
+%  Comments &  & & \\ 
 \end{tabular}  
 
 \end{center}
-
-
-\textbf{Other alternatives}:
-\begin{itemize}
-  \item \textbf{Giratina (Origin)}: Shadow Claw, Shadow Ball, Ominous Wind
-  \item \textbf{Venusaur}: Vine Whip, Frenzy Plant, Sludge Bomb
-  \item \textbf{Typhlosion}: Shadow Claw, Blast Burn, Solar Beam
-  \item \textbf{Kingdra}: Dragon Breath, Outrage, Hydro Pump
-\end{itemize}
 
 
 \end{block}
@@ -488,7 +504,7 @@ Moltres (13, 15, 14) has better statistics for Ultra league than Moltres (15, 15
 
 \begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}p{2cm}} 
   & \textbf{Giratina (O)} \hfill \ghostfull~\dragonfull& \textbf{Dialga} \hfill \steelfull~\dragonfull & \textbf{Lugia} \hfill\psychicfull~\flyingfull &\textbf{Garchomp} \hfill\dragonfull~\groundfull&\textbf{Metagross} \hfill\steelfull~\psychicfull \\ 
-  & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/giratina_o}} &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/dialga} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/lugia} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/garchomp} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/metagross} }  \\ \hline 
+  & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/giratina_o}} &  \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/dialga} } & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/lugia} } & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/garchomp} } & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/metagross} }  \\ \hline 
    \multirow{3}{*}{Ideal moveset}  & \ghostsimp~Shadow Claw & \dragonsimp~Dragon Breath & \dragonsimp~Dragon Tail & \groundsimp~Mud Shot& \steelsimp~Bullet Punch \\
   &\ghostsimp~Shadow Ball &\steelsimp~Iron Head & \flyingsimp~Sky Attack&\groundsimp~Earthquake & \steelsimp~Meteor Mash \\ 
   &\dragonsimp~Dragon Pulse &\electricsimp~Thunder & \watersimp~Hydropump&\dragonsimp~Outrage &\groundsimp~Earthquake  \\ \hline
@@ -497,20 +513,26 @@ Moltres (13, 15, 14) has better statistics for Ultra league than Moltres (15, 15
  HP & \stamina{284} & \stamina{205} & \stamina{235}& \stamina{239} & \stamina{190} \\ \hline
  %Effective Health &\survival{17732} &\survival{23863} & \survival{25033} & 21809 \\
  Weaknesses &\fairyfull~\ghostfull~\darkfull~\dragonfull~\icefull & \fightingfull~\groundfull & \electricfull~\rockfull~\icefull~\ghostfull~\darkfull & \icefull~\dragonfull~\fairyfull & \ghostfull~\darkfull~\firefull~\groundfull \\ \hline
-  Comments &  & & \\ 
+%  Comments &  & & \\ 
 \end{tabular}  
+
+\medskip
+
+\begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}p{2cm}} 
+  & \textbf{Giratina (A)} \hfill \ghostfull~\dragonfull& \textbf{Melmetal} \hfill \steelfull & \textbf{Mewtwo} \hfill\psychicfull &\textbf{Tyranitar} \hfill\rockfull~\darkfull&\textbf{Latios} \hfill\dragonfull~\psychicfull \\ 
+  & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/giratina_a}} &  \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/melmetal} } & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/mewtwo} } & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/tyranitar} } & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/latios} }  \\ \hline 
+   \multirow{3}{*}{Ideal moveset}  & \ghostsimp~Shadow Claw & \electricsimp~Thunder Shock & \psysimp~Psycho Cut & \rocksimp~Smack Down &  \dragonsimp~Dragon Breath \\
+  &\dragonsimp~Dragon Claw &\rocksimp~Rock Slide & \ghostsimp~Shadow Ball &\rocksimp~Stone Edge & \dragonsimp~Dragon Claw \\ 
+  &\rocksimp~Ancient Power &\electricsimp~Thunderbolt & \fightingsimp~Focus Blast&\darksimp~Crunch &\grasssimp~Solar Beam  \\ \hline
+ ATT & \attack{187} &\attack{226} &\attack{300}&\attack{251} & \attack{268}  \\
+ DEF & \defense{225} & \defense{190} & \defense{182} &\defense{207}&\defense{212} \\
+ HP & \stamina{284} & \stamina{264} & \stamina{214}& \stamina{225} & \stamina{190} \\ \hline
+ %Effective Health &\survival{17732} &\survival{23863} & \survival{25033} & 21809 \\
+ Weaknesses &\fairyfull~\ghostfull~\darkfull~\dragonfull~\icefull & \fightingfull~\groundfull~\firefull & \ghostfull~\darkfull~\bugfull & \fightingfull~\bugfull~\fairyfull~\groundfull~\steelfull~\waterfull~\grassfull & \fairyfull~\ghostfull~\darkfull~\dragonfull~\icefull  \\ \hline
+% Comments &  & & \\ 
+\end{tabular}
+
 \end{center}
-
-
-\textbf{Other alternatives}:
-\begin{itemize}
-  \item \textbf{Melmetal}: Thunder Shock, Rock Slide, Flash Cannon
-  \item \textbf{Mewtwo}: Psycho Cut, Shadow Ball, Focus Blast
-  \item \textbf{Tyranitar}: Smack Down, Crunch, Stone Edge
-  \item \textbf{Dragonite}: Dragon Breath, Dragon Claw, Outrage
-  \item \textbf{Giratina (A)}: Shadow Claw, Dragon Claw, Ancient Power
-\end{itemize}
-
 \end{block}
 
 \end{tiny}
@@ -522,7 +544,7 @@ Moltres (13, 15, 14) has better statistics for Ultra league than Moltres (15, 15
 \begin{tiny}
 \begin{block}{}
 \begin{center}
-Once you got your three medals, you can steal their look:
+Once you got your three medals, don't forget to steal their look:
 
 \vspace{0.2cm}
 

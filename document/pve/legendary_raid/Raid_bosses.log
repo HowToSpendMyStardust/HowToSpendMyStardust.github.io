@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.21)  7 JUN 2019 21:26
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.21)  11 JUN 2019 15:25
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2431,15 +2431,7 @@ Package pdftex.def Info: ../../images/pokemon/groudon.png used on input line 45
 6.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
-<../../images/pokemon/regigigas.png, id=131, 192.72pt x 192.72pt>
-File: ../../images/pokemon/regigigas.png Graphic file (type png)
-
-<use ../../images/pokemon/regigigas.png>
-Package pdftex.def Info: ../../images/pokemon/regigigas.png used on input line 
-456.
-(pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
-
-<../../images/pokemon/raikou.png, id=132, 192.72pt x 192.72pt>
+<../../images/pokemon/raikou.png, id=131, 192.72pt x 192.72pt>
 File: ../../images/pokemon/raikou.png Graphic file (type png)
 
 <use ../../images/pokemon/raikou.png>
@@ -2447,7 +2439,7 @@ Package pdftex.def Info: ../../images/pokemon/raikou.png used on input line 456
 .
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
-<../../images/pokemon/entei.png, id=133, 192.72pt x 192.72pt>
+<../../images/pokemon/entei.png, id=132, 192.72pt x 192.72pt>
 File: ../../images/pokemon/entei.png Graphic file (type png)
 
 <use ../../images/pokemon/entei.png>
@@ -2455,12 +2447,20 @@ Package pdftex.def Info: ../../images/pokemon/entei.png used on input line 456.
 
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
-<../../images/pokemon/suicune.png, id=134, 192.72pt x 192.72pt>
+<../../images/pokemon/suicune.png, id=133, 192.72pt x 192.72pt>
 File: ../../images/pokemon/suicune.png Graphic file (type png)
 
 <use ../../images/pokemon/suicune.png>
 Package pdftex.def Info: ../../images/pokemon/suicune.png used on input line 45
 6.
+(pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
+
+<../../images/pokemon/regigigas.png, id=134, 192.72pt x 192.72pt>
+File: ../../images/pokemon/regigigas.png Graphic file (type png)
+
+<use ../../images/pokemon/regigigas.png>
+Package pdftex.def Info: ../../images/pokemon/regigigas.png used on input line 
+456.
 (pdftex.def)             Requested size: 28.45274pt x 28.45094pt.
 
 <../../images/pokemon/rayquaza.png, id=135, 192.72pt x 192.72pt>
@@ -2599,9 +2599,9 @@ ine 456.
  [4
 
  <../../images/pokemon/cresselia.png> <../../images/pokemon/kyogre.png> <../../
-images/pokemon/groudon.png> <../../images/pokemon/regigigas.png> <../../images/
-pokemon/raikou.png> <../../images/pokemon/entei.png> <../../images/pokemon/suic
-une.png> <../../images/pokemon/rayquaza.png> <../../images/pokemon/mewtwo.png> 
+images/pokemon/groudon.png> <../../images/pokemon/raikou.png> <../../images/pok
+emon/entei.png> <../../images/pokemon/suicune.png> <../../images/pokemon/regigi
+gas.png> <../../images/pokemon/rayquaza.png> <../../images/pokemon/mewtwo.png> 
 <../../images/pokemon/heatran.png> <../../images/pokemon/dialga.png> <../../ima
 ges/pokemon/palkia.png> <../../images/pokemon/regirock.png> <../../images/pokem
 on/regice.png> <../../images/pokemon/registeel.png> <../../images/pokemon/lugia
@@ -3047,7 +3047,7 @@ ype1/public/lm/lmss8.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public
 /lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy
 5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/amsfonts/symbols/m
 sam5.pfb>
-Output written on Raid_bosses.pdf (6 pages, 4780319 bytes).
+Output written on Raid_bosses.pdf (6 pages, 4780120 bytes).
 PDF statistics:
  235 PDF objects out of 1000 (max. 8388607)
  55 compressed objects within 1 object stream
