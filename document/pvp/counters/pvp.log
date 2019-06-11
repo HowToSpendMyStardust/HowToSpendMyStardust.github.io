@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.21)  10 JUN 2019 23:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.21)  11 JUN 2019 11:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1694,12 +1694,14 @@ File: ../../images/type/simplified/dragon.png Graphic file (type png)
 Package pdftex.def Info: ../../images/type/simplified/dragon.png used on input 
 line 439.
 (pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
-File: ../../images/type/full/Rock.png Graphic file (type png)
 
-<use ../../images/type/full/Rock.png>
-Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 439
-.
-(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+<../../images/type/simplified/rock.png, id=70, 44.165pt x 45.16875pt>
+File: ../../images/type/simplified/rock.png Graphic file (type png)
+
+<use ../../images/type/simplified/rock.png>
+Package pdftex.def Info: ../../images/type/simplified/rock.png used on input li
+ne 439.
+(pdftex.def)             Requested size: 4.17279pt x 4.26773pt.
 File: ../../images/type/simplified/fighting.png Graphic file (type png)
 
 <use ../../images/type/simplified/fighting.png>
@@ -1724,20 +1726,18 @@ File: ../../images/type/simplified/dragon.png Graphic file (type png)
 Package pdftex.def Info: ../../images/type/simplified/dragon.png used on input 
 line 439.
 (pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
-File: ../../images/type/full/Rock.png Graphic file (type png)
+File: ../../images/type/simplified/rock.png Graphic file (type png)
 
-<use ../../images/type/full/Rock.png>
-Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 439
-.
-(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+<use ../../images/type/simplified/rock.png>
+Package pdftex.def Info: ../../images/type/simplified/rock.png used on input li
+ne 439.
+(pdftex.def)             Requested size: 4.17279pt x 4.26773pt.
 File: ../../images/type/simplified/ice.png Graphic file (type png)
 
 <use ../../images/type/simplified/ice.png>
 Package pdftex.def Info: ../../images/type/simplified/ice.png used on input lin
 e 439.
 (pdftex.def)             Requested size: 4.17279pt x 4.26773pt.
-
-<../../images/type/simplified/rock.png, id=70, 44.165pt x 45.16875pt>
 File: ../../images/type/simplified/rock.png Graphic file (type png)
 
 <use ../../images/type/simplified/rock.png>
@@ -1760,14 +1760,15 @@ File: ../../images/type/simplified/flying.png Graphic file (type png)
 Package pdftex.def Info: ../../images/type/simplified/flying.png used on input 
 line 439.
 (pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
-File: ../../images/type/full/Fire.png Graphic file (type png)
+File: ../../images/type/simplified/fire.png Graphic file (type png)
 
-<use ../../images/type/full/Fire.png>
-Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 439
-.
-(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+<use ../../images/type/simplified/fire.png>
+Package pdftex.def Info: ../../images/type/simplified/fire.png used on input li
+ne 439.
+(pdftex.def)             Requested size: 4.17279pt x 4.26773pt.
 File: ../../images/type/full/Fairy.png Graphic file (type png)
- <use ../../images/type/full/Fairy.png>
+
+<use ../../images/type/full/Fairy.png>
 Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 43
 9.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
@@ -2021,12 +2022,12 @@ File: ../../images/type/simplified/fighting.png Graphic file (type png)
 Package pdftex.def Info: ../../images/type/simplified/fighting.png used on inpu
 t line 479.
 (pdftex.def)             Requested size: 4.36247pt x 4.26773pt.
-File: ../../images/type/full/Dragon.png Graphic file (type png)
+File: ../../images/type/simplified/dragon.png Graphic file (type png)
 
-<use ../../images/type/full/Dragon.png>
-Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 4
-79.
-(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+<use ../../images/type/simplified/dragon.png>
+Package pdftex.def Info: ../../images/type/simplified/dragon.png used on input 
+line 479.
+(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
 File: ../../images/type/simplified/dragon.png Graphic file (type png)
 
 <use ../../images/type/simplified/dragon.png>
@@ -2051,12 +2052,12 @@ File: ../../images/type/simplified/fighting.png Graphic file (type png)
 Package pdftex.def Info: ../../images/type/simplified/fighting.png used on inpu
 t line 479.
 (pdftex.def)             Requested size: 4.36247pt x 4.26773pt.
-File: ../../images/type/full/Ground.png Graphic file (type png)
+File: ../../images/type/simplified/ground.png Graphic file (type png)
 
-<use ../../images/type/full/Ground.png>
-Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 4
-79.
-(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+<use ../../images/type/simplified/ground.png>
+Package pdftex.def Info: ../../images/type/simplified/ground.png used on input 
+line 479.
+(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
 File: ../../images/type/simplified/rock.png Graphic file (type png)
 
 <use ../../images/type/simplified/rock.png>
@@ -2081,58 +2082,61 @@ File: ../../images/type/simplified/ghost.png Graphic file (type png)
 Package pdftex.def Info: ../../images/type/simplified/ghost.png used on input l
 ine 479.
 (pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
+
+<../../images/type/simplified/dark.png, id=119, 45.16875pt x 45.16875pt>
+File: ../../images/type/simplified/dark.png Graphic file (type png)
+
+<use ../../images/type/simplified/dark.png>
+Package pdftex.def Info: ../../images/type/simplified/dark.png used on input li
+ne 479.
+(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
+File: ../../images/type/full/Fairy.png Graphic file (type png)
+
+<use ../../images/type/full/Fairy.png>
+Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 47
+9.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+File: ../../images/type/full/Ghost.png Graphic file (type png)
+ <use ../../images/type/full/Ghost.png>
+Package pdftex.def Info: ../../images/type/full/Ghost.png used on input line 47
+9.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dark.png Graphic file (type png)
 
 <use ../../images/type/full/Dark.png>
 Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 479
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
-File: ../../images/type/full/Fairy.png Graphic file (type png)
- <use ../../images/type/full/Fairy.png>
-Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 47
-9.
-(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
-File: ../../images/type/full/Ghost.png Graphic file (type png)
-
-<use ../../images/type/full/Ghost.png>
-Package pdftex.def Info: ../../images/type/full/Ghost.png used on input line 47
-9.
-(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
-File: ../../images/type/full/Dark.png Graphic file (type png)
- <use ../../images/type/full/Dark.png>
-Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 479
-.
-(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dragon.png Graphic file (type png)
-
-<use ../../images/type/full/Dragon.png>
+ <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 4
 79.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ice.png Graphic file (type png)
- <use ../../images/type/full/Ice.png>
+
+<use ../../images/type/full/Ice.png>
 Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 479.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ghost.png Graphic file (type png)
-
-<use ../../images/type/full/Ghost.png>
+ <use ../../images/type/full/Ghost.png>
 Package pdftex.def Info: ../../images/type/full/Ghost.png used on input line 47
 9.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dark.png Graphic file (type png)
- <use ../../images/type/full/Dark.png>
+
+<use ../../images/type/full/Dark.png>
 Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 479
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Bug.png Graphic file (type png)
-
-<use ../../images/type/full/Bug.png>
+ <use ../../images/type/full/Bug.png>
 Package pdftex.def Info: ../../images/type/full/Bug.png used on input line 479.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Electric.png Graphic file (type png)
- <use ../../images/type/full/Electric.png>
+
+<use ../../images/type/full/Electric.png>
 Package pdftex.def Info: ../../images/type/full/Electric.png used on input line
  479.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
@@ -2183,7 +2187,7 @@ Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
  479.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
-<../../pve/guide/ultra_league.png, id=119, 192.72pt x 192.72pt>
+<../../pve/guide/ultra_league.png, id=120, 192.72pt x 192.72pt>
 File: ../../pve/guide/ultra_league.png Graphic file (type png)
 
 <use ../../pve/guide/ultra_league.png>
@@ -2201,315 +2205,315 @@ e 479.
  <../../pve/guide/ultra_league.png> <../../images/pokemon/giratina_a.png> <../.
 ./images/pokemon/cresselia.png> <../../images/pokemon/blastoise.png> <../../ima
 ges/pokemon/lucario.png> <../../images/pokemon/steelix.png> <../../images/type/
-simplified/ghost.png>]
+simplified/ghost.png> <../../images/type/simplified/dark.png>]
 File: ../../images/type/full/Ghost.png Graphic file (type png)
-
-<use ../../images/type/full/Ghost.png>
+ <use ../../images/type/full/Ghost.png>
 Package pdftex.def Info: ../../images/type/full/Ghost.png used on input line 51
-6.
-(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
-File: ../../images/type/full/Dragon.png Graphic file (type png)
- <use ../../images/type/full/Dragon.png>
-Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 5
-16.
-(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
-File: ../../images/type/full/Steel.png Graphic file (type png)
-
-<use ../../images/type/full/Steel.png>
-Package pdftex.def Info: ../../images/type/full/Steel.png used on input line 51
-6.
-(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
-File: ../../images/type/full/Dragon.png Graphic file (type png)
- <use ../../images/type/full/Dragon.png>
-Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 5
-16.
-(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
-File: ../../images/type/full/Psychic.png Graphic file (type png)
-
-<use ../../images/type/full/Psychic.png>
-Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-516.
-(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
-File: ../../images/type/full/Flying.png Graphic file (type png)
-
-<use ../../images/type/full/Flying.png>
-Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 5
-16.
+7.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dragon.png Graphic file (type png)
 
 <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 5
-16.
-(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
-File: ../../images/type/full/Ground.png Graphic file (type png)
-
-<use ../../images/type/full/Ground.png>
-Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 5
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Steel.png Graphic file (type png)
  <use ../../images/type/full/Steel.png>
 Package pdftex.def Info: ../../images/type/full/Steel.png used on input line 51
-6.
+7.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+File: ../../images/type/full/Dragon.png Graphic file (type png)
+
+<use ../../images/type/full/Dragon.png>
+Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 5
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-516.
+517.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+File: ../../images/type/full/Flying.png Graphic file (type png)
 
-<../../images/pokemon/giratina_o.png, id=132, 192.72pt x 192.72pt>
-File: ../../images/pokemon/giratina_o.png Graphic file (type png)
-
-<use ../../images/pokemon/giratina_o.png>
-Package pdftex.def Info: ../../images/pokemon/giratina_o.png used on input line
- 516.
-(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
-
-<../../images/pokemon/dialga.png, id=133, 192.72pt x 192.72pt>
-File: ../../images/pokemon/dialga.png Graphic file (type png)
-
-<use ../../images/pokemon/dialga.png>
-Package pdftex.def Info: ../../images/pokemon/dialga.png used on input line 516
-.
-(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
-
-<../../images/pokemon/lugia.png, id=134, 192.72pt x 192.72pt>
-File: ../../images/pokemon/lugia.png Graphic file (type png)
-
-<use ../../images/pokemon/lugia.png>
-Package pdftex.def Info: ../../images/pokemon/lugia.png used on input line 516.
-
-(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
-
-<../../images/pokemon/garchomp.png, id=135, 192.72pt x 192.72pt>
-File: ../../images/pokemon/garchomp.png Graphic file (type png)
-
-<use ../../images/pokemon/garchomp.png>
-Package pdftex.def Info: ../../images/pokemon/garchomp.png used on input line 5
-16.
-(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
-
-<../../images/pokemon/metagross.png, id=136, 192.72pt x 192.72pt>
-File: ../../images/pokemon/metagross.png Graphic file (type png)
-
-<use ../../images/pokemon/metagross.png>
-Package pdftex.def Info: ../../images/pokemon/metagross.png used on input line 
-516.
-(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
-File: ../../images/type/simplified/ghost.png Graphic file (type png)
-
-<use ../../images/type/simplified/ghost.png>
-Package pdftex.def Info: ../../images/type/simplified/ghost.png used on input l
-ine 516.
-(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
-File: ../../images/type/simplified/dragon.png Graphic file (type png)
-
-<use ../../images/type/simplified/dragon.png>
-Package pdftex.def Info: ../../images/type/simplified/dragon.png used on input 
-line 516.
-(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
-File: ../../images/type/simplified/dragon.png Graphic file (type png)
-
-<use ../../images/type/simplified/dragon.png>
-Package pdftex.def Info: ../../images/type/simplified/dragon.png used on input 
-line 516.
-(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
-File: ../../images/type/simplified/ground.png Graphic file (type png)
-
-<use ../../images/type/simplified/ground.png>
-Package pdftex.def Info: ../../images/type/simplified/ground.png used on input 
-line 516.
-(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
-
-<../../images/type/simplified/steel.png, id=137, 45.16875pt x 45.16875pt>
-File: ../../images/type/simplified/steel.png Graphic file (type png)
-
-<use ../../images/type/simplified/steel.png>
-Package pdftex.def Info: ../../images/type/simplified/steel.png used on input l
-ine 516.
-(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
-File: ../../images/type/simplified/ghost.png Graphic file (type png)
-
-<use ../../images/type/simplified/ghost.png>
-Package pdftex.def Info: ../../images/type/simplified/ghost.png used on input l
-ine 516.
-(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
-File: ../../images/type/simplified/steel.png Graphic file (type png)
-
-<use ../../images/type/simplified/steel.png>
-Package pdftex.def Info: ../../images/type/simplified/steel.png used on input l
-ine 516.
-(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
-File: ../../images/type/simplified/flying.png Graphic file (type png)
-
-<use ../../images/type/simplified/flying.png>
-Package pdftex.def Info: ../../images/type/simplified/flying.png used on input 
-line 516.
-(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
-File: ../../images/type/simplified/ground.png Graphic file (type png)
-
-<use ../../images/type/simplified/ground.png>
-Package pdftex.def Info: ../../images/type/simplified/ground.png used on input 
-line 516.
-(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
-File: ../../images/type/simplified/steel.png Graphic file (type png)
-
-<use ../../images/type/simplified/steel.png>
-Package pdftex.def Info: ../../images/type/simplified/steel.png used on input l
-ine 516.
-(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
-File: ../../images/type/simplified/dragon.png Graphic file (type png)
-
-<use ../../images/type/simplified/dragon.png>
-Package pdftex.def Info: ../../images/type/simplified/dragon.png used on input 
-line 516.
-(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
-File: ../../images/type/simplified/electric.png Graphic file (type png)
-
-<use ../../images/type/simplified/electric.png>
-Package pdftex.def Info: ../../images/type/simplified/electric.png used on inpu
-t line 516.
-(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
-File: ../../images/type/simplified/water.png Graphic file (type png)
-
-<use ../../images/type/simplified/water.png>
-Package pdftex.def Info: ../../images/type/simplified/water.png used on input l
-ine 516.
-(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
-File: ../../images/type/simplified/dragon.png Graphic file (type png)
-
-<use ../../images/type/simplified/dragon.png>
-Package pdftex.def Info: ../../images/type/simplified/dragon.png used on input 
-line 516.
-(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
-File: ../../images/type/simplified/ground.png Graphic file (type png)
-
-<use ../../images/type/simplified/ground.png>
-Package pdftex.def Info: ../../images/type/simplified/ground.png used on input 
-line 516.
-(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
-File: ../../images/type/full/Fairy.png Graphic file (type png)
-
-<use ../../images/type/full/Fairy.png>
-Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 51
-6.
-(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
-File: ../../images/type/full/Ghost.png Graphic file (type png)
- <use ../../images/type/full/Ghost.png>
-Package pdftex.def Info: ../../images/type/full/Ghost.png used on input line 51
-6.
-(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
-File: ../../images/type/full/Dark.png Graphic file (type png)
-
-<use ../../images/type/full/Dark.png>
-Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 516
-.
+<use ../../images/type/full/Flying.png>
+Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 5
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dragon.png Graphic file (type png)
- <use ../../images/type/full/Dragon.png>
+
+<use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 5
-16.
-(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
-File: ../../images/type/full/Ice.png Graphic file (type png)
-
-<use ../../images/type/full/Ice.png>
-Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 516.
-
-(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
-File: ../../images/type/full/Fighting.png Graphic file (type png)
- <use ../../images/type/full/Fighting.png>
-Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 516.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ground.png Graphic file (type png)
 
 <use ../../images/type/full/Ground.png>
 Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 5
-16.
+17.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+File: ../../images/type/full/Steel.png Graphic file (type png)
+ <use ../../images/type/full/Steel.png>
+Package pdftex.def Info: ../../images/type/full/Steel.png used on input line 51
+7.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+File: ../../images/type/full/Psychic.png Graphic file (type png)
+
+<use ../../images/type/full/Psychic.png>
+Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
+517.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+
+<../../images/pokemon/giratina_o.png, id=134, 192.72pt x 192.72pt>
+File: ../../images/pokemon/giratina_o.png Graphic file (type png)
+
+<use ../../images/pokemon/giratina_o.png>
+Package pdftex.def Info: ../../images/pokemon/giratina_o.png used on input line
+ 517.
+(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
+
+<../../images/pokemon/dialga.png, id=135, 192.72pt x 192.72pt>
+File: ../../images/pokemon/dialga.png Graphic file (type png)
+
+<use ../../images/pokemon/dialga.png>
+Package pdftex.def Info: ../../images/pokemon/dialga.png used on input line 517
+.
+(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
+
+<../../images/pokemon/lugia.png, id=136, 192.72pt x 192.72pt>
+File: ../../images/pokemon/lugia.png Graphic file (type png)
+
+<use ../../images/pokemon/lugia.png>
+Package pdftex.def Info: ../../images/pokemon/lugia.png used on input line 517.
+
+(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
+
+<../../images/pokemon/garchomp.png, id=137, 192.72pt x 192.72pt>
+File: ../../images/pokemon/garchomp.png Graphic file (type png)
+
+<use ../../images/pokemon/garchomp.png>
+Package pdftex.def Info: ../../images/pokemon/garchomp.png used on input line 5
+17.
+(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
+
+<../../images/pokemon/metagross.png, id=138, 192.72pt x 192.72pt>
+File: ../../images/pokemon/metagross.png Graphic file (type png)
+
+<use ../../images/pokemon/metagross.png>
+Package pdftex.def Info: ../../images/pokemon/metagross.png used on input line 
+517.
+(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
+File: ../../images/type/simplified/ghost.png Graphic file (type png)
+
+<use ../../images/type/simplified/ghost.png>
+Package pdftex.def Info: ../../images/type/simplified/ghost.png used on input l
+ine 517.
+(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
+File: ../../images/type/simplified/dragon.png Graphic file (type png)
+
+<use ../../images/type/simplified/dragon.png>
+Package pdftex.def Info: ../../images/type/simplified/dragon.png used on input 
+line 517.
+(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
+File: ../../images/type/simplified/dragon.png Graphic file (type png)
+
+<use ../../images/type/simplified/dragon.png>
+Package pdftex.def Info: ../../images/type/simplified/dragon.png used on input 
+line 517.
+(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
+File: ../../images/type/simplified/ground.png Graphic file (type png)
+
+<use ../../images/type/simplified/ground.png>
+Package pdftex.def Info: ../../images/type/simplified/ground.png used on input 
+line 517.
+(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
+
+<../../images/type/simplified/steel.png, id=139, 45.16875pt x 45.16875pt>
+File: ../../images/type/simplified/steel.png Graphic file (type png)
+
+<use ../../images/type/simplified/steel.png>
+Package pdftex.def Info: ../../images/type/simplified/steel.png used on input l
+ine 517.
+(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
+File: ../../images/type/simplified/ghost.png Graphic file (type png)
+
+<use ../../images/type/simplified/ghost.png>
+Package pdftex.def Info: ../../images/type/simplified/ghost.png used on input l
+ine 517.
+(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
+File: ../../images/type/simplified/steel.png Graphic file (type png)
+
+<use ../../images/type/simplified/steel.png>
+Package pdftex.def Info: ../../images/type/simplified/steel.png used on input l
+ine 517.
+(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
+File: ../../images/type/simplified/flying.png Graphic file (type png)
+
+<use ../../images/type/simplified/flying.png>
+Package pdftex.def Info: ../../images/type/simplified/flying.png used on input 
+line 517.
+(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
+File: ../../images/type/simplified/ground.png Graphic file (type png)
+
+<use ../../images/type/simplified/ground.png>
+Package pdftex.def Info: ../../images/type/simplified/ground.png used on input 
+line 517.
+(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
+File: ../../images/type/simplified/steel.png Graphic file (type png)
+
+<use ../../images/type/simplified/steel.png>
+Package pdftex.def Info: ../../images/type/simplified/steel.png used on input l
+ine 517.
+(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
+File: ../../images/type/simplified/dragon.png Graphic file (type png)
+
+<use ../../images/type/simplified/dragon.png>
+Package pdftex.def Info: ../../images/type/simplified/dragon.png used on input 
+line 517.
+(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
+File: ../../images/type/simplified/electric.png Graphic file (type png)
+
+<use ../../images/type/simplified/electric.png>
+Package pdftex.def Info: ../../images/type/simplified/electric.png used on inpu
+t line 517.
+(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
+File: ../../images/type/simplified/water.png Graphic file (type png)
+
+<use ../../images/type/simplified/water.png>
+Package pdftex.def Info: ../../images/type/simplified/water.png used on input l
+ine 517.
+(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
+File: ../../images/type/simplified/dragon.png Graphic file (type png)
+
+<use ../../images/type/simplified/dragon.png>
+Package pdftex.def Info: ../../images/type/simplified/dragon.png used on input 
+line 517.
+(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
+File: ../../images/type/simplified/ground.png Graphic file (type png)
+
+<use ../../images/type/simplified/ground.png>
+Package pdftex.def Info: ../../images/type/simplified/ground.png used on input 
+line 517.
+(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
+File: ../../images/type/full/Fairy.png Graphic file (type png)
+
+<use ../../images/type/full/Fairy.png>
+Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 51
+7.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+File: ../../images/type/full/Ghost.png Graphic file (type png)
+ <use ../../images/type/full/Ghost.png>
+Package pdftex.def Info: ../../images/type/full/Ghost.png used on input line 51
+7.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+File: ../../images/type/full/Dark.png Graphic file (type png)
+
+<use ../../images/type/full/Dark.png>
+Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 517
+.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+File: ../../images/type/full/Dragon.png Graphic file (type png)
+ <use ../../images/type/full/Dragon.png>
+Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 5
+17.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+File: ../../images/type/full/Ice.png Graphic file (type png)
+
+<use ../../images/type/full/Ice.png>
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 517.
+
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+File: ../../images/type/full/Fighting.png Graphic file (type png)
+ <use ../../images/type/full/Fighting.png>
+Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
+ 517.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+File: ../../images/type/full/Ground.png Graphic file (type png)
+
+<use ../../images/type/full/Ground.png>
+Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 5
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Electric.png Graphic file (type png)
 
 <use ../../images/type/full/Electric.png>
 Package pdftex.def Info: ../../images/type/full/Electric.png used on input line
- 516.
+ 517.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Rock.png Graphic file (type png)
 
 <use ../../images/type/full/Rock.png>
-Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 516
+Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 517
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ice.png Graphic file (type png)
  <use ../../images/type/full/Ice.png>
-Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 516.
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 517.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ghost.png Graphic file (type png)
 
 <use ../../images/type/full/Ghost.png>
 Package pdftex.def Info: ../../images/type/full/Ghost.png used on input line 51
-6.
+7.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dark.png Graphic file (type png)
  <use ../../images/type/full/Dark.png>
-Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 516
+Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 517
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ice.png Graphic file (type png)
 
 <use ../../images/type/full/Ice.png>
-Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 516.
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 517.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dragon.png Graphic file (type png)
  <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 5
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fairy.png Graphic file (type png)
 
 <use ../../images/type/full/Fairy.png>
 Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 51
-6.
+7.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ghost.png Graphic file (type png)
  <use ../../images/type/full/Ghost.png>
 Package pdftex.def Info: ../../images/type/full/Ghost.png used on input line 51
-6.
+7.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dark.png Graphic file (type png)
 
 <use ../../images/type/full/Dark.png>
-Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 516
+Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 517
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fire.png Graphic file (type png)
  <use ../../images/type/full/Fire.png>
-Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 516
+Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 517
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ground.png Graphic file (type png)
 
 <use ../../images/type/full/Ground.png>
 Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 5
-16.
+17.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
-<../../pve/guide/master_league.png, id=138, 192.72pt x 192.72pt>
+<../../pve/guide/master_league.png, id=140, 192.72pt x 192.72pt>
 File: ../../pve/guide/master_league.png Graphic file (type png)
 
 <use ../../pve/guide/master_league.png>
 Package pdftex.def Info: ../../pve/guide/master_league.png used on input line 5
-16.
+17.
 (pdftex.def)             Requested size: 8.5359pt x 8.53381pt.
 File: ../../images/type/background/pvp.jpg Graphic file (type jpg)
 
 <use ../../images/type/background/pvp.jpg>
 Package pdftex.def Info: ../../images/type/background/pvp.jpg used on input lin
-e 516.
+e 517.
 (pdftex.def)             Requested size: 455.24408pt x 398.33902pt.
  [5
 
@@ -2517,34 +2521,34 @@ e 516.
 ../images/pokemon/dialga.png> <../../images/pokemon/lugia.png> <../../images/po
 kemon/garchomp.png> <../../images/pokemon/metagross.png> <../../images/type/sim
 plified/steel.png>]
-<../../outfit/Alola_Ace_Trainer_2.jpg, id=151, 2007.5pt x 2007.5pt>
+<../../outfit/Alola_Ace_Trainer_2.jpg, id=153, 2007.5pt x 2007.5pt>
 File: ../../outfit/Alola_Ace_Trainer_2.jpg Graphic file (type jpg)
 
 <use ../../outfit/Alola_Ace_Trainer_2.jpg>
 Package pdftex.def Info: ../../outfit/Alola_Ace_Trainer_2.jpg used on input lin
-e 538.
+e 539.
 (pdftex.def)             Requested size: 119.50148pt x 119.49521pt.
 
-<../../outfit/Kalos_Veteran_2.jpg, id=152, 2007.5pt x 2007.5pt>
+<../../outfit/Kalos_Veteran_2.jpg, id=154, 2007.5pt x 2007.5pt>
 File: ../../outfit/Kalos_Veteran_2.jpg Graphic file (type jpg)
 
 <use ../../outfit/Kalos_Veteran_2.jpg>
 Package pdftex.def Info: ../../outfit/Kalos_Veteran_2.jpg used on input line 53
-8.
+9.
 (pdftex.def)             Requested size: 119.50148pt x 119.49521pt.
 
-<../../outfit/Unova_Ace_Trainer_2.jpg, id=153, 2007.5pt x 2007.5pt>
+<../../outfit/Unova_Ace_Trainer_2.jpg, id=155, 2007.5pt x 2007.5pt>
 File: ../../outfit/Unova_Ace_Trainer_2.jpg Graphic file (type jpg)
 
 <use ../../outfit/Unova_Ace_Trainer_2.jpg>
 Package pdftex.def Info: ../../outfit/Unova_Ace_Trainer_2.jpg used on input lin
-e 538.
+e 539.
 (pdftex.def)             Requested size: 119.50148pt x 119.49521pt.
 File: ../../images/type/background/pvp.jpg Graphic file (type jpg)
 
 <use ../../images/type/background/pvp.jpg>
 Package pdftex.def Info: ../../images/type/background/pvp.jpg used on input lin
-e 538.
+e 539.
 (pdftex.def)             Requested size: 455.24408pt x 398.33902pt.
  [6
 
@@ -2559,19 +2563,19 @@ e 538.
 \tf@snm=\write8
 \openout8 = `pvp.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 540.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 540.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 541.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 541.
  (./pvp.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 540.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 540.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 541.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 541.
 Package rerunfilecheck Info: File `pvp.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 22108 strings out of 492995
- 433052 string characters out of 6132704
- 547492 words of memory out of 5000000
- 25047 multiletter control sequences out of 15000+600000
+ 22113 strings out of 492995
+ 433227 string characters out of 6132704
+ 547559 words of memory out of 5000000
+ 25051 multiletter control sequences out of 15000+600000
  45318 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,18n,59p,769b,1123s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2585,10 +2589,10 @@ fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/lo
 cal/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive
 /2017/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2017/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msam5.pfb>
-Output written on pvp.pdf (6 pages, 1961097 bytes).
+Output written on pvp.pdf (6 pages, 1964091 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
+ 194 PDF objects out of 1000 (max. 8388607)
  64 compressed objects within 1 object stream
  13 named destinations out of 1000 (max. 500000)
- 318 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 323 words of extra memory for PDF output out of 10000 (max. 10000000)
 
