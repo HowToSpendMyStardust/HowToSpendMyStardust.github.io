@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.21)  11 JUN 2019 17:14
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.21)  11 JUN 2019 20:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -2150,12 +2150,12 @@ Package pdftex.def Info: ../../images/type/full/Water.png used on input line 44
 8.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
-<../../pve/guide/great_league.png, id=91, 192.72pt x 192.72pt>
-File: ../../pve/guide/great_league.png Graphic file (type png)
+<../../images/league/great_league.png, id=91, 192.72pt x 192.72pt>
+File: ../../images/league/great_league.png Graphic file (type png)
 
-<use ../../pve/guide/great_league.png>
-Package pdftex.def Info: ../../pve/guide/great_league.png used on input line 44
-8.
+<use ../../images/league/great_league.png>
+Package pdftex.def Info: ../../images/league/great_league.png used on input lin
+e 448.
 (pdftex.def)             Requested size: 8.5359pt x 8.53381pt.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <8> on input line 448.
@@ -2176,23 +2176,23 @@ e 448.
 (pdftex.def)             Requested size: 455.24408pt x 398.33902pt.
  [3
 
- <../../pve/guide/great_league.png> <../../images/type/full/Fighting.png> <../.
-./images/type/full/Psychic.png> <../../images/type/full/Water.png> <../../image
-s/type/full/Fairy.png> <../../images/type/full/Dragon.png> <../../images/type/f
-ull/Rock.png> <../../images/type/full/Steel.png> <../../images/pokemon/medicham
-.png> <../../images/pokemon/deoxys_d.png> <../../images/pokemon/azumarill.png> 
-<../../images/pokemon/altaria.png> <../../images/pokemon/bastiodon.png> <../../
-images/type/simplified/fighting.png> <../../images/type/simplified/rock.png> <.
-./../images/type/simplified/fairy.png> <../../images/type/simplified/flying.png
-> <../../images/type/full/Ghost.png> <../../images/type/full/Dark.png> <../../i
-mages/type/full/Bug.png> <../../images/type/full/Electric.png> <../../images/ty
-pe/full/Grass.png> <../../images/type/full/Poison.png> <../../images/type/full/
-Ice.png> <../../images/type/full/Ground.png> <../../images/pokemon/skarmory.png
-> <../../images/pokemon/venusaur.png> <../../images/pokemon/umbreon.png> <../..
-/images/pokemon/cresselia.png> <../../images/pokemon/lucario.png> <../../images
-/type/simplified/dark.png> <../../images/type/simplified/steel.png> <../../imag
-es/type/simplified/poison.png> <../../images/type/simplified/normal.png> <../..
-/images/type/simplified/ghost.png>]
+ <../../images/league/great_league.png> <../../images/type/full/Fighting.png> <
+../../images/type/full/Psychic.png> <../../images/type/full/Water.png> <../../i
+mages/type/full/Fairy.png> <../../images/type/full/Dragon.png> <../../images/ty
+pe/full/Rock.png> <../../images/type/full/Steel.png> <../../images/pokemon/medi
+cham.png> <../../images/pokemon/deoxys_d.png> <../../images/pokemon/azumarill.p
+ng> <../../images/pokemon/altaria.png> <../../images/pokemon/bastiodon.png> <..
+/../images/type/simplified/fighting.png> <../../images/type/simplified/rock.png
+> <../../images/type/simplified/fairy.png> <../../images/type/simplified/flying
+.png> <../../images/type/full/Ghost.png> <../../images/type/full/Dark.png> <../
+../images/type/full/Bug.png> <../../images/type/full/Electric.png> <../../image
+s/type/full/Grass.png> <../../images/type/full/Poison.png> <../../images/type/f
+ull/Ice.png> <../../images/type/full/Ground.png> <../../images/pokemon/skarmory
+.png> <../../images/pokemon/venusaur.png> <../../images/pokemon/umbreon.png> <.
+./../images/pokemon/cresselia.png> <../../images/pokemon/lucario.png> <../../im
+ages/type/simplified/dark.png> <../../images/type/simplified/steel.png> <../../
+images/type/simplified/poison.png> <../../images/type/simplified/normal.png> <.
+./../images/type/simplified/ghost.png>]
 File: ../../images/type/full/Ghost.png Graphic file (type png)
  <use ../../images/type/full/Ghost.png>
 Package pdftex.def Info: ../../images/type/full/Ghost.png used on input line 49
@@ -2629,6 +2629,12 @@ File: ../../images/type/simplified/water.png Graphic file (type png)
 Package pdftex.def Info: ../../images/type/simplified/water.png used on input l
 ine 495.
 (pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
+File: ../../images/type/simplified/dragon.png Graphic file (type png)
+
+<use ../../images/type/simplified/dragon.png>
+Package pdftex.def Info: ../../images/type/simplified/dragon.png used on input 
+line 495.
+(pdftex.def)             Requested size: 4.26764pt x 4.26773pt.
 File: ../../images/type/simplified/ice.png Graphic file (type png)
 
 <use ../../images/type/simplified/ice.png>
@@ -2744,12 +2750,12 @@ Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 4
 95.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
-<../../pve/guide/ultra_league.png, id=141, 192.72pt x 192.72pt>
-File: ../../pve/guide/ultra_league.png Graphic file (type png)
+<../../images/league/ultra_league.png, id=141, 192.72pt x 192.72pt>
+File: ../../images/league/ultra_league.png Graphic file (type png)
 
-<use ../../pve/guide/ultra_league.png>
-Package pdftex.def Info: ../../pve/guide/ultra_league.png used on input line 49
-5.
+<use ../../images/league/ultra_league.png>
+Package pdftex.def Info: ../../images/league/ultra_league.png used on input lin
+e 495.
 (pdftex.def)             Requested size: 8.5359pt x 8.53381pt.
 
 Overfull \vbox (1.6019pt too high) detected at line 495
@@ -2762,11 +2768,11 @@ e 495.
 (pdftex.def)             Requested size: 455.24408pt x 398.33902pt.
  [4
 
- <../../pve/guide/ultra_league.png> <../../images/pokemon/giratina_a.png> <../.
-./images/pokemon/blastoise.png> <../../images/pokemon/steelix.png> <../../image
-s/type/full/Normal.png> <../../images/pokemon/giratina_o.png> <../../images/pok
-emon/lapras.png> <../../images/pokemon/snorlax.png> <../../images/pokemon/poliw
-rath.png>]
+ <../../images/league/ultra_league.png> <../../images/pokemon/giratina_a.png> <
+../../images/pokemon/blastoise.png> <../../images/pokemon/steelix.png> <../../i
+mages/type/full/Normal.png> <../../images/pokemon/giratina_o.png> <../../images
+/pokemon/lapras.png> <../../images/pokemon/snorlax.png> <../../images/pokemon/p
+oliwrath.png>]
 File: ../../images/type/full/Ghost.png Graphic file (type png)
 
 <use ../../images/type/full/Ghost.png>
@@ -3362,12 +3368,12 @@ Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 539.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
-<../../pve/guide/master_league.png, id=164, 192.72pt x 192.72pt>
-File: ../../pve/guide/master_league.png Graphic file (type png)
+<../../images/league/master_league.png, id=164, 192.72pt x 192.72pt>
+File: ../../images/league/master_league.png Graphic file (type png)
 
-<use ../../pve/guide/master_league.png>
-Package pdftex.def Info: ../../pve/guide/master_league.png used on input line 5
-39.
+<use ../../images/league/master_league.png>
+Package pdftex.def Info: ../../images/league/master_league.png used on input li
+ne 539.
 (pdftex.def)             Requested size: 8.5359pt x 8.53381pt.
 File: ../../images/type/background/pvp.jpg Graphic file (type jpg)
 
@@ -3377,11 +3383,11 @@ e 539.
 (pdftex.def)             Requested size: 455.24408pt x 398.33902pt.
  [5
 
- <../../pve/guide/master_league.png> <../../images/pokemon/dialga.png> <../../i
-mages/pokemon/lugia.png> <../../images/pokemon/garchomp.png> <../../images/poke
-mon/metagross.png> <../../images/pokemon/melmetal.png> <../../images/pokemon/me
-wtwo.png> <../../images/pokemon/tyranitar.png> <../../images/pokemon/latios.png
->]
+ <../../images/league/master_league.png> <../../images/pokemon/dialga.png> <../
+../images/pokemon/lugia.png> <../../images/pokemon/garchomp.png> <../../images/
+pokemon/metagross.png> <../../images/pokemon/melmetal.png> <../../images/pokemo
+n/mewtwo.png> <../../images/pokemon/tyranitar.png> <../../images/pokemon/latios
+.png>]
 <../../outfit/Alola_Ace_Trainer_2.jpg, id=179, 2007.5pt x 2007.5pt>
 File: ../../outfit/Alola_Ace_Trainer_2.jpg Graphic file (type jpg)
 
@@ -3434,8 +3440,8 @@ Package rerunfilecheck Info: File `pvp.out' has not changed.
  ) 
 Here is how much of TeX's memory you used:
  22197 strings out of 492995
- 435674 string characters out of 6132704
- 602182 words of memory out of 5000000
+ 435726 string characters out of 6132704
+ 603324 words of memory out of 5000000
  25122 multiletter control sequences out of 15000+600000
  45318 words of font info for 48 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3450,7 +3456,7 @@ fb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/lo
 cal/texlive/2017/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive
 /2017/texmf-dist/fonts/type1/public/lm/lmtt8.pfb></usr/local/texlive/2017/texmf
 -dist/fonts/type1/public/amsfonts/symbols/msam5.pfb>
-Output written on pvp.pdf (6 pages, 2363361 bytes).
+Output written on pvp.pdf (6 pages, 2363371 bytes).
 PDF statistics:
  220 PDF objects out of 1000 (max. 8388607)
  64 compressed objects within 1 object stream
