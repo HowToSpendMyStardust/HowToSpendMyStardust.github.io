@@ -282,12 +282,12 @@ We consider the example of Mewtwo. When you go on the Internet (for instance \te
 \end{tabular}   
 \end{center}
 
-Assume you are very lucky, and you caught a perfect Mewtwo, with (IV\_ATT, IV\_DEV, IV\_HP) = (15, 15, 15). Your perfect Mewtwo based stats are:
+Assume you are very lucky, and you caught a perfect Mewtwo, with (ATT\_IV, DEF\_IV, HP\_IV) = (15, 15, 15). Your perfect Mewtwo based stats are:
 \begin{center}
 \begin{tabular}{rp{2cm}} 
-  Base\_ATT + IV\_ATT  &  \attack{315} \\
-  Base\_DEF + IV\_DEF & \defense{197} \\
-  Base\_HP + IV\_HP & \stamina{229} \\ % \hline
+  Base\_ATT + ATT\_IV  &  \attack{315} \\
+  Base\_DEF + DEF\_IV & \defense{197} \\
+  Base\_HP + HP\_IV & \stamina{229} \\ % \hline
 \end{tabular}   
 \end{center}
 
@@ -303,9 +303,9 @@ Depending on the level of your Pokémon, you will multiply all these stats by a 
 This table tells that: at level 25, your Pokemon is at 84.5\% of its capacity; at level 30, your Pokemon is at 92.6\% of its capacity; at level 35, your Pokemon is at 96.4\% of its capacity. Coming back to Mewtwo, if you level up it to level 30, its statistics are finally:
 \begin{center}
 \begin{tabular}{rp{2cm}} 
-ATT =  (ATT + IV\_ATT) at level 30  &  \attack{230} \\
-DEF =  (DEF + IV\_DEF) at level 30 & \defense{144} \\
-HP =  (HP + IV\_HP) at level 30 & \stamina{167} \\ % \hline
+ATT =  (ATT + ATT\_IV) at level 30  &  \attack{230} \\
+DEF =  (DEF + DEF\_IV) at level 30 & \defense{144} \\
+HP =  (HP + HP\_IV) at level 30 & \stamina{167} \\ % \hline
 \end{tabular}   
 \end{center}
 
@@ -372,7 +372,7 @@ The damage a Pok\'emon will do to its opponent is given by:
 Damage formula = $\text{floor}\left(\frac{1}{2}\text{Power} \times \frac{\text{ATT}}{\text{OPP\_DEF}}\times\text{Multiplier}\right) +1$
 \end{center}
 
-To illustrate this formula we consider an Exeggutor (A) perfect at level 30 launching Solar Beam versus a Kyogre at level 40.
+To illustrate this formula we consider an Exeggutor (A) perfect at level 30 launching Solar Beam to a Kyogre at level 40.
 \begin{itemize}
   \item $\text{floor}\left(\right)+1$ guarantees that the minimum damage of any attack is 1.
   \item Power is the power of the considered move, for Solar Beam, it is 180.
@@ -395,7 +395,7 @@ Super effective & $\times 1.6$  \\
 \end{center}
 \end{itemize}
 
-Under no weather boost, no friendship bonus, the damage will be:
+Under no weather boost, no friendship bonus, the damage will be, for Kyogre:
 \begin{center}
 Damage formula = $\text{floor}\left(\frac{1}{2}\text{Power} \times \frac{\text{ATT}}{\text{OPP\_DEF}}\times\text{Multiplier}\right) +1 = \text{floor}\left(\frac{1}{2}\text{180} \times \frac{\text{179}}{\text{192}}\times\text{1.6}\right) +1 = 134 + 1 = 135$ HP
 \end{center}
@@ -498,7 +498,7 @@ They must be chosen based on their:
   \item Damage Per Second (DPS) defined by their fast and charged move: it represents how much damage a Pok\'emon can make in a second.
   \item Effective Health (EH) is computed via the formula (at level 40):
 \begin{center}
-EH $=$ (base DEF + IV DEF)$\times$ (base HP + IV HP) $\times \frac{0.7903^2}{900}$
+EH $=$ (base DEF + DEF\_IV)$\times$ (base HP + HP\_IV) $\times \frac{0.7903^2}{900}$
 \end{center}
   \item Total Damage Output (TDO) represents how much damage a Pok\'emon can make before it faints. It is computed via TDO = DPS $\times$ EH
   \item  DPS$^3 \times$ TDO, a mathematical measure without any physical sense, that can help to order Pok\'emon.
@@ -578,7 +578,7 @@ As a raid boss, they will be:
 }
 
 \begin{itemize}
-   \item Damages realised by the raid boss are identical to a Pok\'emon level 40 with IV\_ATT = 15.
+   \item Damages realised by the raid boss are identical to a Pok\'emon level 40 with ATT\_IV = 15.
   \item For a 5-head boss, you must realise 15000/300 = 50 HP per second; same damage to realise per second for a 4-head boss. The main difficulty of a 5-head boss is that it has more HP, and therefore you will need more time, more Pok\'emon and more revives.
   \item Difficulty of a raid boss will mainly depends on \textbf{the boss defence statistic} (the higher is defense is, the more time you will need to defeat it).
   \item \textbf{You need to play on resistance of your Pok\'emon, if you want to use less potion to defeat it}
@@ -600,12 +600,12 @@ As a raid boss, they will be:
 
 %They depends on the Pok\'emon base statistics. 
 \begin{itemize}
-  \item If the Pok\'emon has an important base attack statistic, there will be no difference between IV\_ATT = 14 and IV\_ATT = 15. 
+  \item If the Pok\'emon has an important base attack statistic, there will be no difference between ATT\_IV = 14 and ATT\_IV = 15. 
   
-  It is recommended to that a high IV\_ATT for Pok\'emon with low DPS.
-  \item Regarding to bulkiness (IV\_DEF and IV\_HP), the defence statistic influences how fast your Pok\'emon will die, whereas the HP statistic tells you the total number of HP your Pok\'emon will have. Usually, it is more interesting to have a higher IV\_DEF than IV\_HP. 
+  It is recommended to that a high ATT\_IV for Pok\'emon with low DPS.
+  \item Regarding to bulkiness (DEF\_IV and HP\_IV), the defence statistic influences how fast your Pok\'emon will die, whereas the HP statistic tells you the total number of HP your Pok\'emon will have. Usually, it is more interesting to have a higher DEF\_IV than HP\_IV. 
   
-  It is recommended to that a high IV\_DEF and IV\_HP for Pok\'emon with low Effective Health.
+  It is recommended to that a high DEF\_IV and HP\_IV for Pok\'emon with low Effective Health.
 \end{itemize}
 
 It is also recommended to level up at least to level 30 your Pok\'emon. At level 30, your Pokemon is already at 92.6\% of its capacity!

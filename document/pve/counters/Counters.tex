@@ -273,17 +273,17 @@
   \item Moves with symbol \dag~are legacy and unavailable.
   \item \megaevol~means that the Pok\'emon can mega-evolve at generation 6.
   \item Neutral DPS, Effective Health, and TDO are computated for Pok\'emon at level 40, with perfect IVs. 
-  \item \textbf{Neutral DPS} (Damage per Second) represents how much damage a Pok\'emon can make in a second. It depends on the Pok\'emon's attack stat (base ATT + IV ATT)$\times$0.7903, on the Pokemon's fast and charged moves and on the "Same Type Attack Bonus" (STAB, 25\% damage boost of a move when it is the same type as one of the types of the Pokémon using the move). They define the damages and the necessary energy for realising the damages.
+  \item \textbf{Neutral DPS} (Damage per Second) represents how much damage a Pok\'emon can make in a second. It depends on the Pok\'emon's attack stat (base ATT + ATT IV)$\times$0.7903, on the Pokemon's fast and charged moves and on the "Same Type Attack Bonus" (STAB, 25\% damage boost of a move when it is the same type as one of the types of the Pokémon using the move). They define the damages and the necessary energy for realising the damages.
 \begin{center}
 \begin{tabular}{rl}
 DPS$\leq$12.5   &  not an attacker  \\
-12.5$<$DPS$\leq$16   &  a good attacker (but privilege IV ATT = 15, and level up to 35)  \\
+12.5$<$DPS$\leq$16   &  a good attacker (but privilege ATT IV = 15, and level up to 35)  \\
 DPS$>$16   &  excellent attacker  \\
 \end{tabular}
 \end{center}
   \item The \textbf{Effective Health} (EH) is computed via the formula:
 \begin{center}
-EH $=$ (base DEF + IV DEF)$\times$ (base HP + IV HP) $\times \frac{0.7903^2}{900}$
+EH $=$ (base DEF + DEF IV)$\times$ (base HP + HP IV) $\times \frac{0.7903^2}{900}$
 \end{center}
 \begin{center}
 \begin{tabular}{rl}
