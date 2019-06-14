@@ -1,5 +1,4 @@
 cd document/pve/counters/
-latex Counters.tex
+xelatex Counters.tex
 pdf2htmlex Counters.pdf
 cd ../../..
-
