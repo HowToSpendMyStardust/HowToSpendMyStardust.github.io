@@ -264,13 +264,11 @@
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/lobby}}
 \begin{frame}
-\frametitle{A guide to choose which Pok\'emon to level up}
+\frametitle{1. How do Individual Values (IV) work?}
 
 \begin{block}{}
 \begin{tiny}
-\textbf{1. How do Individual Values (IV) work?}
-
-We consider the example of Mewtwo. When you go on the Internet (for instance \texttt{https://pokemon.gameinfo.io/fr/pokemon/150-mewtwo}), they give you the following base statistics:
+We consider the example of Mewtwo. Mewtwo's base statistics are (from \url{https://pokemon.gameinfo.io/fr/pokemon/150-mewtwo}):
 
 \begin{center}
 \begin{tabular}{rp{2cm}} 
@@ -281,6 +279,8 @@ We consider the example of Mewtwo. When you go on the Internet (for instance \te
   Base\_HP & \stamina{214} \\ % \hline
 \end{tabular}   
 \end{center}
+
+The attack statistic defines the damages your Pokémon will do, the defence statistic defines the speed at which your Pokémon will die, the HP is your Pokémon's Health Points.
 
 Assume you are very lucky, and you caught a perfect Mewtwo, with (ATT\_IV, DEF\_IV, HP\_IV) = (15, 15, 15). Your perfect Mewtwo based stats are:
 \begin{center}
@@ -320,17 +320,16 @@ CP = $\text{floor}\left(\frac{\text{ATT} \times \sqrt{\text{DEF} \times \text{HP
 
 
 \begin{frame}
-\frametitle{A guide to choose which Pok\'emon to level up}
+\frametitle{2. How to measure the bulkiness of a Pokémon?}
 
 \begin{block}{}
 \begin{tiny}
-\textbf{2. How to measure the bulkiness of a Pokémon?}
-
 \begin{itemize}
-  \item We use the effective health (EH) defined by : EH $\propto$ DEF $\times$ HP. The higher the score is, the bulkier the Pok\'emon is. For instance: 
+  \item We use the \textbf{effective health} (EH) defined by : EH $\propto$ DEF $\times$ HP. The higher the score is, the bulkier the Pok\'emon is. For instance: 
 \begin{center}
 \begin{tabular}{rp{2cm}p{2cm}} 
     & \textbf{Tangrowth} \hfill  \grassfull &\textbf{Exeggutor (A)} \hfill  \grassfull~\dragonfull    \\ 
+    & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/tangrowth.png}} & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/exeggutor_a.png}} \\
   Base\_ATT &  \attack{207} &\attack{230}  \\
   Base\_DEF & \defense{184} &\defense{153}  \\
   Base\_HP & \stamina{225}  & \stamina{216} \\
@@ -350,7 +349,7 @@ Double Resistance & $\times 2.56$ \\
 \end{tabular} 
 \end{center}
   
-  If we use these two Pokémon versus Kyogre (Waterfall + Hydro Pump), Tangrowth's base Effective Health is 41400$\times$1.6 = 66240, whereas Exeggutor (A)'s base Effective Health is 33048$\times$2.56 = 84602.88. Therefore, Exeggutor (A) will be more resistant versus Kyogre Hydro Pump than Tangrowth.
+  If we use these two Pokémon versus Kyogre (Waterfall + Hydro Pump), Tangrowth's base Effective Health is 41400$\times$1.6 = 66240, whereas Exeggutor (A)'s base Effective Health is 33048$\times$2.56 = 84602.88. Therefore, Exeggutor (A) will be more resistant versus Kyogre (Hydro Pump) than Tangrowth.
 \end{itemize}
 
 \end{tiny}
@@ -360,13 +359,10 @@ Double Resistance & $\times 2.56$ \\
 
 
 \begin{frame}
-\frametitle{A guide to choose which Pok\'emon to level up}
+\frametitle{3. How to compute the damage realised by a Pokémon?}
 
 \begin{block}{}
 \begin{tiny}
-
-\textbf{3. How to compute the damage realised by a Pokémon?}
-
 The damage a Pok\'emon will do to its opponent is given by:
 \begin{center}
 Damage formula = $\text{floor}\left(\frac{1}{2}\text{Power} \times \frac{\text{ATT}}{\text{OPP\_DEF}}\times\text{Multiplier}\right) +1$
@@ -395,9 +391,9 @@ Super effective & $\times 1.6$  \\
 \end{center}
 \end{itemize}
 
-Under no weather boost, no friendship bonus, the damage will be, for Kyogre:
+Under no weather boost, no friendship bonus, the damages Exeggutor will do to Kyogre are:
 \begin{center}
-Damage formula = $\text{floor}\left(\frac{1}{2}\text{Power} \times \frac{\text{ATT}}{\text{OPP\_DEF}}\times\text{Multiplier}\right) +1 = \text{floor}\left(\frac{1}{2}\text{180} \times \frac{\text{179}}{\text{192}}\times\text{1.6}\right) +1 = 134 + 1 = 135$ HP
+Damage formula = $\text{floor}\left(\frac{1}{2}\text{Power} \times \frac{\text{ATT}}{\text{OPP\_DEF}}\times\text{Multiplier}\right) +1 = \text{floor}\left(\frac{1}{2}\text{180} \times \frac{\text{179}}{\text{192}}\times\text{1.2}\times\text{1.6}\right) +1 = 161 + 1 = 162$ HP
 \end{center}
 
 
@@ -409,12 +405,10 @@ Damage formula = $\text{floor}\left(\frac{1}{2}\text{Power} \times \frac{\text{A
 
 
 \begin{frame}
-\frametitle{A guide to choose which Pok\'emon to level up}
+\frametitle{4. Which moves to choose for a Pokemon?}
 
 \begin{block}{}
 \begin{tiny}
-\textbf{4. Which moves to choose for a Pokemon?}
-
 \begin{itemize}
   \item Each Pokemon has a fast move and a charged move. Both together define the damages the Pok\'emon will realise.
   \item Each move is defined by the damage it realises, its duration and the energy it generates (for fast moves) or uses (for charged moves).
@@ -444,7 +438,7 @@ energy of 33.33& energy of 50 & energy of 100 \\
 \end{center}
 
 
-  \item The goal is then to choose the best moves that realise the \textbf{most damages per second}. We consider the example of Metagross: is Meteor Mash or Flash Cannon more interesting? From \texttt{https://pokemon.gameinfo.io}, we get the following table:
+  \item The goal is then to choose the best moves that realise the \textbf{most damages per second}. We consider the example of Metagross: is Meteor Mash or Flash Cannon more interesting? From \url{https://pokemon.gameinfo.io}, we get the following table:
   \begin{center}
 \begin{tabular}{ccc}
 & \steelsimp~Meteor Mash & \steelsimp~Flash Cannon \\ \hline
@@ -462,21 +456,24 @@ DPS is the damage per second for this move (= Base damage/Move duration), wherea
 Both attacks realise 100 as base damage, and have similar Move duration. However Meteor Mash needs less energy than Flash Cannon; a player will launch two Meteor Mash for one Flash Cannon, and realise twice more damage in the same time. This is reflected in the EPS.
 
 Therefore, Meteor Mash is much more interesting than Flash Cannon.
-\item We usually compute the global and neutral DPS for each couple (fast, charge) to see the number of damage per second the Pok\'emon realises by combining its fast and charged moves. Computation is complex, as it needs to consider also the damage realised by the opponent which brings energy to the giver. The DPS must also consider  "Same Type Attack Bonus" (STAB, 25\% damage boost of a move when it is the same type as one of the types of the Pokémon using the move). Read \texttt{https://pokemongo.gamepress.gg/tdo-how-calculate-pokemon-ability-outdated} for more details.
+\item We usually compute the global and neutral DPS for each couple (fast, charge) to see the number of damage per second the Pok\'emon realises by combining its fast and charged moves. Computation is complex, as it needs to consider also the damage realised by the opponent which brings energy to the giver. The DPS must also consider  "Same Type Attack Bonus" (STAB, 25\% damage boost of a move when it is the same type as one of the types of the Pokémon using the move). 
 
-However, such table containing all neutral DPS is available at \texttt{https://pokemongo.gamepress.gg/comprehensive-dps-spreadsheet}. For Metagross, they write:
+\begin{center}
+   \href{https://pokemongo.gamepress.gg/tdo-how-calculate-pokemon-ability-outdated}{\beamergotobutton{How DPS is computed?}} \quad \quad 
+   \href{https://pokemongo.gamepress.gg/comprehensive-dps-spreadsheet}{\beamergotobutton{Comprehensive DPS/TDO spreadsheet}}
+\end{center}
+
+For Metagross, DPS of (Bullet Punch, Meteor Mash) is much higher than DPS of (Bullet Punch, Flash Cannon):
 \begin{center}
 \begin{tabular}{ccccccc}
 Pokemon & Fast Move & Charged Move & DPS & TDO & DPS$^3 \times$ TDO & CP \\ \hline
 Metagross	 & \steelsimp~Bullet Punch	& \steelsimp~Meteor Mash&	17.983	&621.7	&3615.5	&3791\\
-Metagross	& \psysimp~Zen Headbutt	& \steelsimp~Meteor Mash	&17.437	&602.8	&3195.7&	3791\\
+%Metagross	& \psysimp~Zen Headbutt	& \steelsimp~Meteor Mash	&17.437	&602.8	&3195.7&	3791\\
 Metagross	& \steelsimp~Bullet Punch	& \steelsimp~Flash Cannon&	13.563	&468.9	1&169.7&	3791\\
 %Metagross	& Bullet Punch	& Psychic	13.475&	465.8	&1139.6	&3791\\
 %Metagross	& Zen Headbutt & 	Flash Cannon&	13.394& 463	&1112.6	&3791 \\
 \end{tabular}
 \end{center}
-
-DPS of (Bullet Punch, Meteor Mash) is much higher than DPS of (Bullet Punch, Flash Cannon).
 \end{itemize}
 
 \end{tiny}
@@ -487,11 +484,10 @@ DPS of (Bullet Punch, Meteor Mash) is much higher than DPS of (Bullet Punch, Fla
 
 
 \begin{frame}
-\frametitle{A guide to choose which Pok\'emon to level up}
+\frametitle{5. Which Pokemon to choose for levelling up?}
 
 \begin{block}{}
 \begin{tiny}
-\textbf{5. Which Pokemon to choose for levelling up?}
 
 They must be chosen based on their:
 \begin{itemize}
@@ -504,6 +500,10 @@ EH $=$ (base DEF + DEF\_IV)$\times$ (base HP + HP\_IV) $\times \frac{0.7903^2}{9
   \item  DPS$^3 \times$ TDO, a mathematical measure without any physical sense, that can help to order Pok\'emon.
 \end{itemize} 
 
+\begin{center}
+   \href{https://pokemongo.gamepress.gg/comprehensive-dps-spreadsheet}{\beamergotobutton{Comprehensive DPS/TDO spreadsheet}}
+\end{center}
+
 For instance, if we compare the two best Ghost-type Pokémon:
 \begin{center}
 \begin{tabular}{ccccccc}
@@ -513,7 +513,7 @@ Giratina (Origin Forme)&	\ghostsimp~Shadow Claw	&\ghostsimp~Shadow Ball&	15.814	
 \end{tabular}
 \end{center}
 
-Gengar has a monstruous DPS, but low TDO, whereas Giratina (O) has excellent EH and TDO. The global measure  DPS$^3 \times$ TDO recommends Giratina (O).
+Gengar has a monstrous DPS, but low TDO, whereas Giratina (O) has excellent EH and TDO. The global measure  DPS$^3 \times$ TDO recommends Giratina (O).
 
 Note also that weaknesses are not taken in this spreadsheet, as we compute the neutral DPS. If we choose "Mewtwo" with (Confusion, Psychic) as opponent, the spreadsheet becomes:
 \begin{center}
@@ -533,12 +533,10 @@ DPS has increased by $\approx 1.6$ (as Mewtwo is weak to Ghost attacks), but Gen
 
 
 \begin{frame}
-\frametitle{A guide to choose which Pok\'emon to level up}
+\frametitle{6. How difficult are Raid bosses?}
 
 \begin{block}{}
 \begin{tiny}
-\textbf{6. How difficult are Raid bosses?}
-
 Raid boss have the attack and defend statistics of a perfect level 40 Pokémon, but their HP depends on the difficulty of the raid:
 \begin{center}
 \begin{tabular}{ccc}
@@ -592,13 +590,12 @@ As a raid boss, they will be:
 
 
 \begin{frame}
-\frametitle{A guide to choose which Pok\'emon to level up}
+\frametitle{7. How are IV important? What is the optimal level for a Pok\'emon?}
 
 \begin{block}{}
 \begin{tiny}
-\textbf{7. How are IV important?}
 
-%They depends on the Pok\'emon base statistics. 
+Regarding IVs, they depend on the Pok\'emon base statistics. 
 \begin{itemize}
   \item If the Pok\'emon has an important base attack statistic, there will be no difference between ATT\_IV = 14 and ATT\_IV = 15. 
   
@@ -608,16 +605,12 @@ As a raid boss, they will be:
   It is recommended to that a high DEF\_IV and HP\_IV for Pok\'emon with low Effective Health.
 \end{itemize}
 
-It is also recommended to level up at least to level 30 your Pok\'emon. At level 30, your Pokemon is already at 92.6\% of its capacity!
+The more you want to level up your Pok\'emon, the more expansive it will be. Level 35 is fine (where your Pok\'emon is at 96.4\% of its capacity), but level 30 is good too (92.6\% of its capacity). 
 
-\medskip
-
-\textbf{8. What is the optimal level for a Pok\'emon?}
 \begin{center}
 Level 20 $\xrightarrow[\text{\stardust 31,000}]{\text{\candy~28}}$ Level 25 $\xrightarrow[\text{\stardust 44,000}]{\text{\candy~38}}$ Level 30 $\xrightarrow[\text{\stardust 62,000}]{\text{\candy~64}}$ Level 35 $\xrightarrow[\text{\stardust 88,000}]{\text{\candy~118}}$ Level 40
 \end{center}
-
-The more you want to level up your Pok\'emon, the more expansive it will be. Level 35 is fine (where your Pok\'emon is at 96.4\% of its capacity), but level 30 is good too (92.6\% of its capacity). There is an ideal level depending on each Pok\'emon and its opponent: 
+There is an ideal level depending on each Pok\'emon and its opponent: 
 \begin{itemize}
   \item above a certain level, it will not be more resistant (its oponent will be able to inflige a certain number of fast and charged attacks until your Pok\'emon dies). It is called the \textit{bulkpoint}.
   \item above a certain level (usually different from the bulkpoint), your Pok\'emon fast attack will do exactly the same damage (it's due to the floor in the damage formula). It is called the \textit{breakpoint}.
@@ -628,18 +621,6 @@ The more you want to level up your Pok\'emon, the more expansive it will be. Lev
 %\textbf{7. How are computed based statistics for a Pok\'emon?}
 
 %Read \texttt{https://pokemongohub.net/post/meta/pokemon-go-cp-rework-stat-changes-formula-and-raiding-after-the-rework/}
-
-\medskip
-
-\textbf{Sources}
-
-\begin{itemize}
-  \item Base Statistics: \texttt{https://pokemongo.gamepress.gg/pokemon-list\#1}, \texttt{https://pokegocomplete.com} (generations 1 to 7)
-  \item Comprehensive DPS/TDO spreadsheet: \texttt{https://pokemongo.gamepress.gg/comprehensive-dps-spreadsheet}
-  \item How DPS, TDO are computed: \texttt{https://pokemongo.gamepress.gg/tdo-how-calculate-pokemon-ability-outdated}
-  \item Raid simulator: \texttt{https://www.pokebattler.com}
-  \item Sheets "Best Pok\'emon in Pok\'emon Go": \texttt{https://imgur.com/a/2HVx6LX}%https://imgur.com/a/XcHwt3h
-\end{itemize}
 
 \end{tiny}
 \end{block}

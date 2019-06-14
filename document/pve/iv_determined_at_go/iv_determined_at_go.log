@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/MacPorts 2016_4) (preloaded format=xelatex 2017.2.11)  14 JUN 2019 21:21
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/MacPorts 2016_4) (preloaded format=xelatex 2017.2.11)  14 JUN 2019 22:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -993,6 +993,10 @@ LaTeX Info: Redefining \nameref on input line 247.
 \@outlinefile=\write5
 \openout5 = `iv_determined_at_go.out'.
 
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 247.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
@@ -1118,19 +1122,9 @@ LaTeX Font Info:    Try loading font information for T1+lmtt on input line 314.
 (/opt/local/share/texmf-texlive/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Overfull \hbox (3.5278pt too wide) in paragraph at lines 314--314
-[]\T1/lmtt/m/n/5 https://www.reddit.com/r/TheSilphRoad/comments/703u8z/cp$[]$is
-$[]$determined$[]$at$[]$the$[]$start$[]$of$[]$a$[]$raid$[]$battle/  
- []
-
-
-Overfull \hbox (6.18405pt too wide) in paragraph at lines 314--314
-[]\T1/lmtt/m/n/5 https://www.reddit.com/r/TheSilphRoad/comments/7lpbdt/if$[]$th
-e$[]$weather$[]$changes$[]$midraid$[]$the$[]$catch$[]$screen/  
- []
-
 File: 54435651_723596804707123_4963745028846387200_n.png Graphic file (type QTm
 )
+
 <use  "54435651_723596804707123_4963745028846387200_n.png" >
 File: ../../images/type/background/lobby.png Graphic file (type QTm)
 
@@ -1154,12 +1148,12 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 319.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 319.
  ) 
 Here is how much of TeX's memory you used:
- 23827 strings out of 495534
- 448218 string characters out of 6185783
- 504183 words of memory out of 5000000
- 26593 multiletter control sequences out of 15000+600000
+ 23825 strings out of 495534
+ 448109 string characters out of 6185783
+ 504799 words of memory out of 5000000
+ 26591 multiletter control sequences out of 15000+600000
  29388 words of font info for 34 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 48i,12n,54p,823b,741s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,12n,54p,823b,794s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on iv_determined_at_go.pdf (1 page).
