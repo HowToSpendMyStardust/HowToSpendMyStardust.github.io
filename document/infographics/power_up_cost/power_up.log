@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/MacPorts 2016_4) (preloaded format=xelatex 2017.2.11)  14 JUN 2019 22:27
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/MacPorts 2016_4) (preloaded format=xelatex 2017.2.11)  14 JUN 2019 22:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -957,7 +957,7 @@ Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
 \tcb@out=\write5
 \tcb@record@out=\write6
 )
-No file power_up.aux.
+(./power_up.aux)
 \openout1 = `power_up.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 165.
@@ -978,7 +978,7 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 165.
 LaTeX Font Info:    ... okay on input line 165.
 LaTeX Font Info:    Try loading font information for T1+lmss on input line 165.
 
-(/opt/local/share/texmf-texlive/tex/latex/lm/t1lmss.fd
+ (/opt/local/share/texmf-texlive/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 *geometry* driver: auto-detecting
@@ -1030,12 +1030,10 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 165.
 LaTeX Info: Redefining \pageref on input line 165.
 LaTeX Info: Redefining \nameref on input line 165.
+
+(./power_up.out) (./power_up.out)
 \@outlinefile=\write7
 \openout7 = `power_up.out'.
-
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 165.
@@ -1112,10 +1110,10 @@ LaTeX Info: Redefining \includegraphics on input line 165.
 
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 165.
-
-No file power_up.nav.
+ (./power_up.nav)
 LaTeX Font Info:    Try loading font information for OT1+lmss on input line 233
 .
+
 (/opt/local/share/texmf-texlive/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1273,10 +1271,10 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 235.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 235.
  ) 
 Here is how much of TeX's memory you used:
- 25798 strings out of 495534
- 492601 string characters out of 6185783
- 571118 words of memory out of 5000000
- 28547 multiletter control sequences out of 15000+600000
+ 25813 strings out of 495534
+ 492754 string characters out of 6185783
+ 571161 words of memory out of 5000000
+ 28554 multiletter control sequences out of 15000+600000
  42586 words of font info for 47 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,17n,73p,943b,938s stack positions out of 5000i,500n,10000p,200000b,80000s
