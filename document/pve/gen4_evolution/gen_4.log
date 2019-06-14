@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.21)  6 JUN 2019 13:49
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.21)  14 JUN 2019 15:49
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1377,57 +1377,57 @@ LaTeX Info: Redefining \includegraphics on input line 247.
 
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 247.
-
-No file gen_4.nav.
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 299
+ (./gen_4.nav)
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 303
 .
+
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 299.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 303.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 299
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 303
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 299
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 303
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 299.
-LaTeX Font Info:    Try loading font information for U+msa on input line 299.
+(Font)              <5> on input line 303.
+LaTeX Font Info:    Try loading font information for U+msa on input line 303.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 299.
+LaTeX Font Info:    Try loading font information for U+msb on input line 303.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 299.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 303.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 299.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 303.
 
 <../../images/pokemon/mamoswine.png, id=13, 192.72pt x 192.72pt>
 File: ../../images/pokemon/mamoswine.png Graphic file (type png)
 
 <use ../../images/pokemon/mamoswine.png>
 Package pdftex.def Info: ../../images/pokemon/mamoswine.png used on input line 
-299.
+303.
 (pdftex.def)             Requested size: 51.21465pt x 51.21504pt.
 
 <../../images/pokemon/magnezone.png, id=15, 192.72pt x 192.72pt>
@@ -1435,7 +1435,7 @@ File: ../../images/pokemon/magnezone.png Graphic file (type png)
 
 <use ../../images/pokemon/magnezone.png>
 Package pdftex.def Info: ../../images/pokemon/magnezone.png used on input line 
-299.
+303.
 (pdftex.def)             Requested size: 51.21465pt x 51.21504pt.
 
 <../../images/pokemon/rhyperior.png, id=16, 192.72pt x 192.72pt>
@@ -1443,38 +1443,38 @@ File: ../../images/pokemon/rhyperior.png Graphic file (type png)
 
 <use ../../images/pokemon/rhyperior.png>
 Package pdftex.def Info: ../../images/pokemon/rhyperior.png used on input line 
-299.
+303.
 (pdftex.def)             Requested size: 51.21465pt x 51.21504pt.
 
 <../../images/pokemon/roserade.png, id=17, 192.72pt x 192.72pt>
 File: ../../images/pokemon/roserade.png Graphic file (type png)
 
 <use ../../images/pokemon/roserade.png>
-Package pdftex.def Info: ../../images/pokemon/roserade.png used on input line 2
-99.
+Package pdftex.def Info: ../../images/pokemon/roserade.png used on input line 3
+03.
 (pdftex.def)             Requested size: 51.21465pt x 51.21504pt.
 
 <../../images/pokemon/weavile.png, id=18, 192.72pt x 192.72pt>
 File: ../../images/pokemon/weavile.png Graphic file (type png)
 
 <use ../../images/pokemon/weavile.png>
-Package pdftex.def Info: ../../images/pokemon/weavile.png used on input line 29
-9.
+Package pdftex.def Info: ../../images/pokemon/weavile.png used on input line 30
+3.
 (pdftex.def)             Requested size: 51.21465pt x 51.21504pt.
 
 <../../images/pokemon/togekiss.png, id=19, 192.72pt x 192.72pt>
 File: ../../images/pokemon/togekiss.png Graphic file (type png)
 
 <use ../../images/pokemon/togekiss.png>
-Package pdftex.def Info: ../../images/pokemon/togekiss.png used on input line 2
-99.
+Package pdftex.def Info: ../../images/pokemon/togekiss.png used on input line 3
+03.
 (pdftex.def)             Requested size: 51.21465pt x 51.21504pt.
 
 <../../images/objects/candy.png, id=20, 256.96pt x 256.96pt>
 File: ../../images/objects/candy.png Graphic file (type png)
 
 <use ../../images/objects/candy.png>
-Package pdftex.def Info: ../../images/objects/candy.png used on input line 299.
+Package pdftex.def Info: ../../images/objects/candy.png used on input line 303.
 
 (pdftex.def)             Requested size: 4.26591pt x 4.26773pt.
 
@@ -1483,12 +1483,12 @@ File: ../../images/objects/sinnoh_stone.png Graphic file (type png)
 
 <use ../../images/objects/sinnoh_stone.png>
 Package pdftex.def Info: ../../images/objects/sinnoh_stone.png used on input li
-ne 299.
+ne 303.
 (pdftex.def)             Requested size: 5.68921pt x 5.69046pt.
 File: ../../images/objects/candy.png Graphic file (type png)
 
 <use ../../images/objects/candy.png>
-Package pdftex.def Info: ../../images/objects/candy.png used on input line 299.
+Package pdftex.def Info: ../../images/objects/candy.png used on input line 303.
 
 (pdftex.def)             Requested size: 4.26591pt x 4.26773pt.
 
@@ -1497,124 +1497,224 @@ File: ../../images/objects/magnetic_lure.png Graphic file (type png)
 
 <use ../../images/objects/magnetic_lure.png>
 Package pdftex.def Info: ../../images/objects/magnetic_lure.png used on input l
-ine 299.
+ine 303.
 (pdftex.def)             Requested size: 5.69019pt x 5.69046pt.
 File: ../../images/objects/candy.png Graphic file (type png)
 
 <use ../../images/objects/candy.png>
-Package pdftex.def Info: ../../images/objects/candy.png used on input line 299.
+Package pdftex.def Info: ../../images/objects/candy.png used on input line 303.
 
 (pdftex.def)             Requested size: 4.26591pt x 4.26773pt.
 File: ../../images/objects/sinnoh_stone.png Graphic file (type png)
 
 <use ../../images/objects/sinnoh_stone.png>
 Package pdftex.def Info: ../../images/objects/sinnoh_stone.png used on input li
-ne 299.
+ne 303.
 (pdftex.def)             Requested size: 5.68921pt x 5.69046pt.
 File: ../../images/objects/candy.png Graphic file (type png)
 
 <use ../../images/objects/candy.png>
-Package pdftex.def Info: ../../images/objects/candy.png used on input line 299.
+Package pdftex.def Info: ../../images/objects/candy.png used on input line 303.
 
 (pdftex.def)             Requested size: 4.26591pt x 4.26773pt.
 File: ../../images/objects/sinnoh_stone.png Graphic file (type png)
 
 <use ../../images/objects/sinnoh_stone.png>
 Package pdftex.def Info: ../../images/objects/sinnoh_stone.png used on input li
-ne 299.
+ne 303.
 (pdftex.def)             Requested size: 5.68921pt x 5.69046pt.
 File: ../../images/objects/candy.png Graphic file (type png)
 
 <use ../../images/objects/candy.png>
-Package pdftex.def Info: ../../images/objects/candy.png used on input line 299.
+Package pdftex.def Info: ../../images/objects/candy.png used on input line 303.
 
 (pdftex.def)             Requested size: 4.26591pt x 4.26773pt.
 File: ../../images/objects/sinnoh_stone.png Graphic file (type png)
 
 <use ../../images/objects/sinnoh_stone.png>
 Package pdftex.def Info: ../../images/objects/sinnoh_stone.png used on input li
-ne 299.
+ne 303.
 (pdftex.def)             Requested size: 5.68921pt x 5.69046pt.
 File: ../../images/objects/candy.png Graphic file (type png)
 
 <use ../../images/objects/candy.png>
-Package pdftex.def Info: ../../images/objects/candy.png used on input line 299.
+Package pdftex.def Info: ../../images/objects/candy.png used on input line 303.
 
 (pdftex.def)             Requested size: 4.26591pt x 4.26773pt.
 File: ../../images/objects/sinnoh_stone.png Graphic file (type png)
 
 <use ../../images/objects/sinnoh_stone.png>
 Package pdftex.def Info: ../../images/objects/sinnoh_stone.png used on input li
-ne 299.
+ne 303.
 (pdftex.def)             Requested size: 5.68921pt x 5.69046pt.
 
-<../../images/pokemon/glaceon.png, id=23, 192.72pt x 192.72pt>
+<../../images/type/full/Ice.png, id=23, 32.12pt x 14.0525pt>
+File: ../../images/type/full/Ice.png Graphic file (type png)
+
+<use ../../images/type/full/Ice.png>
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 303.
+
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+
+<../../images/type/full/Ground.png, id=24, 32.12pt x 14.0525pt>
+File: ../../images/type/full/Ground.png Graphic file (type png)
+
+<use ../../images/type/full/Ground.png>
+Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 3
+03.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+
+<../../images/type/full/Electric.png, id=25, 32.12pt x 14.0525pt>
+File: ../../images/type/full/Electric.png Graphic file (type png)
+
+<use ../../images/type/full/Electric.png>
+Package pdftex.def Info: ../../images/type/full/Electric.png used on input line
+ 303.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+
+<../../images/type/full/Rock.png, id=26, 32.12pt x 14.0525pt>
+File: ../../images/type/full/Rock.png Graphic file (type png)
+
+<use ../../images/type/full/Rock.png>
+Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 303
+.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+File: ../../images/type/full/Ground.png Graphic file (type png)
+ <use ../../images/type/full/Ground.png>
+Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 3
+03.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+
+<../../images/type/full/Grass.png, id=27, 32.12pt x 14.0525pt>
+File: ../../images/type/full/Grass.png Graphic file (type png)
+
+<use ../../images/type/full/Grass.png>
+Package pdftex.def Info: ../../images/type/full/Grass.png used on input line 30
+3.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+
+<../../images/type/full/Poison.png, id=28, 32.12pt x 14.0525pt>
+File: ../../images/type/full/Poison.png Graphic file (type png)
+
+<use ../../images/type/full/Poison.png>
+Package pdftex.def Info: ../../images/type/full/Poison.png used on input line 3
+03.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 303--303
+[]$\OMS/lmsy/m/n/5 ^^H$ \T1/lmss/m/n/5 Best [] and
+ []
+
+<../../images/type/full/Dark.png, id=29, 32.12pt x 14.0525pt>
+File: ../../images/type/full/Dark.png Graphic file (type png)
+
+<use ../../images/type/full/Dark.png>
+Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 303
+.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+File: ../../images/type/full/Ice.png Graphic file (type png)
+ <use ../../images/type/full/Ice.png>
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 303.
+
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+
+<../../images/type/full/Fairy.png, id=30, 32.12pt x 14.0525pt>
+File: ../../images/type/full/Fairy.png Graphic file (type png)
+
+<use ../../images/type/full/Fairy.png>
+Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 30
+3.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+
+<../../images/pokemon/glaceon.png, id=31, 192.72pt x 192.72pt>
 File: ../../images/pokemon/glaceon.png Graphic file (type png)
 
 <use ../../images/pokemon/glaceon.png>
-Package pdftex.def Info: ../../images/pokemon/glaceon.png used on input line 29
-9.
+Package pdftex.def Info: ../../images/pokemon/glaceon.png used on input line 30
+3.
 (pdftex.def)             Requested size: 51.21465pt x 51.21504pt.
 
-<../../images/pokemon/electivire.png, id=24, 192.72pt x 192.72pt>
+<../../images/pokemon/electivire.png, id=32, 192.72pt x 192.72pt>
 File: ../../images/pokemon/electivire.png Graphic file (type png)
 
 <use ../../images/pokemon/electivire.png>
 Package pdftex.def Info: ../../images/pokemon/electivire.png used on input line
- 299.
+ 303.
 (pdftex.def)             Requested size: 51.21465pt x 51.21504pt.
 
-<../../images/pokemon/honchkrow.png, id=25, 192.72pt x 192.72pt>
+<../../images/pokemon/honchkrow.png, id=33, 192.72pt x 192.72pt>
 File: ../../images/pokemon/honchkrow.png Graphic file (type png)
 
 <use ../../images/pokemon/honchkrow.png>
 Package pdftex.def Info: ../../images/pokemon/honchkrow.png used on input line 
-299.
+303.
 (pdftex.def)             Requested size: 51.21465pt x 51.21504pt.
 File: ../../images/objects/candy.png Graphic file (type png)
  <use ../../images/objects/candy.png>
-Package pdftex.def Info: ../../images/objects/candy.png used on input line 299.
+Package pdftex.def Info: ../../images/objects/candy.png used on input line 303.
 
 (pdftex.def)             Requested size: 4.26591pt x 4.26773pt.
 
-<../../images/objects/glacial_lure.png, id=26, 192.72pt x 192.72pt>
+<../../images/objects/glacial_lure.png, id=34, 192.72pt x 192.72pt>
 File: ../../images/objects/glacial_lure.png Graphic file (type png)
 
 <use ../../images/objects/glacial_lure.png>
 Package pdftex.def Info: ../../images/objects/glacial_lure.png used on input li
-ne 299.
+ne 303.
 (pdftex.def)             Requested size: 5.69019pt x 5.69046pt.
 File: ../../images/objects/candy.png Graphic file (type png)
 
 <use ../../images/objects/candy.png>
-Package pdftex.def Info: ../../images/objects/candy.png used on input line 299.
+Package pdftex.def Info: ../../images/objects/candy.png used on input line 303.
 
 (pdftex.def)             Requested size: 4.26591pt x 4.26773pt.
 File: ../../images/objects/sinnoh_stone.png Graphic file (type png)
 
 <use ../../images/objects/sinnoh_stone.png>
 Package pdftex.def Info: ../../images/objects/sinnoh_stone.png used on input li
-ne 299.
+ne 303.
 (pdftex.def)             Requested size: 5.68921pt x 5.69046pt.
 File: ../../images/objects/candy.png Graphic file (type png)
 
 <use ../../images/objects/candy.png>
-Package pdftex.def Info: ../../images/objects/candy.png used on input line 299.
+Package pdftex.def Info: ../../images/objects/candy.png used on input line 303.
 
 (pdftex.def)             Requested size: 4.26591pt x 4.26773pt.
 File: ../../images/objects/sinnoh_stone.png Graphic file (type png)
 
 <use ../../images/objects/sinnoh_stone.png>
 Package pdftex.def Info: ../../images/objects/sinnoh_stone.png used on input li
-ne 299.
+ne 303.
 (pdftex.def)             Requested size: 5.68921pt x 5.69046pt.
+File: ../../images/type/full/Ice.png Graphic file (type png)
 
-<../../images/type/background/normal.png, id=27, 722.7pt x 1284.8pt>
+<use ../../images/type/full/Ice.png>
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 303.
+
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+File: ../../images/type/full/Electric.png Graphic file (type png)
+ <use ../../images/type/full/Electric.png>
+Package pdftex.def Info: ../../images/type/full/Electric.png used on input line
+ 303.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+
+<../../images/type/full/Flying.png, id=35, 32.12pt x 14.0525pt>
+File: ../../images/type/full/Flying.png Graphic file (type png)
+
+<use ../../images/type/full/Flying.png>
+Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 3
+03.
+(pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
+
+Overfull \vbox (4.50844pt too high) detected at line 303
+ []
+
+<../../images/type/background/normal.png, id=36, 722.7pt x 1284.8pt>
 File: ../../images/type/background/normal.png Graphic file (type png)
 
 <use ../../images/type/background/normal.png>
 Package pdftex.def Info: ../../images/type/background/normal.png used on input 
-line 299.
+line 303.
 (pdftex.def)             Requested size: 455.24408pt x 809.33028pt.
  [1
 
@@ -1623,9 +1723,13 @@ mages/type/background/normal.png> <../../images/pokemon/mamoswine.png> <../../i
 mages/pokemon/magnezone.png> <../../images/pokemon/rhyperior.png> <../../images
 /pokemon/roserade.png> <../../images/pokemon/weavile.png> <../../images/pokemon
 /togekiss.png> <../../images/objects/candy.png> <../../images/objects/sinnoh_st
-one.png> <../../images/objects/magnetic_lure.png> <../../images/pokemon/glaceon
-.png> <../../images/pokemon/electivire.png> <../../images/pokemon/honchkrow.png
-> <../../images/objects/glacial_lure.png>]
+one.png> <../../images/objects/magnetic_lure.png> <../../images/type/full/Ice.p
+ng> <../../images/type/full/Ground.png> <../../images/type/full/Electric.png> <
+../../images/type/full/Rock.png> <../../images/type/full/Grass.png> <../../imag
+es/type/full/Poison.png> <../../images/type/full/Dark.png> <../../images/type/f
+ull/Fairy.png> <../../images/pokemon/glaceon.png> <../../images/pokemon/electiv
+ire.png> <../../images/pokemon/honchkrow.png> <../../images/objects/glacial_lur
+e.png> <../../images/type/full/Flying.png>]
 \tf@nav=\write6
 \openout6 = `gen_4.nav'.
 
@@ -1635,29 +1739,31 @@ one.png> <../../images/objects/magnetic_lure.png> <../../images/pokemon/glaceon
 \tf@snm=\write8
 \openout8 = `gen_4.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 301.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 301.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 305.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 305.
  (./gen_4.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 301.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 301.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 305.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 305.
 Package rerunfilecheck Info: File `gen_4.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 21672 strings out of 492995
- 421729 string characters out of 6132704
- 505569 words of memory out of 5000000
- 24681 multiletter control sequences out of 15000+600000
+ 21736 strings out of 492995
+ 423475 string characters out of 6132704
+ 512584 words of memory out of 5000000
+ 24733 multiletter control sequences out of 15000+600000
  25936 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,16n,59p,771b,672s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/
-texlive/2017/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/201
-7/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on gen_4.pdf (1 page, 850905 bytes).
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/lo
+cal/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}</usr/local/texlive/20
+17/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2017/texmf-di
+st/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist/fonts
+/type1/public/lm/lmsy5.pfb>
+Output written on gen_4.pdf (1 page, 861108 bytes).
 PDF statistics:
- 61 PDF objects out of 1000 (max. 8388607)
- 21 compressed objects within 1 object stream
+ 84 PDF objects out of 1000 (max. 8388607)
+ 25 compressed objects within 1 object stream
  3 named destinations out of 1000 (max. 500000)
- 113 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 158 words of extra memory for PDF output out of 10000 (max. 10000000)
 
