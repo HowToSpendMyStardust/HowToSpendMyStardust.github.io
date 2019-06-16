@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.21)  16 JUN 2019 19:45
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.6.21)  16 JUN 2019 21:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -102,8 +102,8 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutvoffset=\dimen126
 \Gm@dimlist=\toks15
 )
-(/usr/local/texlive/2017/texmf-dist/tex/latex/base/size11.clo
-File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+(/usr/local/texlive/2017/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 )
 (/usr/local/texlive/2017/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/local/texlive/2017/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -737,34 +737,543 @@ nput line 129.
 Package beamerposter Info: finished orientation check. on input line 129.
 Package beamerposter Info: checking size input, please wait. on input line 129.
 
-Package beamerposter Info: the input a4\ 5\ was correct, we proceed. on input l
-ine 129.
+Package beamerposter Info: the input custom\ 6\ was correct, we proceed. on inp
+ut line 129.
 Package beamerposter Info: finished size input check. on input line 129.
+Package beamerposter Info: custom poster width=16 on input line 129.
+Package beamerposter Info: custom poster height=20 on input line 129.
+Package beamerposter Info: myfontscale=0.5 on input line 129.
+Package beamerposter Info: enabled debug mode on input line 129.
  ( FP-UPN
-( FP-MUL ) ( FP-ROUND ) )
+FP debug: upn: +++ computing upn-expression "myfontscale fontscale * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.5"
+FP debug: upn: calculating "fontscale"
+FP debug: upn: result      "1.0"
+FP debug: upn: calculating "1.0 mul 0.5"
+( FP-MUL )
+FP debug: upn: result      "0.500000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(0.500000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "0.50"
+FP debug: upn: +++ result of upn-expression is "(0.50)"
+)
 \tmp=\dimen188
-Package beamerposter Info: paperwidth=597.50787pt, paperheight=845.04675pt on i
+ ( FP-UPN
+FP debug: upn: +++ computing upn-expression "1 customwidth -"
+FP debug: upn: calculating "1"
+FP debug: upn: result      "1"
+FP debug: upn: calculating "customwidth"
+FP debug: upn: result      "16"
+FP debug: upn: calculating "16 sub 1"
+( FP-SUB )
+FP debug: upn: result      "15.000000000000000000"
+FP debug: upn: +++ result of upn-expression is "(15.000000000000000000)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "1 customheight -"
+FP debug: upn: calculating "1"
+FP debug: upn: result      "1"
+FP debug: upn: calculating "customheight"
+FP debug: upn: result      "20"
+FP debug: upn: calculating "20 sub 1"
+( FP-SUB )
+FP debug: upn: result      "19.000000000000000000"
+FP debug: upn: +++ result of upn-expression is "(19.000000000000000000)"
+)
+Package beamerposter Info: paperwidth=455.24408pt, paperheight=569.05511pt on i
 nput line 172.
-Package beamerposter Info: textwidth=569.05511pt, textwidth=816.594pt on input 
-line 173.
-Package beamerposter Info: fontscale=0.25, myfontscale=0.25 on input line 174.
- ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL
-) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL )
-( FP-ROUND ) ) ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL )
-( FP-ROUND ) ) ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL )
-( FP-ROUND ) ) ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL )
-( FP-ROUND ) ) ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL )
-( FP-ROUND ) ) ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL )
-( FP-ROUND ) ) ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL )
-( FP-ROUND ) ) ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL )
-( FP-ROUND ) ) ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL )
-( FP-ROUND ) ) ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL )
-( FP-ROUND ) ) ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL )
-( FP-ROUND ) ) ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL )
-( FP-ROUND ) ) ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL )
-( FP-ROUND ) ) ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL )
-( FP-ROUND ) ) ( FP-UPN ( FP-MUL ) ( FP-ROUND ) ) ( FP-UPN ( FP-MUL )
-( FP-ROUND ) )) (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
+Package beamerposter Info: textwidth=426.79134pt, textwidth=540.60236pt on inpu
+t line 173.
+Package beamerposter Info: fontscale=1.0, myfontscale=0.50 on input line 174.
+ ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeX * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeX"
+FP debug: upn: result      "12"
+FP debug: upn: calculating "12 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "6.000000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(6.000000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "6.00"
+FP debug: upn: +++ result of upn-expression is "(6.00)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeY * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeY"
+FP debug: upn: result      "14"
+FP debug: upn: calculating "14 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "7.000000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(7.000000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "7.00"
+FP debug: upn: +++ result of upn-expression is "(7.00)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeX * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeX"
+FP debug: upn: result      "14.4"
+FP debug: upn: calculating "14.4 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "7.200000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(7.200000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "7.20"
+FP debug: upn: +++ result of upn-expression is "(7.20)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeY * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeY"
+FP debug: upn: result      "18"
+FP debug: upn: calculating "18 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "9.000000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(9.000000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "9.00"
+FP debug: upn: +++ result of upn-expression is "(9.00)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeX * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeX"
+FP debug: upn: result      "17.28"
+FP debug: upn: calculating "17.28 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "8.640000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(8.640000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "8.64"
+FP debug: upn: +++ result of upn-expression is "(8.64)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeY * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeY"
+FP debug: upn: result      "22"
+FP debug: upn: calculating "22 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "11.000000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(11.000000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "11.00"
+FP debug: upn: +++ result of upn-expression is "(11.00)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeX * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeX"
+FP debug: upn: result      "20.74"
+FP debug: upn: calculating "20.74 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "10.370000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(10.370000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "10.37"
+FP debug: upn: +++ result of upn-expression is "(10.37)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeY * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeY"
+FP debug: upn: result      "25"
+FP debug: upn: calculating "25 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "12.500000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(12.500000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "12.50"
+FP debug: upn: +++ result of upn-expression is "(12.50)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeX * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeX"
+FP debug: upn: result      "24.88"
+FP debug: upn: calculating "24.88 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "12.440000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(12.440000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "12.44"
+FP debug: upn: +++ result of upn-expression is "(12.44)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeY * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeY"
+FP debug: upn: result      "30"
+FP debug: upn: calculating "30 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "15.000000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(15.000000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "15.00"
+FP debug: upn: +++ result of upn-expression is "(15.00)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeX * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeX"
+FP debug: upn: result      "29.86"
+FP debug: upn: calculating "29.86 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "14.930000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(14.930000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "14.93"
+FP debug: upn: +++ result of upn-expression is "(14.93)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeY * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeY"
+FP debug: upn: result      "37"
+FP debug: upn: calculating "37 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "18.500000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(18.500000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "18.50"
+FP debug: upn: +++ result of upn-expression is "(18.50)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeX * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeX"
+FP debug: upn: result      "35.83"
+FP debug: upn: calculating "35.83 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "17.915000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(17.915000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "17.92"
+FP debug: upn: +++ result of upn-expression is "(17.92)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeY * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeY"
+FP debug: upn: result      "45"
+FP debug: upn: calculating "45 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "22.500000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(22.500000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "22.50"
+FP debug: upn: +++ result of upn-expression is "(22.50)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeX * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeX"
+FP debug: upn: result      "43"
+FP debug: upn: calculating "43 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "21.500000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(21.500000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "21.50"
+FP debug: upn: +++ result of upn-expression is "(21.50)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeY * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeY"
+FP debug: upn: result      "54"
+FP debug: upn: calculating "54 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "27.000000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(27.000000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "27.00"
+FP debug: upn: +++ result of upn-expression is "(27.00)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeX * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeX"
+FP debug: upn: result      "51.6"
+FP debug: upn: calculating "51.6 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "25.800000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(25.800000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "25.80"
+FP debug: upn: +++ result of upn-expression is "(25.80)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeY * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeY"
+FP debug: upn: result      "64"
+FP debug: upn: calculating "64 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "32.000000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(32.000000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "32.00"
+FP debug: upn: +++ result of upn-expression is "(32.00)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeX * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeX"
+FP debug: upn: result      "61.92"
+FP debug: upn: calculating "61.92 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "30.960000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(30.960000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "30.96"
+FP debug: upn: +++ result of upn-expression is "(30.96)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeY * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeY"
+FP debug: upn: result      "77"
+FP debug: upn: calculating "77 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "38.500000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(38.500000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "38.50"
+FP debug: upn: +++ result of upn-expression is "(38.50)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeX * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeX"
+FP debug: upn: result      "74.3"
+FP debug: upn: calculating "74.3 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "37.150000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(37.150000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "37.15"
+FP debug: upn: +++ result of upn-expression is "(37.15)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeY * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeY"
+FP debug: upn: result      "93"
+FP debug: upn: calculating "93 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "46.500000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(46.500000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "46.50"
+FP debug: upn: +++ result of upn-expression is "(46.50)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeX * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeX"
+FP debug: upn: result      "89.16"
+FP debug: upn: calculating "89.16 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "44.580000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(44.580000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "44.58"
+FP debug: upn: +++ result of upn-expression is "(44.58)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeY * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeY"
+FP debug: upn: result      "112"
+FP debug: upn: calculating "112 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "56.000000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(56.000000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "56.00"
+FP debug: upn: +++ result of upn-expression is "(56.00)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeX * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeX"
+FP debug: upn: result      "107"
+FP debug: upn: calculating "107 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "53.500000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(53.500000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "53.50"
+FP debug: upn: +++ result of upn-expression is "(53.50)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "myfontscale fontSizeY * 2 round"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "fontSizeY"
+FP debug: upn: result      "134"
+FP debug: upn: calculating "134 mul 0.50"
+( FP-MUL )
+FP debug: upn: result      "67.000000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(67.000000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "67.00"
+FP debug: upn: +++ result of upn-expression is "(67.00)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "labelWidthValue myfontscale * 2 ro
+und"
+FP debug: upn: calculating "labelWidthValue"
+FP debug: upn: result      "1"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "0.50 mul 1"
+( FP-MUL )
+FP debug: upn: result      "0.500000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(0.500000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "0.50"
+FP debug: upn: +++ result of upn-expression is "(0.50)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "labelSepValue myfontscale * 2 roun
+d"
+FP debug: upn: calculating "labelSepValue"
+FP debug: upn: result      "1"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "0.50 mul 1"
+( FP-MUL )
+FP debug: upn: result      "0.500000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(0.500000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "0.50"
+FP debug: upn: +++ result of upn-expression is "(0.50)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "indentionLevelValuei myfontscale *
+ 2 round"
+FP debug: upn: calculating "indentionLevelValuei"
+FP debug: upn: result      "4"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "0.50 mul 4"
+( FP-MUL )
+FP debug: upn: result      "2.000000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(2.000000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "2.00"
+FP debug: upn: +++ result of upn-expression is "(2.00)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "indentionLevelValueii myfontscale 
+* 2 round"
+FP debug: upn: calculating "indentionLevelValueii"
+FP debug: upn: result      "2.2"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "0.50 mul 2.2"
+( FP-MUL )
+FP debug: upn: result      "1.100000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(1.100000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "1.10"
+FP debug: upn: +++ result of upn-expression is "(1.10)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "indentionLevelValueiii myfontscale
+ * 2 round"
+FP debug: upn: calculating "indentionLevelValueiii"
+FP debug: upn: result      "1.87"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "0.50 mul 1.87"
+( FP-MUL )
+FP debug: upn: result      "0.935000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(0.935000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "0.94"
+FP debug: upn: +++ result of upn-expression is "(0.94)"
+) ( FP-UPN
+FP debug: upn: +++ computing upn-expression "bibIconScaleValue myfontscale * 2 
+round"
+FP debug: upn: calculating "bibIconScaleValue"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "myfontscale"
+FP debug: upn: result      "0.50"
+FP debug: upn: calculating "0.50 mul 2"
+( FP-MUL )
+FP debug: upn: result      "1.000000000000000000"
+FP debug: upn: calculating "2"
+FP debug: upn: result      "2"
+FP debug: upn: calculating "round(1.000000000000000000:2)"
+( FP-ROUND )
+FP debug: upn: result      "1.00"
+FP debug: upn: +++ result of upn-expression is "(1.00)"
+)) (/usr/local/texlive/2017/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count166
 \calc@Bcount=\count167
@@ -1269,7 +1778,7 @@ Package: textpos 2016/06/07 1.8, absolute positioning of text on the page
 \TPVertModule=\dimen260
 \TP@margin=\dimen261
 \TP@absmargin=\dimen262
-Grid set 16 x 16 = 37.34424pt x 52.81541pt
+Grid set 16 x 16 = 28.45274pt x 35.56593pt
 \TPboxrulesize=\dimen263
 \TP@tbargs=\toks49
 \TP@prevdepth=\dimen264
@@ -1307,21 +1816,21 @@ Package: ulem 2012/05/18
 (./Counters.aux)
 \openout1 = `Counters.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 244.
-LaTeX Font Info:    ... okay on input line 244.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 244.
-LaTeX Font Info:    ... okay on input line 244.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 244.
-LaTeX Font Info:    ... okay on input line 244.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 244.
-LaTeX Font Info:    ... okay on input line 244.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 244.
-LaTeX Font Info:    ... okay on input line 244.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 244.
-LaTeX Font Info:    ... okay on input line 244.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 244.
-LaTeX Font Info:    ... okay on input line 244.
-LaTeX Font Info:    Try loading font information for T1+lmss on input line 244.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 247.
+LaTeX Font Info:    ... okay on input line 247.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 247.
+LaTeX Font Info:    ... okay on input line 247.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 247.
+LaTeX Font Info:    ... okay on input line 247.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 247.
+LaTeX Font Info:    ... okay on input line 247.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 247.
+LaTeX Font Info:    ... okay on input line 247.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 247.
+LaTeX Font Info:    ... okay on input line 247.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 247.
+LaTeX Font Info:    ... okay on input line 247.
+LaTeX Font Info:    Try loading font information for T1+lmss on input line 247.
 
  (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/t1lmss.fd
 File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1334,23 +1843,23 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: includehead includefoot 
-* h-part:(L,W,R)=(28.45274pt, 540.60239pt, 28.45274pt)
-* v-part:(T,H,B)=(0.0pt, 845.04675pt, 0.0pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04675pt
-* \textwidth=540.60239pt
-* \textheight=816.59402pt
+* h-part:(L,W,R)=(28.45274pt, 398.3386pt, 28.45274pt)
+* v-part:(T,H,B)=(0.0pt, 569.05511pt, 0.0pt)
+* \paperwidth=455.24408pt
+* \paperheight=569.05511pt
+* \textwidth=398.3386pt
+* \textheight=540.60239pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
 * \topmargin=-72.26999pt
 * \headheight=14.22636pt
 * \headsep=0.0pt
-* \topskip=11.0pt
+* \topskip=12.0pt
 * \footskip=14.22636pt
 * \marginparwidth=4.0pt
 * \marginparsep=10.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1392,7 +1901,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box63
-Package hyperref Info: Link coloring OFF on input line 244.
+Package hyperref Info: Link coloring OFF on input line 247.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1402,60 +1911,60 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count187
 )
-LaTeX Info: Redefining \ref on input line 244.
-LaTeX Info: Redefining \pageref on input line 244.
-LaTeX Info: Redefining \nameref on input line 244.
+LaTeX Info: Redefining \ref on input line 247.
+LaTeX Info: Redefining \pageref on input line 247.
+LaTeX Info: Redefining \nameref on input line 247.
 
 (./Counters.out) (./Counters.out)
 \@outlinefile=\write5
 \openout5 = `Counters.out'.
 
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 244.
+(Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 247.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 244.
+(Font)                  OT1/lmr/bx/n --> OT1/cmss/bx/n on input line 247.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 244.
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 247.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 244.
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 247.
 \symnumbers=\mathgroup7
 \sympureletters=\mathgroup8
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 244.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 244.
+(Font)                  OT1/lmss/m/n --> T1/lmr/m/n on input line 247.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 244.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 244.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 244.
+(Font)                  OT1/lmr/bx/n --> T1/lmss/bx/n on input line 247.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 244.
+(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 244.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 244.
+(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 247.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 244.
+(Font)                  OT1/lmr/m/it --> T1/lmss/m/it on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 244.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 244.
+(Font)                  OT1/lmr/bx/it --> T1/lmss/m/it on input line 247.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 244.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 244.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 247.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 244.
+(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 247.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 244.
+(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmr/bx/n on input line 244.
+(Font)                  OT1/lmss/bx/n --> T1/lmr/bx/n on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/lmss/bx/n --> T1/lmss/bx/n on input line 244.
+(Font)                  T1/lmss/bx/n --> T1/lmss/bx/n on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 244.
+(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 244.
+(Font)                  T1/lmss/m/it --> T1/lmss/bx/it on input line 247.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/lmtt/m/n --> T1/lmtt/bx/n on input line 244.
+(Font)                  T1/lmtt/m/n --> T1/lmtt/bx/n on input line 247.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/beamer/translator/dicts/translato
 r-basic-dictionary/translator-basic-dictionary-English.dict
@@ -1481,67 +1990,71 @@ Dictionary: translator-numbers-dictionary, Language: English
 r-theorem-dictionary/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 244.
+LaTeX Info: Redefining \includegraphics on input line 247.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 244.
+LaTeX Info: Redefining \selectfont on input line 247.
  (./Counters.nav)
-LaTeX Font Info:    Calculating math sizes for size <7.47> on input line 312.
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 312
+LaTeX Font Info:    Calculating math sizes for size <14.93> on input line 315.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 315
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 312.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 315.
 
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 312
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 315
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 312
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 315
 .
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.47> on input line 312.
+(Font)              <14.93> on input line 315.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.22897> on input line 312.
+(Font)              <10.45094> on input line 315.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <3.735> on input line 312.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 312.
+(Font)              <7.465> on input line 315.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 315.
 
 (/usr/local/texlive/2017/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.47> not available
-(Font)              size <7> substituted on input line 312.
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <14.93> not available
+(Font)              size <14.4> substituted on input line 315.
 
 
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <3.735> not available
-(Font)              size <5> substituted on input line 312.
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <10.45094> not available
+(Font)              size <10> substituted on input line 315.
 
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7.47> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 312.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5.22897> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 312.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <3.735> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 312.
+
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <7.465> not available
+(Font)              size <7> substituted on input line 315.
+
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <14.93> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 315.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.45094> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 315.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7.465> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 315.
 <../../images/type/full/Fighting.png, id=13, 32.12pt x 14.0525pt>
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 312.
+ 315.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Ghost.png, id=15, 32.12pt x 14.0525pt>
@@ -1549,14 +2062,14 @@ File: ../../images/type/full/Ghost.png Graphic file (type png)
 
 <use ../../images/type/full/Ghost.png>
 Package pdftex.def Info: ../../images/type/full/Ghost.png used on input line 31
-2.
+5.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Dark.png, id=16, 32.12pt x 14.0525pt>
 File: ../../images/type/full/Dark.png Graphic file (type png)
 
 <use ../../images/type/full/Dark.png>
-Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 312
+Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 315
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
@@ -1565,14 +2078,14 @@ File: ../../images/type/full/Dragon.png Graphic file (type png)
 
 <use ../../images/type/full/Dragon.png>
 Package pdftex.def Info: ../../images/type/full/Dragon.png used on input line 3
-12.
+15.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Ice.png, id=18, 32.12pt x 14.0525pt>
 File: ../../images/type/full/Ice.png Graphic file (type png)
 
 <use ../../images/type/full/Ice.png>
-Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 312.
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 315.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
@@ -1580,7 +2093,7 @@ Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 312.
 File: ../../images/type/full/Rock.png Graphic file (type png)
 
 <use ../../images/type/full/Rock.png>
-Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 312
+Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 315
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
@@ -1589,7 +2102,7 @@ File: ../../images/type/full/Ground.png Graphic file (type png)
 
 <use ../../images/type/full/Ground.png>
 Package pdftex.def Info: ../../images/type/full/Ground.png used on input line 3
-12.
+15.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Electric.png, id=21, 32.12pt x 14.0525pt>
@@ -1597,7 +2110,7 @@ File: ../../images/type/full/Electric.png Graphic file (type png)
 
 <use ../../images/type/full/Electric.png>
 Package pdftex.def Info: ../../images/type/full/Electric.png used on input line
- 312.
+ 315.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Grass.png, id=22, 32.12pt x 14.0525pt>
@@ -1605,7 +2118,7 @@ File: ../../images/type/full/Grass.png Graphic file (type png)
 
 <use ../../images/type/full/Grass.png>
 Package pdftex.def Info: ../../images/type/full/Grass.png used on input line 31
-2.
+5.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Water.png, id=23, 32.12pt x 14.0525pt>
@@ -1613,14 +2126,14 @@ File: ../../images/type/full/Water.png Graphic file (type png)
 
 <use ../../images/type/full/Water.png>
 Package pdftex.def Info: ../../images/type/full/Water.png used on input line 31
-2.
+5.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Fire.png, id=24, 32.12pt x 14.0525pt>
 File: ../../images/type/full/Fire.png Graphic file (type png)
 
 <use ../../images/type/full/Fire.png>
-Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 312
+Package pdftex.def Info: ../../images/type/full/Fire.png used on input line 315
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
@@ -1629,7 +2142,7 @@ File: ../../images/type/full/Steel.png Graphic file (type png)
 
 <use ../../images/type/full/Steel.png>
 Package pdftex.def Info: ../../images/type/full/Steel.png used on input line 31
-2.
+5.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Fairy.png, id=26, 32.12pt x 14.0525pt>
@@ -1637,7 +2150,7 @@ File: ../../images/type/full/Fairy.png Graphic file (type png)
 
 <use ../../images/type/full/Fairy.png>
 Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 31
-2.
+5.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Psychic.png, id=27, 32.12pt x 14.0525pt>
@@ -1645,7 +2158,7 @@ File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-312.
+315.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Flying.png, id=28, 32.12pt x 14.0525pt>
@@ -1653,7 +2166,7 @@ File: ../../images/type/full/Flying.png Graphic file (type png)
 
 <use ../../images/type/full/Flying.png>
 Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 3
-12.
+15.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Poison.png, id=29, 32.12pt x 14.0525pt>
@@ -1661,14 +2174,14 @@ File: ../../images/type/full/Poison.png Graphic file (type png)
 
 <use ../../images/type/full/Poison.png>
 Package pdftex.def Info: ../../images/type/full/Poison.png used on input line 3
-12.
+15.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
 <../../images/type/full/Bug.png, id=30, 32.12pt x 14.0525pt>
 File: ../../images/type/full/Bug.png Graphic file (type png)
 
 <use ../../images/type/full/Bug.png>
-Package pdftex.def Info: ../../images/type/full/Bug.png used on input line 312.
+Package pdftex.def Info: ../../images/type/full/Bug.png used on input line 315.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
@@ -1677,31 +2190,39 @@ File: ../../images/type/full/Normal.png Graphic file (type png)
 
 <use ../../images/type/full/Normal.png>
 Package pdftex.def Info: ../../images/type/full/Normal.png used on input line 3
-12.
+15.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
-LaTeX Font Info:    Try loading font information for OMS+lmss on input line 312
+LaTeX Font Info:    Try loading font information for OMS+lmss on input line 315
 .
-LaTeX Font Info:    No file OMSlmss.fd. on input line 312.
+LaTeX Font Info:    No file OMSlmss.fd. on input line 315.
 
 
 LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textdagger' on input line 312.
+(Font)              for symbol `textdagger' on input line 315.
 
 <../../images/megaevolve.png, id=32, 200.75pt x 200.75pt>
 File: ../../images/megaevolve.png Graphic file (type png)
 
 <use ../../images/megaevolve.png>
-Package pdftex.def Info: ../../images/megaevolve.png used on input line 312.
+Package pdftex.def Info: ../../images/megaevolve.png used on input line 315.
 (pdftex.def)             Requested size: 5.69046pt x 5.68834pt.
+
+Overfull \hbox (134.32523pt too wide) in paragraph at lines 315--315
+ [] 
+ []
+
+
+Overfull \vbox (131.55666pt too high) detected at line 315
+ []
 
 <../../images/type/background/lobby.png, id=38, 770.88pt x 770.88pt>
 File: ../../images/type/background/lobby.png Graphic file (type png)
 
 <use ../../images/type/background/lobby.png>
 Package pdftex.def Info: ../../images/type/background/lobby.png used on input l
-ine 312.
-(pdftex.def)             Requested size: 597.50787pt x 597.50818pt.
+ine 315.
+(pdftex.def)             Requested size: 455.24408pt x 455.23872pt.
  [1
 
 {/usr/local/texlive/2017/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <../../i
@@ -1714,400 +2235,375 @@ mages/type/full/Fire.png> <../../images/type/full/Steel.png> <../../images/type
 /full/Fairy.png> <../../images/type/full/Psychic.png> <../../images/type/full/F
 lying.png> <../../images/type/full/Poison.png> <../../images/type/full/Bug.png>
  <../../images/type/full/Normal.png> <../../images/megaevolve.png>]
-LaTeX Font Info:    Calculating math sizes for size <8.96> on input line 407.
+LaTeX Font Info:    Calculating math sizes for size <7.2> on input line 403.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.96> on input line 407.
+(Font)              <7.2> on input line 403.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.27197> on input line 407.
+(Font)              <5.03996> on input line 403.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.48> on input line 407.
+(Font)              <3.59999> on input line 403.
 
 
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.48> not available
-(Font)              size <5> substituted on input line 407.
+LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <3.59999> not available
+(Font)              size <5> substituted on input line 403.
 
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8.96> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 407.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6.27197> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 407.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <4.48> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 407.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7.2> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 403.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5.03996> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 403.
+LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <3.59999> not available
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 403.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 407.
+ 403.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
-<../../images/pokemon/machamp.png, id=73, 192.72pt x 192.72pt>
+<../../images/pokemon/machamp.png, id=75, 192.72pt x 192.72pt>
 File: ../../images/pokemon/machamp.png Graphic file (type png)
 
 <use ../../images/pokemon/machamp.png>
 Package pdftex.def Info: ../../images/pokemon/machamp.png used on input line 40
-7.
-(pdftex.def)             Requested size: 85.35826pt x 85.35577pt.
+3.
+(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
 
-Overfull \vbox (21.2309pt too high) detected at line 407
+Overfull \vbox (5.60486pt too high) detected at line 403
  []
 
-LaTeX Font Info:    Calculating math sizes for size <3.6> on input line 407.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <3.6> on input line 407.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <2.51999> on input line 407.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <1.8> on input line 407.
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <3.6> not available
-(Font)              size <5> substituted on input line 407.
-
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <2.51999> not available
-(Font)              size <5> substituted on input line 407.
-
-
-LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <1.8> not available
-(Font)              size <5> substituted on input line 407.
-
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <3.6> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 407.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <2.51999> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 407.
-LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <1.8> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 407.
-<../../images/type/simplified/fighting.png, id=74, 46.1725pt x 45.16875pt>
+<../../images/type/simplified/fighting.png, id=76, 46.1725pt x 45.16875pt>
 File: ../../images/type/simplified/fighting.png Graphic file (type png)
 
 <use ../../images/type/simplified/fighting.png>
 Package pdftex.def Info: ../../images/type/simplified/fighting.png used on inpu
-t line 407.
+t line 403.
 (pdftex.def)             Requested size: 4.36247pt x 4.26773pt.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 407.
+ 403.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/simplified/fighting.png Graphic file (type png)
 
 <use ../../images/type/simplified/fighting.png>
 Package pdftex.def Info: ../../images/type/simplified/fighting.png used on inpu
-t line 407.
+t line 403.
 (pdftex.def)             Requested size: 4.36247pt x 4.26773pt.
 File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-407.
+403.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fairy.png Graphic file (type png)
 
 <use ../../images/type/full/Fairy.png>
 Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 40
-7.
+3.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Flying.png Graphic file (type png)
  <use ../../images/type/full/Flying.png>
 Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 4
-07.
+03.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 407.
+ 403.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/pokemon/machamp.png Graphic file (type png)
 
 <use ../../images/pokemon/machamp.png>
 Package pdftex.def Info: ../../images/pokemon/machamp.png used on input line 40
-7.
-(pdftex.def)             Requested size: 85.35826pt x 85.35577pt.
+3.
+(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
 
-Overfull \vbox (21.2309pt too high) detected at line 407
+Overfull \vbox (5.60486pt too high) detected at line 403
  []
 
 File: ../../images/type/simplified/fighting.png Graphic file (type png)
 <use ../../images/type/simplified/fighting.png>
 Package pdftex.def Info: ../../images/type/simplified/fighting.png used on inpu
-t line 407.
+t line 403.
 (pdftex.def)             Requested size: 4.36247pt x 4.26773pt.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 407.
+ 403.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/simplified/fighting.png Graphic file (type png)
 
 <use ../../images/type/simplified/fighting.png>
 Package pdftex.def Info: ../../images/type/simplified/fighting.png used on inpu
-t line 407.
+t line 403.
 (pdftex.def)             Requested size: 4.36247pt x 4.26773pt.
 File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-407.
+403.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fairy.png Graphic file (type png)
 
 <use ../../images/type/full/Fairy.png>
 Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 40
-7.
+3.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Flying.png Graphic file (type png)
  <use ../../images/type/full/Flying.png>
 Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 4
-07.
+03.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 407.
+ 403.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/pokemon/machamp.png Graphic file (type png)
 
 <use ../../images/pokemon/machamp.png>
 Package pdftex.def Info: ../../images/pokemon/machamp.png used on input line 40
-7.
-(pdftex.def)             Requested size: 85.35826pt x 85.35577pt.
+3.
+(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
 
-Overfull \vbox (21.2309pt too high) detected at line 407
+Overfull \vbox (5.60486pt too high) detected at line 403
  []
 
 File: ../../images/type/simplified/fighting.png Graphic file (type png)
 <use ../../images/type/simplified/fighting.png>
 Package pdftex.def Info: ../../images/type/simplified/fighting.png used on inpu
-t line 407.
+t line 403.
 (pdftex.def)             Requested size: 4.36247pt x 4.26773pt.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 407.
+ 403.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/simplified/fighting.png Graphic file (type png)
 
 <use ../../images/type/simplified/fighting.png>
 Package pdftex.def Info: ../../images/type/simplified/fighting.png used on inpu
-t line 407.
+t line 403.
 (pdftex.def)             Requested size: 4.36247pt x 4.26773pt.
 File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-407.
+403.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fairy.png Graphic file (type png)
 
 <use ../../images/type/full/Fairy.png>
 Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 40
-7.
+3.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Flying.png Graphic file (type png)
  <use ../../images/type/full/Flying.png>
 Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 4
-07.
+03.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 407.
+ 403.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/pokemon/machamp.png Graphic file (type png)
 
 <use ../../images/pokemon/machamp.png>
 Package pdftex.def Info: ../../images/pokemon/machamp.png used on input line 40
-7.
-(pdftex.def)             Requested size: 85.35826pt x 85.35577pt.
+3.
+(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
 
-Overfull \vbox (21.2309pt too high) detected at line 407
+Overfull \vbox (5.60486pt too high) detected at line 403
  []
 
 File: ../../images/type/simplified/fighting.png Graphic file (type png)
 <use ../../images/type/simplified/fighting.png>
 Package pdftex.def Info: ../../images/type/simplified/fighting.png used on inpu
-t line 407.
+t line 403.
 (pdftex.def)             Requested size: 4.36247pt x 4.26773pt.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 407.
+ 403.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/simplified/fighting.png Graphic file (type png)
 
 <use ../../images/type/simplified/fighting.png>
 Package pdftex.def Info: ../../images/type/simplified/fighting.png used on inpu
-t line 407.
+t line 403.
 (pdftex.def)             Requested size: 4.36247pt x 4.26773pt.
 File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-407.
+403.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fairy.png Graphic file (type png)
 
 <use ../../images/type/full/Fairy.png>
 Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 40
-7.
+3.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Flying.png Graphic file (type png)
  <use ../../images/type/full/Flying.png>
 Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 4
-07.
+03.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 407.
+ 403.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/pokemon/machamp.png Graphic file (type png)
 
 <use ../../images/pokemon/machamp.png>
 Package pdftex.def Info: ../../images/pokemon/machamp.png used on input line 40
-7.
-(pdftex.def)             Requested size: 85.35826pt x 85.35577pt.
+3.
+(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
 
-Overfull \vbox (21.2309pt too high) detected at line 407
+Overfull \vbox (5.60486pt too high) detected at line 403
  []
 
 File: ../../images/type/simplified/fighting.png Graphic file (type png)
 <use ../../images/type/simplified/fighting.png>
 Package pdftex.def Info: ../../images/type/simplified/fighting.png used on inpu
-t line 407.
+t line 403.
 (pdftex.def)             Requested size: 4.36247pt x 4.26773pt.
 File: ../../images/type/full/Fighting.png Graphic file (type png)
 
 <use ../../images/type/full/Fighting.png>
 Package pdftex.def Info: ../../images/type/full/Fighting.png used on input line
- 407.
+ 403.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/simplified/fighting.png Graphic file (type png)
 
 <use ../../images/type/simplified/fighting.png>
 Package pdftex.def Info: ../../images/type/simplified/fighting.png used on inpu
-t line 407.
+t line 403.
 (pdftex.def)             Requested size: 4.36247pt x 4.26773pt.
 File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-407.
+403.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Fairy.png Graphic file (type png)
 
 <use ../../images/type/full/Fairy.png>
 Package pdftex.def Info: ../../images/type/full/Fairy.png used on input line 40
-7.
+3.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Flying.png Graphic file (type png)
  <use ../../images/type/full/Flying.png>
 Package pdftex.def Info: ../../images/type/full/Flying.png used on input line 4
-07.
+03.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Psychic.png Graphic file (type png)
 
 <use ../../images/type/full/Psychic.png>
 Package pdftex.def Info: ../../images/type/full/Psychic.png used on input line 
-407.
+403.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Normal.png Graphic file (type png)
 
 <use ../../images/type/full/Normal.png>
 Package pdftex.def Info: ../../images/type/full/Normal.png used on input line 4
-07.
+03.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Dark.png Graphic file (type png)
  <use ../../images/type/full/Dark.png>
-Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 407
+Package pdftex.def Info: ../../images/type/full/Dark.png used on input line 403
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Ice.png Graphic file (type png)
 
 <use ../../images/type/full/Ice.png>
-Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 407.
+Package pdftex.def Info: ../../images/type/full/Ice.png used on input line 403.
 
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Steel.png Graphic file (type png)
  <use ../../images/type/full/Steel.png>
 Package pdftex.def Info: ../../images/type/full/Steel.png used on input line 40
-7.
+3.
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 File: ../../images/type/full/Rock.png Graphic file (type png)
 
 <use ../../images/type/full/Rock.png>
-Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 407
+Package pdftex.def Info: ../../images/type/full/Rock.png used on input line 403
 .
 (pdftex.def)             Requested size: 9.75467pt x 4.26773pt.
 
-<../../images/pokemon/tyranitar.png, id=75, 192.72pt x 192.72pt>
+<../../images/pokemon/tyranitar.png, id=77, 192.72pt x 192.72pt>
 File: ../../images/pokemon/tyranitar.png Graphic file (type png)
 
 <use ../../images/pokemon/tyranitar.png>
 Package pdftex.def Info: ../../images/pokemon/tyranitar.png used on input line 
-407.
-(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
+403.
+(pdftex.def)             Requested size: 42.67912pt x 42.67789pt.
 
-<../../images/pokemon/regirock.png, id=76, 192.72pt x 192.72pt>
+<../../images/pokemon/regirock.png, id=78, 192.72pt x 192.72pt>
 File: ../../images/pokemon/regirock.png Graphic file (type png)
 
 <use ../../images/pokemon/regirock.png>
 Package pdftex.def Info: ../../images/pokemon/regirock.png used on input line 4
-07.
-(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
+03.
+(pdftex.def)             Requested size: 42.67912pt x 42.67789pt.
 
-<../../images/pokemon/regice.png, id=77, 192.72pt x 192.72pt>
+<../../images/pokemon/regice.png, id=79, 192.72pt x 192.72pt>
 File: ../../images/pokemon/regice.png Graphic file (type png)
 
 <use ../../images/pokemon/regice.png>
-Package pdftex.def Info: ../../images/pokemon/regice.png used on input line 407
+Package pdftex.def Info: ../../images/pokemon/regice.png used on input line 403
 .
-(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
+(pdftex.def)             Requested size: 42.67912pt x 42.67789pt.
 
-<../../images/pokemon/registeel.png, id=78, 192.72pt x 192.72pt>
+<../../images/pokemon/registeel.png, id=80, 192.72pt x 192.72pt>
 File: ../../images/pokemon/registeel.png Graphic file (type png)
 
 <use ../../images/pokemon/registeel.png>
 Package pdftex.def Info: ../../images/pokemon/registeel.png used on input line 
-407.
-(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
+403.
+(pdftex.def)             Requested size: 42.67912pt x 42.67789pt.
 
-<../../images/pokemon/regigigas.png, id=79, 192.72pt x 192.72pt>
+<../../images/pokemon/regigigas.png, id=81, 192.72pt x 192.72pt>
 File: ../../images/pokemon/regigigas.png Graphic file (type png)
 
 <use ../../images/pokemon/regigigas.png>
 Package pdftex.def Info: ../../images/pokemon/regigigas.png used on input line 
-407.
-(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
+403.
+(pdftex.def)             Requested size: 42.67912pt x 42.67789pt.
 
-<../../images/pokemon/dialga.png, id=80, 192.72pt x 192.72pt>
+<../../images/pokemon/dialga.png, id=82, 192.72pt x 192.72pt>
 File: ../../images/pokemon/dialga.png Graphic file (type png)
 
 <use ../../images/pokemon/dialga.png>
-Package pdftex.def Info: ../../images/pokemon/dialga.png used on input line 407
+Package pdftex.def Info: ../../images/pokemon/dialga.png used on input line 403
 .
-(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
+(pdftex.def)             Requested size: 42.67912pt x 42.67789pt.
 
-<../../images/pokemon/darkrai.png, id=81, 192.72pt x 192.72pt>
+<../../images/pokemon/darkrai.png, id=83, 192.72pt x 192.72pt>
 File: ../../images/pokemon/darkrai.png Graphic file (type png)
 
 <use ../../images/pokemon/darkrai.png>
 Package pdftex.def Info: ../../images/pokemon/darkrai.png used on input line 40
-7.
-(pdftex.def)             Requested size: 56.9055pt x 56.90483pt.
+3.
+(pdftex.def)             Requested size: 42.67912pt x 42.67789pt.
 
-<../../images/type/background/fighting.png, id=82, 722.7pt x 1284.8pt>
+<../../images/type/background/fighting.png, id=84, 722.7pt x 1284.8pt>
 File: ../../images/type/background/fighting.png Graphic file (type png)
 
 <use ../../images/type/background/fighting.png>
 Package pdftex.def Info: ../../images/type/background/fighting.png used on inpu
-t line 407.
-(pdftex.def)             Requested size: 597.50787pt x 1062.24721pt.
+t line 403.
+(pdftex.def)             Requested size: 455.24408pt x 809.33028pt.
  [2
 
  <../../images/type/background/fighting.png> <../../images/pokemon/machamp.png>
@@ -2124,45 +2620,48 @@ es/pokemon/dialga.png> <../../images/pokemon/darkrai.png>]
 \tf@snm=\write8
 \openout8 = `Counters.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 411.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 411.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 407.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 407.
  (./Counters.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 411.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 411.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 407.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 407.
 Package rerunfilecheck Info: File `Counters.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 3.2pt have occurred.
+(Font)              up to 1.40001pt have occurred.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 22978 strings out of 492995
- 441675 string characters out of 6132704
- 605073 words of memory out of 5000000
- 25905 multiletter control sequences out of 15000+600000
- 104448 words of font info for 92 fonts, out of 8000000 for 9000
+ 22954 strings out of 492995
+ 441282 string characters out of 6132704
+ 606717 words of memory out of 5000000
+ 25876 multiletter control sequences out of 15000+600000
+ 76369 words of font info for 71 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,18n,68p,829b,1161s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/
-texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/20
+ 56i,18n,68p,868b,1103s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/lo
+cal/texlive/2017/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/20
 17/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2017/texmf-dist/
 fonts/enc/dvips/lm/lm-mathsy.enc}</usr/local/texlive/2017/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
-public/lm/lmmi5.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/l
-mmi7.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmss8.pfb></
-usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmss9.pfb></usr/local/t
-exlive/2017/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2
-017/texmf-dist/fonts/type1/public/lm/lmsy7.pfb></usr/local/texlive/2017/texmf-d
-ist/fonts/type1/public/amsfonts/symbols/msam7.pfb>
-Output written on Counters.pdf (2 pages, 1321783 bytes).
+1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1
+/public/lm/lmmi10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm
+/lmmi12.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmmi7.pfb
+></usr/local/texlive/2017/texmf-dist/fonts/type1/public/lm/lmss10.pfb></usr/loc
+al/texlive/2017/texmf-dist/fonts/type1/public/lm/lmss12.pfb></usr/local/texlive
+/2017/texmf-dist/fonts/type1/public/lm/lmss8.pfb></usr/local/texlive/2017/texmf
+-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2017/texmf-dist/fo
+nts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2017/texmf-dist/fonts/type1/
+public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2017/texmf-dist/fonts/ty
+pe1/public/amsfonts/symbols/msam7.pfb>
+Output written on Counters.pdf (2 pages, 1348696 bytes).
 PDF statistics:
- 132 PDF objects out of 1000 (max. 8388607)
- 53 compressed objects within 1 object stream
+ 144 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  5 named destinations out of 1000 (max. 500000)
  193 words of extra memory for PDF output out of 10000 (max. 10000000)
 

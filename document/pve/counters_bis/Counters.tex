@@ -1,5 +1,8 @@
-\documentclass[compress]{beamer}
-\usepackage[orientation=portrait,size=A4]{beamerposter}
+\documentclass[12pt]{beamer}
+%\usepackage[orientation=portrait,size=A4]{beamerposter}
+%\usepackage{beamerthemesplit}
+\usepackage[orientation=portrait,size=custom,width=16,height=20,scale=0.5,debug]{beamerposter} 
+
 
 \usepackage{beamerbasethemes}
 \usepackage{calc}
@@ -145,7 +148,7 @@
 
 \newcommand*{\colorbar}[2]{
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
-\draw [line width=4.pt,color=#1] (0.,0.)-- (#2/180,0.);
+\draw [line width=6.pt,color=#1] (0.,0.)-- (#2/180,0.);
 \draw[color=white] (0.2,0.) node {\scriptsize{$#2$}};
 \end{tikzpicture}
 }
@@ -157,19 +160,19 @@
 
 \newcommand*{\dps}[1]{
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
-\draw [line width=4.pt,color=black] (0.,0.)-- (#1/12.,0.);
+\draw [line width=6.pt,color=black] (0.,0.)-- (#1/12.,0.);
 \draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
 \end{tikzpicture}
 }
 \newcommand*{\survival}[1]{
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
-\draw [line width=4.pt,color=black] (0.,0.)-- (#1/25.,0.);
+\draw [line width=6.pt,color=black] (0.,0.)-- (#1/25.,0.);
 \draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
 \end{tikzpicture}
 }
 \newcommand*{\tdo}[1]{
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
-\draw [line width=4.pt,color=black] (0.,0.)-- (#1/390.,0.);
+\draw [line width=6.pt,color=black] (0.,0.)-- (#1/390.,0.);
 \draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
 \end{tikzpicture}
 }
@@ -318,92 +321,85 @@ TDO $=$ DPS $\times$ EH.
 \begin{frame}
 \frametitle{Fighting}
 
-\begin{Large}
+\begin{scriptsize}
 \begin{block}{}
 \begin{center}
 
-\begin{tabular}{p{4cm}rp{4cm}rp{5cm}} 
+\begin{tabular}{p{2.5cm}rp{3cm}rp{4cm}} 
 \textbf{Machamp} \hfill  \fightingfull \\
-\multicolumn{1}{c}{\multirow{6}{*}{\includegraphics[width=3cm]{../../images/pokemon/machamp.png}}} & Base ATK &  \attack{234} &   DPS &   \dps{16.21} \\ 
+\multicolumn{1}{c}{\multirow{6}{*}{\includegraphics[width=2cm]{../../images/pokemon/machamp.png}}} & Base ATK &  \attack{234} &   DPS &   \dps{16.21} \\ 
 &Base DEF & \defense{159}&  Health &\survival{26.81}   \\
 &Base HP & \stamina{207} &     TDO &\tdo{434.6} \\ %\cline{2-3}
-&\multirow{2}{*}{Moveset}   & \fightingsimp~Counter (12)  & Remarks & \multirow{3}{5cm}{Machamp is the best \fightingfull~ Pok\'emon until gen 5 \\} \\
+&\multirow{2}{*}{Movesets}   & \fightingsimp~Counter (12)  & Remarks & \multirow{3}{4cm}{Machamp is the best \fightingfull~Pok\'emon until gen 5 \\} \\
 &  					        &\fightingsimp~Dynamic Punch (90)  \\
 &Weak to & \psychicfull~\fairyfull~\flyingfull&   \\
 \end{tabular}
-\bigskip
-\bigskip
+\medskip
 
-\begin{tabular}{p{4cm}rp{4cm}rp{5cm}} 
+\begin{tabular}{p{2.5cm}rp{3cm}rp{4cm}} 
 \textbf{Machamp} \hfill  \fightingfull \\
-\multicolumn{1}{c}{\multirow{6}{*}{\includegraphics[width=3cm]{../../images/pokemon/machamp.png}}} & Base ATK &  \attack{234} &   DPS &   \dps{16.21} \\ 
+\multicolumn{1}{c}{\multirow{6}{*}{\includegraphics[width=2cm]{../../images/pokemon/machamp.png}}} & Base ATK &  \attack{234} &   DPS &   \dps{16.21} \\ 
 &Base DEF & \defense{159}&  Health &\survival{26.81}   \\
 &Base HP & \stamina{207} &     TDO &\tdo{434.6} \\ %\cline{2-3}
-&\multirow{2}{*}{Moveset}   & \fightingsimp~Counter (12)  & Remarks & \multirow{3}{5cm}{Machamp is the best \fightingfull~ Pok\'emon until gen 5 \\} \\
+&\multirow{2}{*}{Movesets}   & \fightingsimp~Counter (12)  & Remarks & \multirow{3}{4cm}{Machamp is the best \fightingfull~Pok\'emon until gen 5 \\} \\
 &  					        &\fightingsimp~Dynamic Punch (90)  \\
 &Weak to & \psychicfull~\fairyfull~\flyingfull&   \\
 \end{tabular}
-\bigskip
-\bigskip
+\medskip
 
-
-\begin{tabular}{p{4cm}rp{4cm}rp{5cm}} 
+\begin{tabular}{p{2.5cm}rp{3cm}rp{4cm}} 
 \textbf{Machamp} \hfill  \fightingfull \\
-\multicolumn{1}{c}{\multirow{6}{*}{\includegraphics[width=3cm]{../../images/pokemon/machamp.png}}} & Base ATK &  \attack{234} &   DPS &   \dps{16.21} \\ 
+\multicolumn{1}{c}{\multirow{6}{*}{\includegraphics[width=2cm]{../../images/pokemon/machamp.png}}} & Base ATK &  \attack{234} &   DPS &   \dps{16.21} \\ 
 &Base DEF & \defense{159}&  Health &\survival{26.81}   \\
 &Base HP & \stamina{207} &     TDO &\tdo{434.6} \\ %\cline{2-3}
-&\multirow{2}{*}{Moveset}   & \fightingsimp~Counter (12)  & Remarks & \multirow{3}{5cm}{Machamp is the best \fightingfull~ Pok\'emon until gen 5 \\} \\
+&\multirow{2}{*}{Movesets}   & \fightingsimp~Counter (12)  & Remarks & \multirow{3}{4cm}{Machamp is the best \fightingfull~Pok\'emon until gen 5 \\} \\
 &  					        &\fightingsimp~Dynamic Punch (90)  \\
 &Weak to & \psychicfull~\fairyfull~\flyingfull&   \\
 \end{tabular}
-\bigskip
-\bigskip
+\medskip
 
-
-\begin{tabular}{p{4cm}rp{4cm}rp{5cm}} 
+\begin{tabular}{p{2.5cm}rp{3cm}rp{4cm}} 
 \textbf{Machamp} \hfill  \fightingfull \\
-\multicolumn{1}{c}{\multirow{6}{*}{\includegraphics[width=3cm]{../../images/pokemon/machamp.png}}} & Base ATK &  \attack{234} &   DPS &   \dps{16.21} \\ 
+\multicolumn{1}{c}{\multirow{6}{*}{\includegraphics[width=2cm]{../../images/pokemon/machamp.png}}} & Base ATK &  \attack{234} &   DPS &   \dps{16.21} \\ 
 &Base DEF & \defense{159}&  Health &\survival{26.81}   \\
 &Base HP & \stamina{207} &     TDO &\tdo{434.6} \\ %\cline{2-3}
-&\multirow{2}{*}{Moveset}   & \fightingsimp~Counter (12)  & Remarks & \multirow{3}{5cm}{Machamp is the best \fightingfull~ Pok\'emon until gen 5 \\} \\
+&\multirow{2}{*}{Movesets}   & \fightingsimp~Counter (12)  & Remarks & \multirow{3}{4cm}{Machamp is the best \fightingfull~Pok\'emon until gen 5 \\} \\
 &  					        &\fightingsimp~Dynamic Punch (90)  \\
 &Weak to & \psychicfull~\fairyfull~\flyingfull&   \\
 \end{tabular}
-\bigskip
-\bigskip
+\medskip
 
-
-\begin{tabular}{p{4cm}rp{4cm}rp{5cm}} 
+\begin{tabular}{p{2.5cm}rp{3cm}rp{4cm}} 
 \textbf{Machamp} \hfill  \fightingfull \\
-\multicolumn{1}{c}{\multirow{6}{*}{\includegraphics[width=3cm]{../../images/pokemon/machamp.png}}} & Base ATK &  \attack{234} &   DPS &   \dps{16.21} \\ 
+\multicolumn{1}{c}{\multirow{6}{*}{\includegraphics[width=2cm]{../../images/pokemon/machamp.png}}} & Base ATK &  \attack{234} &   DPS &   \dps{16.21} \\ 
 &Base DEF & \defense{159}&  Health &\survival{26.81}   \\
 &Base HP & \stamina{207} &     TDO &\tdo{434.6} \\ %\cline{2-3}
-&\multirow{2}{*}{Moveset}   & \fightingsimp~Counter (12)  & Remarks & \multirow{3}{5cm}{Machamp is the best \fightingfull~ Pok\'emon until gen 5 \\} \\
+&\multirow{2}{*}{Movesets}   & \fightingsimp~Counter (12)  & Remarks & \multirow{3}{4cm}{Machamp is the best \fightingfull~Pok\'emon until gen 5 \\} \\
 &  					        &\fightingsimp~Dynamic Punch (90)  \\
 &Weak to & \psychicfull~\fairyfull~\flyingfull&   \\
 \end{tabular}
-\bigskip
-\bigskip
+\medskip
 
-\textbf{Other viable alternatives}: \textbf{Breloom} (more DPS than Machamp, but very low EH), \textbf{Mewtwo} (with Focus Blast, DPS: 13.64, good EH, and not weak to \psychicfull~moves)
-
-\textbf{Generation 5 competitor}: \textbf{Conkeldurr} (higher DPS\&TDO than Machamp)
+\begin{itemize}
+\item \textbf{Other viable alternatives}: \textbf{Breloom} (more DPS than Machamp, but very low EH), \textbf{Mewtwo} (with Focus Blast, DPS: 13.64, good EH, and not weak to \psychicfull~moves)
+\item \textbf{Generation 5 competitor}: \textbf{Conkeldurr} (higher DPS\&TDO than Machamp)
+\end{itemize}
 \end{center}
 \end{block}
 
 \begin{block}{}\begin{center}
 This type is useful versus \normalfull~\darkfull~\icefull~\steelfull~\rockfull~and versus the following raid bosses:
 
-    \includegraphics[width=2cm]{../../images/pokemon/tyranitar.png}
-    \includegraphics[width=2cm]{../../images/pokemon/regirock.png}
-    \includegraphics[width=2cm]{../../images/pokemon/regice.png}
-    \includegraphics[width=2cm]{../../images/pokemon/registeel.png}
-    \includegraphics[width=2cm]{../../images/pokemon/regigigas.png}
-    \includegraphics[width=2cm]{../../images/pokemon/dialga.png}
-    \includegraphics[width=2cm]{../../images/pokemon/darkrai.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/tyranitar.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/regirock.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/regice.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/registeel.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/regigigas.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/dialga.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/darkrai.png}
 \end{center}
 \end{block}
-\end{Large}
+\end{scriptsize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
