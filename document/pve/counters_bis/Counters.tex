@@ -1,5 +1,5 @@
 \documentclass[12pt]{beamer}
-\usepackage[orientation=portrait,size=custom,width=15,height=18,scale=0.5,debug]{beamerposter} 
+\usepackage[orientation=portrait,size=custom,width=15,height=20,scale=0.5,debug]{beamerposter} 
 
 \usepackage{beamerbasethemes}
 \usepackage{calc}
@@ -228,7 +228,7 @@
 & HP   & \stamina{#3}  &     TDO & \tdo{#6} \\ 
 }
 \newcommand{\pokemoncontinued}[4]{
-& Moves & #1                 & Remarks & \multirow{3}{4cm}{#4} \\
+& Moves & #1                 & Remarks & \multirow{3}{3.5cm}{#4} \\
 &  		   & #2 & \\
 &Weak to    & #3 &   \\
 }
@@ -351,10 +351,15 @@ TDO $=$ DPS $\times$ EH.
   \item \scriptsize \textbf{Breloom} (more DPS than Machamp, but very low Health),
   \item \scriptsize  \textbf{Mewtwo} (with Focus Blast, DPS: 13.64, good Health, and not weak to \psychicfull~moves)
 \end{itemize}
-\item \textbf{Generation 5 competitor}: \textbf{Conkeldurr} (higher DPS\&TDO than Machamp)
+\item \textbf{Generation 5 competitor}: 
+\begin{itemize}
+  \item \scriptsize \textbf{Conkeldurr} (higher DPS\&TDO than Machamp)
+\end{itemize}
 \end{itemize}
 \end{center}
 \end{block}
+
+\bigskip
 
 \begin{block}{}\begin{center}
 This type is useful versus \normalfull~\darkfull~\icefull~\steelfull~\rockfull~and versus the following raid bosses:
@@ -376,12 +381,11 @@ This type is useful versus \normalfull~\darkfull~\icefull~\steelfull~\rockfull~a
 
 \usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/ghost.png}}
 \begin{frame}
-\begin{tiny}
+\begin{scriptsize}
 \frametitle{Ghost}
 
 \begin{block}{}
 \begin{center}
-
 
 \pokemon{Giratina (O)}{}{\ghostfull~\dragonfull}{giratina_o.png}{{225}{187}{284}{15.81}{41.91}{662.8}}{{ \ghostsimp~Shadow Claw (9)}{\ghostsimp~Shadow Ball (100)}{\icefull~\fairyfull~\dragonfull~\ghostfull~\darkfull}{Its amazing bulk and moves make it the \ghostfull~ King. \\ }}
 
@@ -394,10 +398,15 @@ This type is useful versus \normalfull~\darkfull~\icefull~\steelfull~\rockfull~a
 \pokemon{Mewtwo}{\megaevol}{\psychicfull}{mewtwo.png}{{300}{182}{214}{15.23}{31.31}{476.9}}{{\psysimp~Psycho Cut (5)}{\ghostsimp~Shadow Ball (100)}{\ghostfull~\darkfull~\bugfull}{Worse Giratina. Note that DPS has been corrected for \psychicfull~opponents. \\ }}
 
 \begin{itemize}
-\item \textbf{Generation 5 competitor}: \textbf{Chandelure} (more DPS\&TDO than Gengar, no \psychicfull~weakness, but still fragile)
+\item \textbf{Generation 5 competitor}: 
+\begin{itemize}
+  \item \scriptsize \textbf{Chandelure} (more DPS\&TDO than Gengar, no \psychicfull~weakness, but still fragile)
+\end{itemize}
 \end{itemize}
 \end{center}
 \end{block}
+
+\bigskip
 
 \begin{block}{}\begin{center}
 This type is useful versus \psychicfull~\ghostfull~and versus the following raid bosses:
@@ -418,40 +427,42 @@ This type is useful versus \psychicfull~\ghostfull~and versus the following raid
 \end{center}
 \end{block}
 
-\end{tiny}
+\end{scriptsize}
 \end{frame}
 
 
-\end{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/dark.png}}
+\usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/dark.png}}
 \begin{frame}
-\begin{tiny}
+\begin{scriptsize}
 \frametitle{Dark}
+
 
 \begin{block}{}
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}} 
-    & \textbf{\sout{Darkrai}} \hfill  \darkfull&  \textbf{Tyranitar} \megaevol \hfill \rockfull~\darkfull &  \textbf{Weawile} \hfill \darkfull~\icefull \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/darkrai.png}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/tyranitar.png} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/weavile.png} } \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \darksimp~Snarl (12) & \darksimp~Bite (6) & \darksimp~Feint Attack (10) \\
-    &\ghostsimp~Shadow Ball (100) &\darksimp~Crunch (70) & \darksimp~Foul Play (70) \\  \hline
-  ATT &  \attack{285} &\attack{251}&\attack{243} \\
-  DEF & \defense{198} & \defense{207} & \defense{171} \\
-  HP & \stamina{172} & \stamina{225}& \stamina{172} \\  \hline
-  DPS &   \dps{16.8} & \dps{14.28}& \dps{15.13} \\
-  Effective Health &\survival{27.64} &\survival{36.97}&\survival{24.14} \\
-  TDO &\tdo{464.4} &\tdo{527.8}&\tdo{365.1} \\ \hline
-  \multirow{2}{*}{Weaknesses} & \multicolumn{1}{c}{\multirow{2}{*}{\fightingfull~\fairyfull~\bugfull}} &  \multicolumn{1}{c}{\fightingfull~\fairyfull~\bugfull} &  \multicolumn{1}{c}{\fightingfull~\fairyfull~\bugfull} \\ 
-  & & \multicolumn{1}{c}{\waterfull~\grassfull~\steelfull~\groundfull} & \multicolumn{1}{c}{\firefull~\steelfull~\rockfull} \\ \hline
-   Comments &Best \darkfull~ Pok\'emon & Bulkier, less DPS & Its typing makes it useful versus \icefull~moves. \\  
-\end{tabular}
+\pokemon{\sout{Darkrai}}{}{\darkfull}{darkrai}{{285}{198}{172}{16.8}{27.64}{464.4}}{{\darksimp~Snarl (12)}{\ghostsimp~Shadow Ball (100)}{\fightingfull~\fairyfull~\bugfull}{Best \darkfull~type Pok\'emon.\\~ \\ }}
 
-\textbf{Generation 5 competitors}: \textbf{Hydreigon} (similar to Tyranitar), \textbf{Zoroark} (as fragile as Weawile)
+\bigskip
+
+\pokemon{Tyranitar}{\megaevol}{\rockfull~\darkfull}{tyranitar}{{251}{207}{225}{14.28}{36.97}{527.8}}{{\darksimp~Bite (6)}{\darksimp~Crunch (70)}{\fightingfull~\fairyfull~\bugfull~ \waterfull~\grassfull~\steelfull~\groundfull}{Bulkier, less DPS.\\~ \\ }}
+
+\bigskip
+
+\pokemon{Weawile}{}{\darkfull~\icefull}{weavile}{{243}{171}{172}{15.13}{24.14}{365.1}}{{\darksimp~Feint Attack (10)}{\darksimp~Foul Play (70)}{\fightingfull~\fairyfull~\bugfull~ \firefull~\steelfull~\rockfull}{Its typing makes it useful versus \icefull~moves.  \\ }}
+
+\begin{itemize}
+  \item \textbf{Generation 5 competitors}:
+  \begin{itemize}
+  \item \scriptsize\textbf{Hydreigon} (similar to Tyranitar)
+  \item \scriptsize\textbf{Zoroark} (as fragile as Weawile)
+\end{itemize}
+\end{itemize}
 \end{center}
 \end{block}
+
+\bigskip
 
 \begin{block}{}\begin{center}
 This type is useful versus \psychicfull~\ghostfull~and versus the following raid bosses:
@@ -462,44 +473,56 @@ This type is useful versus \psychicfull~\ghostfull~and versus the following raid
     \includegraphics[width=1.25cm]{../../images/pokemon/deoxys_a.png}
     \includegraphics[width=1.25cm]{../../images/pokemon/deoxys_d.png}
     \includegraphics[width=1.25cm]{../../images/pokemon/deoxys_s.png}
+    
     \includegraphics[width=1.25cm]{../../images/pokemon/uxie.png}
     \includegraphics[width=1.25cm]{../../images/pokemon/mesprit.png}
     \includegraphics[width=1.25cm]{../../images/pokemon/azelf.png}
     \includegraphics[width=1.25cm]{../../images/pokemon/cresselia.png}
     \includegraphics[width=1.25cm]{../../images/pokemon/giratina_a.png}
+    \includegraphics[width=1.25cm]{../../images/pokemon/giratina_o.png}
     \end{center}
 \end{block}
 
-\end{tiny}
+\end{scriptsize}
 \end{frame}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/dragon.png}}
+\usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/dragon.png}}
 \begin{frame}
-\begin{tiny}
+\begin{scriptsize}
 \frametitle{Dragon}
 
 \begin{block}{}
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}p{2cm}} 
-    & \textbf{{Rayquaza}} \megaevol \hfill  \dragonfull~\flyingfull&  \textbf{{Salamence}} \megaevol \hfill \dragonfull~\flyingfull &  \textbf{{Palkia}} \hfill \dragonfull~\waterfull &  \textbf{Dragonite} \hfill \dragonfull~\flyingfull &   \textbf{Dialga} \hfill \steelfull~\dragonfull \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/rayquaza.png}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/salamence.png} } &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/palkia.png} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/dragonite.png} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/dialga.png} }    \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \dragonsimp~Dragon Tail (15) & \dragonsimp~Dragon Tail (15)& \dragonsimp~Dragon Tail (15)& \dragonsimp~Dragon Tail (15)& \dragonsimp~Dragon Breath (6) \\
-    &\dragonsimp~Outrage (110) &\dragonsimp~Outrage$^{\dag}$(110) &\dragonsimp~Draco Meteor  (150) &\dragonsimp~Outrage (110) &\dragonsimp~Draco Meteor (150) \\  \hline
-  ATT &  \attack{284} &\attack{277}&\attack{280} &\attack{263} &\attack{275} \\
-  DEF & \defense{170} & \defense{168}& \defense{215} & \defense{198}& \defense{211} \\
-  HP & \stamina{213} & \stamina{216} & \stamina{189} & \stamina{209} & \stamina{205} \\  \hline
-  DPS &   \dps{18.68} & \dps{18.27}  & \dps{17.91}  & \dps{17.23}  & \dps{17.09}  \\
-  Effective Health &\survival{29.27} &\survival{29.33} &\survival{32.56}&\survival{33.11}&\survival{34.51} \\
-  TDO &\tdo{546.8} &\tdo{535.9}&\tdo{583.2}&\tdo{570.5}&\tdo{589.7} \\ \hline
-  Weaknesses & \multicolumn{1}{c}{\icefull~\rockfull~\dragonfull~\fairyfull} &  \multicolumn{1}{c}{\icefull~\rockfull~\dragonfull~\fairyfull} &  \multicolumn{1}{c}{\dragonfull~\fairyfull} & \multicolumn{1}{c}{\icefull~\rockfull~\dragonfull~\fairyfull} & \multicolumn{1}{c}{\fightingfull~\groundfull} \\ \hline
-   Comments & Rayquaza faces heavy competition & Similar to Rayquaza, less DPS & Double resistance to \waterfull~and \firefull~moves & Worse Rayquaza & No \dragonfull~ weakness \\  
-\end{tabular}
 
-\textbf{Other viable alternatives}: \textbf{Garchomp} (same DPS as Dragonite, more TDO, however, it is more interesting as \groundfull~type Pok\'emon), \textbf{Latios} (less DPS than Dialga)
 
-\textbf{Generation 5 competitors}: \textbf{Haxorus} (more fragile than Rayquaza), \textbf{Zekrom}, \textbf{Reshiram} (same DPS as Salamence, but bulkier)
+\pokemon{Rayquaza}{\megaevol}{\dragonfull~\flyingfull}{rayquaza.png}{{284}{170}{213}{18.68}{29.27}{546.8}}{{\dragonsimp~Dragon Tail (15)}{\dragonsimp~Outrage (110)}{\icefull~\rockfull~\dragonfull~\fairyfull}{Rayquaza faces heavy competition. \\ }}
+
+
+\pokemon{Salamence}{\megaevol}{\dragonfull~\flyingfull}{salamence.png}{{277}{168}{216}{18.27}{29.33}{535.9}}{{\dragonsimp~Dragon Tail (15)}{\dragonsimp~Outrage$^{\dag}$(110)}{\icefull~\rockfull~\dragonfull~\fairyfull}{Similar to Rayquaza, less DPS. \\ }}
+
+\pokemon{Palkia}{}{\dragonfull~\waterfull}{palkia.png}{{280}{215}{189}{17.91}{32.56}{583.2}}{{\dragonsimp~Dragon Tail (15)}{\dragonsimp~Draco Meteor (150)}{\dragonfull~\fairyfull}{Double resistance to \waterfull~and \firefull~moves. \\ }}
+
+\pokemon{Dragonite}{}{\dragonfull~\flyingfull}{dragonite.png}{{263}{198}{209}{17.23}{33.11}{570.5}}{{\dragonsimp~Dragon Tail (15)}{\dragonsimp~Outrage (110)}{\fightingfull~\groundfull}{Worse Rayquaza. \\ }}
+
+
+\pokemon{Dialga}{}{\steelfull~\dragonfull}{Dialga.png}{{275}{211}{205}{17.09}{34.51}{589.7}}{{\dragonsimp~Dragon Breath (6)}{\dragonsimp~Draco Meteor (150)}{\dragonfull~\fairyfull}{No \dragonfull~ weakness. \\ }}
+
+\begin{itemize}
+\item \textbf{Other alternatives}: 
+\begin{itemize}
+  \item \scriptsize \textbf{Garchomp} (same DPS as Dragonite, more TDO). However, it is more interesting as \groundfull~type Pok\'emon,
+  \item \scriptsize \textbf{Latios} (less DPS than Dialga), but 3-bar charged move (Dragon Claw)
+\end{itemize}
+\item \textbf{Generation 5 competitors}: 
+\begin{itemize}
+  \item \scriptsize  \textbf{Haxorus} (more fragile than Rayquaza),
+  \item \scriptsize \textbf{Zekrom}, \textbf{Reshiram} (same DPS as Salamence, but more TDO)
+\end{itemize}
+\end{itemize}
 \end{center}
 \end{block}
 
@@ -514,8 +537,11 @@ This type is useful versus \dragonfull~and versus the following raid bosses:
 \end{center}
 \end{block}
 
-\end{tiny}
+\end{scriptsize}
 \end{frame}
+
+
+\end{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
