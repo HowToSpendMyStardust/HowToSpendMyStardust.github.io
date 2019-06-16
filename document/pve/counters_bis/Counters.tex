@@ -1,5 +1,5 @@
 \documentclass[12pt]{beamer}
-\usepackage[orientation=portrait,size=custom,width=15,height=20,scale=0.5,debug]{beamerposter} 
+\usepackage[orientation=portrait,size=custom,width=15.55,height=22,scale=0.5,debug]{beamerposter} 
 
 \usepackage{beamerbasethemes}
 \usepackage{calc}
@@ -144,7 +144,7 @@
 
 \newcommand*{\colorbar}[2]{
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.15,-0.1) rectangle (2.5,0.1);
-\draw [line width=7.pt,color=#1] (0.,0.)-- (#2/130,0.);
+\draw [line width=8.pt,color=#1] (0.,0.)-- (#2/130,0.);
 \draw[color=white] (0.2,0.) node {\scriptsize{$#2$}};
 \end{tikzpicture}
 }
@@ -156,19 +156,19 @@
 
 \newcommand*{\dps}[1]{
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.15,-0.1) rectangle (2.5,0.1);
-\draw [line width=6.pt,color=black] (0.,0.)-- (#1/8.7,0.);
+\draw [line width=8.pt,color=black] (0.,0.)-- (#1/8.7,0.);
 \draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
 \end{tikzpicture}
 }
 \newcommand*{\survival}[1]{
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.15,-0.1) rectangle (2.5,0.1);
-\draw [line width=6.pt,color=black] (0.,0.)-- (#1/18.,0.);
+\draw [line width=8.pt,color=black] (0.,0.)-- (#1/18.,0.);
 \draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
 \end{tikzpicture}
 }
 \newcommand*{\tdo}[1]{
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.15,-0.1) rectangle (2.5,0.1);
-\draw [line width=6.pt,color=black] (0.,0.)-- (#1/282.,0.);
+\draw [line width=8.pt,color=black] (0.,0.)-- (#1/282.,0.);
 \draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
 \end{tikzpicture}
 }
@@ -214,13 +214,13 @@
 \newcommand{\twice}{{\tiny{($\times$2)}}}
 
 \newcommand*{\pokemon}[6]{
-\begin{tabular}{p{2.5cm}rp{3cm}rp{4cm}} 
+\begin{tabular}{p{3cm}rp{3cm}rp{4cm}} 
 \textbf{#1}~#2 \hfill  #3 \\
 \multicolumn{1}{c}{\multirow{6}{*}{\includegraphics[width=2cm]{../../images/pokemon/#4}}} 
 \pokemonstats#5
 \pokemoncontinued#6
 \end{tabular}
-\bigskip
+\medskip
 }
 \newcommand*{\pokemonstats}[6]{
 & ATK  & \attack{#1}     &     DPS & \dps{#4} \\ 
@@ -264,7 +264,7 @@
 \frametitle{Best Pok\'emon for PvE in Pok\'emon Go \hspace{3.2cm} \today}
 
 \begin{block}{}
-\begin{scriptsize}
+\begin{footnotesize}
 
 \begin{itemize}
   \item \textbf{Relevant types}: 
@@ -305,24 +305,24 @@ TDO $=$ DPS $\times$ EH.
 \item \textbf{Base statistics and moves}
 
 \begin{center}
-   \href{https://pokemongo.gamepress.gg/}{\beamergotobutton{Base Statistics}} \quad \quad 
-   \href{https://pokegocomplete.com}{\beamergotobutton{Base Statistics for generations 5 to 7}}
+   \href{https://pokemongo.gamepress.gg/}{\beamergotobutton{ Base Statistics}} \quad \quad 
+   \href{https://pokegocomplete.com}{\beamergotobutton{ Base Statistics for generations 5 to 7}}
 \end{center}
 
-\item \textbf{Raid simulator}
+\item \textbf{Simulators}
    
 \begin{center}
-   \href{https://pokemongo.gamepress.gg/comprehensive-dps-spreadsheet}{\beamergotobutton{Comprehensive DPS/TDO spreadsheet}}  \quad \quad 
-   \href{https://www.pokebattler.com}{\beamergotobutton{Pokébattler Raid simulator}} 
+   \href{https://pokemongo.gamepress.gg/comprehensive-dps-spreadsheet}{\beamergotobutton{ Comprehensive DPS/TDO spreadsheet}}  \quad \quad 
+   \href{https://www.pokebattler.com}{\beamergotobutton{ Pokébattler Raid simulator}} 
 \end{center}
 
 \item \textbf{Sheets  "Best Pokémon in the game"}
 \begin{center}
-   \href{https://imgur.com/a/1nSSUqM}{\beamergotobutton{V7}}
+   \href{https://imgur.com/a/1nSSUqM}{\beamergotobutton{ V7}}
    \end{center}
 \end{itemize}
 
-\end{scriptsize}
+\end{footnotesize}
 \end{block}
 \end{frame}
 
@@ -333,7 +333,7 @@ TDO $=$ DPS $\times$ EH.
 \begin{frame}
 \frametitle{Fighting}
 
-\begin{scriptsize}
+\begin{footnotesize}
 \begin{block}{}
 \begin{center}
 
@@ -373,7 +373,7 @@ This type is useful versus \normalfull~\darkfull~\icefull~\steelfull~\rockfull~a
     \includegraphics[width=1.5cm]{../../images/pokemon/darkrai.png}
 \end{center}
 \end{block}
-\end{scriptsize}
+\end{footnotesize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -381,7 +381,7 @@ This type is useful versus \normalfull~\darkfull~\icefull~\steelfull~\rockfull~a
 
 \usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/ghost.png}}
 \begin{frame}
-\begin{scriptsize}
+\begin{footnotesize}
 \frametitle{Ghost}
 
 \begin{block}{}
@@ -427,7 +427,7 @@ This type is useful versus \psychicfull~\ghostfull~and versus the following raid
 \end{center}
 \end{block}
 
-\end{scriptsize}
+\end{footnotesize}
 \end{frame}
 
 
@@ -436,7 +436,7 @@ This type is useful versus \psychicfull~\ghostfull~and versus the following raid
 
 \usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/dark.png}}
 \begin{frame}
-\begin{scriptsize}
+\begin{footnotesize}
 \frametitle{Dark}
 
 
@@ -483,7 +483,7 @@ This type is useful versus \psychicfull~\ghostfull~and versus the following raid
     \end{center}
 \end{block}
 
-\end{scriptsize}
+\end{footnotesize}
 \end{frame}
 
 
@@ -492,7 +492,7 @@ This type is useful versus \psychicfull~\ghostfull~and versus the following raid
 
 \usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/dragon.png}}
 \begin{frame}
-\begin{scriptsize}
+\begin{footnotesize}
 \frametitle{Dragon}
 
 \begin{block}{}
@@ -502,19 +502,19 @@ This type is useful versus \psychicfull~\ghostfull~and versus the following raid
 \pokemon{Rayquaza}{\megaevol}{\dragonfull~\flyingfull}{rayquaza.png}{{284}{170}{213}{18.68}{29.27}{546.8}}{{\dragonsimp~Dragon Tail (15)}{\dragonsimp~Outrage (110)}{\icefull~\rockfull~\dragonfull~\fairyfull}{Rayquaza faces heavy competition. \\ }}
 
 
-\pokemon{Salamence}{\megaevol}{\dragonfull~\flyingfull}{salamence.png}{{277}{168}{216}{18.27}{29.33}{535.9}}{{\dragonsimp~Dragon Tail (15)}{\dragonsimp~Outrage$^{\dag}$(110)}{\icefull~\rockfull~\dragonfull~\fairyfull}{Similar to Rayquaza, less DPS. \\ }}
+\pokemon{Salamence}{\megaevol}{\dragonfull~\flyingfull}{salamence.png}{{277}{168}{216}{18.27}{29.33}{535.9}}{{\dragonsimp~Dragon Tail (15)}{\dragonsimp~Outrage$^{\dag}$(110)}{\icefull~\rockfull~\dragonfull~\fairyfull}{Similar to Rayquaza, less DPS. \\~ \\ }}
 
-\pokemon{Palkia}{}{\dragonfull~\waterfull}{palkia.png}{{280}{215}{189}{17.91}{32.56}{583.2}}{{\dragonsimp~Dragon Tail (15)}{\dragonsimp~Draco Meteor (150)}{\dragonfull~\fairyfull}{Double resistance to \waterfull~and \firefull~moves. \\ }}
+\pokemon{Palkia}{}{\dragonfull~\waterfull}{palkia.png}{{280}{215}{189}{17.91}{32.56}{583.2}}{{\dragonsimp~Dragon Tail (15)}{\dragonsimp~Draco Meteor (150)}{\dragonfull~\fairyfull}{Double resistance to~\waterfull~and \firefull~moves. \\ }}
 
-\pokemon{Dragonite}{}{\dragonfull~\flyingfull}{dragonite.png}{{263}{198}{209}{17.23}{33.11}{570.5}}{{\dragonsimp~Dragon Tail (15)}{\dragonsimp~Outrage (110)}{\fightingfull~\groundfull}{Worse Rayquaza. \\ }}
+\pokemon{Dragonite}{}{\dragonfull~\flyingfull}{dragonite.png}{{263}{198}{209}{17.23}{33.11}{570.5}}{{\dragonsimp~Dragon Tail (15)}{\dragonsimp~Outrage (110)}{\fightingfull~\groundfull}{Worse Rayquaza. \\ ~ \\}}
 
 
-\pokemon{Dialga}{}{\steelfull~\dragonfull}{Dialga.png}{{275}{211}{205}{17.09}{34.51}{589.7}}{{\dragonsimp~Dragon Breath (6)}{\dragonsimp~Draco Meteor (150)}{\dragonfull~\fairyfull}{No \dragonfull~ weakness. \\ }}
+\pokemon{Dialga}{}{\steelfull~\dragonfull}{Dialga.png}{{275}{211}{205}{17.09}{34.51}{589.7}}{{\dragonsimp~Dragon Breath (6)}{\dragonsimp~Draco Meteor (150)}{\dragonfull~\fairyfull}{No \dragonfull~weakness. \\ ~ \\}}
 
 \begin{itemize}
 \item \textbf{Other alternatives}: 
 \begin{itemize}
-  \item \scriptsize \textbf{Garchomp} (same DPS as Dragonite, more TDO). However, it is more interesting as \groundfull~type Pok\'emon,
+  \item \scriptsize \textbf{Garchomp} (same DPS as Dragonite, more TDO). But it's more interesting as~\groundfull~type Pok\'emon,
   \item \scriptsize \textbf{Latios} (less DPS than Dialga), but 3-bar charged move (Dragon Claw)
 \end{itemize}
 \item \textbf{Generation 5 competitors}: 
@@ -537,7 +537,7 @@ This type is useful versus \dragonfull~and versus the following raid bosses:
 \end{center}
 \end{block}
 
-\end{scriptsize}
+\end{footnotesize}
 \end{frame}
 
 
