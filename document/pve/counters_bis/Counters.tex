@@ -1,7 +1,7 @@
 \documentclass[12pt]{beamer}
 %\usepackage[orientation=portrait,size=A4]{beamerposter}
 %\usepackage{beamerthemesplit}
-\usepackage[orientation=portrait,size=custom,width=16,height=20,scale=0.5,debug]{beamerposter} 
+\usepackage[orientation=portrait,size=custom,width=16,height=18,scale=0.5,debug]{beamerposter} 
 
 
 \usepackage{beamerbasethemes}
@@ -148,7 +148,7 @@
 
 \newcommand*{\colorbar}[2]{
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
-\draw [line width=6.pt,color=#1] (0.,0.)-- (#2/180,0.);
+\draw [line width=7.pt,color=#1] (0.,0.)-- (#2/180,0.);
 \draw[color=white] (0.2,0.) node {\scriptsize{$#2$}};
 \end{tikzpicture}
 }
