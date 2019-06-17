@@ -1,4 +1,5 @@
-\documentclass[8pt,aspectratio=43,compress]{beamer}
+\documentclass[12pt]{beamer}
+\usepackage[orientation=portrait,size=custom,width=10.5,height=14.85,scale=0.5,debug]{beamerposter} 
 
 \usepackage{beamerbasethemes}
 \usepackage{calc}
@@ -259,30 +260,34 @@
 \renewcommand{\baselinestretch}{1.1}
 
 
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/lucky}}
+\setbeamertemplate{frametitle}[default][center]
+\usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/lucky}}
 \begin{frame}
 \frametitle{Lucky Trade}
 
 \begin{block}{}
-\begin{tiny}
+\begin{footnotesize}
 
 \begin{itemize}
   \item \textbf{Legendaries} 
 
 \begin{center}
-\begin{tabular}{cccccc}
-\includegraphics[width=1cm]{../../images/pokemon/rayquaza.png}
-& \includegraphics[width=1cm]{../../images/pokemon/mewtwo.png}
-& \includegraphics[width=1cm]{../../images/pokemon/raikou.png}
-& \includegraphics[width=1cm]{../../images/pokemon/kyogre.png}
-& \includegraphics[width=1cm]{../../images/pokemon/groudon.png}\\
+\begin{tabular}{ccc}
+\includegraphics[width=1.5cm]{../../images/pokemon/mewtwo.png}
+& \includegraphics[width=1.5cm]{../../images/pokemon/raikou.png}
+& \includegraphics[width=1.5cm]{../../images/pokemon/moltres.png}\\
 \end{tabular}
 
+\begin{tabular}{ccc}
+\includegraphics[width=1.5cm]{../../images/pokemon/rayquaza.png}
+& \includegraphics[width=1.5cm]{../../images/pokemon/kyogre.png}
+& \includegraphics[width=1.5cm]{../../images/pokemon/groudon.png}\\
+\end{tabular}
 
 \begin{tabular}{ccc}
- \includegraphics[width=1cm]{../../images/pokemon/giratina_o.png} 
-& \includegraphics[width=1cm]{../../images/pokemon/dialga.png} 
-& \includegraphics[width=1cm]{../../images/pokemon/palkia.png}  \\
+ \includegraphics[width=1.5cm]{../../images/pokemon/giratina_o.png} 
+& \includegraphics[width=1.5cm]{../../images/pokemon/dialga.png} 
+& \includegraphics[width=1.5cm]{../../images/pokemon/palkia.png}  \\
 \end{tabular}
 
 \end{center}
@@ -290,13 +295,16 @@
   \item \textbf{Shinies} 
 
 \begin{center}
-\begin{tabular}{ccccc}
-\includegraphics[width=1cm]{../../images/pokemon/shiny/salamence_shiny.png}
-& \includegraphics[width=1cm]{../../images/pokemon/shiny/metagross_shiny.png}
-& \includegraphics[width=1cm]{../../images/pokemon/shiny/tyranitar_shiny.png} 
-& \includegraphics[width=1cm]{../../images/pokemon/shiny/roserade_shiny.png}
-& \includegraphics[width=1cm]{../../images/pokemon/shiny/meltan_shiny.png}\\
-Outrage & Meteor Mash &  & \\
+\begin{tabular}{ccc}
+\includegraphics[width=1.5cm]{../../images/pokemon/shiny/tyranitar_shiny.png} 
+& \includegraphics[width=1.5cm]{../../images/pokemon/shiny/roserade_shiny.png}
+& \includegraphics[width=1.5cm]{../../images/pokemon/shiny/meltan_shiny.png}\\
+\end{tabular}
+
+\begin{tabular}{ccc}
+\includegraphics[width=1.5cm]{../../images/pokemon/shiny/salamence_shiny.png}
+& \includegraphics[width=1.5cm]{../../images/pokemon/shiny/metagross_shiny.png}\\
+Outrage$^{\dag}$ & Meteor Mash$^{\dag}$ \\
 \end{tabular}
 \end{center}
 
@@ -304,14 +312,14 @@ Outrage & Meteor Mash &  & \\
 
 \begin{center}
 \begin{tabular}{ccc}
-\includegraphics[width=1cm]{../../images/pokemon/shiny/gibble.png}
-& \includegraphics[width=1cm]{../../images/pokemon/shiny/riolu.png}
-& \includegraphics[width=1cm]{../../images/pokemon/shiny/kranidos.png} \\
+\includegraphics[width=1.5cm]{../../images/pokemon/shiny/gibble.png}
+& \includegraphics[width=1.5cm]{../../images/pokemon/shiny/riolu.png}
+& \includegraphics[width=1.5cm]{../../images/pokemon/shiny/kranidos.png} \\
 \end{tabular}
 \end{center}
 \end{itemize}
 
-\end{tiny}
+\end{footnotesize}
 \end{block}
 \end{frame}
 

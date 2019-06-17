@@ -1,4 +1,5 @@
-\documentclass[8pt,aspectratio=169,compress]{beamer}
+\documentclass[12pt]{beamer}
+\usepackage[orientation=portrait,size=custom,width=15.55,height=22,scale=0.5,debug]{beamerposter} 
 
 \usepackage{beamerbasethemes}
 \usepackage{calc}
@@ -13,7 +14,6 @@
 \usepackage{xcolor}
 \usepackage{calc}
 \usepackage{tikz}
-
 
 \mode<presentation>
 
@@ -135,16 +135,16 @@
 %gets rid of footer
 \setbeamertemplate{footline}{}
 \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.5}{$\blacktriangleright$}}}
+\setbeamertemplate{itemize subitem}{\raisebox{0.2em}{\scalebox{0.5}{$\blacktriangleright$}}}
 
 \usepackage{pgf,tikz}
 \usepackage{mathrsfs}
 \usetikzlibrary{arrows}
 \pagestyle{empty}
-\renewcommand{\baselinestretch}{1.1}
 
 \newcommand*{\colorbar}[2]{
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
-\draw [line width=4.pt,color=#1] (0.,0.)-- (#2/180,0.);
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.15,-0.1) rectangle (2.5,0.1);
+\draw [line width=8.pt,color=#1] (0.,0.)-- (#2/130,0.);
 \draw[color=white] (0.2,0.) node {\scriptsize{$#2$}};
 \end{tikzpicture}
 }
@@ -155,83 +155,106 @@
 \newcommand*{\stamina}[1]{\colorbar{lightgreen}{#1}}
 
 \newcommand*{\dps}[1]{
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
-\draw [line width=4.pt,color=black] (0.,0.)-- (#1/12.,0.);
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.15,-0.1) rectangle (2.5,0.1);
+\draw [line width=8.pt,color=black] (0.,0.)-- (#1/8.7,0.);
 \draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
 \end{tikzpicture}
 }
 \newcommand*{\survival}[1]{
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
-\draw [line width=4.pt,color=black] (0.,0.)-- (#1/25.,0.);
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.15,-0.1) rectangle (2.5,0.1);
+\draw [line width=8.pt,color=black] (0.,0.)-- (#1/18.,0.);
 \draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
 \end{tikzpicture}
 }
 \newcommand*{\tdo}[1]{
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
-\draw [line width=4.pt,color=black] (0.,0.)-- (#1/390.,0.);
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.15,-0.1) rectangle (2.5,0.1);
+\draw [line width=8.pt,color=black] (0.,0.)-- (#1/282.,0.);
 \draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
 \end{tikzpicture}
 }
 
-\newcommand{\fightingfull}{\includegraphics[height=0.15cm]{../../images/type/full/Fighting.png}}
-\newcommand{\bugfull}{\includegraphics[height=0.15cm]{../../images/type/full/Bug.png}}
-\newcommand{\darkfull}{\includegraphics[height=0.15cm]{../../images/type/full/Dark.png}}
-\newcommand{\electricfull}{\includegraphics[height=0.15cm]{../../images/type/full/Electric.png}}
-\newcommand{\fairyfull}{\includegraphics[height=0.15cm]{../../images/type/full/Fairy.png}}
-\newcommand{\firefull}{\includegraphics[height=0.15cm]{../../images/type/full/Fire.png}}
-\newcommand{\flyingfull}{\includegraphics[height=0.15cm]{../../images/type/full/Flying.png}}
-\newcommand{\ghostfull}{\includegraphics[height=0.15cm]{../../images/type/full/Ghost.png}}
-\newcommand{\dragonfull}{\includegraphics[height=0.15cm]{../../images/type/full/Dragon.png}}
-\newcommand{\grassfull}{\includegraphics[height=0.15cm]{../../images/type/full/Grass.png}}
-\newcommand{\groundfull}{\includegraphics[height=0.15cm]{../../images/type/full/Ground.png}}
-\newcommand{\icefull}{\includegraphics[height=0.15cm]{../../images/type/full/Ice.png}}
-\newcommand{\normalfull}{\includegraphics[height=0.15cm]{../../images/type/full/Normal.png}}
-\newcommand{\psychicfull}{\includegraphics[height=0.15cm]{../../images/type/full/Psychic.png}}
-\newcommand{\rockfull}{\includegraphics[height=0.15cm]{../../images/type/full/Rock.png}}
-\newcommand{\waterfull}{\includegraphics[height=0.15cm]{../../images/type/full/Water.png}}
-\newcommand{\poisonfull}{\includegraphics[height=0.15cm]{../../images/type/full/Poison.png}}
-\newcommand{\steelfull}{\includegraphics[height=0.15cm]{../../images/type/full/Steel.png}}
+\newcommand{\fightingfull}{\includegraphics[height=0.2cm]{../../images/type/full/Fighting.png}}
+\newcommand{\bugfull}{\includegraphics[height=0.2cm]{../../images/type/full/Bug.png}}
+\newcommand{\darkfull}{\includegraphics[height=0.2cm]{../../images/type/full/Dark.png}}
+\newcommand{\electricfull}{\includegraphics[height=0.2cm]{../../images/type/full/Electric.png}}
+\newcommand{\fairyfull}{\includegraphics[height=0.2cm]{../../images/type/full/Fairy.png}}
+\newcommand{\firefull}{\includegraphics[height=0.2cm]{../../images/type/full/Fire.png}}
+\newcommand{\flyingfull}{\includegraphics[height=0.2cm]{../../images/type/full/Flying.png}}
+\newcommand{\ghostfull}{\includegraphics[height=0.2cm]{../../images/type/full/Ghost.png}}
+\newcommand{\dragonfull}{\includegraphics[height=0.2cm]{../../images/type/full/Dragon.png}}
+\newcommand{\grassfull}{\includegraphics[height=0.2cm]{../../images/type/full/Grass.png}}
+\newcommand{\groundfull}{\includegraphics[height=0.2cm]{../../images/type/full/Ground.png}}
+\newcommand{\icefull}{\includegraphics[height=0.2cm]{../../images/type/full/Ice.png}}
+\newcommand{\normalfull}{\includegraphics[height=0.2cm]{../../images/type/full/Normal.png}}
+\newcommand{\psychicfull}{\includegraphics[height=0.2cm]{../../images/type/full/Psychic.png}}
+\newcommand{\rockfull}{\includegraphics[height=0.2cm]{../../images/type/full/Rock.png}}
+\newcommand{\waterfull}{\includegraphics[height=0.2cm]{../../images/type/full/Water.png}}
+\newcommand{\poisonfull}{\includegraphics[height=0.2cm]{../../images/type/full/Poison.png}}
+\newcommand{\steelfull}{\includegraphics[height=0.2cm]{../../images/type/full/Steel.png}}
 
-\newcommand{\fightingrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Fighting.png}}
-\newcommand{\bugrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Bug.png}}
-\newcommand{\darkrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Dark.png}}
-\newcommand{\electricrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Electric.png}}
-\newcommand{\fairyrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Fairy.png}}
-\newcommand{\firerev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Fire.png}}
-\newcommand{\flyingrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Flying.png}}
-\newcommand{\ghostrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Ghost.png}}
-\newcommand{\dragonrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Dragon.png}}
-\newcommand{\grassrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Grass.png}}
-\newcommand{\groundrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Ground.png}}
-\newcommand{\icerev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Ice.png}}
-\newcommand{\normalrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Normal.png}}
-\newcommand{\psychicrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Psychic.png}}
-\newcommand{\rockrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Rock.png}}
-\newcommand{\waterrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Water.png}}
-\newcommand{\poisonrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Poison.png}}
-\newcommand{\steelrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Steel.png}}
+\newcommand{\fightingsimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/fighting.png}}
+\newcommand{\dragonsimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/dragon.png}}
+\newcommand{\darksimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/dark.png}}
+\newcommand{\ghostsimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/ghost.png}}
+\newcommand{\psysimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/psy.png}}
+\newcommand{\icesimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/ice.png}}
+\newcommand{\rocksimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/rock.png}}
+\newcommand{\groundsimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/ground.png}}
+\newcommand{\electricsimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/electric.png}}
+\newcommand{\watersimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/water.png}}
+\newcommand{\grasssimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/grass.png}}
+\newcommand{\firesimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/fire.png}}
+\newcommand{\steelsimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/steel.png}}
+\newcommand{\fairysimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/fairy.png}}
+\newcommand{\flyingsimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/flying.png}}
+\newcommand{\poisonsimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/poison.png}}
+\newcommand{\bugsimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/bug.png}}
 
-\newcommand{\fightingsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/fighting.png}}
-\newcommand{\dragonsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/dragon.png}}
-\newcommand{\darksimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/dark.png}}
-\newcommand{\ghostsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/ghost.png}}
-\newcommand{\psysimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/psy.png}}
-\newcommand{\icesimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/ice.png}}
-\newcommand{\rocksimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/rock.png}}
-\newcommand{\groundsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/ground.png}}
-\newcommand{\electricsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/electric.png}}
-\newcommand{\watersimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/water.png}}
-\newcommand{\grasssimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/grass.png}}
-\newcommand{\firesimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/fire.png}}
-\newcommand{\steelsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/steel.png}}
-\newcommand{\fairysimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/fairy.png}}
-\newcommand{\flyingsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/flying.png}}
-\newcommand{\poisonsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/poison.png}}
-\newcommand{\bugsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/bug.png}}
+
+
+\newcommand{\fightingrev}{\includegraphics[height=0.35cm]{../../images/type/simplified_bis/Fighting.png}}
+\newcommand{\bugrev}{\includegraphics[height=0.35cm]{../../images/type/simplified_bis/Bug.png}}
+\newcommand{\darkrev}{\includegraphics[height=0.35cm]{../../images/type/simplified_bis/Dark.png}}
+\newcommand{\electricrev}{\includegraphics[height=0.35cm]{../../images/type/simplified_bis/Electric.png}}
+\newcommand{\fairyrev}{\includegraphics[height=0.35cm]{../../images/type/simplified_bis/Fairy.png}}
+\newcommand{\firerev}{\includegraphics[height=0.35cm]{../../images/type/simplified_bis/Fire.png}}
+\newcommand{\flyingrev}{\includegraphics[height=0.35cm]{../../images/type/simplified_bis/Flying.png}}
+\newcommand{\ghostrev}{\includegraphics[height=0.35cm]{../../images/type/simplified_bis/Ghost.png}}
+\newcommand{\dragonrev}{\includegraphics[height=0.35cm]{../../images/type/simplified_bis/Dragon.png}}
+\newcommand{\grassrev}{\includegraphics[height=0.35cm]{../../images/type/simplified_bis/Grass.png}}
+\newcommand{\groundrev}{\includegraphics[height=0.35cm]{../../images/type/simplified_bis/Ground.png}}
+\newcommand{\icerev}{\includegraphics[height=0.35cm]{../../images/type/simplified_bis/Ice.png}}
+\newcommand{\normalrev}{\includegraphics[height=0.35cm]{../../images/type/simplified_bis/Normal.png}}
+\newcommand{\psychicrev}{\includegraphics[height=0.35cm]{../../images/type/simplified_bis/Psychic.png}}
+\newcommand{\rockrev}{\includegraphics[height=0.35cm]{../../images/type/simplified_bis/Rock.png}}
+\newcommand{\waterrev}{\includegraphics[height=0.35cm]{../../images/type/simplified_bis/Water.png}}
+\newcommand{\poisonrev}{\includegraphics[height=0.35cm]{../../images/type/simplified_bis/Poison.png}}
+\newcommand{\steelrev}{\includegraphics[height=0.35cm]{../../images/type/simplified_bis/Steel.png}}
 
 
 \newcommand{\megaevol}{\includegraphics[width=0.2cm]{../../images/megaevolve}}
 \newcommand{\twice}{{\tiny{($\times$2)}}}
+
+\newcommand*{\pokemon}[6]{
+\begin{tabular}{p{3cm}rp{3cm}rp{4cm}} 
+\textbf{#1}~#2 \hfill  #3 \\
+\multicolumn{1}{c}{\multirow{6}{*}{\includegraphics[width=2cm]{../../images/pokemon/#4}}} 
+\pokemonstats#5
+\pokemoncontinued#6
+\end{tabular}
+\medskip
+}
+\newcommand*{\pokemonstats}[6]{
+& ATK  & \attack{#1}     &     DPS & \dps{#4} \\ 
+& DEF & \defense{#2}  &  Health & \survival{#5} \\
+& HP   & \stamina{#3}  &     TDO & \tdo{#6} \\ 
+}
+\newcommand{\pokemoncontinued}[4]{
+& Moves & #1                 & Remarks & \multirow{3}{3.5cm}{#4} \\
+&  		   & #2 & \\
+&Weak to    & #3 &   \\
+}
+
 
 %\setbeamertemplate{frametitle}[default][center]
 \setbeamerfont{frametitle}{size=\normalsize,series=\bfseries}
@@ -239,6 +262,8 @@
 %\setbeamercolor*{frametitle}{fg=black}
 
 \usepackage{ulem}
+
+\setbeamertemplate{frametitle}[default][center]
 
 \begin{document}
 
@@ -256,23 +281,53 @@
     \usebeamertemplate{block end}%
   \end{actionenv}}
 
-\renewcommand{\baselinestretch}{1}
+\renewcommand{\baselinestretch}{1.2}
 
-
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/lobby}}
+\usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/lobby_}}
 \begin{frame}
-\frametitle{Best Pok\'emon for PvE in Pok\'emon Go \hspace{8cm} \today}
+\frametitle{Best Pok\'emon for PvE in Pok\'emon Go \hspace{3.3cm} \today}
 
 \begin{block}{}
-\begin{tiny}
+\begin{footnotesize}
+
 \begin{itemize}
-  \item \textbf{Relevant types}: \fightingfull ~\ghostfull ~\darkfull ~\dragonfull ~\icefull ~\rockfull ~\groundfull ~\electricfull ~\grassfull ~\waterfull ~\firefull ~\steelfull ~\fairyfull 
- \item \textbf{Not Relevant types}:  \psychicfull ~\flyingfull ~\poisonfull ~\bugfull ~\normalfull
+  \item \textbf{Relevant types}: 
+  
+  \begin{center}
+  \includegraphics[height=0.3cm]{../../images/type/full/Fighting.png}~
+  \includegraphics[height=0.3cm]{../../images/type/full/Ghost}~
+  \includegraphics[height=0.3cm]{../../images/type/full/Dark}~
+  \includegraphics[height=0.3cm]{../../images/type/full/Dragon}~
+  \includegraphics[height=0.3cm]{../../images/type/full/Ice}~
+  \includegraphics[height=0.3cm]{../../images/type/full/Rock}~
+  \includegraphics[height=0.3cm]{../../images/type/full/Ground}~
+  \includegraphics[height=0.3cm]{../../images/type/full/Electric}~
+  \includegraphics[height=0.3cm]{../../images/type/full/Grass}~
+  \includegraphics[height=0.3cm]{../../images/type/full/Water}~
+  \includegraphics[height=0.3cm]{../../images/type/full/Fire}~
+  \includegraphics[height=0.3cm]{../../images/type/full/Steel}~
+  \includegraphics[height=0.3cm]{../../images/type/full/Fairy}
+\end{center}
+ \item \textbf{Not Relevant types}:
+   \begin{center}
+  \includegraphics[height=0.3cm]{../../images/type/full/Psychic}~
+  \includegraphics[height=0.3cm]{../../images/type/full/Flying}~
+  \includegraphics[height=0.3cm]{../../images/type/full/Poison}~
+  \includegraphics[height=0.3cm]{../../images/type/full/Bug}~
+  \includegraphics[height=0.3cm]{../../images/type/full/Normal}
+\end{center}
+
   \item Pok\'emon with barred names mean that there are either not still not available in the game, or that it is worthwhile to wait a Community Day before evolving it.
   \item Moves with symbol \dag~are legacy and unavailable.
   \item \megaevol~means that the Pok\'emon can mega-evolve at generation 6.
-  \item Neutral DPS, Effective Health, and TDO are computated for Pok\'emon at level 40, with perfect IVs. 
-  \item \textbf{Neutral DPS} (Damage per Second) represents how much damage a Pok\'emon can make in a second. It depends on the Pok\'emon's attack stat (base ATT + ATT IV)$\times$0.7903, on the Pokemon's fast and charged moves and on the "Same Type Attack Bonus" (STAB, 25\% damage boost of a move when it is the same type as one of the types of the Pokémon using the move). They define the damages and the necessary energy for realising the damages.
+  \item Neutral DPS, Effective Health, and TDO are computed for Pok\'emon at level 40, with perfect IVs. 
+  \item \textbf{Neutral DPS} (Damage per Second) represents how much damage a Pok\'emon can make in a second. It depends on:
+  \begin{itemize}
+  \item \footnotesize the Pok\'emon's attack stat at level 40 (base ATK + ATK IV)$\times$0.7903, 
+  \item \footnotesize the Pokemon's fast and charged moves (they define the damages and the necessary energy for realising the damages). The fast move generates energy used to launch the charged move.
+  \item \footnotesize the "Same Type Attack Bonus" (STAB, 25\% damage boost of a move when it is the same type as one of the types of the Pokémon using the move). 
+\end{itemize}
+
 \begin{center}
 \begin{tabular}{rl}
 DPS$\leq$12.5   &  not an attacker  \\
@@ -280,7 +335,7 @@ DPS$\leq$12.5   &  not an attacker  \\
 DPS$>$16   &  excellent attacker  \\
 \end{tabular}
 \end{center}
-  \item The \textbf{Effective Health} (EH) is computed via the formula:
+  \item The \textbf{Effective Health} (EH) defines the bulkiness of a Pok\'emon. At level 40, it is computed via the formula:
 \begin{center}
 EH $=$ (base DEF + DEF IV)$\times$ (base HP + HP IV) $\times \frac{0.7903^2}{900}$
 \end{center}
@@ -294,299 +349,329 @@ EH$>$35   &  very bulky  \\
 \end{center}
 \item \textbf{TDO} (Total Damage Output) represents how much damage a Pok\'emon can make before it faints. It is computed via the formula: 
 TDO $=$ DPS $\times$ EH.
-\item \textbf{Useful ressources}
+\item \textbf{Base statistics and moves}
 
 \begin{center}
-   \href{https://pokemongo.gamepress.gg/}{\beamergotobutton{Base Statistics}} \quad \quad 
-   \href{https://pokegocomplete.com}{\beamergotobutton{Base Statistics for generations 5 to 7}} \quad \quad 
-   \href{https://pokemongo.gamepress.gg/comprehensive-dps-spreadsheet}{\beamergotobutton{Comprehensive DPS/TDO spreadsheet}}  \quad \quad 
-   \href{https://www.pokebattler.com}{\beamergotobutton{Raid simulator}} \quad\quad 
-   \href{https://imgur.com/a/1nSSUqM}{\beamergotobutton{"Best Pokémon in the game" (v7)}}
-   
+   \href{https://pokemongo.gamepress.gg/}{\beamergotobutton{ Base Statistics}} \quad \quad 
+   \href{https://pokegocomplete.com}{\beamergotobutton{ Base Statistics for generations 5 to 7}}
 \end{center}
+
+\item \textbf{Simulators}
+   
+\begin{center}
+   \href{https://pokemongo.gamepress.gg/comprehensive-dps-spreadsheet}{\beamergotobutton{ Comprehensive DPS/TDO spreadsheet}}  \quad \quad 
+   \href{https://www.pokebattler.com}{\beamergotobutton{ Pokébattler Raid simulator}} 
+\end{center}
+
+\item \textbf{Sheets  "Best Pokémon in the game"}
+\begin{center}
+   \href{https://imgur.com/a/1nSSUqM}{\beamergotobutton{ V7}}
+   \end{center}
 \end{itemize}
 
-\end{tiny}
+\end{footnotesize}
 \end{block}
 \end{frame}
 
 
-\renewcommand{\baselinestretch}{1.1}
+\renewcommand{\baselinestretch}{1.0}
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/fighting.png}}
 \begin{frame}
 \frametitle{Fighting}
 
-\begin{tiny}
+\begin{footnotesize}
 \begin{block}{}
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}} 
-    & \textbf{Machamp} \hfill  \fightingfull&  \textbf{Hariyama} \hfill \fightingfull\\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/machamp.png}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/hariyama.png} } \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \fightingsimp~Counter (12) & \fightingsimp~Counter (12) \\
-    &\fightingsimp~Dynamic Punch (90) &\fightingsimp~Dynamic Punch (90)  \\  \hline
-  ATT &  \attack{234} &\attack{209} \\
-  DEF & \defense{159} & \defense{114} \\
-  HP & \stamina{207} & \stamina{302} \\  \hline
-  DPS &   \dps{16.21} & \dps{15.19} \\
-  Effective Health &\survival{26.81} &\survival{28.38} \\
-  TDO &\tdo{434.6} &\tdo{431.1} \\ \hline
-  Weaknesses & \multicolumn{1}{c}{\psychicfull~\fairyfull~\flyingfull} &  \multicolumn{1}{c}{\psychicfull~\fairyfull~\flyingfull} \\ \hline
-   Comments &Best fighting Pok\'emon until gen 5 & Bulkier, less DPS \\  
-\end{tabular}   
 
-\textbf{Other viable alternatives}: \textbf{Breloom} (more DPS than Machamp, but very low EH), \textbf{Mewtwo} (with Focus Blast, DPS: 13.64, good EH, and not weak to \psychicfull~moves)
+\pokemon{Machamp}{}{\fightingfull}{machamp.png}{{234}{159}{207}{16.21}{26.81}{434.6}}{{\fightingsimp~Counter (12)}{\fightingsimp~Dynamic Punch (90)}{\psychicfull~\fairyfull~\flyingfull}{Machamp is the best \fightingfull~type Pok\'emon until gen 5 \\ }}
 
-\textbf{Generation 5 competitor}: \textbf{Conkeldurr} (higher DPS\&TDO than Machamp)
+\bigskip
+
+\pokemon{Hariyama}{}{\fightingfull}{hariyama.png}{{209}{114}{302}{15.19}{28.38}{431.1}}{{\fightingsimp~Counter (12)}{\fightingsimp~Dynamic Punch (90)}{\psychicfull~\fairyfull~\flyingfull}{Bulkier, less DPS \\ ~\\ }}
+
+\bigskip
+
+\begin{itemize}
+\item \textbf{Other alternatives} 
+\begin{itemize}
+  \item \footnotesize \textbf{Breloom} (more DPS than Machamp, but very low Health),
+  \item \footnotesize  \textbf{Mewtwo} (with Focus Blast, DPS: 13.64, good Health, and not weak to~\psychicfull~moves)
+\end{itemize}
+\item \textbf{Generation 5 competitor}
+\begin{itemize}
+  \item \footnotesize \textbf{Conkeldurr} (higher DPS\&TDO than Machamp)
+\end{itemize}
+\end{itemize}
 \end{center}
 \end{block}
+
+\bigskip
 
 \begin{block}{}\begin{center}
 This type is useful versus \normalfull~\darkfull~\icefull~\steelfull~\rockfull~and versus the following raid bosses:
 
-    \includegraphics[width=1.25cm]{../../images/pokemon/tyranitar.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/regirock.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/regice.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/registeel.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/regigigas.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/dialga.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/darkrai.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/tyranitar.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/regirock.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/regice.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/registeel.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/regigigas.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/dialga.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/darkrai.png}
 \end{center}
 \end{block}
-\end{tiny}
+\end{footnotesize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/ghost.png}}
+
+\usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/ghost.png}}
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Ghost}
 
 \begin{block}{}
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}} 
-    & \textbf{Giratina (O)} \hfill  \ghostfull~\dragonfull&  \textbf{Gengar} \megaevol \hfill \ghostfull~\poisonfull &  \textbf{Mewtwo} \megaevol \hfill \psychicfull \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/giratina_o.png}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/gengar.png} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/mewtwo.png} } \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \ghostsimp~Shadow Claw (9) & \darksimp~Lick$^{\dag}$(5) / S.Claw$^{\dag}$(9)  & \psysimp~Psycho Cut (5) \\
-    &\ghostsimp~Shadow Ball (100) &\ghostsimp~Shadow Ball (100) & \ghostsimp~Shadow Ball$^{\dag}$(100) \\  \hline
-  ATT &  \attack{225} &\attack{261}&\attack{300} \\
-  DEF & \defense{187} & \defense{149} & \defense{182} \\
-  HP & \stamina{284} & \stamina{155}& \stamina{214} \\  \hline
-  DPS &   \dps{15.81} & \dps{18.11}& \dps{15.23} \\
-  Effective Health &\survival{41.91} &\survival{19.35}&\survival{31.31} \\
-  TDO &\tdo{662.8} &\tdo{350.4}&\tdo{476.9} \\ \hline
-  Weaknesses & \multicolumn{1}{c}{\icefull~\fairyfull~\dragonfull~\ghostfull~\darkfull} &  \multicolumn{1}{c}{\psychicfull~\ghostfull~\darkfull~\groundfull} &  \multicolumn{1}{c}{\ghostfull~\darkfull~\bugfull} \\ \hline
-   Comments & Its amazing bulk and moves make it the ghost King. & Very fragile. Do not use against counters with \psychicfull~moves. & Worse Giratina. DPS corrected for \psychicfull~opponents \\  
-\end{tabular}   
 
-\textbf{Generation 5 competitor}: \textbf{Chandelure} (more DPS\&TDO than Gengar, but still fragile)
+\pokemon{Giratina (O)}{}{\ghostfull~\dragonfull}{giratina_o.png}{{225}{187}{284}{15.81}{41.91}{662.8}}{{ \ghostsimp~Shadow Claw (9)}{\ghostsimp~Shadow Ball (100)}{\icefull~\fairyfull~\dragonfull~\ghostfull~\darkfull}{Its amazing bulk and moves make it the~\ghostfull~ King. \\ }}
+
+\bigskip
+
+\pokemon{Gengar}{\megaevol}{\ghostfull~\poisonfull}{gengar.png}{{261}{149}{155}{18.11}{19.35}{350.4}}{{ \ghostsimp~Lick$^{\dag}$(5)}{\ghostsimp~Shadow Ball (100)}{\psychicfull~\ghostfull~\darkfull~\groundfull}{Very fragile. Do not use against counters with~\psychicfull~moves. \\ }}
+
+\bigskip
+
+\pokemon{Mewtwo}{\megaevol}{\psychicfull}{mewtwo.png}{{300}{182}{214}{15.23}{31.31}{476.9}}{{\psysimp~Psycho Cut (5)}{\ghostsimp~Shadow Ball (100)}{\ghostfull~\darkfull~\bugfull}{Worse Giratina. Note that DPS has been corrected for \psychicfull~opponents. \\ }}
+
+\begin{itemize}
+\item \textbf{Generation 5 competitor}
+\begin{itemize}
+  \item \footnotesize \textbf{Chandelure} (more DPS\&TDO than Gengar, no~\psychicfull~weakness, but still fragile)
+\end{itemize}
+\end{itemize}
 \end{center}
 \end{block}
+
+\bigskip
 
 \begin{block}{}\begin{center}
 This type is useful versus \psychicfull~\ghostfull~and versus the following raid bosses:
 
-    \includegraphics[width=1.25cm]{../../images/pokemon/mewtwo.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/lugia.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/deoxys_n.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/deoxys_a.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/deoxys_d.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/deoxys_s.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/uxie.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/mesprit.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/azelf.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/cresselia.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/giratina_a.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/mewtwo.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/lugia.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/deoxys_n.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/deoxys_a.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/deoxys_d.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/deoxys_s.png}
+    
+    \includegraphics[width=1.5cm]{../../images/pokemon/uxie.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/mesprit.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/azelf.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/cresselia.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/giratina_a.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/giratina_o.png}
 \end{center}
 \end{block}
 
-\end{tiny}
+\end{footnotesize}
 \end{frame}
+
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/dark.png}}
+\usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/dark.png}}
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Dark}
+
 
 \begin{block}{}
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}} 
-    & \textbf{\sout{Darkrai}} \hfill  \darkfull&  \textbf{Tyranitar} \megaevol \hfill \rockfull~\darkfull &  \textbf{Weawile} \hfill \darkfull~\icefull \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/darkrai.png}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/tyranitar.png} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/weavile.png} } \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \darksimp~Snarl (12) & \darksimp~Bite (6) & \darksimp~Feint Attack (10) \\
-    &\ghostsimp~Shadow Ball (100) &\darksimp~Crunch (70) & \darksimp~Foul Play (70) \\  \hline
-  ATT &  \attack{285} &\attack{251}&\attack{243} \\
-  DEF & \defense{198} & \defense{207} & \defense{171} \\
-  HP & \stamina{172} & \stamina{225}& \stamina{172} \\  \hline
-  DPS &   \dps{16.8} & \dps{14.28}& \dps{15.13} \\
-  Effective Health &\survival{27.64} &\survival{36.97}&\survival{24.14} \\
-  TDO &\tdo{464.4} &\tdo{527.8}&\tdo{365.1} \\ \hline
-  \multirow{2}{*}{Weaknesses} & \multicolumn{1}{c}{\multirow{2}{*}{\fightingfull~\fairyfull~\bugfull}} &  \multicolumn{1}{c}{\fightingfull~\fairyfull~\bugfull} &  \multicolumn{1}{c}{\fightingfull~\fairyfull~\bugfull} \\ 
-  & & \multicolumn{1}{c}{\waterfull~\grassfull~\steelfull~\groundfull} & \multicolumn{1}{c}{\firefull~\steelfull~\rockfull} \\ \hline
-   Comments &Best \darkfull~ Pok\'emon & Bulkier, less DPS & Its typing makes it useful versus \icefull~moves. \\  
-\end{tabular}
+\pokemon{\sout{Darkrai}}{}{\darkfull}{darkrai}{{285}{198}{172}{16.8}{27.64}{464.4}}{{\darksimp~Snarl (12)}{\ghostsimp~Shadow Ball (100)}{\fightingfull~\fairyfull~\bugfull}{Best \darkfull~type Pok\'emon.\\~ \\ }}
 
-\textbf{Generation 5 competitors}: \textbf{Hydreigon} (similar to Tyranitar), \textbf{Zoroark} (as fragile as Weawile)
+\bigskip
+
+\pokemon{Tyranitar}{\megaevol}{\rockfull~\darkfull}{tyranitar}{{251}{207}{225}{14.28}{36.97}{527.8}}{{\darksimp~Bite (6)}{\darksimp~Crunch (70)}{\fightingfull~\fairyfull~\bugfull~ \waterfull~\grassfull~\steelfull~\groundfull}{Bulkier, less DPS.\\~ \\ }}
+
+\bigskip
+
+\pokemon{Weawile}{}{\darkfull~\icefull}{weavile}{{243}{171}{172}{15.13}{24.14}{365.1}}{{\darksimp~Feint Attack (10)}{\darksimp~Foul Play (70)}{\fightingfull~\fairyfull~\bugfull~ \firefull~\steelfull~\rockfull}{Its typing makes it useful versus \icefull~moves.  \\ }}
+
+\begin{itemize}
+  \item \textbf{Generation 5 competitors}
+  \begin{itemize}
+  \item \footnotesize\textbf{Hydreigon} (similar to Tyranitar)
+  \item \footnotesize\textbf{Zoroark} (as fragile as Weawile)
+\end{itemize}
+\end{itemize}
 \end{center}
 \end{block}
+
+\bigskip
 
 \begin{block}{}\begin{center}
 This type is useful versus \psychicfull~\ghostfull~and versus the following raid bosses:
 
-    \includegraphics[width=1.25cm]{../../images/pokemon/mewtwo.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/lugia.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/deoxys_n.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/deoxys_a.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/deoxys_d.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/deoxys_s.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/uxie.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/mesprit.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/azelf.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/cresselia.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/giratina_a.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/mewtwo.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/lugia.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/deoxys_n.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/deoxys_a.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/deoxys_d.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/deoxys_s.png}
+    
+    \includegraphics[width=1.5cm]{../../images/pokemon/uxie.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/mesprit.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/azelf.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/cresselia.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/giratina_a.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/giratina_o.png}
     \end{center}
 \end{block}
 
-\end{tiny}
+\end{footnotesize}
 \end{frame}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/dragon.png}}
+\usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/dragon.png}}
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Dragon}
 
 \begin{block}{}
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}p{2cm}} 
-    & \textbf{{Rayquaza}} \megaevol \hfill  \dragonfull~\flyingfull&  \textbf{{Salamence}} \megaevol \hfill \dragonfull~\flyingfull &  \textbf{{Palkia}} \hfill \dragonfull~\waterfull &  \textbf{Dragonite} \hfill \dragonfull~\flyingfull &   \textbf{Dialga} \hfill \steelfull~\dragonfull \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/rayquaza.png}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/salamence.png} } &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/palkia.png} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/dragonite.png} } & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/dialga.png} }    \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \dragonsimp~Dragon Tail (15) & \dragonsimp~Dragon Tail (15)& \dragonsimp~Dragon Tail (15)& \dragonsimp~Dragon Tail (15)& \dragonsimp~Dragon Breath (6) \\
-    &\dragonsimp~Outrage (110) &\dragonsimp~Outrage$^{\dag}$(110) &\dragonsimp~Draco Meteor  (150) &\dragonsimp~Outrage (110) &\dragonsimp~Draco Meteor (150) \\  \hline
-  ATT &  \attack{284} &\attack{277}&\attack{280} &\attack{263} &\attack{275} \\
-  DEF & \defense{170} & \defense{168}& \defense{215} & \defense{198}& \defense{211} \\
-  HP & \stamina{213} & \stamina{216} & \stamina{189} & \stamina{209} & \stamina{205} \\  \hline
-  DPS &   \dps{18.68} & \dps{18.27}  & \dps{17.91}  & \dps{17.23}  & \dps{17.09}  \\
-  Effective Health &\survival{29.27} &\survival{29.33} &\survival{32.56}&\survival{33.11}&\survival{34.51} \\
-  TDO &\tdo{546.8} &\tdo{535.9}&\tdo{583.2}&\tdo{570.5}&\tdo{589.7} \\ \hline
-  Weaknesses & \multicolumn{1}{c}{\icefull~\rockfull~\dragonfull~\fairyfull} &  \multicolumn{1}{c}{\icefull~\rockfull~\dragonfull~\fairyfull} &  \multicolumn{1}{c}{\dragonfull~\fairyfull} & \multicolumn{1}{c}{\icefull~\rockfull~\dragonfull~\fairyfull} & \multicolumn{1}{c}{\fightingfull~\groundfull} \\ \hline
-   Comments & Rayquaza faces heavy competition & Similar to Rayquaza, less DPS & Double resistance to \waterfull~and \firefull~moves & Worse Rayquaza & No \dragonfull~ weakness \\  
-\end{tabular}
+\pokemon{Rayquaza}{\megaevol}{\dragonfull~\flyingfull}{rayquaza.png}{{284}{170}{213}{18.68}{29.27}{546.8}}{{\dragonsimp~Dragon Tail (15)}{\dragonsimp~Outrage (110)}{\icefull~\rockfull~\dragonfull~\fairyfull}{Rayquaza faces heavy competition. \\ }}
 
-\textbf{Other viable alternatives}: \textbf{Garchomp} (same DPS as Dragonite, more TDO, however, it is more interesting as \groundfull~type Pok\'emon), \textbf{Latios} (less DPS than Dialga)
+\pokemon{Salamence}{\megaevol}{\dragonfull~\flyingfull}{salamence.png}{{277}{168}{216}{18.27}{29.33}{535.9}}{{\dragonsimp~Dragon Tail (15)}{\dragonsimp~Outrage$^{\dag}$(110)}{\icefull~\rockfull~\dragonfull~\fairyfull}{Similar to Rayquaza, less DPS. \\~ \\ }}
 
-\textbf{Generation 5 competitors}: \textbf{Haxorus} (more fragile than Rayquaza), \textbf{Zekrom}, \textbf{Reshiram} (same DPS as Salamence, but bulkier)
+\pokemon{Palkia}{}{\dragonfull~\waterfull}{palkia.png}{{280}{215}{189}{17.91}{32.56}{583.2}}{{\dragonsimp~Dragon Tail (15)}{\dragonsimp~Draco Meteor (150)}{\dragonfull~\fairyfull}{Double resistance to~\waterfull~and \firefull~moves. \\ }}
+
+\pokemon{Dragonite}{}{\dragonfull~\flyingfull}{dragonite.png}{{263}{198}{209}{17.23}{33.11}{570.5}}{{\dragonsimp~Dragon Tail (15)}{\dragonsimp~Outrage (110)}{}{Worse Rayquaza. \\ ~ \\}}
+
+\pokemon{Dialga}{}{\steelfull~\dragonfull}{Dialga.png}{{275}{211}{205}{17.09}{34.51}{589.7}}{{\dragonsimp~Dragon Breath (6)}{\dragonsimp~Draco Meteor (150)}{\fightingfull~\groundfull}{No \dragonfull~ weakness. \\ ~ \\}}
+
+\begin{itemize}
+\item \textbf{Other alternatives}
+\begin{itemize}
+  \item \footnotesize \textbf{Garchomp} (same DPS as Dragonite, but much more TDO). However, it's more interesting as~\groundfull~type Pok\'emon,
+  \item \footnotesize \textbf{Latios} (less DPS than Dialga, but 3-bar charged move (Dragon Claw))
+\end{itemize}
+\item \textbf{Generation 5 competitors}
+\begin{itemize}
+  \item \footnotesize  \textbf{Haxorus} (more fragile than Rayquaza),
+  \item \footnotesize \textbf{Zekrom}, \textbf{Reshiram} (same DPS as Salamence, but more TDO)
+\end{itemize}
+\end{itemize}
 \end{center}
 \end{block}
 
 \begin{block}{}\begin{center}
 This type is useful versus \dragonfull~and versus the following raid bosses:
 
-    \includegraphics[width=1.25cm]{../../images/pokemon/latias.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/latios.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/palkia.png}\quad
-    \includegraphics[width=1.25cm]{../../images/pokemon/giratina_a.png}\quad
-    \includegraphics[width=1.25cm]{../../images/pokemon/giratina_o.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/latias.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/latios.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/palkia.png}\quad
+    \includegraphics[width=1.5cm]{../../images/pokemon/giratina_a.png}\quad
+    \includegraphics[width=1.5cm]{../../images/pokemon/giratina_o.png}
 \end{center}
 \end{block}
 
-\end{tiny}
+\end{footnotesize}
 \end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/ice.png}}
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Ice}
 
-\begin{block}{}
-\begin{center}
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}} 
-    & \textbf{{Mamoswine}} \hfill  \icefull~\groundfull &  \textbf{{Glaceon}} \hfill  \icefull &  \textbf{Weawile} \hfill \darkfull~\icefull &  \textbf{{Mewtwo}} \megaevol \hfill \psychicfull \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/mamoswine}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/glaceon.png} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/weavile.png} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/mewtwo.png} }  \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \icesimp~Powder Snow (6) & \icesimp~Frost Breath (10) & \icesimp~Ice Shard (12)& \psysimp~Psycho Cut (5) \\
-    &\icesimp~Avalanche (90) &\icesimp~Avalanche (90) &\icesimp~Avalanche (90) & \icesimp~Ice Beam (90)\\  \hline
-  ATT &  \attack{247} &\attack{238}&\attack{243} &\attack{300} \\
-  DEF & \defense{146} & \defense{205} & \defense{171}& \defense{182} \\
-  HP & \stamina{242} & \stamina{163}& \stamina{172} & \stamina{214} \\  \hline
-  DPS &   \dps{16.02} & \dps{15.08}& \dps{15.13}& \dps{13.41} \\
-  Effective Health &\survival{28.72} &\survival{27.18}&\survival{24.14}&\survival{31.31} \\
-  TDO &\tdo{459.9} &\tdo{409.7}&\tdo{370.1} &\tdo{419.9} \\ \hline
-  \multirow{2}{*}{Weaknesses} & \multicolumn{1}{c}{\fightingfull~\firefull~\steelfull} &  \multicolumn{1}{c}{\multirow{2}{*}{\fightingfull~\firefull~\steelfull~\rockfull}} &  \multicolumn{1}{c}{\fightingfull~\fairyfull~\bugfull} &  \multicolumn{1}{c}{\multirow{2}{*}{\ghostfull~\darkfull~\bugfull}}  \\ 
-  &\multicolumn{1}{c}{\waterfull~\grassfull}  & & \multicolumn{1}{c}{\steelfull~\rockfull~\firefull} &  \\ \hline
-   Comments &The undisputed ice King. & Inferior to Mamoswine. & Similar to Glaceon & Bulky, less DPS. Interesting versus Groudon.  \\  
-\end{tabular}   
 
-\textbf{Generation 5 competitor}: \textbf{Kyurem} (same DPS as Mamoswine, but slightly bulkier with the \dragonfull~ weakness)
+\begin{block}{}\begin{center}
+\pokemon{Mamoswine}{}{\icefull~\groundfull}{mamoswine.png}{{247}{146}{242}{16.02}{28.72}{459.9}}{{\icesimp~Powder Snow (6)}{\icesimp~Avalanche (90)}{\fightingfull~\firefull~\steelfull~\waterfull~\grassfull}{The undisputed~\icefull~King.\\~\\ }}
+
+
+\pokemon{Glaceon}{}{\icefull}{glaceon}{{238}{205}{163}{15.08}{27.18}{409.7}}{{\icesimp~Frost Breath (10)}{\icesimp~Avalanche (90)}{\fightingfull~\firefull~\steelfull~\rockfull}{Inferior to Mamoswine.\\~  \\ }}
+
+
+\pokemon{Weawile}{}{\darkfull~\icefull}{weavile}{{243}{171}{172}{15.34}{24.14}{370.1}}{{\icesimp~Ice Shard (12)}{\icesimp~Avalanche (90)}{\fightingfull~\fairyfull~\bugfull~ \firefull~\steelfull~\rockfull}{Similar to Glaceon.\\~  \\ }}
+
+
+\pokemon{Mewtwo}{\megaevol}{\psychicfull}{mewtwo.png}{{300}{182}{214}{13.41}{31.31}{419.9}}{{\psysimp~Psycho Cut (5)}{\icesimp~Ice Beam (90)}{\ghostfull~\darkfull~\bugfull}{Bulky, less DPS. Interesting versus Groudon. Note that DPS has been corrected. }}
+
+\begin{itemize}
+  \item \textbf{Generation 5 competitor}
+  \begin{itemize}
+  \item \footnotesize \textbf{Kyurem} (same DPS as Mamoswine, but slightly bulkier with the~\dragonfull~weakness)
+\end{itemize}
+\end{itemize}
 \end{center}
 \end{block}
 
 \begin{block}{}\begin{center}
 This type is useful versus \dragonfull~\flyingfull~\grassfull~\groundfull~and versus the following raid bosses:
 
-    \includegraphics[width=1.25cm]{../../images/pokemon/zapdos.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/lugia.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/latias.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/latios.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/rayquaza.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/giratina_a.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/giratina_o.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/zapdos.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/lugia.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/latias.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/latios.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/rayquaza.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/giratina_a.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/giratina_o.png}
 \end{center}
 \end{block}
 
-\end{tiny}
+\end{footnotesize}
 \end{frame}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/rock.png}}
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Rock}
 
 \begin{block}{}
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}} 
-    & \textbf{Ramparos} \hfill  \rockfull&  \textbf{Tyranitar} \megaevol \hfill \rockfull~\darkfull &  \textbf{Rhyperior} \hfill \groundfull~\rockfull \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/rampardos.png}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/tyranitar.png} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/rhyperior.png} } \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \rocksimp~Smack Down (16) & \rocksimp~Smack Down$^{\dag}$(16) &\rocksimp~Smack Down (16) \\
-    &\rocksimp~Rock Slide (80) &\rocksimp~Stone Edge (100) & \rocksimp~Stone Edge (100)  \\  \hline
-  ATT &  \attack{295} &\attack{251}&\attack{241} \\
-  DEF & \defense{109} & \defense{207} & \defense{190} \\
-  HP & \stamina{219} & \stamina{225}& \stamina{251} \\  \hline
-  DPS &   \dps{18.41} & \dps{14.41}& \dps{13.98} \\
-  Effective Health &\survival{20.14} &\survival{36.97}&\survival{37.84} \\
-  TDO &\tdo{370.8} &\tdo{532.6}&\tdo{529} \\ \hline
-  \multirow{2}{*}{Weaknesses} & \multicolumn{1}{c}{\waterfull~\grassfull~\groundfull} &  \multicolumn{1}{c}{\fightingfull~\fairyfull~\bugfull} &  \multicolumn{1}{c}{\waterfull~\grassfull~\groundfull} \\ 
-  &   \multicolumn{1}{c}{\fightingfull~\steelfull} & \multicolumn{1}{c}{\waterfull~\grassfull~\steelfull~\groundfull} & \multicolumn{1}{c}{\firefull~\steelfull~\rockfull} \\ \hline
-   Comments & Monstruous DPS, but fragile & Great bulk and good DPS & Less DPS than Tyranitar. Potential Community Day \\  
-\end{tabular}   
 
-\textbf{Generation 5 competitors}: \textbf{Archeops} (as fragile as Ramparos), \textbf{Terrakion} (as bulky as Tyranitar, but more DPS)
+\pokemon{Rampardos}{}{\rockfull}{rampardos}{{295}{109}{219}{18.41}{20.14}{370.8}}{{\rocksimp~Smack Down (16)}{\rocksimp~Rock Slide (80)}{\waterfull~\grassfull~\groundfull}{Bulkier, less DPS.\\~ \\ }}
+
+\bigskip
+
+\pokemon{Tyranitar}{\megaevol}{\rockfull~\darkfull}{tyranitar}{{251}{207}{225}{14.41}{36.97}{532.6}}{{\rocksimp~Smack Down$^{\dag}$(16)}{\rocksimp~Stone Edge (100)}{\fightingfull~\fairyfull~\bugfull~ \waterfull~\grassfull~\steelfull~\groundfull}{Great bulk and good DPS.\\~ \\ }}
+
+\bigskip
+
+\pokemon{Rhyperior}{}{\groundfull~\rockfull}{rhyperior}{{241}{190}{251}{13.98}{37.84}{529}}{{\rocksimp~Smack Down (16)}{\rocksimp~Stone Edge (100)}{\waterfull~\grassfull~\groundfull~\fightingfull~\steelfull~\icefull}{Less DPS than Tyranitar. Potential Community Day.\\~ \\ }}
+
+\begin{itemize}
+  \item \textbf{Generation 5 competitors}
+  \begin{itemize}
+  \item \footnotesize \textbf{Archeops} (as fragile as Rampardos)
+  \item \footnotesize \textbf{Terrakion} (as bulky as Tyranitar, but more DPS)
+\end{itemize}
+\end{itemize}
 \end{center}
 \end{block}
 
 \begin{block}{}\begin{center}
 This type is useful versus \flyingfull~\firefull~\icefull~\bugfull~and versus the following raid bosses:
 
-    \includegraphics[width=1.25cm]{../../images/pokemon/articuno.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/zapdos.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/moltres.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/entei.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/ho-oh.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/lugia.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/articuno.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/zapdos.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/moltres.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/entei.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/ho-oh.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/lugia.png}
     \end{center}
 \end{block}
 
-\end{tiny}
+\end{footnotesize}
 \end{frame}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -595,41 +680,45 @@ This type is useful versus \flyingfull~\firefull~\icefull~\bugfull~and versus th
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/ground.png}}
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Ground}
 
 \begin{block}{}
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}} 
-    & \textbf{{Groudon}} \megaevol \hfill  \groundfull& \sout{\textbf{{Garchomp}}} \megaevol \hfill \dragonfull~\groundfull &  \textbf{Rhyperior} \hfill \groundfull~\rockfull &  \textbf{Mamoswine} \hfill \icefull~\groundfull \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/groudon.png}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/garchomp.png} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/rhyperior.png} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/mamoswine.png} }  \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \groundsimp~Mud Shot (5) &\groundsimp~Mud Shot (5)  &\groundsimp~Mud Slap (15) & \groundsimp~Mud Slap (15)  \\
-    &\groundsimp~Earthquake (120) &\groundsimp~Earthquake (120) & \groundsimp~Earthquake (120)& \groundsimp~Bulldoze (80)  \\  \hline
-  ATT &  \attack{270} &\attack{261}&\attack{241}&\attack{247} \\
-  DEF & \defense{228} & \defense{193} & \defense{190}& \defense{146} \\
-  HP & \stamina{205} & \stamina{239}& \stamina{251}& \stamina{242} \\  \hline
-  DPS &   \dps{13.96} & \dps{13.67}& \dps{12.66}& \dps{13.12} \\
-  Effective Health &\survival{37.10} &\survival{36.66}&\survival{37.84}&\survival{28.72} \\
-  TDO &\tdo{517.8} &\tdo{501.2}&\tdo{478.9} &\tdo{376.8} \\ \hline
-  \multirow{2}{*}{Weaknesses} & \multicolumn{1}{c}{\multirow{2}{*}{\waterfull~\grassfull~\icefull}} &  \multicolumn{1}{c}{\multirow{2}{*}{\icefull~\fairyfull~\dragonfull}} &  \multicolumn{1}{c}{\waterfull~\grassfull~\groundfull} &  \\ 
-  &    &  & \multicolumn{1}{c}{\firefull~\steelfull~\rockfull} \\ \hline
-   Comments & The ground King, in competition with Garchomp & Potential Community Day & Worse Groudon & Good DPS \\  
-\end{tabular}   
 
-\textbf{Generation 5 competitors}: \textbf{Landorus} (as good as Garchomp), \textbf{Excadrill} 
+\pokemon{Groudon}{}{\groundfull}{groudon}{{270}{228}{205}{13.96}{37.10}{517.8}}{{\groundsimp~Mud Shot (5)}{\groundsimp~Earthquake (120)}{\waterfull~\grassfull~\icefull}{The~\groundfull~King, now in competition with Garchomp.\\~\\ }}
+\bigskip
+
+\pokemon{\sout{Garchomp}}{\megaevol}{\dragonfull~\groundfull}{garchomp}{{261}{193}{239}{13.67}{36.66}{501.2}}{{\groundsimp~Mud Shot (5)}{\groundsimp~Earthquake (120)}{\icefull~\fairyfull~\dragonfull}{Potential Community Day. \\~ \\ }}
+\bigskip
+
+\pokemon{Rhyperior}{}{\groundfull~\rockfull}{rhyperior}{{241}{190}{251}{12.66}{37.84}{478.9}}{{\groundsimp~Mud Slap (15)}{\groundsimp~Earthquake (120)}{\waterfull~\grassfull~\groundfull~\fightingfull~\steelfull~\icefull}{Inferior to Groudon. Potential Community Day. \\~ \\ }}
+\bigskip
+
+\pokemon{Mamoswine}{}{\icefull~\groundfull}{mamoswine.png}{{247}{146}{242}{13.12}{28.72}{376.8}}{{\groundsimp~Mud Slap (15)}{\groundsimp~Earthquake (120)}{\fightingfull~\firefull~\steelfull~\waterfull~\grassfull}{Good DPS, with 2-bar charged move.\\~\\ }}
+
+\begin{itemize}
+  \item \textbf{Generation 5 competitors}
+\begin{itemize}
+  \item  \footnotesize\textbf{Landorus} (as good as Garchomp)
+  \item\footnotesize \textbf{Excadrill} 
+\end{itemize}
+\end{itemize}
+
+ 
 \end{center}
 \end{block}
 
 \begin{block}{}\begin{center}
 This type is useful versus \steelfull~\electricfull~\poisonfull~\rockfull~and versus the following raid bosses:
 
-    \includegraphics[width=1.25cm]{../../images/pokemon/raikou.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/heatran.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/dialga.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/raikou.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/heatran.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/dialga.png}
     \end{center}
 \end{block}
 
-\end{tiny}
+\end{footnotesize}
 \end{frame}
 
 
@@ -637,44 +726,52 @@ This type is useful versus \steelfull~\electricfull~\poisonfull~\rockfull~and ve
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/electric.png}}
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Electric}
 
 \begin{block}{}
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}} 
-    & \textbf{{Raikou}} \hfill  \electricfull &  \textbf{{Magnezone}} \hfill  \electricfull~\steelfull &  \textbf{Electivire} \hfill \electricfull &  \textbf{{Mewtwo}} \megaevol \hfill \psychicfull \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/raikou}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/magnezone} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/electivire} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/mewtwo.png} }  \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \electricsimp~Thunder Shock (5) & \electricsimp~Spark (6) & \electricsimp~Thunder Shock (5)& \psysimp~Psycho Cut (5) \\
-    &\electricsimp~Wild Charge (90) &\electricsimp~Wild Charge (90) & \electricsimp~Wild Charge (90) & \electricsimp~Thunderbolt (80)\\  \hline
-  ATT &  \attack{241} &\attack{238}&\attack{249} &\attack{300} \\
-  DEF & \defense{195} & \defense{205} & \defense{163}& \defense{182} \\
-  HP & \stamina{207} & \stamina{172}& \stamina{181} & \stamina{214} \\  \hline
-  DPS &   \dps{16.13} & \dps{15.68}& \dps{16.74}& \dps{14.82} \\
-  Effective Health &\survival{32.36} &\survival{28.55}&\survival{24.21}&\survival{31.31} \\
-  TDO & \tdo{522} &\tdo{447.6}&\tdo{405.2} &\tdo{464.1} \\ \hline
-  Weaknesses & \multicolumn{1}{c}{\groundfull} &  \multicolumn{1}{c}{\groundfull~\fightingfull~\firefull} & \multicolumn{1}{c}{\groundfull}  &  \multicolumn{1}{c}{\ghostfull~\darkfull~\bugfull}   \\ \hline
-   Comments & Balance stats: great DPS and TDO & Tons of resistance, giving a high TDO when exploited & Amazing DPS, but fragile & Inferior to Raikou  \\  
-\end{tabular}   
 
-\textbf{Other viable alternatives} : \textbf{Zapdos} (its problem is its \icefull~weakness)
+\pokemon{Raikou}{}{\electricfull}{raikou.png}{{241}{195}{207}{16.13}{32.36}{522}}{{\electricsimp~Thunder Shock (5)}{\electricsimp~Wild Charge (90)}{\groundfull}{Balance stats: great DPS and TDO. \\ }}
+\bigskip
 
-\textbf{Generation 5 competitors}: \textbf{Zekrom} (more DPS\&TDO than Raikou, but has the \icefull~weakness), \textbf{Thundurus} (as fragile as Electivire, with the \icefull~weakness)
+\pokemon{Magnezone}{}{\electricfull~\steelfull}{magnezone.png}{{238}{205}{172}{15.68}{28.55}{447.6}}{{\electricsimp~Spark (6)}{\electricsimp~Wild Charge (90)}{\groundfull~\fightingfull~\firefull}{Tons of resistance, giving a high TDO when exploited. \\ }}
+\bigskip
+
+\pokemon{Electivire}{}{\electricfull}{electivire.png}{{249}{163}{181}{16.74}{24.21}{405.2}}{{\electricsimp~Thunder Shock (5)}{\electricsimp~Wild Charge (90)}{\groundfull}{Amazing DPS, but fragile. \\ ~\\ }}
+\bigskip
+
+\pokemon{Mewtwo}{\megaevol}{\psychicfull}{mewtwo.png}{{300}{182}{214}{14.82}{31.31}{464.1}}{{\psysimp~Psycho Cut (5)}{\electricsimp~Thunderbolt (80)}{\ghostfull~\darkfull~\bugfull}{Worse Raikou. Note that DPS has been corrected. \\ }}
+\bigskip
+
+\begin{itemize}
+  \item \textbf{Other alternative}
+  \begin{itemize}
+  \item \footnotesize \textbf{Zapdos} (similar to magnezone in DPS and TDO, but its problem is its \icefull~weakness)
+\end{itemize}
+
+  \item \textbf{Generation 5 competitors}
+  \begin{itemize}
+  \item\footnotesize \textbf{Zekrom} (more DPS\&TDO than Raikou, but has the \icefull~weakness)
+  \item\footnotesize \textbf{Thundurus} (as fragile as Electivire, with the \icefull~weakness)
+\end{itemize} 
+\end{itemize}
 \end{center}
 \end{block}
 
 \begin{block}{}\begin{center}
 This type is useful versus \flyingfull~\waterfull~and versus the following raid bosses:
 
-    \includegraphics[width=1.25cm]{../../images/pokemon/suicune}
-    \includegraphics[width=1.25cm]{../../images/pokemon/lugia.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/ho-oh}
-    \includegraphics[width=1.25cm]{../../images/pokemon/kyogre}
+    \includegraphics[width=1.5cm]{../../images/pokemon/suicune}
+    \includegraphics[width=1.5cm]{../../images/pokemon/lugia.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/ho-oh}
+    \includegraphics[width=1.5cm]{../../images/pokemon/kyogre}
 \end{center}
 \end{block}
 
-\end{tiny}
+\end{footnotesize}
 \end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -683,88 +780,88 @@ This type is useful versus \flyingfull~\waterfull~and versus the following raid 
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/grass}}
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Grass}
+
 
 \begin{block}{}
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}} 
-    & \textbf{{Roserade}} \hfill  \grassfull~\poisonfull &  \textbf{{Venusaur}} \hfill  \grassfull~\poisonfull &  \textbf{{Sceptile}} \megaevol \hfill \grassfull &  \textbf{Exeggutor (A)} \hfill \grassfull~\dragonfull \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/roserade}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/venusaur} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/sceptile} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/exeggutor_a} }  \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \grasssimp~Rasor Leaf (13) &\grasssimp~Vine Whip (7)  & \grasssimp~Bullet Seed (8) & \grasssimp~Bullet Seed (8)  \\
-    &\grasssimp~Grass Knot (90) &\grasssimp~Frenzy Plant$^{\dag}$(100) & \grasssimp~Frenzy Plant$^{\dag}$(100) & \grasssimp~Solar Beam (180) \\  \hline
-  ATT &  \attack{243} &\attack{198}&\attack{223} &\attack{230} \\
-  DEF & \defense{185} & \defense{189} & \defense{169}& \defense{153} \\
-  HP & \stamina{155} & \stamina{190}& \stamina{171} & \stamina{216} \\  \hline
-  DPS &   \dps{15.78} & \dps{14.78}& \dps{15.43}& \dps{13.82} \\
-  Effective Health &\survival{23.60} &\survival{29.01}&\survival{23.75}&\survival{26.93} \\
-  TDO & \tdo{372.4} &\tdo{429}&\tdo{368.5} &\tdo{371.8} \\ \hline
-  \multirow{2}{*}{Weaknesses} & \multicolumn{1}{c}{\multirow{2}{*}{\firefull~\icefull~\flyingfull~\psychicfull}} &   \multicolumn{1}{c}{\multirow{2}{*}{\firefull~\icefull~\flyingfull~\psychicfull}} &  \multicolumn{1}{c}{\firefull~\icefull~\flyingfull}  &    \multicolumn{1}{c}{\icefull~\flyingfull~\bugfull}   \\ 
-  & &&  \multicolumn{1}{c}{\poisonfull~\bugfull}  & \multicolumn{1}{c}{\dragonfull~\fairyfull~\poisonfull}  \\ \hline
-   Comments & Great DPS & Good DPS and excellent TDO & Similar to Roserade & Double resistance to \waterfull~\grassfull~\electricfull~moves  \\  
-\end{tabular}   
+\pokemon{Roserade}{}{\grassfull~\poisonfull}{roserade.png}{{243}{185}{155}{15.78}{23.60}{372.4}}{{\grasssimp~Rasor Leaf (13)}{\grasssimp~Grass Knot (90)}{\firefull~\icefull~\flyingfull~\psychicfull}{Great DPS. \\ ~\\ }}
+\bigskip
 
-\textbf{Generation 5 competitors}: None
+\pokemon{Venusaur}{}{\grassfull~\poisonfull}{venusaur.png}{{198}{189}{190}{14.78}{29.01}{429}}{{\grasssimp~Vine Whip (7)}{\grasssimp~Frenzy Plant$^{\dag}$(100)}{\firefull~\icefull~\flyingfull~\psychicfull}{Good DPS and excellent TDO. \\ ~\\ }}
+\bigskip
+
+\pokemon{Sceptile}{}{\grassfull}{sceptile.png}{{223}{169}{171}{15.43}{23.75}{368.5}}{{\grasssimp~Bullet Seed (8)}{\grasssimp~Frenzy Plant$^{\dag}$(100)}{\firefull~\icefull~\flyingfull~\poisonfull~\bugfull}{Similar to Roserade. \\ ~\\ }}
+\bigskip
+
+\pokemon{Exeggutor (A)}{}{\grassfull~\dragonfull}{exeggutor_a}{{230}{153}{216}{13.82}{26.93}{371.8}}{{\grasssimp~Bullet Seed (8)}{\grasssimp~Solar Beam (180)}{\icefull~\flyingfull~\bugfull~\dragonfull~\fairyfull~\poisonfull}{Double resistance to \waterfull~\grassfull~\electricfull~moves. \\ }}
+\bigskip
+
+\begin{itemize}
+  \item \textbf{Generation 5 competitors}: None
+\end{itemize}
 \end{center}
 \end{block}
 
 \begin{block}{}\begin{center}
 This type is useful versus \waterfull~\groundfull~\rockfull~and versus the following raid bosses:
 
-    \includegraphics[width=1.25cm]{../../images/pokemon/suicune}
-    \includegraphics[width=1.25cm]{../../images/pokemon/regirock}
-    \includegraphics[width=1.25cm]{../../images/pokemon/groudon}
-    \includegraphics[width=1.25cm]{../../images/pokemon/kyogre}
+    \includegraphics[width=1.5cm]{../../images/pokemon/suicune}
+    \includegraphics[width=1.5cm]{../../images/pokemon/regirock}
+    \includegraphics[width=1.5cm]{../../images/pokemon/groudon}
+    \includegraphics[width=1.5cm]{../../images/pokemon/kyogre}
 \end{center}
 \end{block}
 
-\end{tiny}
+\end{footnotesize}
 \end{frame}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%GRASS
+%WATER
 
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/water}}
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Water}
+
 
 \begin{block}{}
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}} 
-    & \textbf{{Kyogre}} \megaevol \hfill  \waterfull &  \textbf{\sout{Swampert}} \megaevol \hfill  \waterfull~\groundfull &  \textbf{Feraligatr} \hfill \waterfull &  \textbf{{Gyarados}} \megaevol \hfill \waterfull~\flyingfull \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Kyogre}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Swampert} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Feraligatr} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Gyarados} }  \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \watersimp~Waterfall (16) &\watersimp~Water Gun (5)  & \watersimp~Waterfall (16) & \watersimp~Waterfall (16) \\
-    &\watersimp~Hydro Pump (130) &\watersimp~Hydro Cannon$^{\dag}$(90) & \watersimp~Hydro Cannon$^{\dag}$(90) & \watersimp~Hydro Pump (130) \\  \hline
-  ATT &  \attack{270} &\attack{208}&\attack{205} &\attack{237} \\
-  DEF & \defense{228} & \defense{175} & \defense{188}& \defense{186} \\
-  HP & \stamina{205} & \stamina{225}& \stamina{198} & \stamina{216} \\  \hline
-  DPS &   \dps{15.91} & \dps{15.61}& \dps{14.79}& \dps{14.23} \\
-  Effective Health &\survival{37.10} &\survival{31.65}&\survival{30.01}&\survival{32.22} \\
-  TDO & \tdo{590.3} &\tdo{494}&\tdo{443.9} &\tdo{458.5} \\ \hline
-  Weaknesses &  \multicolumn{1}{c}{\electricfull~\grassfull}  & \multicolumn{1}{c}{\grassfull}  &  \multicolumn{1}{c}{\electricfull~\grassfull} &  \multicolumn{1}{c}{\electricfull~\rockfull}  \\ \hline
-   Comments & The king of the sea & Inferior to Kyogre. Potential Community Day & Worse Swampert & Useful versus Ground type Pok\'emon (such as Groudon) \\  
-\end{tabular}   
 
-\textbf{Generation 5 competitors}: None
+\pokemon{Kyogre}{\megaevol}{\waterfull}{kyogre.png}{{270}{228}{205}{15.91}{37.10}{590.3}}{{\watersimp~Waterfall (16)}{\watersimp~Hydro Pump (130)}{\grassfull~\electricfull}{The king of the sea. \\ ~\\ }}
+\bigskip
+
+\pokemon{\sout{Swampert}}{\megaevol}{\waterfull~\groundfull}{swampert.png}{{208}{175}{225}{15.61}{31.65}{494}}{{\watersimp~Water Gun (5)}{\watersimp~Hydro Cannon$^{\dag}$(90)}{\grassfull}{Best non-legendary \waterfull~type Pok\'emon. Potential Community Day. }}
+\bigskip
+
+\pokemon{Feraligatr}{}{\waterfull}{feraligatr.png}{{205}{188}{198}{14.79}{30.01}{443.9}}{{\watersimp~Waterfall (16)}{\watersimp~Hydro Cannon$^{\dag}$(90)}{\grassfull~\electricfull}{Inferior to Swampert. \\ ~ \\ }}
+\bigskip
+
+\pokemon{Gyarados}{}{\waterfull}{gyarados.png}{{237}{186}{216}{14.23}{32.22}{458.5}}{{\watersimp~Waterfall (16)}{\watersimp~Hydropump (130)}{\electricfull~\rockfull}{Useful versus Ground type Pok\'emon (such as Groudon). }}
+\bigskip
+
+\begin{itemize}
+  \item \textbf{Generation 5 competitors}: None
+\end{itemize}
 \end{center}
 \end{block}
 
 \begin{block}{}\begin{center}
 This type is useful versus \firefull~\groundfull~\rockfull~and versus the following raid bosses:
 
-    \includegraphics[width=1.25cm]{../../images/pokemon/suicune}
-    \includegraphics[width=1.25cm]{../../images/pokemon/regirock}
-    \includegraphics[width=1.25cm]{../../images/pokemon/groudon}
-    \includegraphics[width=1.25cm]{../../images/pokemon/kyogre}
+    \includegraphics[width=1.5cm]{../../images/pokemon/regirock}
+    \includegraphics[width=1.5cm]{../../images/pokemon/groudon}
+    \includegraphics[width=1.5cm]{../../images/pokemon/entei}
 \end{center}
 \end{block}
 
-\end{tiny}
+\end{footnotesize}
 \end{frame}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -773,39 +870,45 @@ This type is useful versus \firefull~\groundfull~\rockfull~and versus the follow
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/fire}}
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Fire}
 
 \begin{block}{}
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}} 
-    & \textbf{{Moltres}} \hfill  \firefull~\flyingfull &  \textbf{{Entei}} \hfill  \firefull &  \textbf{Blaziken} \megaevol \hfill \firefull~\fightingfull &  \textbf{{Charizard}} \megaevol \hfill \firefull~\flyingfull \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Moltres}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Entei} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Blaziken} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Charizard} }  \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \firesimp~Fire Spin (14) &\firesimp~Fire Spin (14)  &\firesimp~Fire Spin (14) &\firesimp~Fire Spin (14) \\
-    & \firesimp~Overheat (160) & \firesimp~Overheat (160) & \firesimp~Blast Burn$^{\dag}$(110) &  \firesimp~Blast Burn$^{\dag}$(110) \\  \hline
-  ATT &  \attack{251} &\attack{235}&\attack{240} &\attack{223} \\
-  DEF & \defense{181} & \defense{171} & \defense{141}& \defense{173} \\
-  HP & \stamina{207} & \stamina{251}& \stamina{190} & \stamina{186} \\  \hline
-  DPS &   \dps{16.27} & \dps{15.50}& \dps{17.25}& \dps{15.88} \\
-  Effective Health &\survival{30.20} &\survival{34.34}&\survival{22.19}&\survival{26.22} \\
-  TDO & \tdo{491.4} &\tdo{532.3}&\tdo{379.4} &\tdo{416.3} \\ \hline
-  Weaknesses &  \multicolumn{1}{c}{\rockfull~\electricfull~\waterfull}  & \multicolumn{1}{c}{\rockfull~\groundfull~\waterfull}  &  \multicolumn{1}{c}{\psychicfull~\flyingfull~\groundfull~\waterfull} &  \multicolumn{1}{c}{\rockfull~\electricfull~\waterfull}  \\ \hline
-   Comments & Good DPS \& TDO & Bulkier than Moltres & Amazing DPS, but fragile & Worse Moltres  \\  
-\end{tabular}   
 
-\textbf{Generation 5 competitors}: \textbf{Reshiram} (higher DPS\&TDO than Moltres), \textbf{Chandelure} (high DPS, but fragile), \textbf{Volcarona} (high DPS), \textbf{Darmanitan} (high DPS, but fragile)
+\pokemon{Moltres}{}{\firefull~\flyingfull}{Moltres.png}{{251}{181}{207}{16.27}{30.20}{491.4}}{{\firesimp~Fire Spin (14)}{\firesimp~Overheat (160)}{\rockfull~\electricfull~\waterfull}{Good DPS \& TDO.\\~ \\ }}
+\bigskip
+
+\pokemon{Entei}{}{\firefull}{Entei.png}{{235}{171}{251}{15.50}{34.34}{532.3}}{{\firesimp~Fire Spin (14)}{\firesimp~Overheat (160)}{\rockfull~\groundfull~\waterfull}{Bulkier than Moltres.\\~ \\ }}
+\bigskip
+
+\pokemon{Blaziken}{\megaevol}{\firefull~\fightingfull}{Blaziken.png}{{240}{141}{190}{17.25}{22.19}{379.4}}{{\firesimp~Fire Spin (14)}{\firesimp~Blast Burn$^{\dag}$(110)}{\psychicfull~\flyingfull~\groundfull~\waterfull}{Amazing DPS, but fragile.\\~ \\ }}
+\bigskip
+
+\pokemon{Charizard}{\megaevol}{\firefull~\flyingfull}{Charizard.png}{{223}{173}{186}{15.88}{26.22}{416.3}}{{\firesimp~Fire Spin (14)}{\firesimp~Blast Burn$^{\dag}$(110)}{\rockfull~\electricfull~\waterfull}{Worse Moltres. \\ ~ \\ }}
+\bigskip
+
+\begin{itemize}
+  \item \textbf{Generation 5 competitors}
+\begin{itemize}
+  \item \footnotesize \textbf{Reshiram} (higher DPS\&TDO than Moltres),
+  \item \footnotesize \textbf{Chandelure} (high DPS, but fragile), 
+  \item \footnotesize \textbf{Volcarona} (high DPS),
+  \item \footnotesize \textbf{Darmanitan} (high DPS, but fragile)
+\end{itemize}
+\end{itemize}
 \end{center}
 \end{block}
 
 \begin{block}{}\begin{center}
 This type is useful versus \icefull~\grassfull~\bugfull~\steelfull~and versus the following raid bosses:
 
-    \includegraphics[width=1.25cm]{../../images/pokemon/regice}
-    \includegraphics[width=1.25cm]{../../images/pokemon/registeel}
+    \includegraphics[width=1.5cm]{../../images/pokemon/regice}
+    \includegraphics[width=1.5cm]{../../images/pokemon/registeel}
 \end{center}
 \end{block}
 
-\end{tiny}
+\end{footnotesize}
 \end{frame}
 
 
@@ -813,41 +916,37 @@ This type is useful versus \icefull~\grassfull~\bugfull~\steelfull~and versus th
 
 %STEEL
 
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/steel}}
+\usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/steel}}
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Steel}
 
 \begin{block}{}
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}} 
-    & \textbf{Metagross} \megaevol \hfill  \steelfull~\psychicfull&  \textbf{Dialga} \hfill \steelfull~\dragonfull\\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/metagross}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/dialga} } \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \steelsimp~Bullet Punch (9) & \steelsimp~Metal Claw (8) \\
-    &\steelsimp~Meteor Mash$^{\dag}$(100) &\steelsimp~Iron Head  (60)  \\  \hline
-  ATT &  \attack{257} &\attack{275} \\
-  DEF & \defense{228} & \defense{211} \\
-  HP & \stamina{190} & \stamina{205} \\  \hline
-  DPS &   \dps{17.98} & \dps{15.97} \\
-  Effective Health &\survival{34.57} &\survival{34.51} \\
-  TDO &\tdo{621.7} &\tdo{551} \\ \hline
-  Weaknesses & \multicolumn{1}{c}{\ghostfull~\darkfull~\firefull~\groundfull} &  \multicolumn{1}{c}{\fightingfull~\groundfull} \\ \hline
-   Comments &Best \steelfull~Pok\'emon for generations & Worse Metagross \\  
-\end{tabular}   
+\pokemon{Metagross}{\megaevol}{\steelfull~\dragonfull}{Metagross.png}{{257}{228}{190}{17.98}{34.57}{621.7}}{{\steelsimp~Bullet Punch (9)}{\steelsimp~Meteor Mash$^{\dag}$(100)}{\firefull~\groundfull~\ghostfull~\darkfull}{Best \steelfull~type Pok\'emon for generations.\\ }}
+\bigskip
 
-\textbf{Generation 5 competitor}: \textbf{Excadrill} (worse Metagross)
+\pokemon{Dialga}{}{\steelfull~\dragonfull}{Dialga.png}{{275}{211}{205}{15.97}{34.51}{551}}{{\steelsimp~Metal Claw (8)}{\steelsimp~Iron Head (60)}{\fightingfull~\groundfull}{Worse Metagross. \\ ~ \\}}
+\bigskip
+
+\begin{itemize}
+  \item \textbf{Generation 5 competitor}
+\begin{itemize}
+  \item  \footnotesize \textbf{Excadrill} (worse Metagross)
+\end{itemize}
+\end{itemize}
 \end{center}
 \end{block}
 
 \begin{block}{}\begin{center}
 This type is useful versus \fairyfull~\steelfull~\rockfull~and versus the following raid bosses:
 
-    \includegraphics[width=1.25cm]{../../images/pokemon/regirock.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/regice.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/regirock.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/regice.png}
 \end{center}
 \end{block}
 
-\end{tiny}
+\end{footnotesize}
 \end{frame}
 
 
@@ -855,45 +954,46 @@ This type is useful versus \fairyfull~\steelfull~\rockfull~and versus the follow
 
 %FAIRY
 
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/fairy.png}}
+\usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/fairy.png}}
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Fairy}
 
 \begin{block}{}
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}} 
-    & \sout{\textbf{Gardevoir}} \megaevol \hfill  \psychicfull~\fairyfull&  \textbf{Togekiss} \hfill \fairyfull~\flyingfull &  \textbf{Granbull} \hfill \fairyfull \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Gardevoir}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Togekiss} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Granbull} } \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \psysimp~\sout{Confusion (20)} & \flyingsimp~\sout{Air Slash (14)}  & \psysimp~\sout{Snarl (12)} \\
-    &\fairysimp~Dazzling Gleam (100) &\fairysimp~Dazzling Gleam (100) & \fairysimp~Play Rough (90) \\  \hline
-  ATT &  \attack{237} &\attack{225}&\attack{212} \\
-  DEF & \defense{196} & \defense{217} & \defense{131} \\
-  HP & \stamina{169} & \stamina{198}& \stamina{207} \\  \hline
-  DPS &   \dps{15.09} & \dps{13.86}& \dps{13.48} \\
-  Effective Health &\survival{26.81} &\survival{34.30}&\survival{22.49} \\
-  TDO &\tdo{404.5} &\tdo{475.5}&\tdo{303.2} \\ \hline
-  Weaknesses & \multicolumn{1}{c}{\ghostfull~\steelfull~\poisonfull} &  \multicolumn{1}{c}{\steelfull~\poisonfull~\rockfull~\electricfull~\icefull} &  \multicolumn{1}{c}{\steelfull~\poisonfull} \\ \hline
-   Comments & Best \fairyfull~ Pokémon for generations. Could learn a \fairyfull~fast move in the future through a CD. & Bulkier, good DPS. Best fast attack is \dragonsimp~H Power. Could learn a \fairyfull~fast move in the future. & A "low cost" \fairyfull~ Pok\'emon \\  
-\end{tabular}   
-% with charm: 14.901 (gardevoir, TDO: 399.6), 14.2 (togekiss, TDO: 486.9)
 
-\textbf{Generation 5 competitors}: None
+\pokemon{\sout{Gardevoir}}{\megaevol}{\psychicfull~\fairyfull}{Gardevoir.png}{{237}{196}{169}{15.09}{26.81}{404.5}}{{\psysimp~\sout{Confusion (20)}}{\fairysimp~Dazzling~Gleam(100)}{\ghostfull~\steelfull~\poisonfull}{Best \fairyfull~type Pokémon for generations. Could learn the \fairyfull~fast move "charm" in the future through a CD.}}
+% with charm: 14.901 (gardevoir, TDO: 399.6)
+\bigskip
+\bigskip
+
+\pokemon{Togekiss}{}{\fairyfull~\flyingfull}{Togekiss.png}{{225}{217}{198}{13.86}{34.30}{475.5}}{{\flyingsimp~\sout{Air Slash (14)}}{\fairysimp~Dazzling~Gleam(100)}{\steelfull~\poisonfull~\rockfull~\electricfull~\icefull}{Bulkier, good DPS. Best fast attack is \dragonsimp~H Power. Could learn the \fairyfull~fast move "charm" in the future.}}
+% with charm: 14.2 (togekiss, TDO: 486.9)
+\bigskip
+\bigskip
+
+\pokemon{Granbull}{}{\fairyfull}{Granbull.png}{{212}{131}{207}{13.48}{22.49}{303.2}}{{\darksimp~\sout{Snarl (12)}}{\fairysimp~Play Rough (90)}{\steelfull~\poisonfull}{A "low cost" \fairyfull~type Pok\'emon. Could learn the \fairyfull~fast move "charm" in the future.}}
+\bigskip
+\bigskip
+
+\begin{itemize}
+  \item \textbf{Generation 5 competitors}: None
+\end{itemize}
 \end{center}
 \end{block}
 
 \begin{block}{}\begin{center}
-This type is useful versus \dragonfull~\darkfull~\fightingfull~and versus the following raid bosses (only in the case they have a \dragonfull~charged move):
+This type is useful versus \dragonfull~\darkfull~\fightingfull~and versus the following raid bosses (only in the case if they have a \dragonfull~charged move):
 
-    \includegraphics[width=1.25cm]{../../images/pokemon/latias.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/latios.png}
-    \includegraphics[width=1.25cm]{../../images/pokemon/palkia.png}\quad
-    \includegraphics[width=1.25cm]{../../images/pokemon/giratina_a.png}\quad
-    \includegraphics[width=1.25cm]{../../images/pokemon/giratina_o.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/latias.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/latios.png}
+    \includegraphics[width=1.5cm]{../../images/pokemon/palkia.png}\quad
+    \includegraphics[width=1.5cm]{../../images/pokemon/giratina_a.png}\quad
+    \includegraphics[width=1.5cm]{../../images/pokemon/giratina_o.png}
 \end{center}
 \end{block}
 
-\end{tiny}
+\end{footnotesize}
 \end{frame}
 
 
@@ -901,29 +1001,25 @@ This type is useful versus \dragonfull~\darkfull~\fightingfull~and versus the fo
 
 %PSYCHIC
 
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/psychic.png}}
+\usebackgroundtemplate{\includegraphics[width=\paperheight]{../../images/type/background/psychic.png}}
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Psychic (not relevant)}
 
 \begin{block}{}
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}} 
-    & \textbf{Mewtwo} \megaevol \hfill  \psychicfull&  \textbf{Espeon} \hfill \psychicfull &  \textbf{Alakazam} \hfill \psychicfull \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Mewtwo}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Espeon} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Alakazam} } \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \psysimp~Confusion (20) & \psysimp~Confusion (20)  & \psysimp~Confusion (20) \\
-    &\psysimp~Psychic (100) &\psysimp~Future Sight (120) & \psysimp~Future Sight (120) \\  \hline
-  ATT &  \attack{300} &\attack{261}&\attack{271} \\
-  DEF & \defense{182} & \defense{175} & \defense{167} \\
-  HP & \stamina{214} & \stamina{163}& \stamina{146} \\  \hline
-  DPS &   \dps{16.56} & \dps{15.62}& \dps{16.04} \\
-  Effective Health &\survival{31.31} &\survival{23.47}&\survival{20.34} \\
-  TDO &\tdo{518.3} &\tdo{366.6}&\tdo{326.2} \\ \hline
-  Weaknesses & \multicolumn{1}{c}{\ghostfull~\darkfull~\bugfull} & \multicolumn{1}{c}{\ghostfull~\darkfull~\bugfull} & \multicolumn{1}{c}{\ghostfull~\darkfull~\bugfull}\\ \hline
-   Comments & Best \psychicfull~Pokémon for generations & Good DPS, a bit fragile & Similar to Espeon, but more fragile  \\  
-\end{tabular}   
+\pokemon{Mewtwo}{\megaevol}{\psychicfull}{mewtwo.png}{{300}{182}{214}{16.56}{31.31}{518.3}}{{\psysimp~Confusion (20)}{\psysimp~Psychic (100)}{\ghostfull~\darkfull~\bugfull}{Best \psychicfull~Pokémon for generations despite bad moves. \\ }}
+\bigskip
 
-\textbf{Generation 5 competitors}: None
+\pokemon{Espeon}{}{\psychicfull}{espeon.png}{{261}{175}{163}{15.62}{23.47}{366.6}}{{\psysimp~Confusion (20)}{\psysimp~Future Sight (120)}{\ghostfull~\darkfull~\bugfull}{Good DPS, a bit fragile. \\ ~\\ }}
+\bigskip
+
+\pokemon{Alakazam}{}{\psychicfull}{Alakazam.png}{{271}{167}{146}{16.04}{20.34}{326.2}}{{\psysimp~Confusion (20)}{\psysimp~Future Sight (120)}{\ghostfull~\darkfull~\bugfull}{Similar to Espeon, but more fragile. \\ }}
+\bigskip
+
+\begin{itemize}
+  \item \textbf{Generation 5 competitors}: None
+\end{itemize}
 \end{center}
 \end{block}
 
@@ -932,7 +1028,7 @@ This type is useful versus \poisonfull~\fightingfull~and versus the following ra
 \end{center}
 \end{block}
 
-\end{tiny}
+\end{footnotesize}
 \end{frame}
 
 
@@ -940,29 +1036,30 @@ This type is useful versus \poisonfull~\fightingfull~and versus the following ra
 
 %FLYING
 
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/flying.png}}
+\usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/flying.png}}
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Flying (not relevant)}
 
 \begin{block}{}
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}} 
-    & \textbf{Moltres} \hfill  \firefull~\flyingfull&  \textbf{Rayquaza} \megaevol \hfill \dragonfull~\flyingfull &  \textbf{Honchkrow} \hfill \darkfull~\flyingfull \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Moltres}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Rayquaza} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Honchkrow} } \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \firesimp~Fire Spin (14) & \flyingsimp~Air Slash (14)  & \flyingsimp~Peck (10) \\
-    &\flyingsimp~Sky Attack (80) &\flyingsimp~Aerial Ace (55) & \flyingsimp~Sky Attack (80) \\  \hline
-  ATT &  \attack{251} &\attack{284}&\attack{243} \\
-  DEF & \defense{181} & \defense{170} & \defense{103} \\
-  HP & \stamina{207} & \stamina{213}& \stamina{225} \\  \hline
-  DPS &   \dps{17.36} & \dps{15.47}& \dps{16.77} \\
-  Effective Health &\survival{30.19} &\survival{29.27}&\survival{19.65} \\
-  TDO &\tdo{524.2} &\tdo{452.9}&\tdo{329.5} \\ \hline
-  Weaknesses & \multicolumn{1}{c}{\rockfull~\electricfull~\waterfull} & \multicolumn{1}{c}{\icefull~\dragonfull~\rockfull~\fairyfull} & \multicolumn{1}{c}{\electricfull~\rockfull~\icefull~\fairyfull}\\ \hline
-   Comments & Best \flyingfull~Pok\'emon versus Virizion & Similar to Moltres & Excellent DPS, but fragile  \\  
-\end{tabular}   
 
-\textbf{Generation 5 competitors}: \textbf{Tornadus}, \textbf{Archeops} (good DPS, but fragile)
+\pokemon{Moltres}{}{\firefull~\flyingfull}{Moltres.png}{{251}{181}{207}{17.36}{30.20}{524.2}}{{\firesimp~Fire Spin (14)}{\flyingsimp~Sky Attack (80)}{\rockfull~\electricfull~\waterfull}{Best \flyingfull~type Pok\'emon versus \grassfull~type Pok\'emon. \\ }}
+\bigskip
+
+\pokemon{Rayquaza}{\megaevol}{\dragonfull~\flyingfull}{rayquaza.png}{{284}{170}{213}{15.47}{29.27}{452.9}}{{\flyingsimp~Air Slash (14)}{\flyingsimp~Aerial Ace (55)}{\icefull~\rockfull~\dragonfull~\fairyfull}{Good DPS \& TDO. \\~ \\ }}
+\bigskip
+
+\pokemon{Honchkrow}{}{\darkfull~\flyingfull}{honchkrow.png}{{243}{103}{225}{16.77}{19.65}{329.5}}{{\flyingsimp~Peck (10)}{\flyingsimp~Sky Attack (80)}{\electricfull~\rockfull~\icefull~\fairyfull}{Excellent DPS, but fragile. \\ ~\\ }}
+\bigskip
+
+\begin{itemize}
+  \item \textbf{Generation 5 competitors}: 
+  \begin{itemize}
+  \item \footnotesize \textbf{Tornadus}
+  \item \footnotesize \textbf{Archeops}
+\end{itemize}
+\end{itemize}
 \end{center}
 \end{block}
 
@@ -971,9 +1068,8 @@ This type is useful versus \grassfull~\bugfull~\fightingfull~and versus the foll
 \end{center}
 \end{block}
 
-\end{tiny}
+\end{footnotesize}
 \end{frame}
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -981,27 +1077,24 @@ This type is useful versus \grassfull~\bugfull~\fightingfull~and versus the foll
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/poison.png}}
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Poison (not relevant)}
 
 \begin{block}{}
 \begin{center}
-\begin{tabular}{rp{2.1cm}p{2.1cm}p{2.1cm}} 
-    & \textbf{Roserade} \hfill  \grassfull~\poisonfull&  \textbf{Gengar} \megaevol \hfill \ghostfull~\poisonfull &  \textbf{Toxicroak} \hfill \poisonfull~\fightingfull \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Roserade}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Gengar} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Toxicroak} } \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \poisonsimp~Poison Jab (10) & \ghostsimp~Lick$^{\dag}$(5)~/~\ghostsimp~S.Claw$^{\dag}$(9)  & \poisonsimp~Poison Jab (10) \\
-    &\poisonsimp~Sludge Bomb (80) &\poisonsimp~Sludge Bomb (80) & \poisonsimp~Sludge Bomb (80) \\  \hline
-  ATT &  \attack{243} &\attack{261}&\attack{211} \\
-  DEF & \defense{185} & \defense{149} & \defense{133} \\
-  HP & \stamina{155} & \stamina{155}& \stamina{195} \\  \hline
-  DPS &   \dps{15.85} & \dps{17.33}& \dps{14.37} \\
-  Effective Health &\survival{23.60} &\survival{19.35}&\survival{21.57} \\
-  TDO &\tdo{374} &\tdo{335.2}&\tdo{309.9} \\ \hline
-  Weaknesses & \multicolumn{1}{c}{\psychicfull~\flyingfull~\firefull~\icefull} & \multicolumn{1}{c}{\psychicfull~\groundfull~\ghostfull~\darkfull} & \multicolumn{1}{c}{\psychicfull~\groundfull~\flyingfull}\\ \hline
-   Comments & Best \poisonfull~Pok\'emon for generations & Glass cannon & Worse Roserade  \\  
-\end{tabular}   
 
-\textbf{Generation 5 competitors}: None
+\pokemon{Roserade}{}{\grassfull~\poisonfull}{roserade.png}{{243}{185}{155}{15.85}{23.60}{374}}{{\poisonsimp~Poison Jab (10)}{\poisonsimp~Sludge Bomb (80)}{\firefull~\icefull~\flyingfull~\psychicfull}{Best \poisonfull~type Pok\'emon for generations. \\ }}
+\bigskip
+
+\pokemon{Gengar}{\megaevol}{\ghostfull~\poisonfull}{gengar.png}{{261}{149}{155}{17.33}{19.35}{335.2}}{{ \ghostsimp~Lick$^{\dag}$(5)~/~S.Claw$^{\dag}$(9)}{\poisonsimp~Sludge Bomb (80)}{\psychicfull~\ghostfull~\darkfull~\groundfull}{Glass cannon. \\~\\ }}
+\bigskip
+
+\pokemon{Toxicroak}{}{\poisonfull~\fightingfull}{toxicroak.png}{{211}{133}{195}{14.37}{21.57}{309.9}}{{\poisonsimp~Poison Jab (10)}{\poisonsimp~Sludge Bomb (80)}{\psychicfull~\groundfull~\flyingfull}{Worse Roserade. \\~\\ }}
+\bigskip   
+
+\begin{itemize}
+  \item \textbf{Generation 5 competitors}: None
+\end{itemize}
 \end{center}
 \end{block}
 
@@ -1010,7 +1103,7 @@ This type is useful versus \grassfull~\fairyfull~and versus the following raid b
 \end{center}
 \end{block}
 
-\end{tiny}
+\end{footnotesize}
 \end{frame}
 
 
@@ -1019,27 +1112,28 @@ This type is useful versus \grassfull~\fairyfull~and versus the following raid b
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/bug.png}}
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Bug (not relevant)}
 
 \begin{block}{}
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}} 
-    & \textbf{Scizor} \hfill  \bugfull~\steelfull&  \textbf{Pinsir} \megaevol \hfill \bugfull &  \textbf{Yanmega} \hfill \bugfull~\flyingfull \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Scizor}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Pinsir} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Yanmega} } \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \bugsimp~Fury Cutter (3) & \bugsimp~Bug Bite (5)  & \bugsimp~Bug Bite (5)  \\
-    &\bugsimp~X-Scissor (45) &\bugsimp~X-Scissor (45) & \bugsimp~Bug Buzz (90) \\  \hline
-  ATT &  \attack{236} &\attack{238}&\attack{231} \\
-  DEF & \defense{181} & \defense{182} & \defense{156} \\
-  HP & \stamina{172} & \stamina{163}& \stamina{200} \\  \hline
-  DPS &   \dps{13.76} & \dps{14.07}& \dps{13.63} \\
-  Effective Health &\survival{25.44} &\survival{24.34}&\survival{25.52} \\
-  TDO &\tdo{350} &\tdo{342.4}&\tdo{347.8} \\ \hline
-  Weaknesses & \multicolumn{1}{c}{\firefull} & \multicolumn{1}{c}{\firefull~\flyingfull~\rockfull} & \multicolumn{1}{c}{\rockfull~\firefull~\flyingfull~\electricfull~\icefull}\\ \hline
-   Comments & Best \bugfull~Pok\'emon until generation 5 & Similar to Scizor & Great versus Grass  \\  
-\end{tabular}   
+\pokemon{Scizor}{}{\bugfull~\steelfull}{Scizor.png}{{236}{181}{172}{13.76}{25.44}{350}}{{\bugsimp~Fury Cutter (3)}{\bugsimp~X-Scissor (45)}{\firefull}{Best \bugfull~type Pok\'emon until generation 5. \\ }}
+\bigskip
 
-\textbf{Generation 5 competitors}: \textbf{Volcarona} (high DPS), \textbf{Genesect} (high DPS)
+\pokemon{Pinsir}{}{\bugfull~\steelfull}{Pinsir.png}{{238}{182}{163}{14.07}{24.34}{342.4}}{{\bugsimp~Bug Bite (5)}{\bugsimp~X-Scissor (45)}{\firefull~\flyingfull~\rockfull}{Similar to Scizor. \\ ~\\ }}
+\bigskip
+
+\pokemon{Yanmega}{}{\bugfull~\flyingfull}{Yanmega.png}{{231}{156}{200}{13.63}{25.52}{347.8}}{{\bugsimp~Bug Bite (5)}{\bugsimp~Bug Buzz (90)}{\rockfull~\firefull~\flyingfull~\electricfull~\icefull}{Similar to Scizor. Great versus \grassfull.\\ }}
+\bigskip
+
+\begin{itemize}
+  \item \textbf{Generation 5 competitors}: 
+  \begin{itemize}
+  \item \footnotesize\textbf{Volcarona} (high DPS),
+  \item \footnotesize\textbf{Genesect} (mythical Pok\'emon).
+\end{itemize}
+\end{itemize}
+
 \end{center}
 \end{block}
 
@@ -1054,7 +1148,7 @@ This type is useful versus \grassfull~\psychicfull~\darkfull. However,
 \end{center}
 \end{block}
 
-\end{tiny}
+\end{footnotesize}
 \end{frame}
 
 
@@ -1062,71 +1156,54 @@ This type is useful versus \grassfull~\psychicfull~\darkfull. However,
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
+\setbeamercolor*{frametitle}{fg=black}
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/normal.png}}
 \begin{frame}
-\begin{tiny}
-\frametitle{10 best investments for PvE}
+\begin{footnotesize}
+\frametitle{Best investments}
 
 \begin{block}{}
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}p{2cm}} 
-    & \textbf{Machamp} \hfill \fightingfull&  \textbf{Raikou} \hfill \electricfull&  \textbf{Mamoswine} \hfill  \icefull~\groundfull&  \textbf{Giratina (O)} \hfill \ghostfull~\dragonfull & \textbf{Metagross} \hfill \steelfull~\psychicfull  \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Machamp}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Raikou} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Mamoswine} }   &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Giratina_o} }   &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Metagross} } \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \fightingsimp~Counter (12) & \electricsimp~Thunder Shock (5)  & \icesimp~Mamoswine (6) &\ghostsimp~Shadow Claw (9)&\steelsimp~Bullet Punch (9) \\
-    &\fightingsimp~Dynamic Punch (90) &\electricsimp~Wild Charge (90) & \icesimp~Avalanche (90) &\ghostsimp~Shadow Ball (100) & \steelsimp~Meteor Mash$^{\dag}$(100) \\  \hline
-Alternatives & \sout{Conkeldurr} & Magnezone, \sout{Zekrom} & Weawile (Avalanche) & Mewtwo (Shadow Ball) & None \\
+\begin{tabular}{p{3cm}p{3cm}p{3cm}p{3cm}} 
+     \textbf{Machamp} \hfill \fightingfull&  \textbf{Raikou} \hfill \electricfull&  \textbf{Mamoswine} \hfill  \icefull~\groundfull&  \textbf{Giratina (O)} \hfill \ghostfull~\dragonfull \\ 
+      \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Machamp}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Raikou} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Mamoswine} }   &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Giratina_o} }  \\ 
+  \fightingsimp~Counter & \electricsimp~Thunder Shock  & \icesimp~Powder Snow &\ghostsimp~Shadow Claw  \\
+   \fightingsimp~Dynamic Punch &\electricsimp~Wild Charge  & \icesimp~Avalanche &\ghostsimp~Shadow Ball \\  
+ % \sout{Conkeldurr} & Magnezone, \sout{Zekrom} & Weawile (Avalanche) & Mewtwo (Shadow Ball) & None \\
 \end{tabular}   
 
 \bigskip
+\bigskip
+\bigskip
 
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}p{2cm}} 
-    & \textbf{Rayquaza} \hfill \dragonfull~\flyingfull &  \textbf{Tyranitar} \hfill \rockfull~\darkfull &  \textbf{Tyranitar} \hfill \rockfull~\darkfull  &  \textbf{Roserade} \hfill \grassfull~\poisonfull  & \textbf{Kyogre} \hfill  \waterfull \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Rayquaza}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Tyranitar} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Tyranitar} }   &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Roserade} }   &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Kyogre} } \\ \hline
-\multirow{2}{*}{Ideal moveset}   & \dragonsimp~Dragon Tail (15) & \rocksimp~Smack Down (16)  & \darksimp~Bite (6)& \grasssimp~Rasor Leaf (13) & \watersimp~Waterfall (15) \\
-    &\dragonsimp~Outrage (110) &\rocksimp~Stone Edge (100) & \darksimp~Crunch (70)& \grasssimp~Grass Knot (90) & \watersimp~Hydro Pump (130)  \\  \hline  
-Alternatives & Salamence (Outrage),  & Ramparos, \sout{Terrakion} & Weawile (Foul Play),  & Venusaur (Frenzy Plant) & \sout{Swampert} (Hydro  \\
- & Dragonite, Garchomp & & \sout{Darkrai} & & Cannon)
+\begin{tabular}{p{3cm}p{3cm}p{3cm}p{3cm}}
+\textbf{Metagross} \hfill \steelfull~\psychicfull  & \textbf{Roserade} \hfill \grassfull~\poisonfull &  \textbf{Tyranitar} \hfill \rockfull~\darkfull &  \textbf{Tyranitar} \hfill \rockfull~\darkfull   \\
+\multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Metagross} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Roserade} }  & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Tyranitar} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Tyranitar} }   \\
+\steelsimp~Bullet Punch& \grasssimp~Rasor Leaf & \rocksimp~Smack Down  & \darksimp~Bite \\
+\steelsimp~Meteor Mash$^{\dag}$ & \grasssimp~Grass Knot &\rocksimp~Stone Edge & \darksimp~Crunch\\
+\end{tabular} 
+
+\bigskip
+\bigskip
+\bigskip
+
+\begin{tabular}{p{3cm}p{3cm}p{3cm}p{3cm}} 
+\textbf{Rayquaza} \hfill \dragonfull~\flyingfull  & \textbf{Kyogre} \hfill  \waterfull & \textbf{Groudon} \hfill \groundfull & \textbf{Mewtwo} \hfill \psychicfull \\ 
+\multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Rayquaza}} &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Kyogre} } &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Groudon} } &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Mewtwo} }   \\ 
+ \dragonsimp~Dragon Tail (15) &\watersimp~Waterfall (15) & \groundsimp~Mud Shot (5)  & \psysimp~Psycho Cut (5)  \\
+\dragonsimp~Outrage (110) & \watersimp~Hydro Pump (130) &  \groundsimp~Earthquake (120) & \ghostsimp~Shadow Ball$^{\dag}$(100)  \\    
+& & & \psysimp~Psychic / \fightingsimp~F.Blast \\ 
+%Alternatives & Salamence (Outrage),  & Ramparos, \sout{Terrakion} & Weawile (Foul Play),  & Venusaur (Frenzy Plant) & \sout{Swampert} (Hydro  \\
+% & Dragonite, Garchomp & & \sout{Darkrai} & & Cannon)
 \end{tabular}
 
 \end{center}
 \end{block}
-\end{tiny}
+\end{footnotesize}
 \end{frame}
 
 
 
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/normal.png}}
-\begin{frame}
-\begin{tiny}
-\frametitle{\includegraphics[width=0.2cm]{../../images/Badge_BattleLegend_GOLD_01.png}~ Best legendary investment } 
-
-\begin{block}{}
-\begin{center}
-\begin{tabular}{rp{2.5cm}p{2.5cm}p{2.5cm}p{2.5cm}} 
-    &  \textbf{Raikou} \hfill \electricfull&  \textbf{Giratina (O)} \hfill \ghostfull~\dragonfull & \sout{\textbf{Darkrai}} \hfill \darkfull & \textbf{Mewtwo} \hfill \psychicfull  \\ 
-    &    \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Raikou} }  &      \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Giratina_o} }   &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Darkrai} }  &   \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Mewtwo} }  \\ \hline
-\multirow{3}{*}{Ideal moveset}   &  \electricsimp~Thunder Shock (5)  &\ghostsimp~Shadow Claw (9)&\darksimp~Snarl (12) & \psysimp~Psycho Cut (5) \\
-    & \electricsimp~Wild Charge (90) & \ghostsimp~Shadow Ball (100)  & \ghostsimp~Shadow Ball (100)  & \ghostsimp~Shadow Ball$^{\dag}$(100) \\  
-    & & & & \psysimp~Psychic / \fightingsimp~F.Blast \\ \hline
-Alternatives & Magnezone, \sout{Zekrom} & Mewtwo (Shadow Ball) & Tyranitar, Weawile & Giratina (O) \\
-\end{tabular}   
-
-\bigskip
-
-\begin{tabular}{rp{2.5cm}p{2.5cm}p{2.5cm}p{2.5cm}} 
-    & \textbf{Rayquaza} \hfill \dragonfull~\flyingfull & \textbf{Kyogre} \hfill  \waterfull & \textbf{Groudon} \hfill \groundfull &\textbf{Moltres} \hfill \firefull~\flyingfull   \\ 
-    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Rayquaza}} &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Kyogre} } &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Groudon} } &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Moltres} } \\ \hline
-\multirow{3}{*}{Ideal moveset}   & \dragonsimp~Dragon Tail (15) & \watersimp~Waterfall (15) & \groundsimp~Mud Shot (5) & \firesimp~Fire Spin (12) \\
-    &\dragonsimp~Outrage (110) & \watersimp~Hydro Pump (130) &  \groundsimp~Earthquake (120) & \flyingsimp~Sky Attack (80) \\
-    & & & & \firesimp~Overheat (160) \\  \hline  
-Alternatives & Salamence (Outrage),  &  \sout{Swampert} (Hydro & \sout{Garchomp} & Entei, \sout{Reshiram}  \\
- & Dragonite, Garchomp & Cannon) & & 
-\end{tabular}
-
-\end{center}
-\end{block}
-\end{tiny}
-\end{frame}
 
 \end{document}
 

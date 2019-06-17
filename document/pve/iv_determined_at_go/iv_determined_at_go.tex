@@ -1,4 +1,5 @@
-\documentclass[8pt,aspectratio=169,compress]{beamer}
+\documentclass[12pt]{beamer}
+\usepackage[orientation=portrait,size=custom,width=15.55,height=20,scale=0.5,debug]{beamerposter} 
 
 \usepackage{beamerbasethemes}
 \usepackage{calc}
@@ -260,15 +261,14 @@
     \usebeamertemplate{block end}%
   \end{actionenv}}
 
-\renewcommand{\baselinestretch}{1.1}
+\renewcommand{\baselinestretch}{1.2}
 
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/lobby}}
+\usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/lobby}}
 \begin{frame}
 \frametitle{Why you should not leave a Raid battle after the GO?}
 
 \begin{block}{}
-\begin{tiny}
-\parbox{0.75\linewidth}{
+\begin{footnotesize}
 Several elements define a Pokémon:
 \begin{itemize}
 \item its IV (ATT IV, DEF IV, HP IV),
@@ -284,22 +284,9 @@ Several elements define a Pokémon:
 \begin{enumerate}
   \item \textbf{These elements are defined at the GO. } 
 
+
+\parbox{0.75\linewidth}{
 \emph{Proof 1}: We did the same raid battle (Dialga) on two different accounts, with different lobbies. There were rain weather boost at 2pm, and wind weather boost after 3pm. The two accounts joined the lobby at 2:58pm but they were in \textbf{two different lobbies with 20 seconds of difference}. The first account started the raid battle first (the GO was before 3pm), whereas the second account has its GO after 3pm. Both accounts where in the lobby at 2:59pm, and finished their battles after 3pm. However, it can be seen that the first account Dialga's level is 20, while the second Dialga's level 25. Therefore, the level is not determined in the lobby or during/at the end of the raid battle, since the two accounts had exactly the same weather status. The only possibility is at the "GO".
-
-\emph{Proof 2}:
-\begin{itemize}
-  \item \tiny CP is determined at the start of a raid battle:
-  
-\tiny \url{https://www.reddit.com/r/TheSilphRoad/comments/703u8z/cp_is_determined_at_the_start_of_a_raid_battle/}
-  \item\tiny If the weather changes mid-raid, the catch screen will still show the old weather boost: 
-  
-\tiny \url{https://www.reddit.com/r/TheSilphRoad/comments/7lpbdt/if_the_weather_changes_midraid_the_catch_screen/}
-\end{itemize}
-
-  \item \textbf{If you leave a raid battle after the GO, you will draw a new sample, independently from the previous.}
-
-\emph{Proof}: Do a raid battle with weather boost and leave it after the GO. Then come back after the weather change (no boost anymore) and complete the raid battle. The raid boss will be at level 20 (and not 25). 
-\end{enumerate}
 }
 \parbox{0.02\linewidth}{\quad}
 \parbox{0.2\linewidth}{
@@ -308,8 +295,23 @@ Several elements define a Pokémon:
 \end{center}
 }
 
+\emph{Proof 2}:
+\begin{itemize}
+  \item \footnotesize CP is determined at the start of a raid battle:
+  
+\footnotesize \url{https://www.reddit.com/r/TheSilphRoad/comments/703u8z/cp_is_determined_at_the_start_of_a_raid_battle/}
+  \item\footnotesize If the weather changes mid-raid, the catch screen will still show the old weather boost: 
+  
+\footnotesize \url{https://www.reddit.com/r/TheSilphRoad/comments/7lpbdt/if_the_weather_changes_midraid_the_catch_screen/}
+\end{itemize}
 
-\end{tiny}
+  \item \textbf{If you leave a raid battle after the GO, you will draw a new sample, independently from the previous.}
+
+\emph{Proof}: Do a raid battle with weather boost and leave it after the GO. Then come back after the weather change (no boost anymore) and complete the raid battle. The raid boss will be at level 20 (and not 25). 
+\end{enumerate}
+
+
+\end{footnotesize}
 \end{block}
 \end{frame}
 
