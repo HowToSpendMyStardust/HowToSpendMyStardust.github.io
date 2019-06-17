@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/MacPorts 2016_4) (preloaded format=xelatex 2017.2.11)  17 JUN 2019 17:55
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/MacPorts 2016_4) (preloaded format=xelatex 2017.2.11)  17 JUN 2019 19:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2366,6 +2366,18 @@ File: ../../images/type/simplified/dragon.png Graphic file (type QTm)
 File: ../../images/type/simplified/dragon.png Graphic file (type QTm)
 
 <use  "../../images/type/simplified/dragon.png" >
+File: ../../images/type/full/Ice.png Graphic file (type QTm)
+
+<use  "../../images/type/full/Ice.png" >
+File: ../../images/type/full/Rock.png Graphic file (type QTm)
+
+<use  "../../images/type/full/Rock.png" >
+File: ../../images/type/full/Dragon.png Graphic file (type QTm)
+
+<use  "../../images/type/full/Dragon.png" >
+File: ../../images/type/full/Fairy.png Graphic file (type QTm)
+
+<use  "../../images/type/full/Fairy.png" >
 Overfull \hbox (21.85652pt too wide) in paragraph at lines 584--584
  [][] 
  []
@@ -2417,7 +2429,7 @@ File: ../../images/pokemon/giratina_a.png Graphic file (type QTm)
 File: ../../images/pokemon/giratina_o.png Graphic file (type QTm)
 
 <use  "../../images/pokemon/giratina_o.png" >
-Overfull \vbox (12.45047pt too high) detected at line 584
+Overfull \vbox (1.45047pt too high) detected at line 584
  []
 
 File: ../../images/type/background/dragon.png Graphic file (type QTm)
@@ -4325,7 +4337,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1208.
 Here is how much of TeX's memory you used:
  25486 strings out of 495534
  473724 string characters out of 6185783
- 644617 words of memory out of 5000000
+ 645771 words of memory out of 5000000
  28066 multiletter control sequences out of 15000+600000
  105005 words of font info for 94 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191

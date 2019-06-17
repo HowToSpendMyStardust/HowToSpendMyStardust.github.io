@@ -1,4 +1,5 @@
-\documentclass[8pt,aspectratio=169,compress]{beamer}
+\documentclass[12pt]{beamer}
+\usepackage[orientation=portrait,size=custom,width=15.55,height=22,scale=0.5,debug]{beamerposter} 
 
 \usepackage{beamerbasethemes}
 \usepackage{calc}
@@ -144,7 +145,7 @@
 
 \newcommand*{\colorbar}[2]{
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
-\draw [line width=4.pt,color=#1] (0.,0.)-- (#2/220,0.);
+\draw [line width=7.pt,color=#1] (0.,0.)-- (#2/220,0.);
 \draw[color=white] (0.2,0.) node {\scriptsize{$#2$}};
 \end{tikzpicture}
 }
@@ -156,82 +157,82 @@
 
 \newcommand*{\dps}[1]{
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
-\draw [line width=4.pt,color=black] (0.,0.)-- (#1/12.,0.);
+\draw [line width=7.pt,color=black] (0.,0.)-- (#1/12.,0.);
 \draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
 \end{tikzpicture}
 }
 \newcommand*{\survival}[1]{
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
-\draw [line width=4.pt,color=black] (0.,0.)-- (#1/25.,0.);
+\draw [line width=7.pt,color=black] (0.,0.)-- (#1/25.,0.);
 \draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
 \end{tikzpicture}
 }
 \newcommand*{\tdo}[1]{
 \begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
-\draw [line width=4.pt,color=black] (0.,0.)-- (#1/390.,0.);
+\draw [line width=7.pt,color=black] (0.,0.)-- (#1/390.,0.);
 \draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
 \end{tikzpicture}
 }
 
-\newcommand{\fightingfull}{\includegraphics[height=0.15cm]{../../images/type/full/Fighting.png}}
-\newcommand{\bugfull}{\includegraphics[height=0.15cm]{../../images/type/full/Bug.png}}
-\newcommand{\darkfull}{\includegraphics[height=0.15cm]{../../images/type/full/Dark.png}}
-\newcommand{\electricfull}{\includegraphics[height=0.15cm]{../../images/type/full/Electric.png}}
-\newcommand{\fairyfull}{\includegraphics[height=0.15cm]{../../images/type/full/Fairy.png}}
-\newcommand{\firefull}{\includegraphics[height=0.15cm]{../../images/type/full/Fire.png}}
-\newcommand{\flyingfull}{\includegraphics[height=0.15cm]{../../images/type/full/Flying.png}}
-\newcommand{\ghostfull}{\includegraphics[height=0.15cm]{../../images/type/full/Ghost.png}}
-\newcommand{\dragonfull}{\includegraphics[height=0.15cm]{../../images/type/full/Dragon.png}}
-\newcommand{\grassfull}{\includegraphics[height=0.15cm]{../../images/type/full/Grass.png}}
-\newcommand{\groundfull}{\includegraphics[height=0.15cm]{../../images/type/full/Ground.png}}
-\newcommand{\icefull}{\includegraphics[height=0.15cm]{../../images/type/full/Ice.png}}
-\newcommand{\normalfull}{\includegraphics[height=0.15cm]{../../images/type/full/Normal.png}}
-\newcommand{\psychicfull}{\includegraphics[height=0.15cm]{../../images/type/full/Psychic.png}}
-\newcommand{\rockfull}{\includegraphics[height=0.15cm]{../../images/type/full/Rock.png}}
-\newcommand{\waterfull}{\includegraphics[height=0.15cm]{../../images/type/full/Water.png}}
-\newcommand{\poisonfull}{\includegraphics[height=0.15cm]{../../images/type/full/Poison.png}}
-\newcommand{\steelfull}{\includegraphics[height=0.15cm]{../../images/type/full/Steel.png}}
+\newcommand{\fightingfull}{\includegraphics[height=0.2cm]{../../images/type/full/Fighting.png}}
+\newcommand{\bugfull}{\includegraphics[height=0.2cm]{../../images/type/full/Bug.png}}
+\newcommand{\darkfull}{\includegraphics[height=0.2cm]{../../images/type/full/Dark.png}}
+\newcommand{\electricfull}{\includegraphics[height=0.2cm]{../../images/type/full/Electric.png}}
+\newcommand{\fairyfull}{\includegraphics[height=0.2cm]{../../images/type/full/Fairy.png}}
+\newcommand{\firefull}{\includegraphics[height=0.2cm]{../../images/type/full/Fire.png}}
+\newcommand{\flyingfull}{\includegraphics[height=0.2cm]{../../images/type/full/Flying.png}}
+\newcommand{\ghostfull}{\includegraphics[height=0.2cm]{../../images/type/full/Ghost.png}}
+\newcommand{\dragonfull}{\includegraphics[height=0.2cm]{../../images/type/full/Dragon.png}}
+\newcommand{\grassfull}{\includegraphics[height=0.2cm]{../../images/type/full/Grass.png}}
+\newcommand{\groundfull}{\includegraphics[height=0.2cm]{../../images/type/full/Ground.png}}
+\newcommand{\icefull}{\includegraphics[height=0.2cm]{../../images/type/full/Ice.png}}
+\newcommand{\normalfull}{\includegraphics[height=0.2cm]{../../images/type/full/Normal.png}}
+\newcommand{\psychicfull}{\includegraphics[height=0.2cm]{../../images/type/full/Psychic.png}}
+\newcommand{\rockfull}{\includegraphics[height=0.2cm]{../../images/type/full/Rock.png}}
+\newcommand{\waterfull}{\includegraphics[height=0.2cm]{../../images/type/full/Water.png}}
+\newcommand{\poisonfull}{\includegraphics[height=0.2cm]{../../images/type/full/Poison.png}}
+\newcommand{\steelfull}{\includegraphics[height=0.2cm]{../../images/type/full/Steel.png}}
 
-\newcommand{\fightingrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Fighting.png}}
-\newcommand{\bugrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Bug.png}}
-\newcommand{\darkrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Dark.png}}
-\newcommand{\electricrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Electric.png}}
-\newcommand{\fairyrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Fairy.png}}
-\newcommand{\firerev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Fire.png}}
-\newcommand{\flyingrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Flying.png}}
-\newcommand{\ghostrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Ghost.png}}
-\newcommand{\dragonrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Dragon.png}}
-\newcommand{\grassrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Grass.png}}
-\newcommand{\groundrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Ground.png}}
-\newcommand{\icerev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Ice.png}}
-\newcommand{\normalrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Normal.png}}
-\newcommand{\psychicrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Psychic.png}}
-\newcommand{\rockrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Rock.png}}
-\newcommand{\waterrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Water.png}}
-\newcommand{\poisonrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Poison.png}}
-\newcommand{\steelrev}{\includegraphics[height=0.15cm]{../../images/type/simplified_bis/Steel.png}}
+\newcommand{\fightingrev}{\includegraphics[height=0.2cm]{../../images/type/simplified_bis/Fighting.png}}
+\newcommand{\bugrev}{\includegraphics[height=0.2cm]{../../images/type/simplified_bis/Bug.png}}
+\newcommand{\darkrev}{\includegraphics[height=0.2cm]{../../images/type/simplified_bis/Dark.png}}
+\newcommand{\electricrev}{\includegraphics[height=0.2cm]{../../images/type/simplified_bis/Electric.png}}
+\newcommand{\fairyrev}{\includegraphics[height=0.2cm]{../../images/type/simplified_bis/Fairy.png}}
+\newcommand{\firerev}{\includegraphics[height=0.2cm]{../../images/type/simplified_bis/Fire.png}}
+\newcommand{\flyingrev}{\includegraphics[height=0.2cm]{../../images/type/simplified_bis/Flying.png}}
+\newcommand{\ghostrev}{\includegraphics[height=0.2cm]{../../images/type/simplified_bis/Ghost.png}}
+\newcommand{\dragonrev}{\includegraphics[height=0.2cm]{../../images/type/simplified_bis/Dragon.png}}
+\newcommand{\grassrev}{\includegraphics[height=0.2cm]{../../images/type/simplified_bis/Grass.png}}
+\newcommand{\groundrev}{\includegraphics[height=0.2cm]{../../images/type/simplified_bis/Ground.png}}
+\newcommand{\icerev}{\includegraphics[height=0.2cm]{../../images/type/simplified_bis/Ice.png}}
+\newcommand{\normalrev}{\includegraphics[height=0.2cm]{../../images/type/simplified_bis/Normal.png}}
+\newcommand{\psychicrev}{\includegraphics[height=0.2cm]{../../images/type/simplified_bis/Psychic.png}}
+\newcommand{\rockrev}{\includegraphics[height=0.2cm]{../../images/type/simplified_bis/Rock.png}}
+\newcommand{\waterrev}{\includegraphics[height=0.2cm]{../../images/type/simplified_bis/Water.png}}
+\newcommand{\poisonrev}{\includegraphics[height=0.2cm]{../../images/type/simplified_bis/Poison.png}}
+\newcommand{\steelrev}{\includegraphics[height=0.2cm]{../../images/type/simplified_bis/Steel.png}}
 
-\newcommand{\fightingsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/fighting.png}}
-\newcommand{\dragonsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/dragon.png}}
-\newcommand{\darksimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/dark.png}}
-\newcommand{\ghostsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/ghost.png}}
-\newcommand{\psysimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/psy.png}}
-\newcommand{\icesimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/ice.png}}
-\newcommand{\rocksimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/rock.png}}
-\newcommand{\groundsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/ground.png}}
-\newcommand{\electricsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/electric.png}}
-\newcommand{\watersimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/water.png}}
-\newcommand{\grasssimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/grass.png}}
-\newcommand{\firesimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/fire.png}}
-\newcommand{\steelsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/steel.png}}
-\newcommand{\fairysimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/fairy.png}}
-\newcommand{\flyingsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/flying.png}}
-\newcommand{\poisonsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/poison.png}}
-\newcommand{\bugsimp}{\includegraphics[height=0.15cm]{../../images/type/simplified/bug.png}}
+\newcommand{\fightingsimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/fighting.png}}
+\newcommand{\dragonsimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/dragon.png}}
+\newcommand{\darksimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/dark.png}}
+\newcommand{\ghostsimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/ghost.png}}
+\newcommand{\psysimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/psy.png}}
+\newcommand{\icesimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/ice.png}}
+\newcommand{\rocksimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/rock.png}}
+\newcommand{\groundsimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/ground.png}}
+\newcommand{\electricsimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/electric.png}}
+\newcommand{\watersimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/water.png}}
+\newcommand{\grasssimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/grass.png}}
+\newcommand{\firesimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/fire.png}}
+\newcommand{\steelsimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/steel.png}}
+\newcommand{\fairysimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/fairy.png}}
+\newcommand{\flyingsimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/flying.png}}
+\newcommand{\poisonsimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/poison.png}}
+\newcommand{\bugsimp}{\includegraphics[height=0.2cm]{../../images/type/simplified/bug.png}}
 
 
 \newcommand{\megaevol}{\includegraphics[width=0.2cm]{../../images/megaevolve}}
-\newcommand{\twice}{{\tiny{($\times$2)}}}
+\newcommand{\twice}{{\footnotesize{($\times$2)}}}
 
 %\setbeamertemplate{frametitle}[default][center]
 \setbeamerfont{frametitle}{size=\normalsize,series=\bfseries}
@@ -259,50 +260,72 @@
 \renewcommand{\baselinestretch}{1.05}
 
 
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/lobby}}
+\usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/lobby}}
 \begin{frame}
 \frametitle{Current and Future Legendary Raid Bosses \hspace{7.5cm} \today}
 
 \begin{block}{}
-\begin{tiny}
+\begin{footnotesize}
 
-\begin{tabular}{lccccccc}
+\begin{center}
 Current and future raid bosses
-& \includegraphics[width=1cm]{../../images/pokemon/cresselia.png}
-& \includegraphics[width=1cm]{../../images/pokemon/kyogre.png}
-& \includegraphics[width=1cm]{../../images/pokemon/groudon.png}
-& \includegraphics[width=1cm]{../../images/pokemon/raikou.png}
-& \includegraphics[width=1cm]{../../images/pokemon/entei.png}
-& \includegraphics[width=1cm]{../../images/pokemon/suicune.png}
-& \includegraphics[width=1cm]{../../images/pokemon/regigigas.png} \\
+
+ \includegraphics[width=2cm]{../../images/pokemon/kyogre.png}\quad\quad
+ \includegraphics[width=2cm]{../../images/pokemon/groudon.png}\quad\quad
+ \includegraphics[width=2cm]{../../images/pokemon/regigigas.png}
+ 
+ \includegraphics[width=2cm]{../../images/pokemon/raikou.png}\quad\quad
+ \includegraphics[width=2cm]{../../images/pokemon/entei.png}\quad\quad
+ \includegraphics[width=2cm]{../../images/pokemon/suicune.png}
+
+\bigskip\bigskip
+
 High Probability 
-& \includegraphics[width=1cm]{../../images/pokemon/rayquaza.png}
-& \includegraphics[width=1cm]{../../images/pokemon/mewtwo.png}
-& \includegraphics[width=1cm]{../../images/pokemon/heatran.png}\\
+
+ \includegraphics[width=2cm]{../../images/pokemon/rayquaza.png}\quad\quad
+ \includegraphics[width=2cm]{../../images/pokemon/mewtwo.png}\quad\quad
+ \includegraphics[width=2cm]{../../images/pokemon/heatran.png}
+ 
+ 
+\bigskip\bigskip
+ 
 Possible with Low Probability
-& \includegraphics[width=1cm]{../../images/pokemon/dialga.png}
-& \includegraphics[width=1cm]{../../images/pokemon/palkia.png}
-& \includegraphics[width=1cm]{../../images/pokemon/regirock.png}
-& \includegraphics[width=1cm]{../../images/pokemon/regice.png}
-& \includegraphics[width=1cm]{../../images/pokemon/registeel.png}\\
+
+ \includegraphics[width=2cm]{../../images/pokemon/dialga.png}\quad\quad
+ \includegraphics[width=2cm]{../../images/pokemon/palkia.png}\quad\quad
+ \includegraphics[width=2cm]{../../images/pokemon/regirock.png}\quad\quad
+ \includegraphics[width=2cm]{../../images/pokemon/regice.png}\quad\quad
+ \includegraphics[width=2cm]{../../images/pokemon/registeel.png}
+
+\bigskip\bigskip
+
 Very Low Probability
-& \includegraphics[width=1cm]{../../images/pokemon/lugia.png}
-& \includegraphics[width=1cm]{../../images/pokemon/ho-oh.png}
-& \includegraphics[width=1cm]{../../images/pokemon/latias.png}
-& \includegraphics[width=1cm]{../../images/pokemon/latios.png}
-& \includegraphics[width=1cm]{../../images/pokemon/giratina_a.png}
-& \includegraphics[width=1cm]{../../images/pokemon/giratina_o.png}\\
+
+ \includegraphics[width=2cm]{../../images/pokemon/lugia.png}\quad\quad
+ \includegraphics[width=2cm]{../../images/pokemon/ho-oh.png}\quad\quad
+ \includegraphics[width=2cm]{../../images/pokemon/latias.png}\quad\quad
+ \includegraphics[width=2cm]{../../images/pokemon/latios.png}\quad\quad
+ 
+ \includegraphics[width=2cm]{../../images/pokemon/giratina_a.png}\quad\quad
+ \includegraphics[width=2cm]{../../images/pokemon/giratina_o.png}
+
+
+\bigskip\bigskip
+
 Raid EX
-& \includegraphics[width=1cm]{../../images/pokemon/deoxys_s.png}
-& \includegraphics[width=1cm]{../../images/pokemon/darkrai.png}
-& \includegraphics[width=1cm]{../../images/pokemon/arceus_neutral.png} \\
-\end{tabular}
-\end{tiny}
+
+ \includegraphics[width=2cm]{../../images/pokemon/deoxys_s.png}\quad\quad
+ \includegraphics[width=2cm]{../../images/pokemon/darkrai.png}\quad\quad
+ \includegraphics[width=2cm]{../../images/pokemon/arceus_neutral.png} 
+
+\end{center}
+
+\end{footnotesize}
 \end{block}
 \end{frame}
 
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Raid boss difficulty (generations 1 and 2)}
 
 \begin{block}{}
@@ -321,10 +344,10 @@ These formula do not take the base ATT into account, that influences the number 
 \textbf{Zapdos} \hfill \electricfull~\flyingfull &
 \textbf{Moltres} \hfill \firefull~\flyingfull &
 \textbf{Mewtwo} \hfill \psychicfull \\
-&\includegraphics[width=1cm]{../../images/pokemon/Articuno} & 
-\includegraphics[width=1cm]{../../images/pokemon/Zapdos} & 
-\includegraphics[width=1cm]{../../images/pokemon/Moltres} & 
-\includegraphics[width=1cm]{../../images/pokemon/Mewtwo} \\ \hline
+&\includegraphics[width=2cm]{../../images/pokemon/Articuno} & 
+\includegraphics[width=2cm]{../../images/pokemon/Zapdos} & 
+\includegraphics[width=2cm]{../../images/pokemon/Moltres} & 
+\includegraphics[width=2cm]{../../images/pokemon/Mewtwo} \\ \hline
 Base ATT & \attack{192} & \attack{253} & \attack{251} &  \attack{300} \\
 Base DEF & \defense{236} & \defense{185} & \defense{207} &\defense{182} \\ \hline
 Weaknesses  & \rockfull~\firefull~\electricfull~\steelfull & \rockfull~\icefull &\rockfull~\electricfull~\waterfull & \ghostfull~\darkfull~\bugfull \\ 
@@ -336,46 +359,74 @@ Worst Attack & $-$ &  $-$ &  $-$ & Ice Beam \\
 \medskip
 
 \begin{center}
-\begin{tabular}{cccccc}
-& \textbf{Raikou} \hfill \electricfull  & \textbf{Entei} \hfill \firefull &  \textbf{Suicune} \hfill \waterfull & \textbf{Lugia} \hfill \psychicfull~\flyingfull & \textbf{Ho-oh} \hfill \firefull~\flyingfull \\
+\begin{tabular}{cccc}
+& \textbf{Raikou} \hfill \electricfull  & \textbf{Entei} \hfill \firefull &  \textbf{Suicune} \hfill \waterfull  \\
 & 
-\includegraphics[width=1cm]{../../images/pokemon/Raikou} & 
-\includegraphics[width=1cm]{../../images/pokemon/Entei} & 
-\includegraphics[width=1cm]{../../images/pokemon/Suicune} & 
-\includegraphics[width=1cm]{../../images/pokemon/Lugia} & 
-\includegraphics[width=1cm]{../../images/pokemon/Ho-oh} \\ \hline
-Base ATT & \attack{241} & \attack{235} & \attack{180} & \attack{193}& \attack{239} \\
-Base DEF & \defense{195} & \defense{171} & \defense{235}  & \defense{310}& \defense{244} \\  \hline
-Weaknesses & \groundfull & \waterfull~\rockfull~\groundfull & \grassfull~\electricfull & \darkfull~\icefull~\rockfull~\electricfull~\ghostfull & \rockfull~\electricfull~\waterfull  \\
-Estimator & 4 players (3.05) & 3 players (2.20) & 4 players (3.05) & 4 players (3.72) & 3 players (2.94) \\
-Worst attack & Shadow Ball & Iron Head & Ice Beam & Sky Attack & Solar Beam \\
+\includegraphics[width=2cm]{../../images/pokemon/Raikou} & 
+\includegraphics[width=2cm]{../../images/pokemon/Entei} & 
+\includegraphics[width=2cm]{../../images/pokemon/Suicune}  \\ \hline
+Base ATT & \attack{241} & \attack{235} & \attack{180}  \\
+Base DEF & \defense{195} & \defense{171} & \defense{235}   \\  \hline
+Weaknesses & \groundfull & \waterfull~\rockfull~\groundfull & \grassfull~\electricfull  \\
+Estimator & 4 players (3.05) & 3 players (2.20) & 4 players (3.05)  \\
+Worst attack & Shadow Ball & Iron Head & Ice Beam \\
 \end{tabular}
 \end{center}
+
+
+\begin{center}
+\begin{tabular}{ccc}
+& \textbf{Lugia} \hfill \psychicfull~\flyingfull & \textbf{Ho-oh} \hfill \firefull~\flyingfull \\
+& 
+\includegraphics[width=2cm]{../../images/pokemon/Lugia} & 
+\includegraphics[width=2cm]{../../images/pokemon/Ho-oh} \\ \hline
+Base ATT & \attack{193}& \attack{239} \\
+Base DEF &  \defense{310}& \defense{244} \\  \hline
+Weaknesses &  \darkfull~\icefull~\rockfull~\electricfull~\ghostfull & \rockfull~\electricfull~\waterfull  \\
+Estimator &  4 players (3.72) & 3 players (2.94) \\
+Worst attack & Sky Attack & Solar Beam \\
+\end{tabular}
+\end{center}
+
 \end{block}
 
-\end{tiny}
+\end{footnotesize}
 \end{frame}
 
 
 
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Raid boss difficulty (generation 3)}
 
 \begin{block}{}
+
 \begin{center}
-\begin{tabular}{cccccc}
-& \textbf{Regice} \hfill \icefull & \textbf{Regirock} \hfill \rockfull & \textbf{Registeel} \hfill \steelfull & \textbf{Latios} \hfill \dragonfull~\psychicfull & \textbf{Latias} \hfill \dragonfull~\psychicfull \\
-& \includegraphics[width=1cm]{../../images/pokemon/Regice} & 
-\includegraphics[width=1cm]{../../images/pokemon/Regirock} & 
-\includegraphics[width=1cm]{../../images/pokemon/Registeel} & 
-\includegraphics[width=1cm]{../../images/pokemon/Latios} &
-\includegraphics[width=1cm]{../../images/pokemon/Latias}  \\ \hline
-Base ATT & \attack{179} & \attack{179}& \attack{143}& \attack{268}& \attack{228} \\
-Base DEF & \defense{309} & \defense{309} & \defense{285} & \defense{212} & \defense{246}   \\ \hline
-Weaknesses & \firefull~\steelfull~\fightingfull~\rockfull & \steelfull~\waterfull~\grassfull~\fightingfull~\groundfull & \firefull~\fightingfull~\groundfull  & \multicolumn{2}{c}{\ghostfull~\darkfull~\bugfull~\dragonfull~\icefull~\fairyfull } \\ 
-Estimator & 4 players (3.60)  & 4 players (3.56) & 4 players (3.45) & 3 players (2.79) & 4 players (3.01)  \\
-Worst Attack & Earthquake & $-$ & $-$ & Dragon Claw & Outrage \\
+\begin{tabular}{ccc}
+& \textbf{Latios} \hfill \dragonfull~\psychicfull & \textbf{Latias} \hfill \dragonfull~\psychicfull \\
+& 
+\includegraphics[width=2cm]{../../images/pokemon/Latios} &
+\includegraphics[width=2cm]{../../images/pokemon/Latias}  \\ \hline
+Base ATT & \attack{268}& \attack{228} \\
+Base DEF & \defense{212} & \defense{246}   \\ \hline
+Weaknesses & \multicolumn{2}{c}{\ghostfull~\darkfull~\bugfull~\dragonfull~\icefull~\fairyfull } \\ 
+Estimator &  3 players (2.79) & 4 players (3.01)  \\
+Worst Attack &  Dragon Claw & Outrage \\
+\end{tabular}
+\end{center}
+
+
+\begin{center}
+\begin{tabular}{cccc}
+& \textbf{Regice} \hfill \icefull & \textbf{Regirock} \hfill \rockfull & \textbf{Registeel} \hfill \steelfull  \\
+& \includegraphics[width=2cm]{../../images/pokemon/Regice} & 
+\includegraphics[width=2cm]{../../images/pokemon/Regirock} & 
+\includegraphics[width=2cm]{../../images/pokemon/Registeel}   \\ \hline
+Base ATT & \attack{179} & \attack{179}& \attack{143}\\
+Base DEF & \defense{309} & \defense{309} & \defense{285}   \\ \hline
+Weaknesses & \firefull~\steelfull~\fightingfull~\rockfull & \steelfull~\waterfull~\grassfull~\fightingfull~\groundfull & \firefull~\fightingfull~\groundfull  \\ 
+Estimator & 4 players (3.60)  & 4 players (3.56) & 4 players (3.45)  \\
+Worst Attack & Earthquake & $-$ & $-$  \\
 \end{tabular}
 \end{center}
 
@@ -384,9 +435,9 @@ Worst Attack & Earthquake & $-$ & $-$ & Dragon Claw & Outrage \\
 & \textbf{Kyogre} \hfill \waterfull & 
 \textbf{Groudon} \hfill \groundfull &
 \textbf{Rayquaza} \hfill \dragonfull~\flyingfull \\
-& \includegraphics[width=1cm]{../../images/pokemon/Kyogre} &
-\includegraphics[width=1cm]{../../images/pokemon/Groudon} &
-\includegraphics[width=1cm]{../../images/pokemon/Rayquaza}  \\ \hline
+& \includegraphics[width=2cm]{../../images/pokemon/Kyogre} &
+\includegraphics[width=2cm]{../../images/pokemon/Groudon} &
+\includegraphics[width=2cm]{../../images/pokemon/Rayquaza}  \\ \hline
 Base ATT & \attack{270}& \attack{270}& \attack{284} \\
 Base DEF &  \defense{228}&  \defense{228}&  \defense{170} \\ \hline
 Weaknesses & \grassfull~\electricfull & \waterfull~\grassfull~\icefull & \icefull~\dragonfull~\rockfull~\fairyfull \\ 
@@ -398,10 +449,10 @@ Worst Attack & Hydropump & Earthquake & Outrage \\
 \begin{center}
 \begin{tabular}{ccccc}
 & \textbf{Deoxys (N)} \hfill \psychicfull & \textbf{Deoxys (A)} \hfill \psychicfull & \textbf{Deoxys (D)} \hfill \psychicfull & \textbf{Deoxys (S)} \hfill \psychicfull \\
-& \includegraphics[width=1cm]{../../images/pokemon/Deoxys_n} & 
-\includegraphics[width=1cm]{../../images/pokemon/Deoxys_a} & 
-\includegraphics[width=1cm]{../../images/pokemon/Deoxys_d} & 
-\includegraphics[width=1cm]{../../images/pokemon/Deoxys_s} \\ \hline
+& \includegraphics[width=2cm]{../../images/pokemon/Deoxys_n} & 
+\includegraphics[width=2cm]{../../images/pokemon/Deoxys_a} & 
+\includegraphics[width=2cm]{../../images/pokemon/Deoxys_d} & 
+\includegraphics[width=2cm]{../../images/pokemon/Deoxys_s} \\ \hline
 Base ATT & \attack{345}& \attack{414}& \attack{144} & \attack{230}\\
 Base DEF &  \defense{115}&  \defense{46}&  \defense{330} & \defense{218} \\ \hline
 Weaknesses & \multicolumn{4}{c}{\ghostfull~\darkfull~\bugfull} \\ 
@@ -410,23 +461,55 @@ Estimator & 2 players (1.66) & 1 player (0.98) & 4 players (3.99) & 3 players (2
 \end{center}
 \end{block}
 
-\end{tiny}
+\end{footnotesize}
 \end{frame}
 
 
 
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Raid boss difficulty (generation 4)}
 
 \begin{block}{}
+
+
+\begin{center}
+\begin{tabular}{ccccc} 
+&\textbf{Mesprit} \hfill \psychicfull& \textbf{Uxie} \hfill \psychicfull & \textbf{Azelf} \hfill \psychicfull \\
+& \includegraphics[width=2cm]{../../images/pokemon/Mesprit} &  
+\includegraphics[width=2cm]{../../images/pokemon/Uxie} &
+\includegraphics[width=2cm]{../../images/pokemon/Azelf} \\ \hline
+Base ATT & \attack{212} &  \attack{156} &  \attack{270} \\
+Base DEF & \defense{212} & \defense{270} & \defense{151}  \\ \hline
+Weaknesses & \multicolumn{3}{c}{\ghostfull~\darkfull~\bugfull} \\ 
+Estimator & 3 players (2.81) &  4 players (3.36) & 3 players (2.06)  \\
+Worst Attack & Blizzard & $-$ & $-$  \\
+\end{tabular}
+\end{center}
+
+
+\begin{center}
+\begin{tabular}{ccccc} 
+& \textbf{Heatran} \hfill \firefull~\steelfull & \textbf{Regigigas} \hfill \normalfull & \textbf{Cresselia} \hfill \psychicfull \\
+& \includegraphics[width=2cm]{../../images/pokemon/Heatran} &
+\includegraphics[width=2cm]{../../images/pokemon/Regigigas} &
+\includegraphics[width=2cm]{../../images/pokemon/Cresselia} \\ \hline
+Base ATT &   \attack{251} &  \attack{287} &  \attack{152} \\
+Base DEF & \defense{213} & \defense{210} & \defense{258} \\ \hline
+Weaknesses &  \groundfull~\fightingfull~\waterfull & \fightingfull & \ghostfull~\darkfull~\bugfull \\ 
+Estimator &  3 players (2.19) & 4 players (3.12) &  4 players (3.24) \\
+Worst Attack  & Iron Head & Avalanche &  Moonblast \\
+\end{tabular}
+\end{center}
+
+
 \begin{center}
 \begin{tabular}{ccccc} 
 & \textbf{Palkia} \hfill\dragonfull~\waterfull & \textbf{Dialga} \hfill \steelfull~\dragonfull & \textbf{Giratina (A)} \hfill \ghostfull~\dragonfull & \textbf{Giratina (O)} \hfill \ghostfull~\dragonfull \\
-&\includegraphics[width=1cm]{../../images/pokemon/Palkia} &
-\includegraphics[width=1cm]{../../images/pokemon/Dialga} &
-\includegraphics[width=1cm]{../../images/pokemon/Giratina_a} &
-\includegraphics[width=1cm]{../../images/pokemon/Giratina_o} \\ \hline
+&\includegraphics[width=2cm]{../../images/pokemon/Palkia} &
+\includegraphics[width=2cm]{../../images/pokemon/Dialga} &
+\includegraphics[width=2cm]{../../images/pokemon/Giratina_a} &
+\includegraphics[width=2cm]{../../images/pokemon/Giratina_o} \\ \hline
 Base ATT & \attack{280} &  \attack{275} &  \attack{187} &  \attack{225} \\
 Base DEF & \defense{215} & \defense{211} & \defense{225} & \defense{187} \\ \hline
 Weaknesses & \fairyfull~\dragonfull & \fightingfull~\groundfull &\multicolumn{2}{c}{\ghostfull~\darkfull~\dragonfull~\icefull~\fairyfull }  \\ 
@@ -435,23 +518,9 @@ Worst Attack & Draco Meteor & Draco Meteor & $-$ & Dragon Pulse \\
 \end{tabular}
 \end{center}
 
-\begin{center}
-\begin{tabular}{cccccc} 
-&\textbf{Mesprit} \hfill \psychicfull& \textbf{Heatran} \hfill \firefull~\steelfull & \textbf{Regigigas} \hfill \normalfull & \textbf{Cresselia} \hfill \psychicfull \\
-& \includegraphics[width=1cm]{../../images/pokemon/Mesprit} &  
-\includegraphics[width=1cm]{../../images/pokemon/Heatran} &
-\includegraphics[width=1cm]{../../images/pokemon/Regigigas} &
-\includegraphics[width=1cm]{../../images/pokemon/Cresselia} \\ \hline
-Base ATT & \attack{212} &  \attack{251} &  \attack{287} &  \attack{152} \\
-Base DEF & \defense{212} & \defense{213} & \defense{210} & \defense{258} \\ \hline
-Weaknesses & \ghostfull~\darkfull~\bugfull & \groundfull~\fightingfull~\waterfull & \fightingfull & \ghostfull~\darkfull~\bugfull \\ 
-Estimator & 3 players (2.81) &  3 players (2.19) & 4 players (3.12) &  4 players (3.23) \\
-Worst Attack & Blizzard & Iron Head & Avalanche &  Moonblast \\
-\end{tabular}
-\end{center}
 
 \end{block}
-\end{tiny}
+\end{footnotesize}
 \end{frame}
 
 
@@ -461,28 +530,47 @@ Worst Attack & Blizzard & Iron Head & Avalanche &  Moonblast \\
 \frametitle{Raid boss difficulty (generation 5)}
 
 \begin{block}{}
-\begin{tiny}
+\begin{footnotesize}
 \begin{itemize}
 \item Base statistics are computed using the same formula as for previous generation Pok\'emon.
 \item Moves remain unknown, but could be guessed based on the game on Game Boy. Remarks are based on these potential predictions.
 \end{itemize}
 
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}p{2cm}}
-& Cobalion \hfill \fightingfull~\steelfull & Terrakion \hfill \fightingfull~\rockfull & Virizion \hfill \fightingfull~\grassfull & Kyurem \hfill \dragonfull~\icefull \\
-& & & & \\
-& \includegraphics[height=2cm]{../../images/pokemon/generation_5/Cobalion} &  \includegraphics[height=1.5cm]{../../images/pokemon/generation_5/Terrakion} &  \includegraphics[height=1.8cm]{../../images/pokemon/generation_5/Virizion} &  \includegraphics[height=1.8cm]{../../images/pokemon/generation_5/Kyurem} \\ \hline   
-ATT & \attack{192} & \attack{260} & \attack{192} &  \attack{246} \\
-DEF & \defense{229} & \defense{192} & \defense{229} & \defense{170}\\
-HP & \stamina{209} & \stamina{209} & \stamina{209} & \stamina{244}\\ \hline
-Max PC & 3022 & 3698 & 3022 & 3568 \\
-Effective Health & \survival{37.93} & \survival{32.18} & \survival{37.93} &\survival{33.25} \\ \hline
-\multirow{2}{*}{Weaknesses}& \multicolumn{1}{c}{\multirow{2}{*}{\fightingfull~\firefull~\groundfull}} &  \multicolumn{1}{c}{\grassfull~\waterfull~\fightingfull~\groundfull} & \multicolumn{1}{c}{\firefull~\icefull~\poisonfull} & \multicolumn{1}{c}{\fightingfull~\rockfull~\dragonfull} \\ 
-& & \multicolumn{1}{c}{\psychicfull~\steelfull~\fairyfull} & \multicolumn{1}{c}{\flyingfull~\psychicfull~\fairyfull} & \multicolumn{1}{c}{\steelfull~\fairyfull} \\ \hline
-Remarks & Useless & Excellent Rock type Pokémon (better than Tyranitar in DPS, and as bulky). Useless as Fighting type Pokémon & Useless & As strong as Mamoswine. However, its weakness to Dragon makes it unviable. \\
+\begin{tabular}{rp{3cm}p{3cm}p{3cm}}
+& Cobalion \hfill \fightingfull~\steelfull & Terrakion \hfill \fightingfull~\rockfull & Virizion \hfill \fightingfull~\grassfull  \\
+& & & \\
+& \includegraphics[height=2cm]{../../images/pokemon/generation_5/Cobalion} &  \includegraphics[height=1.5cm]{../../images/pokemon/generation_5/Terrakion} &  \includegraphics[height=1.8cm]{../../images/pokemon/generation_5/Virizion} \\ \hline   
+ATT & \attack{192} & \attack{260} & \attack{192} \\
+DEF & \defense{229} & \defense{192} & \defense{229} \\
+HP & \stamina{209} & \stamina{209} & \stamina{209}\\ \hline
+Max PC & 3022 & 3698 & 3022  \\
+Effective Health & \survival{37.93} & \survival{32.18} & \survival{37.93}  \\ \hline
+\multirow{2}{*}{Weaknesses}& \multicolumn{1}{c}{\multirow{2}{*}{\fightingfull~\firefull~\groundfull}} &  \multicolumn{1}{c}{\grassfull~\waterfull~\fightingfull~\groundfull} & \multicolumn{1}{c}{\firefull~\icefull~\poisonfull} \\ 
+& & \multicolumn{1}{c}{\psychicfull~\steelfull~\fairyfull} & \multicolumn{1}{c}{\flyingfull~\psychicfull~\fairyfull}  \\ \hline
+Remarks & Useless & Excellent Rock type Pokémon (better than Tyranitar in DPS, and as bulky). Useless as Fighting type Pokémon & Useless  \\
 \end{tabular}
 \end{center}
-\end{tiny}
+
+
+
+\begin{center}
+\begin{tabular}{rp{3cm}p{3cm}p{3cm}}
+& Reshiram \hfill \dragonfull~\firefull & Zekrom \hfill \dragonfull~\electricfull & Kyurem \hfill \dragonfull~\icefull \\
+& & & \\
+& \includegraphics[height=2cm]{../../images/pokemon/generation_5/Reshiram} & \includegraphics[height=2cm]{../../images/pokemon/generation_5/Zekrom} & \includegraphics[height=1.8cm]{../../images/pokemon/generation_5/Kyurem}  \\ \hline   
+ATT & \attack{275} & \attack{275} & \attack{246} \\
+DEF & \defense{211} & \defense{211} & \defense{170} \\
+HP & \stamina{205} & \stamina{205} & \stamina{244} \\ \hline
+Max PC & 4038 & 4038 & 3568 \\
+Effective Health & \survival{34.50} & \survival{34.50} & \survival{33.25}  \\ \hline
+Weaknesses & \multicolumn{1}{c}{\groundfull~\rockfull~\dragonfull} &\multicolumn{1}{c}{\groundfull~\icefull~\dragonfull~\fairyfull} & \multicolumn{1}{c}{\fightingfull~\rockfull~\dragonfull~\steelfull~\fairyfull}  \\ \hline
+Remarks &  Best Fire type Pokémon (better than Moltres). Excellent Dragon & Best Electric type Pokémon (although it has the ice weakness). Excellent Dragon. &As strong as Mamoswine. However, its weakness to Dragon makes it unviable. \\
+\end{tabular}
+\end{center}
+
+
+\end{footnotesize}
 \end{block}
 \end{frame}
 
@@ -492,7 +580,7 @@ Remarks & Useless & Excellent Rock type Pokémon (better than Tyranitar in DPS, 
 \frametitle{Raid boss difficulty (generation 5)}
 
 \begin{block}{}
-\begin{tiny}
+\begin{footnotesize}
 
 \begin{itemize}
 \item Base statistics are computed using the same formula as for previous generation Pok\'emon.
@@ -500,20 +588,20 @@ Remarks & Useless & Excellent Rock type Pokémon (better than Tyranitar in DPS, 
 \end{itemize}
 
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}p{2cm}p{2cm}p{2cm}}
-& Reshiram \hfill \dragonfull~\firefull & Zekrom \hfill \dragonfull~\electricfull & Tornadus \hfill \flyingfull & Thundurus \hfill \flyingfull~\electricfull & Landorus  \hfill \flyingfull~\groundfull \\
-& & & & \\
-& \includegraphics[height=2cm]{../../images/pokemon/generation_5/Reshiram} & \includegraphics[height=2cm]{../../images/pokemon/generation_5/Zekrom} & \includegraphics[height=2cm]{../../images/pokemon/generation_5/Tornadus} & \includegraphics[height=2cm]{../../images/pokemon/generation_5/Thundurus} & \includegraphics[height=2cm]{../../images/pokemon/generation_5/Landorus} \\ \hline   
-ATT & \attack{275} & \attack{275} & \attack{266} &  \attack{266}&  \attack{261} \\
-DEF & \defense{211} & \defense{211} & \defense{164} & \defense{164}& \defense{182}\\
-HP & \stamina{205} & \stamina{205} & \stamina{188} & \stamina{188}& \stamina{205} \\ \hline
-Max PC & 4038 & 4038 & 3345 & 3345 & 3588 \\
-Effective Health & \survival{34.50} & \survival{34.50} & \survival{25.21} &\survival{25.21}&\survival{30.07} \\ \hline
-Weaknesses & \multicolumn{1}{c}{\groundfull~\rockfull~\dragonfull} &\multicolumn{1}{c}{\groundfull~\icefull~\dragonfull~\fairyfull} & \multicolumn{1}{c}{\icefull~\electricfull~\rockfull} & \multicolumn{1}{c}{\icefull~\rockfull}  & \multicolumn{1}{c}{\icefull~\waterfull} \\ \hline
-Remarks &  Best Fire type Pokémon (better than Moltres). Excellent Dragon & Best Electric type Pokémon (although it has the ice weakness). Excellent Dragon. & Excellent flying type Pokémon depending on its moves & Will not have flying type moves. As Electric type Pokemon, it is as Electivire (with the ice weakness). &  Will not have flying type moves.  Could be an excellent ground Pokémon \\
+\begin{tabular}{rp{3cm}p{3cm}p{3cm}}
+& Tornadus \hfill \flyingfull & Thundurus \hfill \flyingfull~\electricfull & Landorus  \hfill \flyingfull~\groundfull \\
+& & & \\
+& \includegraphics[height=2cm]{../../images/pokemon/generation_5/Tornadus} & \includegraphics[height=2cm]{../../images/pokemon/generation_5/Thundurus} & \includegraphics[height=2cm]{../../images/pokemon/generation_5/Landorus} \\ \hline   
+ATT &  \attack{266} &  \attack{266}&  \attack{261} \\
+DEF & \defense{164} & \defense{164}& \defense{182}\\
+HP & \stamina{188} & \stamina{188}& \stamina{205} \\ \hline
+Max PC &  3345 & 3345 & 3588 \\
+Effective Health &  \survival{25.21} &\survival{25.21}&\survival{30.07} \\ \hline
+Weaknesses & \multicolumn{1}{c}{\icefull~\electricfull~\rockfull} & \multicolumn{1}{c}{\icefull~\rockfull}  & \multicolumn{1}{c}{\icefull~\waterfull} \\ \hline
+Remarks &  Excellent flying type Pokémon depending on its moves & Will not have flying type moves. As Electric type Pokemon, it is as Electivire (with the ice weakness). &  Will not have flying type moves.  Could be an excellent ground Pokémon \\
 \end{tabular}
 \end{center}
-\end{tiny}
+\end{footnotesize}
 \end{block}
 \end{frame}
 

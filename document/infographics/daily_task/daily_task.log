@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/MacPorts 2016_4) (preloaded format=xelatex 2017.2.11)  17 JUN 2019 17:58
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/MacPorts 2016_4) (preloaded format=xelatex 2017.2.11)  17 JUN 2019 19:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1618,10 +1618,6 @@ LaTeX Info: Redefining \nameref on input line 254.
 \@outlinefile=\write5
 \openout5 = `daily_task.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 254.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
@@ -1771,10 +1767,10 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 293.
  ) 
 Here is how much of TeX's memory you used:
- 25033 strings out of 495534
- 463555 string characters out of 6185783
- 533861 words of memory out of 5000000
- 27750 multiletter control sequences out of 15000+600000
+ 25031 strings out of 495534
+ 463509 string characters out of 6185783
+ 533922 words of memory out of 5000000
+ 27748 multiletter control sequences out of 15000+600000
  42683 words of font info for 47 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,8n,66p,500b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
