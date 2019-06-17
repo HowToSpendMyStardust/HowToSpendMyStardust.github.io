@@ -2,32 +2,32 @@ cd document/pve/
 
 cd counters/
 xelatex Counters.tex
-pdf2htmlex --zoom 1.2 --hdpi 432 --vdpi 432 Counters.pdf
+pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 Counters.pdf
 cd ..
 
 cd gen4_evolution/
 xelatex gen_4.tex
-pdf2htmlex --zoom 1.2 --hdpi 432 --vdpi 432 gen_4.pdf
+pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 gen_4.pdf
 cd ..
 
 cd guide/
 xelatex Guide.tex
-pdf2htmlex --zoom 1.2 --hdpi 432 --vdpi 432 Guide.pdf
+pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 Guide.pdf
 cd ..
 
 cd gym/
 xelatex Gym.tex
-pdf2htmlex --zoom 1.2 --hdpi 432 --vdpi 432 Gym.pdf
+pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 Gym.pdf
 cd ..
 
 cd legendary_raid/
 xelatex Raid_bosses.tex
-pdf2htmlex --zoom 1.2 --hdpi 432 --vdpi 432 Raid_bosses.pdf
+pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 Raid_bosses.pdf
 cd ..
 
 cd iv_determined_at_go/
 xelatex iv_determined_at_go.tex
-pdf2htmlex --zoom 1.2 --hdpi 432 --vdpi 432 iv_determined_at_go.pdf
+pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 iv_determined_at_go.pdf
 cd ../..
 
 cd pvp/counters

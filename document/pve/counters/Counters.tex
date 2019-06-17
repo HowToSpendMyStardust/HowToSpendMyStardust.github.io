@@ -1,5 +1,6 @@
 \documentclass[12pt]{beamer}
 \usepackage[orientation=portrait,size=custom,width=15.55,height=22,scale=0.5,debug]{beamerposter} 
+\usepackage{hyperref}
 
 \usepackage{beamerbasethemes}
 \usepackage{calc}
@@ -294,26 +295,26 @@
   \item \textbf{Relevant types}: 
   
   \begin{center}
-  \includegraphics[height=0.3cm]{../../images/type/full/Fighting.png}~
-  \includegraphics[height=0.3cm]{../../images/type/full/Ghost}~
-  \includegraphics[height=0.3cm]{../../images/type/full/Dark}~
-  \includegraphics[height=0.3cm]{../../images/type/full/Dragon}~
-  \includegraphics[height=0.3cm]{../../images/type/full/Ice}~
-  \includegraphics[height=0.3cm]{../../images/type/full/Rock}~
-  \includegraphics[height=0.3cm]{../../images/type/full/Ground}~
-  \includegraphics[height=0.3cm]{../../images/type/full/Electric}~
-  \includegraphics[height=0.3cm]{../../images/type/full/Grass}~
-  \includegraphics[height=0.3cm]{../../images/type/full/Water}~
-  \includegraphics[height=0.3cm]{../../images/type/full/Fire}~
-  \includegraphics[height=0.3cm]{../../images/type/full/Steel}~
-  \includegraphics[height=0.3cm]{../../images/type/full/Fairy}
+  \hyperlink{Fighting}{\includegraphics[height=0.3cm]{../../images/type/full/Fighting.png}}~
+  \hyperlink{Ghost}{\includegraphics[height=0.3cm]{../../images/type/full/Ghost}}~
+  \hyperlink{Dark}{\includegraphics[height=0.3cm]{../../images/type/full/Dark}}~
+  \hyperlink{Dragon}{\includegraphics[height=0.3cm]{../../images/type/full/Dragon}}~
+  \hyperlink{Ice}{\includegraphics[height=0.3cm]{../../images/type/full/Ice}}~
+  \hyperlink{Rock}{\includegraphics[height=0.3cm]{../../images/type/full/Rock}}~
+  \hyperlink{Ground}{\includegraphics[height=0.3cm]{../../images/type/full/Ground}}~
+  \hyperlink{Electric}{\includegraphics[height=0.3cm]{../../images/type/full/Electric}}~
+  \hyperlink{Grass}{\includegraphics[height=0.3cm]{../../images/type/full/Grass}}~
+  \hyperlink{Water}{\includegraphics[height=0.3cm]{../../images/type/full/Water}}~
+  \hyperlink{Fire}{\includegraphics[height=0.3cm]{../../images/type/full/Fire}}~
+  \hyperlink{Steel}{\includegraphics[height=0.3cm]{../../images/type/full/Steel}}~
+  \hyperlink{Fairy}{\includegraphics[height=0.3cm]{../../images/type/full/Fairy}}
 \end{center}
  \item \textbf{Not Relevant types}:
    \begin{center}
-  \includegraphics[height=0.3cm]{../../images/type/full/Psychic}~
-  \includegraphics[height=0.3cm]{../../images/type/full/Flying}~
-  \includegraphics[height=0.3cm]{../../images/type/full/Poison}~
-  \includegraphics[height=0.3cm]{../../images/type/full/Bug}~
+  \hyperlink{Psychic}{\includegraphics[height=0.3cm]{../../images/type/full/Psychic}}~
+  \hyperlink{Flying}{\includegraphics[height=0.3cm]{../../images/type/full/Flying}}~
+  \hyperlink{Poison}{\includegraphics[height=0.3cm]{../../images/type/full/Poison}}~
+  \hyperlink{Bug}{\includegraphics[height=0.3cm]{../../images/type/full/Bug}}~
   \includegraphics[height=0.3cm]{../../images/type/full/Normal}
 \end{center}
 
@@ -377,7 +378,7 @@ TDO $=$ DPS $\times$ EH.
 \renewcommand{\baselinestretch}{1.0}
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/fighting.png}}
-\begin{frame}
+\begin{frame}[label=Fighting]
 \frametitle{Fighting}
 
 \begin{footnotesize}
@@ -427,7 +428,7 @@ This type is useful versus \normalfull~\darkfull~\icefull~\steelfull~\rockfull~a
 
 
 \usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/ghost.png}}
-\begin{frame}
+\begin{frame}[label=Ghost]
 \begin{footnotesize}
 \frametitle{Ghost}
 
@@ -482,7 +483,7 @@ This type is useful versus \psychicfull~\ghostfull~and versus the following raid
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/dark.png}}
-\begin{frame}
+\begin{frame}[label=Dark]
 \begin{footnotesize}
 \frametitle{Dark}
 
@@ -538,7 +539,7 @@ This type is useful versus \psychicfull~\ghostfull~and versus the following raid
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/dragon.png}}
-\begin{frame}
+\begin{frame}[label=Dragon]
 \begin{footnotesize}
 \frametitle{Dragon}
 
@@ -587,7 +588,7 @@ This type is useful versus \dragonfull~and versus the following raid bosses:
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/ice.png}}
-\begin{frame}
+\begin{frame}[label=Ice]
 \begin{footnotesize}
 \frametitle{Ice}
 
@@ -632,7 +633,7 @@ This type is useful versus \dragonfull~\flyingfull~\grassfull~\groundfull~and ve
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/rock.png}}
-\begin{frame}
+\begin{frame}[label=Rock]
 \begin{footnotesize}
 \frametitle{Rock}
 
@@ -679,7 +680,7 @@ This type is useful versus \flyingfull~\firefull~\icefull~\bugfull~and versus th
 %GROUND
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/ground.png}}
-\begin{frame}
+\begin{frame}[label=Ground]
 \begin{footnotesize}
 \frametitle{Ground}
 
@@ -725,7 +726,7 @@ This type is useful versus \steelfull~\electricfull~\poisonfull~\rockfull~and ve
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/electric.png}}
-\begin{frame}
+\begin{frame}[label=Electric]
 \begin{footnotesize}
 \frametitle{Electric}
 
@@ -779,7 +780,7 @@ This type is useful versus \flyingfull~\waterfull~and versus the following raid 
 
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/grass}}
-\begin{frame}
+\begin{frame}[label=Grass]
 \begin{footnotesize}
 \frametitle{Grass}
 
@@ -824,7 +825,7 @@ This type is useful versus \waterfull~\groundfull~\rockfull~and versus the follo
 
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/water}}
-\begin{frame}
+\begin{frame}[label=Water]
 \begin{footnotesize}
 \frametitle{Water}
 
@@ -869,7 +870,7 @@ This type is useful versus \firefull~\groundfull~\rockfull~and versus the follow
 %FIRE
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/fire}}
-\begin{frame}
+\begin{frame}[label=Fire]
 \begin{footnotesize}
 \frametitle{Fire}
 
@@ -917,7 +918,7 @@ This type is useful versus \icefull~\grassfull~\bugfull~\steelfull~and versus th
 %STEEL
 
 \usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/steel}}
-\begin{frame}
+\begin{frame}[label=Steel]
 \begin{footnotesize}
 \frametitle{Steel}
 
@@ -955,7 +956,7 @@ This type is useful versus \fairyfull~\steelfull~\rockfull~and versus the follow
 %FAIRY
 
 \usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/fairy.png}}
-\begin{frame}
+\begin{frame}[label=Fairy]
 \begin{footnotesize}
 \frametitle{Fairy}
 
@@ -1002,7 +1003,7 @@ This type is useful versus \dragonfull~\darkfull~\fightingfull~and versus the fo
 %PSYCHIC
 
 \usebackgroundtemplate{\includegraphics[width=\paperheight]{../../images/type/background/psychic.png}}
-\begin{frame}
+\begin{frame}[label=Psychic]
 \begin{footnotesize}
 \frametitle{Psychic (not relevant)}
 
@@ -1037,7 +1038,7 @@ This type is useful versus \poisonfull~\fightingfull~and versus the following ra
 %FLYING
 
 \usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/flying.png}}
-\begin{frame}
+\begin{frame}[label=Flying]
 \begin{footnotesize}
 \frametitle{Flying (not relevant)}
 
@@ -1076,7 +1077,7 @@ This type is useful versus \grassfull~\bugfull~\fightingfull~and versus the foll
 
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/poison.png}}
-\begin{frame}
+\begin{frame}[label=Poison]
 \begin{footnotesize}
 \frametitle{Poison (not relevant)}
 
@@ -1111,7 +1112,7 @@ This type is useful versus \grassfull~\fairyfull~and versus the following raid b
 
 
 \usebackgroundtemplate{\includegraphics[width=\paperwidth]{../../images/type/background/bug.png}}
-\begin{frame}
+\begin{frame}[label=Bug]
 \begin{footnotesize}
 \frametitle{Bug (not relevant)}
 
