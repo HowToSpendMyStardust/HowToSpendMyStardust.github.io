@@ -233,7 +233,7 @@
 
 
 \newcommand{\stardust}{\includegraphics[height=0.15cm]{../../images/objects/stardust}}
-\newcommand{\candy}{\includegraphics[height=0.15cm]{../../images/objects/candy}}
+\newcommand{\candy}{\includegraphics[height=0.15cm]{../../images/objects/rare_candy}}
 \newcommand{\diffhead}{\includegraphics[width=0.2cm]{../../images/Badge_Champion_GOLD_01.png}}
 
 \newcommand{\megaevol}{\includegraphics[width=0.2cm]{../../images/megaevolve}}
@@ -271,7 +271,7 @@
 \begin{block}{}
 \begin{footnotesize}
 \begin{itemize}
-  \item Three statistics define a Pok\'emon: the attack statistic defines the damages your Pokémon will do, the defence statistic defines the speed at which your Pokémon will die, the HP is your Pokémon's Health Points.
+  \item Three statistics define a Pok\'emon: the attack statistic defines the damage your Pokémon will do, the defence statistic defines the speed at which your Pokémon will die, the HP is your Pokémon's Health Points.
 
   \item We consider the example of Mewtwo. Mewtwo's base statistics are:
 
@@ -402,7 +402,7 @@ Super effective & $\times 1.6$  \\
 \end{center}
 \end{itemize}
 
-Under no weather boost, no friendship bonus, the damages Exeggutor will do to Kyogre are:
+Under no weather boost, no friendship bonus, the damage Exeggutor will do to Kyogre are:
 \begin{align*}
 \text{Damage formula} & = \text{floor}\left(\frac{1}{2}\text{Power} \times \frac{\text{ATT}}{\text{OPP\_DEF}}\times\text{Multiplier}\right) +1  \\
 & = \text{floor}\left(\frac{1}{2}\text{180} \times \frac{\text{179}}{\text{192}}\times\text{1.2}\times\text{1.6}\right) +1 \\
@@ -423,7 +423,7 @@ Under no weather boost, no friendship bonus, the damages Exeggutor will do to Ky
 \begin{block}{}
 \begin{footnotesize}
 \begin{itemize}
-  \item Each Pokemon has a fast move and a charged move. Both together define the damages the Pok\'emon will realise.
+  \item Each Pokemon has a fast move and a charged move. Both together define the damage the Pok\'emon will realise.
   \item Each move is defined by the damage it realises, its duration and the energy it generates (for fast moves) or uses (for charged moves).
   \item Charged move energies are defined by the number of bars:
   \begin{center}
@@ -451,7 +451,7 @@ energy of 33.33& energy of 50 & energy of 100 \\
 \end{center}
 
 
-  \item The goal is then to choose the best moves that realise the \textbf{most damages per second}. We consider the example of Metagross: is Meteor Mash or Flash Cannon more interesting? From \url{https://pokemon.gameinfo.io}, we get the following table:
+  \item The goal is then to choose the best moves that realise the \textbf{most damage per second}. We consider the example of Metagross: is Meteor Mash or Flash Cannon more interesting? From \url{https://pokemon.gameinfo.io}, we get the following table:
   \begin{center}
 \begin{tabular}{ccc}
 & \steelsimp~Meteor Mash & \steelsimp~Flash Cannon \\ \hline
@@ -589,7 +589,7 @@ As a raid boss, they will be:
 }
 
 \begin{itemize}
-   \item Damages realised by the raid boss are identical to a Pok\'emon level 40 with ATK\_IV = 15.
+   \item damage realised by the raid boss are identical to a Pok\'emon level 40 with ATK\_IV = 15.
   \item For a 5-head boss, you must realise 15000/300 = 50 HP per second; same damage to realise per second for a 4-head boss. The main difficulty of a 5-head boss is that it has more HP, and therefore you will need more time, more Pok\'emon and more revives.
   \item Difficulty of a raid boss will mainly depends on \textbf{the boss defence statistic} (the higher is defense is, the more time you will need to defeat it).
 
