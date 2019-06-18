@@ -136,6 +136,7 @@
 %gets rid of footer
 \setbeamertemplate{footline}{}
 \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.5}{$\blacktriangleright$}}}
+\setbeamertemplate{itemize subitem}{\raisebox{0.2em}{\scalebox{0.5}{$\blacktriangleright$}}}
 
 \usepackage{pgf,tikz}
 \usepackage{mathrsfs}
@@ -278,7 +279,7 @@
 \begin{tabular}{rp{2cm}} 
     & \textbf{Mewtwo} \hfill  \psychicfull  \\ 
 %    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Mewtwo}} \\ \hline
-  Base\_ATT &  \attack{300} \\
+  Base\_ATK &  \attack{300} \\
   Base\_DEF & \defense{182} \\
   Base\_HP & \stamina{214} \\ % \hline
 \end{tabular}   
@@ -289,7 +290,7 @@
 Assume you are very lucky, and you caught a perfect Mewtwo, with (ATK\_IV, DEF\_IV, HP\_IV) = (15, 15, 15). Your perfect Mewtwo's  stats are:
 \begin{center}
 \begin{tabular}{rp{2cm}} 
-  Base\_ATT + ATK\_IV  &  \attack{315} \\
+  Base\_ATK + ATK\_IV  &  \attack{315} \\
   Base\_DEF + DEF\_IV & \defense{197} \\
   Base\_HP + HP\_IV & \stamina{229} \\ % \hline
 \end{tabular}   
@@ -307,7 +308,7 @@ Assume you are very lucky, and you caught a perfect Mewtwo, with (ATK\_IV, DEF\_
 This table tells that: at level 25, your Pokemon is at 84.5\% of its capacity; at level 30, your Pokemon is at 92.6\% of its capacity; at level 35, your Pokemon is at 96.4\% of its capacity. Coming back to Mewtwo, if you level up it to level 30, its statistics are finally:
 \begin{center}
 \begin{tabular}{rp{2cm}} 
-ATT =  (ATT + ATK\_IV) at level 30  &  \attack{230} \\
+ATK =  (ATT + ATK\_IV) at level 30  &  \attack{230} \\
 DEF =  (DEF + DEF\_IV) at level 30 & \defense{144} \\
 HP =  (HP + HP\_IV) at level 30 & \stamina{167} \\ % \hline
 \end{tabular}   
@@ -335,7 +336,7 @@ CP = $\text{floor}\left(\frac{\text{ATT} \times \sqrt{\text{DEF} \times \text{HP
 \begin{tabular}{rp{2cm}p{2cm}} 
     & \textbf{Tangrowth} \hfill  \grassfull &\textbf{Exeggutor (A)} \hfill  \grassfull~\dragonfull    \\ 
     & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/tangrowth.png}} & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/exeggutor_a.png}} \\
-  Base\_ATT &  \attack{207} &\attack{230}  \\
+  Base\_ATK &  \attack{207} &\attack{230}  \\
   Base\_DEF & \defense{184} &\defense{153}  \\
   Base\_HP & \stamina{225}  & \stamina{216} \\
 \end{tabular}   
@@ -354,7 +355,12 @@ Double Resistance & $\times 2.56$ \\
 \end{tabular} 
 \end{center}
   
-  If we use these two Pokémon versus Kyogre (Waterfall + Hydro Pump), Tangrowth's base Effective Health is 41400$\times$1.6 = 66240, whereas Exeggutor (A)'s base Effective Health is 33048$\times$2.56 = 84602.88. Therefore, Exeggutor (A) will be more resistant versus Kyogre (Hydro Pump) than Tangrowth.
+  If we use these two Pokémon versus Kyogre (Waterfall + Hydro Pump), 
+  \begin{itemize}
+  \item \footnotesize Tangrowth's base Effective Health is 41400$\times$1.6 = 66240
+  \item\footnotesize Exeggutor (A)'s base Effective Health is 33048$\times$2.56 = 84602.88
+\end{itemize}
+ Therefore, Exeggutor (A) will be more resistant versus Kyogre (Hydro Pump) than Tangrowth.
 \end{itemize}
 
 \end{footnotesize}
@@ -377,7 +383,7 @@ To illustrate this formula we consider an Exeggutor (A) perfect at level 30 laun
 \begin{itemize}
   \item $\text{floor}\left(\right)+1$ guarantees that the minimum damage of any attack is 1.
   \item Power is the power of the considered move, for Solar Beam, it is 180.
-  \item ATT is the giver's attack statistic. For instance, for Exeggutor (A) at level 30 with 15 as IV\_ATT, it would be (230+15)$\times$0.7317 = 179.
+  \item ATT is the giver's attack statistic. For instance, for Exeggutor (A) at level 30 with 15 as IV\_ATK, it would be (230+15)$\times$0.7317 = 179.
   \item OPP\_DEF is the opponent's defense statistic. For instance, for Kyogre at level 40 with 15 as IV\_DEF, it would be (228+15)$\times$0.7903 = 192.
   \item Multipliers could be STAB, WAB, FAB and Effectiveness.
   \item STAB is an acronym for Same Type Attack Bonus. If a Pokemon uses a move that matches one of its types, then the attack damage gets a $\times$1.2 multiplier.
@@ -397,9 +403,11 @@ Super effective & $\times 1.6$  \\
 \end{itemize}
 
 Under no weather boost, no friendship bonus, the damages Exeggutor will do to Kyogre are:
-\begin{center}
-Damage formula = $\text{floor}\left(\frac{1}{2}\text{Power} \times \frac{\text{ATT}}{\text{OPP\_DEF}}\times\text{Multiplier}\right) +1 = \text{floor}\left(\frac{1}{2}\text{180} \times \frac{\text{179}}{\text{192}}\times\text{1.2}\times\text{1.6}\right) +1 = 161 + 1 = 162$ HP
-\end{center}
+\begin{align*}
+\text{Damage formula} & = \text{floor}\left(\frac{1}{2}\text{Power} \times \frac{\text{ATT}}{\text{OPP\_DEF}}\times\text{Multiplier}\right) +1  \\
+& = \text{floor}\left(\frac{1}{2}\text{180} \times \frac{\text{179}}{\text{192}}\times\text{1.2}\times\text{1.6}\right) +1 \\
+& = 161 + 1 = 162 \text{HP}
+\end{align*}
 
 
 \end{footnotesize}
@@ -561,7 +569,7 @@ For example, Kyogre's base statistics are:
 \begin{center}
 \begin{tabular}{rp{2cm}} 
     & \textbf{Kyogre} \hfill  \waterfull  \\ 
-  Base\_ATT &  \attack{270} \\
+  Base\_ATK &  \attack{270} \\
   Base\_DEF & \defense{228} \\
   Base\_HP & \stamina{205} \\ % \hline
 \end{tabular}   
