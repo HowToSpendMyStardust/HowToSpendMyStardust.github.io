@@ -1,4 +1,7 @@
-\documentclass[8pt,aspectratio=43,compress]{beamer}
+%\documentclass[8pt,aspectratio=43,compress]{beamer}
+\documentclass[12pt]{beamer}
+\usepackage[orientation=portrait,size=custom,width=15.55,height=22,scale=0.5,debug]{beamerposter} 
+\usepackage{hyperref}
 
 \usepackage{beamerbasethemes}
 \usepackage{calc}
@@ -232,7 +235,7 @@
 
 
 \newcommand{\megaevol}{\includegraphics[width=0.2cm]{../../images/megaevolve}}
-\newcommand{\twice}{{\tiny{($\times$2)}}}
+\newcommand{\twice}{{\footnotesize{($\times$2)}}}
 
 %\setbeamertemplate{frametitle}[default][center]
 \setbeamerfont{frametitle}{size=\normalsize,series=\bfseries}
@@ -262,10 +265,15 @@
 
 
 
-\usebackgroundtemplate{\includegraphics[width=\paperwidth]{background}}
+\usebackgroundtemplate{\includegraphics[height=\paperheight]{background.png}}
 \begin{frame}
-\begin{tiny}
+\begin{footnotesize}
 \frametitle{Which moves for Mewtwo?}
+
+
+\begin{block}{}
+Read also: \url{https://pokemongo.gamepress.gg/pokemon/150}
+\end{block}
 
 \begin{block}{}
 
@@ -292,43 +300,51 @@ Fast move & Charged move & DPS \\ \hline
 \psysimp~Psycho Cut&\icesimp~Ice Beam&	15.463 \\ 
 \end{tabular}
 \end{center}
-\caption{\tiny Neutral DPS}
+\caption{\footnotesize Neutral DPS}
 \end{table}
 
 \vspace{-0.5cm}
 \begin{itemize}
-  \item \ghostfull~Giratina is better than Mewtwo. However, Giratina has two weaknesses \icefull~\fairyfull~than Mewtwo doesn't have.
-  \item \psychicfull~Mewtwo is the best \psychicfull~Pokémon, although Psychic has no utility until gen 5.
-  \item \fightingfull~Machamp is better than Mewtwo. However, Mewtwo is not weak to \psychicfull, making it usefull versus bosses having \psychicfull~moves (Arceus, Regigigas).
-  \item \electricfull~Raikou and Magnezone are better than Mewtwo.
-  \item \normalfull~Hyper Beam is not optimal.
-  \item \icefull~Mamoswine, Glaceon and Weawile are better than Mewtwo. However, Mewtwo doesn't have \firefull~\grassfull~weakness, which makes it usefull versus Groudon.
-  \item \firefull~Moltres and Entei are better than Mewtwo.
+  \item Vs other \ghostfull~type Pokémon, Giratina is better than Mewtwo. \\ However, Giratina has two weaknesses \icefull~\fairyfull~than Mewtwo doesn't have.
+  \item Vs other \psychicfull~type Pokémon, Mewtwo remains the best \psychicfull~Pokémon, although Psychic has no utility until gen 5.
+  \item Vs other \fightingfull~type Pokémon, Machamp is better than Mewtwo. \\ However, Mewtwo is not weak to \psychicfull, making it usefull versus bosses having \psychicfull~moves (Arceus, Regigigas).
+  \item Vs other \icefull~type Pokémon, Mamoswine, Glaceon and Weawile are better than Mewtwo. \\ However, Mewtwo doesn't have \firefull~\grassfull~weakness, which makes it usefull versus Groudon.
+  \item Vs other \firefull~type Pokémon, Moltres and Entei are better than Mewtwo.
+  \item Vs other \electricfull~type Pokémon, Raikou and Magnezone are better than Mewtwo.
+%  \item Vs other \normalfull~type Pokémon, Hyper Beam is not optimal.
 \end{itemize}
+\end{block}
 
+
+\begin{block}{}
 \textbf{Against other Pok\'emon}
 \begin{itemize}
-  \item \fightingfull~Mewtwo can counter Blissey, Snorlax, Chansey, Rhyperior, Tyranitar and all \normalfull~\rockfull~Pok\'emon.
-  \item \ghostfull~Mewtwo can counter Espeon, Gardevoir, Metagross.
-  \item \icefull~Mewtwo can counter Dragonite, Salamence, Togekiss, Groudon.
+  \item With a \fightingfull~type charged move, Mewtwo can counter Blissey, Snorlax, Chansey, Rhyperior, Tyranitar, Dialga, Melmetal and more generally, all \normalfull~\rockfull~Pok\'emon.
+  \item With a \ghostfull~type charged move, Mewtwo can counter Espeon, Gardevoir, Metagross.
+  \item With a \icefull~type charged move, Mewtwo can counter Dragonite, Salamence, Garchomp, Togekiss, Groudon.
 \end{itemize}
+\end{block}
 
+
+\begin{block}{}
 \textbf{Conclusion}
 
 \begin{center}
-\begin{tabular}{rp{2cm}} 
+\begin{tabular}{p{4cm}p{3cm}} 
 %  &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/mewtwo.png} } \\ \hline
-\multirow{2}{*}{Ideal moveset for PvE}   & \psysimp~Psycho Cut (5) \\
+\multirow{2}{*}{Ideal moveset for PvE \& PvP}   & \psysimp~Psycho Cut (5) \\
     & \ghostsimp~Shadow Ball$^{\dag}$(100) \\
     & \fightingsimp~Focus Blast (150) \\  
 %  ATT &  \attack{300} \\
 %  DEF & \defense{182} \\
 % HP &\stamina{214} \\  \hline
 \end{tabular}   
-\quad\quad
-\begin{tabular}{rp{2cm}} 
+
+\bigskip
+
+\begin{tabular}{p{4cm}p{3cm}} 
 %  &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/mewtwo.png} } \\ \hline
-\multirow{2}{*}{Ideal moveset for PvP}   & \psysimp~Psycho Cut (5) \\
+\multirow{2}{*}{Another ideal moveset for PvP}   & \psysimp~Psycho Cut (5) \\
     & \ghostsimp~Shadow Ball$^{\dag}$(100) \\
     & \icesimp~Ice Beam (90) \\  
 %  ATT &  \attack{300} \\
@@ -336,12 +352,9 @@ Fast move & Charged move & DPS \\ \hline
 % HP &\stamina{214} \\  \hline
 \end{tabular}   
 \end{center}
-
-Read also: \texttt{https://pokemongo.gamepress.gg/pokemon/150}
-
 \end{block}
 
-\end{tiny}
+\end{footnotesize}
 \end{frame}
 
 

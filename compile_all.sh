@@ -71,5 +71,5 @@ cd ..
 cd ..
 
 cd calendar/
-pdf2htmlex --zoom 2 --hdpi 432 --vdpi 432 calendar_summer2019.pdf
+pdf2htmlex --zoom 1 --hdpi 432 --vdpi 432 calendar_summer2019.pdf
 cd ..
