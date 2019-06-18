@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/MacPorts 2016_4) (preloaded format=xelatex 2017.2.11)  18 JUN 2019 14:32
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/MacPorts 2016_4) (preloaded format=xelatex 2017.2.11)  18 JUN 2019 17:54
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1771,15 +1771,15 @@ File: ../../images/pokemon/shiny/salamence_shiny.png Graphic file (type QTm)
 File: ../../images/pokemon/shiny/metagross_shiny.png Graphic file (type QTm)
 
 <use  "../../images/pokemon/shiny/metagross_shiny.png" >
-File: ../../images/pokemon/shiny/gibble.png Graphic file (type QTm)
+File: ../../images/pokemon/gibble.png Graphic file (type QTm)
 
-<use  "../../images/pokemon/shiny/gibble.png" >
-File: ../../images/pokemon/shiny/riolu.png Graphic file (type QTm)
+<use  "../../images/pokemon/gibble.png" >
+File: ../../images/pokemon/riolu.png Graphic file (type QTm)
 
-<use  "../../images/pokemon/shiny/riolu.png" >
-File: ../../images/pokemon/shiny/kranidos.png Graphic file (type QTm)
+<use  "../../images/pokemon/riolu.png" >
+File: ../../images/pokemon/kranidos.png Graphic file (type QTm)
 
-<use  "../../images/pokemon/shiny/kranidos.png" >
+<use  "../../images/pokemon/kranidos.png" >
 File: ../../images/type/background/lucky.png Graphic file (type QTm)
 
 <use  "../../images/type/background/lucky.png" > [1
@@ -1808,7 +1808,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 327.
  ) 
 Here is how much of TeX's memory you used:
  24826 strings out of 495534
- 460714 string characters out of 6185783
+ 460696 string characters out of 6185783
  530789 words of memory out of 5000000
  27521 multiletter control sequences out of 15000+600000
  48202 words of font info for 49 fonts, out of 8000000 for 9000

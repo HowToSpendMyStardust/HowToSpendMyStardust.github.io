@@ -62,6 +62,12 @@ xelatex gen_4.tex
 pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 gen_4.pdf
 cd ..
 
+cd second_charged_moves/
+xelatex second_charged_moves.tex
+pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 second_charged_moves.pdf
+cd ..
+
+
 cd ..
 
 cd calendar/
