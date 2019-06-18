@@ -32,7 +32,7 @@ cd ../..
 
 cd pvp/counters
 xelatex pvp.tex
-pdf2htmlex --zoom 2 --hdpi 432 --vdpi 432 pvp.pdf
+pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 pvp.pdf
 cd ../..
 
 cd infographics/
@@ -54,10 +54,10 @@ cd ..
 
 cd power_up_cost/
 xelatex power_up.tex
-pdf2htmlex --zoom 2 --hdpi 432 --vdpi 432 power_up.pdf
+pdf2htmlex --zoom 1.6 --hdpi 432 --vdpi 432 power_up.pdf
 cd ..
 
 cd trading_cost/
 xelatex trading_cost.tex
-pdf2htmlex --zoom 2 --hdpi 432 --vdpi 432 trading_cost.pdf
+pdf2htmlex --zoom 1.6 --hdpi 432 --vdpi 432 trading_cost.pdf
 cd ..

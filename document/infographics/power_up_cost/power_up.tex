@@ -1,4 +1,6 @@
-\documentclass[8pt,aspectratio=43,compress]{beamer}
+%\documentclass[8pt,aspectratio=43,compress]{beamer}
+\documentclass[12pt]{beamer}
+\usepackage[orientation=portrait,size=custom,width=10.5,height=14.85,scale=0.5,debug]{beamerposter} 
 
 \usepackage{beamerbasethemes}
 \usepackage{calc}
@@ -185,7 +187,7 @@
 
 \newcommand{\powerblock}[5]{
 \begin{tcolorbox}[left=0mm,right=0mm,top=0mm,bottom=0mm,width=.15\textwidth, halign=center, colframe=#5]
-\textbf{\normalsize #1} {\normalsize $\rightarrow$} \textbf{\normalsize #2} \\ \stardust#3 \\  \candy~#4 
+\textbf{#1}{$\rightarrow$}\textbf{#2} \\ \stardust#3 \\  \candy~#4 
 \end{tcolorbox}
 }
 
@@ -196,7 +198,7 @@
 \begin{block}{}
 
 \begin{center}
-\begin{footnotesize}
+\begin{scriptsize}
 \begin{tabular}{ccccc}
 \powerblock{15}{20}{21,400}{20}{green}&
 \powerblock{15}{25}{52,400}{48}{yellow}&
@@ -224,10 +226,14 @@
 &
 \powerblock{35}{40}{88,000}{118}{green} \\
 \end{tabular}
-\end{footnotesize}
+\end{scriptsize}
 \end{center}
 
-Pok\'emon from quests are at level 15, from eggs at level 20. Raid bosses caught are at level 20, unless there is weather boost, in that case they are caught at level 25.
+\begin{footnotesize}
+Pok\'emon from quests are at level 15, from eggs at level 20. 
+
+Raid bosses caught are at level 20, unless there is weather boost, in that case they are caught at level 25.
+\end{footnotesize}
 
 \end{block}
 \end{frame}

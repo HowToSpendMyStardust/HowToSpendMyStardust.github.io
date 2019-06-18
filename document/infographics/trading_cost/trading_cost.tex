@@ -1,4 +1,7 @@
-\documentclass[8pt,aspectratio=43,compress]{beamer}
+%\documentclass[8pt,aspectratio=43,compress]{beamer}
+
+\documentclass[12pt]{beamer}
+\usepackage[orientation=portrait,size=custom,width=10.5,height=14.85,scale=0.5,debug]{beamerposter} 
 
 \usepackage{beamerbasethemes}
 \usepackage{calc}
@@ -197,24 +200,31 @@
 
 \begin{block}{}
 
-\begin{footnotesize}
+\begin{scriptsize}
 \begin{center}
-\begin{tabular}{ccccc}
-\textbf{Friendship Level} &  \textbf{Regular Trade} & \textbf{Special Trade} & \textbf{Special Trade} & \textbf{Special Trade} \\
-& Caught & New & Caught & New \\
-& Pokédex Entry &  Pokédex Entry & Legendary/Shiny & Legendary/Shiny \\
+\begin{tabular}{cccc}
+\textbf{Friendship Level} &  \textbf{Regular Trade} & \textbf{Special Trade}  & \textbf{Special Trade} \\
+& Caught & New &  New \\
+& Pokédex Entry &  Pokédex Entry & Legendary/Shiny \\
+&  & OR & \\
+&  & Caught  & \\
+&  & Legendary/Shiny & \\
 \hline
-\textbf{Good friends} (min. 1 day) & \multirow{2}{*}{\stardust \textbf{100}} & \multirow{2}{*}{\stardust \textbf{20,000}} &  \multirow{2}{*}{\stardust \textbf{20,000}} & \multirow{2}{*}{\stardust \textbf{1,000,000}} \\ 
-\heartfull~\heartempty~\heartempty~\heartempty&&&  \\ \hline
-\textbf{Great friends} (min. 7 day) &  \multirow{2}{*}{\stardust \textbf{100}} & \multirow{2}{*}{\stardust \textbf{16,000}} &  \multirow{2}{*}{\stardust \textbf{16,000}} & \multirow{2}{*}{\stardust \textbf{800,000}} \\ 
-\heartfull~\heartfull~\heartempty~\heartempty &&&  \\ \hline
-\textbf{Ultra friends} (min. 30 day) &  \multirow{2}{*}{\stardust \textbf{100}} & \multirow{2}{*}{\stardust \textbf{1,600}} &  \multirow{2}{*}{\stardust \textbf{1,600}} & \multirow{2}{*}{\stardust \textbf{80,000}}  \\ 
-\heartfull~\heartfull~\heartfull~\heartempty &&&  \\ \hline
-\textbf{Best friends} (min. 90 day) &  \multirow{2}{*}{\stardust \textbf{100}} & \multirow{2}{*}{\stardust \textbf{800}} &  \multirow{2}{*}{\stardust \textbf{800}} & \multirow{2}{*}{\stardust \textbf{40,000}} \\ 
-\heartfull~\heartfull~\heartfull~\heartfull &&&  \\ \hline
+\textbf{Good friends} & \multirow{3}{*}{\stardust \textbf{100}} & \multirow{3}{*}{\stardust \textbf{20,000}} & \multirow{3}{*}{\stardust \textbf{1,000,000}} \\ 
+(min. 1 day)  &&  \\ 
+\heartfull~\heartempty~\heartempty~\heartempty&&  \\ \hline
+\textbf{Great friends}&  \multirow{3}{*}{\stardust \textbf{100}} & \multirow{3}{*}{\stardust \textbf{16,000}} & \multirow{3}{*}{\stardust \textbf{800,000}} \\ 
+(min. 7 days)  &&  \\ 
+\heartfull~\heartfull~\heartempty~\heartempty &&  \\ \hline
+\textbf{Ultra friends} &  \multirow{3}{*}{\stardust \textbf{100}} & \multirow{3}{*}{\stardust \textbf{1,600}}  & \multirow{3}{*}{\stardust \textbf{80,000}}  \\ 
+ (min. 30 days)  &&  \\ 
+\heartfull~\heartfull~\heartfull~\heartempty &&  \\ \hline
+\textbf{Best friends}  &  \multirow{3}{*}{\stardust \textbf{100}} & \multirow{3}{*}{\stardust \textbf{800}}& \multirow{3}{*}{\stardust \textbf{40,000}} \\ 
+ (min. 90 days)  &&  \\ 
+\heartfull~\heartfull~\heartfull~\heartfull &&  \\ \hline
 \end{tabular}
 \end{center}
-\end{footnotesize}
+\end{scriptsize}
 \end{block}
 \end{frame}
 

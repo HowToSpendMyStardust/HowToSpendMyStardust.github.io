@@ -144,7 +144,7 @@
 \renewcommand{\baselinestretch}{1.1}
 
 \newcommand*{\colorbar}[2]{
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.15,-0.1) rectangle (1.8,0.1);
 \draw [line width=7.pt,color=#1] (0.,0.)-- (#2/220,0.);
 \draw[color=white] (0.2,0.) node {\scriptsize{$#2$}};
 \end{tikzpicture}
@@ -156,19 +156,19 @@
 \newcommand*{\stamina}[1]{\colorbar{lightgreen}{#1}}
 
 \newcommand*{\dps}[1]{
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.15,-0.1) rectangle (1.8,0.1);
 \draw [line width=7.pt,color=black] (0.,0.)-- (#1/12.,0.);
 \draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
 \end{tikzpicture}
 }
 \newcommand*{\survival}[1]{
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.15,-0.1) rectangle (1.8,0.1);
 \draw [line width=7.pt,color=black] (0.,0.)-- (#1/25.,0.);
 \draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
 \end{tikzpicture}
 }
 \newcommand*{\tdo}[1]{
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.15,-0.1) rectangle (1.8,0.1);
 \draw [line width=7.pt,color=black] (0.,0.)-- (#1/390.,0.);
 \draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
 \end{tikzpicture}
@@ -262,7 +262,7 @@
 
 \usebackgroundtemplate{\includegraphics[height=\paperheight]{../../images/type/background/lobby}}
 \begin{frame}
-\frametitle{Current and Future Legendary Raid Bosses \hspace{7.5cm} \today}
+\frametitle{Current and Future Legendary Raid Bosses \hspace{3cm} \today}
 
 \begin{block}{}
 \begin{footnotesize}
