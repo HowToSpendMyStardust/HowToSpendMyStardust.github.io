@@ -5,11 +5,6 @@ xelatex Counters.tex
 pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 Counters.pdf
 cd ..
 
-cd gen4_evolution/
-xelatex gen_4.tex
-pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 gen_4.pdf
-cd ..
-
 cd guide/
 xelatex Guide.tex
 pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 Guide.pdf
@@ -60,4 +55,15 @@ cd ..
 cd trading_cost/
 xelatex trading_cost.tex
 pdf2htmlex --zoom 1.6 --hdpi 432 --vdpi 432 trading_cost.pdf
+cd ..
+
+cd gen4_evolution/
+xelatex gen_4.tex
+pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 gen_4.pdf
+cd ..
+
+cd ..
+
+cd calendar/
+pdf2htmlex --zoom 2 --hdpi 432 --vdpi 432 calendar_summer2019.pdf
 cd ..

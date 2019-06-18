@@ -268,51 +268,55 @@
 \begin{footnotesize}
 
 \begin{center}
-Current and future raid bosses
+\textbf{Current and future raid bosses}
 
- \includegraphics[width=2cm]{../../images/pokemon/kyogre.png}\quad\quad
- \includegraphics[width=2cm]{../../images/pokemon/groudon.png}\quad\quad
- \includegraphics[width=2cm]{../../images/pokemon/regigigas.png}
+ \includegraphics[width=1.5cm]{../../images/pokemon/kyogre.png}\quad\quad
+ \includegraphics[width=1.5cm]{../../images/pokemon/groudon.png}\quad\quad
+ \includegraphics[width=1.5cm]{../../images/pokemon/regigigas.png}
  
- \includegraphics[width=2cm]{../../images/pokemon/raikou.png}\quad\quad
- \includegraphics[width=2cm]{../../images/pokemon/entei.png}\quad\quad
- \includegraphics[width=2cm]{../../images/pokemon/suicune.png}
+ \includegraphics[width=1.5cm]{../../images/pokemon/raikou.png}\quad\quad
+ \includegraphics[width=1.5cm]{../../images/pokemon/entei.png}\quad\quad
+ \includegraphics[width=1.5cm]{../../images/pokemon/suicune.png}
 
 \bigskip\bigskip
 
-High Probability 
+\textbf{High Probability}
 
- \includegraphics[width=2cm]{../../images/pokemon/rayquaza.png}\quad\quad
- \includegraphics[width=2cm]{../../images/pokemon/mewtwo.png}\quad\quad
- \includegraphics[width=2cm]{../../images/pokemon/heatran.png}
+ \includegraphics[width=1.5cm]{../../images/pokemon/rayquaza.png}\quad\quad
+ \includegraphics[width=1.5cm]{../../images/pokemon/mewtwo.png}\quad\quad
+ \includegraphics[width=1.5cm]{../../images/pokemon/heatran.png}
+ 
+ 
+ \includegraphics[width=1.5cm]{../../images/pokemon/uxie.png}\quad\quad
+ \includegraphics[width=1.5cm]{../../images/pokemon/mesprit.png}\quad\quad
+ \includegraphics[width=1.5cm]{../../images/pokemon/azelf.png}
  
  
 \bigskip\bigskip
  
-Possible with Low Probability
+\textbf{Possible with Low Probability}
 
- \includegraphics[width=2cm]{../../images/pokemon/dialga.png}\quad\quad
- \includegraphics[width=2cm]{../../images/pokemon/palkia.png}\quad\quad
- \includegraphics[width=2cm]{../../images/pokemon/regirock.png}\quad\quad
- \includegraphics[width=2cm]{../../images/pokemon/regice.png}\quad\quad
- \includegraphics[width=2cm]{../../images/pokemon/registeel.png}
-
-\bigskip\bigskip
-
-Very Low Probability
-
- \includegraphics[width=2cm]{../../images/pokemon/lugia.png}\quad\quad
- \includegraphics[width=2cm]{../../images/pokemon/ho-oh.png}\quad\quad
- \includegraphics[width=2cm]{../../images/pokemon/latias.png}\quad\quad
- \includegraphics[width=2cm]{../../images/pokemon/latios.png}\quad\quad
- 
- \includegraphics[width=2cm]{../../images/pokemon/giratina_a.png}\quad\quad
- \includegraphics[width=2cm]{../../images/pokemon/giratina_o.png}
-
+ \includegraphics[width=1.5cm]{../../images/pokemon/dialga.png}\quad\quad
+ \includegraphics[width=1.5cm]{../../images/pokemon/palkia.png}\quad\quad
+ \includegraphics[width=1.5cm]{../../images/pokemon/regirock.png}\quad\quad
+ \includegraphics[width=1.5cm]{../../images/pokemon/regice.png}\quad\quad
+ \includegraphics[width=1.5cm]{../../images/pokemon/registeel.png}
 
 \bigskip\bigskip
 
-Raid EX
+\textbf{Very Low Probability}
+
+ \includegraphics[width=1.5cm]{../../images/pokemon/lugia.png}\quad\quad
+ \includegraphics[width=1.5cm]{../../images/pokemon/ho-oh.png}\quad\quad
+ \includegraphics[width=1.5cm]{../../images/pokemon/latias.png}\quad\quad
+ \includegraphics[width=1.5cm]{../../images/pokemon/latios.png}\quad\quad
+ \includegraphics[width=1.5cm]{../../images/pokemon/giratina_a.png}\quad\quad
+ \includegraphics[width=1.5cm]{../../images/pokemon/giratina_o.png}
+
+
+\bigskip\bigskip
+
+\textbf{Raid EX}
 
  \includegraphics[width=2cm]{../../images/pokemon/deoxys_s.png}\quad\quad
  \includegraphics[width=2cm]{../../images/pokemon/darkrai.png}\quad\quad
@@ -329,12 +333,12 @@ Raid EX
 \frametitle{Raid boss difficulty (generations 1 and 2)}
 
 \begin{block}{}
-Estimator for the minimal number of players with the best counters at level 30, with "best friends" boost, and extreme weather. Raid bosses are considered to have their worst attack (WA). All bosses are tier 5 (they have 15000 HP), except Mewtwo which has 22500 HP.
+Estimator for the minimal number of players with the best counters at level 30, with "best friends" boost, and extreme weather. Raid bosses are considered to have their worst attack. All bosses are tier 5 (they have 15000 HP), except Mewtwo which has 22500 HP.
 \begin{itemize}
-  \item If boss raid has only simple weakness: minimal number of players = ceil(Base DEF/80)
-  \item If boss raid has only double weakness: minimal number of players = ceil(Base DEF/108)
+  \item If boss raid has only simple weakness: minimal number of players = floor(Base DEF/80)+1
+  \item If boss raid has a double weakness: minimal number of players = floor(Base DEF/108)+1
 \end{itemize}
-These formula do not take the Base ATK into account, that influences the number of deaths and indirectly the number of deaths 
+These formulas do not take the Base ATK into account, that influences the number of deaths and indirectly the time to defeat the boss. 
 
 \medskip
 

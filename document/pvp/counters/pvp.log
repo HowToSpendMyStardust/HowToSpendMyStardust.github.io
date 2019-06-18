@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/MacPorts 2016_4) (preloaded format=xelatex 2017.2.11)  18 JUN 2019 12:45
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/MacPorts 2016_4) (preloaded format=xelatex 2017.2.11)  18 JUN 2019 14:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1608,6 +1608,10 @@ LaTeX Info: Redefining \nameref on input line 247.
 \@outlinefile=\write5
 \openout5 = `pvp.out'.
 
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 247.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
@@ -1684,65 +1688,65 @@ LaTeX Info: Redefining \includegraphics on input line 247.
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 247.
  (./pvp.nav)
-LaTeX Font Info:    Calculating math sizes for size <8.64> on input line 336.
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 336
+LaTeX Font Info:    Calculating math sizes for size <8.64> on input line 384.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 384
 .
 
 (/opt/local/share/texmf-texlive/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 336.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 384.
 
 
 (/opt/local/share/texmf-texlive/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 336
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 384
 .
 
 (/opt/local/share/texmf-texlive/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 336
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 384
 .
 
 (/opt/local/share/texmf-texlive/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.64> on input line 336.
+(Font)              <8.64> on input line 384.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.04796> on input line 336.
+(Font)              <6.04796> on input line 384.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.31999> on input line 336.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 336.
+(Font)              <4.31999> on input line 384.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 384.
 
 (/opt/local/share/texmf-texlive/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.31999> not available
-(Font)              size <5> substituted on input line 336.
+(Font)              size <5> substituted on input line 384.
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8.64> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 336.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 384.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6.04796> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 336.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 384.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <4.31999> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 336.
-LaTeX Font Info:    Calculating math sizes for size <10.37> on input line 336.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 384.
+LaTeX Font Info:    Calculating math sizes for size <10.37> on input line 384.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.37> on input line 336.
+(Font)              <10.37> on input line 384.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.25896> on input line 336.
+(Font)              <7.25896> on input line 384.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.185> on input line 336.
+(Font)              <5.185> on input line 384.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.37> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 336.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 384.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7.25896> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 336.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 384.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5.185> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 336.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 384.
 File: ../../images/type/simplified/ground.png Graphic file (type QTm)
 <use  "../../images/type/simplified/ground.png" >
 File: ../../images/type/simplified/psy.png Graphic file (type QTm)
@@ -1766,8 +1770,10 @@ File: ../../images/type/simplified/ice.png Graphic file (type QTm)
 File: ../../images/type/simplified/dragon.png Graphic file (type QTm)
 
 <use  "../../images/type/simplified/dragon.png" >
-File: ../../images/type/background/pvp.jpg Graphic file (type QTm)
+Overfull \vbox (0.98752pt too high) detected at line 384
+ []
 
+File: ../../images/type/background/pvp.jpg Graphic file (type QTm)
 <use  "../../images/type/background/pvp.jpg" > [1
 
 ]
@@ -1789,24 +1795,24 @@ File: ../../images/pokemon/moltres.png Graphic file (type QTm)
 File: ../../images/pokemon/charizard.png Graphic file (type QTm)
 
 <use  "../../images/pokemon/charizard.png" >
-LaTeX Font Info:    Calculating math sizes for size <7.2> on input line 429.
+LaTeX Font Info:    Calculating math sizes for size <7.2> on input line 470.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.2> on input line 429.
+(Font)              <7.2> on input line 470.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.03996> on input line 429.
+(Font)              <5.03996> on input line 470.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <3.59999> on input line 429.
+(Font)              <3.59999> on input line 470.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <3.59999> not available
-(Font)              size <5> substituted on input line 429.
+(Font)              size <5> substituted on input line 470.
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7.2> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 429.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 470.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5.03996> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 429.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 470.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <3.59999> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 429.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 470.
 File: ../../outfit/Alola_Ace_Trainer_2.jpg Graphic file (type QTm)
 <use  "../../outfit/Alola_Ace_Trainer_2.jpg" >
 File: ../../outfit/Kalos_Veteran_2.jpg Graphic file (type QTm)
@@ -1815,10 +1821,8 @@ File: ../../outfit/Kalos_Veteran_2.jpg Graphic file (type QTm)
 File: ../../outfit/Unova_Ace_Trainer_2.jpg Graphic file (type QTm)
 
 <use  "../../outfit/Unova_Ace_Trainer_2.jpg" >
-Overfull \vbox (1.87651pt too high) detected at line 429
- []
-
 File: ../../images/type/background/pvp.jpg Graphic file (type QTm)
+
 <use  "../../images/type/background/pvp.jpg" > [2
 
 ]
@@ -2065,24 +2069,24 @@ File: ../../images/type/full/Fire.png Graphic file (type QTm)
 File: ../../images/league/great_league.png Graphic file (type QTm)
 
 <use  "../../images/league/great_league.png" >
-LaTeX Font Info:    Calculating math sizes for size <12.44> on input line 495.
+LaTeX Font Info:    Calculating math sizes for size <12.44> on input line 536.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12.44> on input line 495.
+(Font)              <12.44> on input line 536.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.70796> on input line 495.
+(Font)              <8.70796> on input line 536.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.22> on input line 495.
+(Font)              <6.22> on input line 536.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <12.44> not available
-(Font)              size <12> substituted on input line 495.
+(Font)              size <12> substituted on input line 536.
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <12.44> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 495.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 536.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8.70796> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 495.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 536.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6.22> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 495.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 536.
 File: ../../images/type/background/pvp.jpg Graphic file (type QTm)
 <use  "../../images/type/background/pvp.jpg" > [3
 
@@ -2608,7 +2612,7 @@ File: ../../images/type/full/Water.png Graphic file (type QTm)
 File: ../../images/type/full/Grass.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Grass.png" >
-Overfull \hbox (17.52763pt too wide) in paragraph at lines 622--622
+Overfull \hbox (17.52763pt too wide) in paragraph at lines 663--663
 [][] [] [] [] [] [] []| 
  []
 
@@ -2628,25 +2632,25 @@ File: ../../images/type/background/pvp.jpg Graphic file (type QTm)
 \tf@snm=\write8
 \openout8 = `pvp.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 625.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 625.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 666.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 666.
  (./pvp.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 625.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 625.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 666.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 666.
 
 
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.40001pt have occurred.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 625.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 666.
  ) 
 Here is how much of TeX's memory you used:
- 25178 strings out of 495534
- 467583 string characters out of 6185783
- 652521 words of memory out of 5000000
- 27807 multiletter control sequences out of 15000+600000
+ 25198 strings out of 495534
+ 467989 string characters out of 6185783
+ 652606 words of memory out of 5000000
+ 27827 multiletter control sequences out of 15000+600000
  130291 words of font info for 114 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 48i,17n,66p,491b,1254s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,17n,66p,491b,1251s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on pvp.pdf (5 pages).

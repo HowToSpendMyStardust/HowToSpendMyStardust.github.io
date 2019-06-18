@@ -270,6 +270,12 @@
 \begin{block}{}
 \begin{footnotesize}
 \begin{itemize}
+  \item \textbf{Leagues}: 
+  \begin{itemize}
+  \item \footnotesize Great league (CP $\leq$ 1500), 
+  \item \footnotesize Ultra league (CP $\leq$ 2500),
+  \item \footnotesize Master league (no CP limit).
+\end{itemize}
  \item \textbf{Moves}: They are all defined differently from PvE. In PvP, a move is defined by its power (the amount of damage it deals), its energy (the amount of energy it generates or uses) and its duration (the number of turns the move lasts, each turn lasts for 0.5s).
  
  Three measures can be defined:
@@ -327,8 +333,50 @@ $\text{coeff}\_\text{level}$ &   0.5974 & 0.667934 & 0.7317 & 0.76156384 & 0.790
 
 \begin{itemize}
   \item \footnotesize For Great league (CP $\leq$ 1500), a good effective health must be higher than 25.
+  
+  \begin{center}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.1,-0.6) rectangle (7.5,0.6);
+\draw [->,line width=1.pt] (0.,0.) -- (5.0008931615854655,0.);
+\draw (0.8,0.4) node[anchor=north west] {25};
+\draw (1.8,0.4) node[anchor=north west] {30};
+\draw (2.8,0.4) node[anchor=north west] {35};
+\draw (5.02,0.2) node[anchor=north west] {Effective Health};
+\draw (0.0,-0.05) node[anchor=north west] {viable};
+\draw (2.1,-0.05) node[anchor=north west] {very bulky};
+\draw (1.1,-0.05) node[anchor=north west] {bulky};
+\begin{scriptsize}
+\draw [fill=black] (1.,0.) circle (1.5pt);
+\draw [fill=black] (2.,0.) circle (1.5pt);
+\draw [fill=black] (3.,0.) circle (1.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{center}
+  
   \item \footnotesize For Ultra league (CP $\leq$ 2500) and Master league (no CP limit), a good effective health must be higher than 30. Below, the Pok\'emon remains fragile. The Pok\'emon can be considered as very bulky if its effective health is higher than 35.
+  
+  \begin{center}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.1,-0.6) rectangle (7.5,0.6);
+\draw [->,line width=1.pt] (0.,0.) -- (5.0008931615854655,0.);
+\draw (0.8,0.4) node[anchor=north west] {25};
+\draw (1.8,0.4) node[anchor=north west] {30};
+\draw (2.8,0.4) node[anchor=north west] {35};
+\draw (5.02,0.2) node[anchor=north west] {Effective Health};
+\draw (0.0,-0.05) node[anchor=north west] {fragile};
+\draw (2.1,-0.05) node[anchor=north west] {bulky};
+\draw (3.2,-0.05) node[anchor=north west] {very bulky};
+\draw (1.1,-0.05) node[anchor=north west] {viable};
+\begin{scriptsize}
+\draw [fill=black] (1.,0.) circle (1.5pt);
+\draw [fill=black] (2.,0.) circle (1.5pt);
+\draw [fill=black] (3.,0.) circle (1.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{center}
+  
 \end{itemize}
+
 
 \end{itemize}
 \end{footnotesize}
@@ -342,13 +390,6 @@ $\text{coeff}\_\text{level}$ &   0.5974 & 0.667934 & 0.7317 & 0.76156384 & 0.790
 \begin{block}{}
 \begin{footnotesize}
 \begin{itemize}
-  \item \textbf{Leagues}: 
-  \begin{itemize}
-  \item \footnotesize Great league (CP $\leq$ 1500), 
-  \item \footnotesize Ultra league (CP $\leq$ 2500),
-  \item \footnotesize Master league (no CP limit).
-\end{itemize}
- 
  \item \textbf{Optimal IV and level (only for Great and Ultra leagues)}
  
  We would like to compare Moltres and Charizard 
@@ -357,7 +398,7 @@ $\text{coeff}\_\text{level}$ &   0.5974 & 0.667934 & 0.7317 & 0.76156384 & 0.790
 & \textbf{Moltres} \hfill \firefull~\flyingfull & \textbf{Charizard} \hfill \firefull~\flyingfull \\
 & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/moltres} }
 & \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/charizard} }\\ \hline
-ATT  &  \attack{251} &  \attack{223} \\
+ATK  &  \attack{251} &  \attack{223} \\
 DEF  & \defense{181} & \defense{173}  \\
 HP  & \stamina{207} & \stamina{186}  \\
 \end{tabular}
@@ -367,7 +408,7 @@ For Moltres, the effective stats are
  
  \begin{center}
  \begin{tabular}{cccccccccc}
- ATT IV & DEF IV & HP IV & LVL & CP & ATT & DEF & HP & SUM& EH \\ \hline
+ ATK IV & DEF IV & HP IV & LVL & CP & ATK & DEF & HP & SUM& EH \\ \hline
  15 & 15 & 15 & 25 & 2475 & 177 & 130 & 148 & 455 & 19240\\
 13 & 15 & 14 & 25.5 & 2500 & 178 & 132 & 149 & 459 & 19668\\
 %0 & 14 & 12 & 27 & 2499 & 174 & 135 & 152 & 461 & 20520\\
@@ -383,7 +424,7 @@ For Moltres, the effective stats are
  
  \begin{center}
  \begin{tabular}{cccccccccc}
- ATT IV & DEF IV & HP IV & LVL & CP & ATT & DEF & HP & SUM& EH \\ \hline
+ ATK IV & DEF IV & HP IV & LVL & CP & ATK & DEF & HP & SUM& EH \\ \hline
 15 & 15 & 15 & 30.5 & 2497 & 174 & 138 & 147 & 459 & 20286 \\
 %0 & 13 & 15 & 35 & 2500 & 169 & 141 & 153 & 463 & 21573 \\
 15 & 0 & 0 & 35.5 & 2495 & 181 & 132 & 142 & 455 & 18744 \\
@@ -445,7 +486,7 @@ Moltres (13, 15, 14) has better statistics for Ultra league than Moltres (15, 15
    \multirow{3}{*}{Ideal moveset}  &  \dragonsimp~Dragon Breath & \rocksimp~Smack Down& \flyingsimp~Air Slash  \\
   & \dragonsimp~Dragon Pulse & \rocksimp~Stone Edge   &\flyingsimp~Sky Attack \\ 
   & \flyingsimp~Sky Attack  & \firesimp~Flamethrower&\steelsimp~Flash Cannon  \\ \hline
- ATT &\attack{141} & \attack{94} &  \attack{148} \\
+ ATK &\attack{141} & \attack{94} &  \attack{148} \\
  DEF &\defense{201} &\defense{286}& \defense{226}  \\
  HP & \stamina{181} & \stamina{155} & \stamina{163} \\ \hline
  Optimal IV / Level & (0,14,15), level 29 & (8,15,15), level 40 & (0,14,15), level 27.5 \\ 
@@ -463,7 +504,7 @@ Moltres (13, 15, 14) has better statistics for Ultra league than Moltres (15, 15
    \multirow{3}{*}{Ideal moveset}  & \fightingsimp~Counter & \fightingsimp~Counter & \watersimp~Bubble  \\
   &\fightingsimp~Power Up Punch &\psysimp~Psycho Boost  & \icesimp~Ice Beam  \\ 
   &\icesimp~Ice Punch &\rocksimp~Rock Slide & \fairysimp~Play Rough \\ \hline
- ATT & \attack{121} &\attack{144} &\attack{112} \\
+ ATK & \attack{121} &\attack{144} &\attack{112} \\
  DEF & \defense{152} & \defense{330} & \defense{152}  \\
  HP & \stamina{155} & \stamina{137} & \stamina{225}\\ \hline
  Optimal IV / Level & (15,15,15), level 40 & (0,15,15), level 25.5  &  (8,15,15), level 40 \\ 
@@ -480,7 +521,7 @@ Moltres (13, 15, 14) has better statistics for Ultra league than Moltres (15, 15
    \multirow{3}{*}{Ideal moveset} & \grasssimp~Vine Whip & \darksimp~Snarl  & \fightingsimp~Counter \\
    &\grasssimp~Frenzy Plant  & \darksimp~Foul Play & \fightingsimp~Power Up Punch  \\ 
   &\poisonsimp~Sludge Bomb & \normalsimp~Last Resort& \ghostsimp~Shadow Ball \\ \hline
- ATT  &\attack{198} &\attack{126}& \attack{236} \\
+ ATK  &\attack{198} &\attack{126}& \attack{236} \\
  DEF & \defense{189} & \defense{240} &\defense{144} \\
  HP  & \stamina{190} & \stamina{216}& \stamina{172} \\ \hline
  Optimal IV / Level& (0,14,15), level 21  &  (0,15,15), level 27.5 & (1,15,15), level 20.5 \\ 
@@ -508,7 +549,7 @@ Moltres (13, 15, 14) has better statistics for Ultra league than Moltres (15, 15
    \multirow{3}{*}{Ideal moveset}  & \ghostsimp~Shadow Claw & \psysimp~Psycho Cut & \watersimp~Water Gun \\
   &\dragonsimp~Dragon Claw &\psysimp~Future Sight & \icesimp~Ice Beam \\ 
   &\rocksimp~Ancient Power &\fairysimp~Moonblast & \watersimp~Hydro Cannon \\ \hline
- ATT & \attack{187} &\attack{152} &\attack{171} \\
+ ATK & \attack{187} &\attack{152} &\attack{171} \\
  DEF & \defense{225} & \defense{258} & \defense{207} \\
  HP & \stamina{284} & \stamina{260} & \stamina{188} \\ \hline
  Optimal IV / Level & (0,14,15), level 28 & (0,13,15), level 37.5  &  (15,15,15), level 40 \\ 
@@ -526,7 +567,7 @@ Moltres (13, 15, 14) has better statistics for Ultra league than Moltres (15, 15
    \multirow{3}{*}{Ideal moveset}  & \ghostsimp~Shadow Claw  & \fightingsimp~Counter & \dragonsimp~Dragon Tail \\
   &\ghostsimp~Shadow Ball &\fightingsimp~Power Up Punch & \groundsimp~Earthquake \\ 
  &\dragonsimp~Dragon Pulse  &\ghostsimp~Shadow Ball & \darksimp~Crunch \\ \hline
- ATT & \attack{225} &\attack{236} & \attack{148}  \\
+ ATK & \attack{225} &\attack{236} & \attack{148}  \\
  DEF & \defense{187}  & \defense{144} & \defense{272} \\
  HP  & \stamina{284} & \stamina{172} & \stamina{181} \\ \hline
  Optimal IV / Level  & (0,13,14), level 25.5 &  (1,15,15), level 38.5 & (15,15,15), level 40 \\ 
@@ -544,7 +585,7 @@ Moltres (13, 15, 14) has better statistics for Ultra league than Moltres (15, 15
    \multirow{3}{*}{Ideal moveset}   & \grasssimp~Vine Whip  & \icesimp~Ice Shard & \ghostsimp~Lick  \\
   &\grasssimp~Frenzy Plant  & \icesimp~Ice Beam & \normalsimp~Body Slam  \\ 
    &\poisonsimp~Sludge Bomb & \watersimp~Surf &\dragonsimp~Outrage \\ \hline
- ATT  &\attack{198} &\attack{165}&\attack{190}  \\
+ ATK  &\attack{198} &\attack{165}&\attack{190}  \\
  DEF& \defense{189} & \defense{174} &\defense{169} \\
  HP & \stamina{190} & \stamina{277}& \stamina{330}  \\ \hline
  %Effective Health &\survival{17732} &\survival{23863} & \survival{25033}  \\
@@ -575,7 +616,7 @@ Moltres (13, 15, 14) has better statistics for Ultra league than Moltres (15, 15
    \multirow{3}{*}{Ideal moveset}  & \ghostsimp~Shadow Claw & \dragonsimp~Dragon Breath & \dragonsimp~Dragon Tail  \\
   &\ghostsimp~Shadow Ball &\steelsimp~Iron Head & \flyingsimp~Sky Attack\\ 
   &\dragonsimp~Dragon Pulse &\electricsimp~Thunder & \watersimp~Hydropump  \\ \hline
- ATT & \attack{225} &\attack{275} &\attack{193}  \\
+ ATK & \attack{225} &\attack{275} &\attack{193}  \\
  DEF & \defense{187} & \defense{211} & \defense{310}  \\
  HP & \stamina{284} & \stamina{205} & \stamina{235} \\ \hline
  %Effective Health &\survival{17732} &\survival{23863} 9 \\
@@ -591,7 +632,7 @@ Moltres (13, 15, 14) has better statistics for Ultra league than Moltres (15, 15
    \multirow{3}{*}{Ideal moveset}   & \groundsimp~Mud Shot& \steelsimp~Bullet Punch& \electricsimp~Thunder Shock  \\
   &\groundsimp~Earthquake & \steelsimp~Meteor Mash &\rocksimp~Rock Slide \\ 
   &\dragonsimp~Outrage &\groundsimp~Earthquake &\electricsimp~Thunderbolt  \\ \hline
- ATT &\attack{261} & \attack{257} &\attack{226} \\
+ ATK &\attack{261} & \attack{257} &\attack{226} \\
  DEF&\defense{193}&\defense{228}& \defense{190} \\
  HP & \stamina{239} & \stamina{190} & \stamina{264} \\ \hline
  %Effective Health & 21809 \\
@@ -607,7 +648,7 @@ Moltres (13, 15, 14) has better statistics for Ultra league than Moltres (15, 15
    \multirow{3}{*}{Ideal moveset}  & \ghostsimp~Shadow Claw & \psysimp~Psycho Cut & \rocksimp~Smack Down \\
   &\dragonsimp~Dragon Claw & \ghostsimp~Shadow Ball &\rocksimp~Stone Edge  \\ 
   &\rocksimp~Ancient Power & \fightingsimp~Focus Blast&\darksimp~Crunch  \\ \hline
- ATT & \attack{187}  &\attack{300}&\attack{251}  \\
+ ATK & \attack{187}  &\attack{300}&\attack{251}  \\
  DEF & \defense{225}  & \defense{182} &\defense{207}\\
  HP & \stamina{284}  & \stamina{214}& \stamina{225} \\ \hline
  %Effective Health &\survival{17732} &\survival{23863} & \survival{25033}  \\
