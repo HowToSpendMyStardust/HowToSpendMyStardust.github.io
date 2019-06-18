@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/MacPorts 2016_4) (preloaded format=xelatex 2017.2.11)  18 JUN 2019 12:02
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/MacPorts 2016_4) (preloaded format=xelatex 2017.2.11)  18 JUN 2019 12:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1651,10 +1651,6 @@ LaTeX Info: Redefining \nameref on input line 170.
 \@outlinefile=\write7
 \openout7 = `trading_cost.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 170.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
@@ -1877,10 +1873,10 @@ LaTeX Font Warning: Size substitutions with differences
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 231.
  ) 
 Here is how much of TeX's memory you used:
- 26797 strings out of 495534
- 505517 string characters out of 6185783
- 580893 words of memory out of 5000000
- 29493 multiletter control sequences out of 15000+600000
+ 26795 strings out of 495534
+ 505471 string characters out of 6185783
+ 580954 words of memory out of 5000000
+ 29491 multiletter control sequences out of 15000+600000
  48019 words of font info for 48 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  48i,16n,73p,947b,732s stack positions out of 5000i,500n,10000p,200000b,80000s

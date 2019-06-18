@@ -330,26 +330,67 @@
 \end{itemize}
 
 \begin{center}
-\begin{tabular}{rl}
-DPS$\leq$12.5   &  not an attacker  \\
-12.5$<$DPS$\leq$16   &  a good attacker (but privilege ATT IV = 15, and level up to 35)  \\
-DPS$>$16   &  excellent attacker  \\
-\end{tabular}
+%\begin{tabular}{rl}
+%DPS$\leq$12.5   &  not an attacker  \\
+%12.5$<$DPS$\leq$16   &  a good attacker (but privilege ATT IV = 15, and level up to 35)  \\
+%DPS$>$16   &  excellent attacker  \\
+%\end{tabular}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.1,-0.6) rectangle (7.5,0.6);
+\draw [->,line width=1.pt] (0.,0.) -- (5.0008931615854655,0.);
+\draw (0.8,0.4) node[anchor=north west] {12.5};
+\draw (2.8,0.4) node[anchor=north west] {16};
+\draw (5.02,0.2) node[anchor=north west] {DPS};
+\draw (0.2,-0.05) node[anchor=north west] {bad};
+\draw (3.0,-0.05) node[anchor=north west] {excellent DPS};
+\draw (1.2,-0.05) node[anchor=north west] {good DPS};
+\begin{scriptsize}
+\draw [fill=black] (1.,0.) circle (1.5pt);
+\draw [fill=black] (3.,0.) circle (1.5pt);
+\draw [fill=black] (3.,0.) circle (1.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+
 \end{center}
   \item The \textbf{Effective Health} (EH) defines the bulkiness of a Pok\'emon. At level 40, it is computed via the formula:
 \begin{center}
 EH $=$ (base DEF + DEF IV)$\times$ (base HP + HP IV) $\times \frac{0.7903^2}{900}$
 \end{center}
 \begin{center}
-\begin{tabular}{rl}
-EH$\leq$25   &  very fragile  \\
-25$<$EH$\leq$30   &  fragile but viable  \\
-30$<$EH$\leq$35   &  bulky  \\
-EH$>$35   &  very bulky  \\
-\end{tabular}
+%\begin{tabular}{rl}
+%EH$\leq$25   &  very fragile  \\
+%25$<$EH$\leq$30   &  fragile but viable  \\
+%30$<$EH$\leq$35   &  bulky  \\
+%EH$>$35   &  very bulky  \\
+%\end{tabular}
+
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]
+\clip(-0.1,-0.6) rectangle (7.5,0.6);
+\draw [->,line width=1.pt] (0.,0.) -- (5.0008931615854655,0.);
+\draw (0.8,0.4) node[anchor=north west] {25};
+\draw (1.8,0.4) node[anchor=north west] {30};
+\draw (2.8,0.4) node[anchor=north west] {35};
+\draw (5.02,0.2) node[anchor=north west] {Effective Health};
+\draw (0.0,-0.05) node[anchor=north west] {fragile};
+\draw (2.1,-0.05) node[anchor=north west] {bulky};
+\draw (3.2,-0.05) node[anchor=north west] {very bulky};
+\draw (1.1,-0.05) node[anchor=north west] {viable};
+\begin{scriptsize}
+\draw [fill=black] (1.,0.) circle (1.5pt);
+\draw [fill=black] (2.,0.) circle (1.5pt);
+\draw [fill=black] (3.,0.) circle (1.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+
 \end{center}
+
+
+
 \item \textbf{TDO} (Total Damage Output) represents how much damage a Pok\'emon can make before it faints. It is computed via the formula: 
-TDO $=$ DPS $\times$ EH.
+\begin{center}
+TDO $=$ DPS $\times$ EH
+\end{center}
 \item \textbf{Base statistics and moves}
 
 \begin{center}
@@ -373,7 +414,6 @@ TDO $=$ DPS $\times$ EH.
 \end{footnotesize}
 \end{block}
 \end{frame}
-
 
 \renewcommand{\baselinestretch}{1.0}
 

@@ -137,6 +137,7 @@
 %gets rid of footer
 \setbeamertemplate{footline}{}
 \setbeamertemplate{itemize item}{\raisebox{0.2em}{\scalebox{0.5}{$\blacktriangleright$}}}
+\setbeamertemplate{itemize subitem}{\raisebox{0.2em}{\scalebox{0.5}{$\blacktriangleright$}}}
 
 \usepackage{pgf,tikz}
 \usepackage{mathrsfs}
@@ -145,7 +146,7 @@
 \renewcommand{\baselinestretch}{1.1}
 
 \newcommand*{\colorbar}[2]{
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.15,-0.1) rectangle (1.8,0.1);
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.15,-0.1) rectangle (2,0.1);
 \draw [line width=7.pt,color=#1] (0.,0.)-- (#2/180,0.);
 \draw[color=white] (0.2,0.) node {\scriptsize{$#2$}};
 \end{tikzpicture}
@@ -324,16 +325,10 @@ $\text{coeff}\_\text{level}$ &   0.5974 & 0.667934 & 0.7317 & 0.76156384 & 0.790
 \end{tabular}   
 \end{center}
 
-At level 40 (Master league),
-
-\begin{center}
-\begin{tabular}{rl}
-EH$\leq$25  & very fragile \\
-25$<$EH$\leq$30  & fragile but viable \\
-30$<$EH$\leq$35  & bulky \\
-EH$>$35  & very bulky \\
-\end{tabular}
-\end{center}
+\begin{itemize}
+  \item \footnotesize For Great league (CP $\leq$ 1500), a good effective health must be higher than 25.
+  \item \footnotesize For Ultra league (CP $\leq$ 2500) and Master league (no CP limit), a good effective health must be higher than 30. Below, the Pok\'emon remains fragile. The Pok\'emon can be considered as very bulky if its effective health is higher than 35.
+\end{itemize}
 
 \end{itemize}
 \end{footnotesize}
@@ -347,7 +342,13 @@ EH$>$35  & very bulky \\
 \begin{block}{}
 \begin{footnotesize}
 \begin{itemize}
-  \item \textbf{Leagues}: Great league (CP $\leq$ 1500), Ultra league (CP $\leq$ 2500), Master league (no CP limit).
+  \item \textbf{Leagues}: 
+  \begin{itemize}
+  \item \footnotesize Great league (CP $\leq$ 1500), 
+  \item \footnotesize Ultra league (CP $\leq$ 2500),
+  \item \footnotesize Master league (no CP limit).
+\end{itemize}
+ 
  \item \textbf{Optimal IV and level (only for Great and Ultra leagues)}
  
  We would like to compare Moltres and Charizard 

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/MacPorts 2016_4) (preloaded format=xelatex 2017.2.11)  18 JUN 2019 11:58
+This is XeTeX, Version 3.14159265-2.6-0.99996 (TeX Live 2016/MacPorts 2016_4) (preloaded format=xelatex 2017.2.11)  18 JUN 2019 12:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1608,6 +1608,10 @@ LaTeX Info: Redefining \nameref on input line 269.
 \@outlinefile=\write5
 \openout5 = `Counters.out'.
 
+
+
+Package hyperref Warning: Rerun to get /PageLabels entry.
+
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/lmr/m/n --> OT1/cmss/m/n on input line 269.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
@@ -1684,52 +1688,52 @@ LaTeX Info: Redefining \includegraphics on input line 269.
 ABD: EverySelectfont initializing macros
 LaTeX Info: Redefining \selectfont on input line 269.
  (./Counters.nav)
-LaTeX Font Info:    Calculating math sizes for size <8.64> on input line 375.
-LaTeX Font Info:    Try loading font information for OT1+lmss on input line 375
+LaTeX Font Info:    Calculating math sizes for size <8.64> on input line 416.
+LaTeX Font Info:    Try loading font information for OT1+lmss on input line 416
 .
 
 (/opt/local/share/texmf-texlive/tex/latex/lm/ot1lmss.fd
 File: ot1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 375.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 416.
 
 
 (/opt/local/share/texmf-texlive/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 375
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 416
 .
 
 (/opt/local/share/texmf-texlive/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 375
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 416
 .
 
 (/opt/local/share/texmf-texlive/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8.64> on input line 375.
+(Font)              <8.64> on input line 416.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6.04796> on input line 375.
+(Font)              <6.04796> on input line 416.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <4.31999> on input line 375.
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 375.
+(Font)              <4.31999> on input line 416.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 416.
 
 (/opt/local/share/texmf-texlive/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <4.31999> not available
-(Font)              size <5> substituted on input line 375.
+(Font)              size <5> substituted on input line 416.
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8.64> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 375.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 416.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <6.04796> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 375.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 416.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <4.31999> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 375.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 416.
 File: ../../images/type/full/Fighting.png Graphic file (type QTm)
 <use  "../../images/type/full/Fighting.png" >
 File: ../../images/type/full/Ghost.png Graphic file (type QTm)
@@ -1783,30 +1787,30 @@ File: ../../images/type/full/Bug.png Graphic file (type QTm)
 File: ../../images/type/full/Normal.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Normal.png" >
-LaTeX Font Info:    Try loading font information for OMS+lmss on input line 375
+LaTeX Font Info:    Try loading font information for OMS+lmss on input line 416
 .
-LaTeX Font Info:    No file OMSlmss.fd. on input line 375.
+LaTeX Font Info:    No file OMSlmss.fd. on input line 416.
 
 
 LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textdagger' on input line 375.
+(Font)              for symbol `textdagger' on input line 416.
 
 File: ../../images/megaevolve.png Graphic file (type QTm)
 <use  "../../images/megaevolve.png" >
-LaTeX Font Info:    Calculating math sizes for size <10.37> on input line 375.
+LaTeX Font Info:    Calculating math sizes for size <10.37> on input line 416.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.37> on input line 375.
+(Font)              <10.37> on input line 416.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.25896> on input line 375.
+(Font)              <7.25896> on input line 416.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.185> on input line 375.
+(Font)              <5.185> on input line 416.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.37> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 375.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 416.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7.25896> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 375.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 416.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5.185> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 375.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 416.
 File: ../../images/type/background/lobby_.png Graphic file (type QTm)
 
 <use  "../../images/type/background/lobby_.png" > [1
@@ -1818,30 +1822,30 @@ File: ../../images/type/full/Fighting.png Graphic file (type QTm)
 File: ../../images/pokemon/machamp.png Graphic file (type QTm)
 
 <use  "../../images/pokemon/machamp.png" >
-LaTeX Font Info:    Calculating math sizes for size <7.2> on input line 425.
+LaTeX Font Info:    Calculating math sizes for size <7.2> on input line 465.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7.2> on input line 425.
+(Font)              <7.2> on input line 465.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5.03996> on input line 425.
+(Font)              <5.03996> on input line 465.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <3.59999> on input line 425.
+(Font)              <3.59999> on input line 465.
 
 
 LaTeX Font Warning: Font shape `U/rsfs/m/n' in size <3.59999> not available
-(Font)              size <5> substituted on input line 425.
+(Font)              size <5> substituted on input line 465.
 
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7.2> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 425.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 465.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <5.03996> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 425.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 465.
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <3.59999> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 425.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 465.
 File: ../../images/type/simplified/fighting.png Graphic file (type QTm)
 <use  "../../images/type/simplified/fighting.png" >
 File: ../../images/type/full/Fighting.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Fighting.png" >
-Overfull \vbox (11.0pt too high) detected at line 425
+Overfull \vbox (11.0pt too high) detected at line 465
  []
 
 File: ../../images/type/simplified/fighting.png Graphic file (type QTm)
@@ -1855,7 +1859,7 @@ File: ../../images/type/full/Fairy.png Graphic file (type QTm)
 File: ../../images/type/full/Flying.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Flying.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 425--425
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 465--465
  [] 
  []
 
@@ -1879,7 +1883,7 @@ File: ../../images/type/full/Fairy.png Graphic file (type QTm)
 File: ../../images/type/full/Flying.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Flying.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 425--425
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 465--465
  [][] 
  []
 
@@ -1941,7 +1945,7 @@ File: ../../images/type/simplified/ghost.png Graphic file (type QTm)
 File: ../../images/type/full/Ghost.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Ghost.png" >
-Overfull \vbox (11.0pt too high) detected at line 479
+Overfull \vbox (11.0pt too high) detected at line 519
  []
 
 File: ../../images/type/simplified/ghost.png Graphic file (type QTm)
@@ -1961,7 +1965,7 @@ File: ../../images/type/full/Ghost.png Graphic file (type QTm)
 File: ../../images/type/full/Dark.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Dark.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 479--479
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 519--519
  [] 
  []
 
@@ -1982,7 +1986,7 @@ File: ../../images/type/simplified/ghost.png Graphic file (type QTm)
 File: ../../images/type/full/Psychic.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Psychic.png" >
-Overfull \vbox (11.0pt too high) detected at line 479
+Overfull \vbox (11.0pt too high) detected at line 519
  []
 
 File: ../../images/type/simplified/ghost.png Graphic file (type QTm)
@@ -1999,7 +2003,7 @@ File: ../../images/type/full/Dark.png Graphic file (type QTm)
 File: ../../images/type/full/Ground.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Ground.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 479--479
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 519--519
  [][] 
  []
 
@@ -2017,7 +2021,7 @@ File: ../../images/type/simplified/psy.png Graphic file (type QTm)
 File: ../../images/type/full/Psychic.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Psychic.png" >
-Overfull \vbox (11.0pt too high) detected at line 479
+Overfull \vbox (11.0pt too high) detected at line 519
  []
 
 File: ../../images/type/simplified/ghost.png Graphic file (type QTm)
@@ -2031,7 +2035,7 @@ File: ../../images/type/full/Dark.png Graphic file (type QTm)
 File: ../../images/type/full/Bug.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Bug.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 479--479
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 519--519
  [][] 
  []
 
@@ -2108,7 +2112,7 @@ File: ../../images/type/full/Fairy.png Graphic file (type QTm)
 File: ../../images/type/full/Bug.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Bug.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 535--535
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 575--575
  [] 
  []
 
@@ -2150,12 +2154,12 @@ File: ../../images/type/full/Steel.png Graphic file (type QTm)
 File: ../../images/type/full/Ground.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Ground.png" >
-Overfull \hbox (19.50096pt too wide) in paragraph at lines 535--535
+Overfull \hbox (19.50096pt too wide) in paragraph at lines 575--575
 [][] [] []  [] [] [] []| 
  []
 
 
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 535--535
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 575--575
  [][] 
  []
 
@@ -2194,12 +2198,12 @@ File: ../../images/type/full/Steel.png Graphic file (type QTm)
 File: ../../images/type/full/Rock.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Rock.png" >
-Overfull \hbox (4.52107pt too wide) in paragraph at lines 535--535
+Overfull \hbox (4.52107pt too wide) in paragraph at lines 575--575
 [][] [] []  [] [] []| 
  []
 
 
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 535--535
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 575--575
  [][] 
  []
 
@@ -2279,7 +2283,7 @@ File: ../../images/type/full/Dragon.png Graphic file (type QTm)
 File: ../../images/type/full/Fairy.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Fairy.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 585--585
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 625--625
  [] 
  []
 
@@ -2297,7 +2301,7 @@ File: ../../images/pokemon/salamence.png Graphic file (type QTm)
 File: ../../images/type/simplified/dragon.png Graphic file (type QTm)
 
 <use  "../../images/type/simplified/dragon.png" >
-Overfull \vbox (11.0pt too high) detected at line 585
+Overfull \vbox (11.0pt too high) detected at line 625
  []
 
 File: ../../images/type/simplified/dragon.png Graphic file (type QTm)
@@ -2314,7 +2318,7 @@ File: ../../images/type/full/Dragon.png Graphic file (type QTm)
 File: ../../images/type/full/Fairy.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Fairy.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 585--585
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 625--625
  [][] 
  []
 
@@ -2344,7 +2348,7 @@ File: ../../images/type/full/Dragon.png Graphic file (type QTm)
 File: ../../images/type/full/Fairy.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Fairy.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 585--585
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 625--625
  [][] 
  []
 
@@ -2374,7 +2378,7 @@ File: ../../images/type/full/Dragon.png Graphic file (type QTm)
 File: ../../images/type/full/Fairy.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Fairy.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 585--585
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 625--625
  [][] 
  []
 
@@ -2401,7 +2405,7 @@ File: ../../images/type/full/Fighting.png Graphic file (type QTm)
 File: ../../images/type/full/Ground.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Ground.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 585--585
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 625--625
  [][] 
  []
 
@@ -2425,7 +2429,7 @@ File: ../../images/pokemon/giratina_a.png Graphic file (type QTm)
 File: ../../images/pokemon/giratina_o.png Graphic file (type QTm)
 
 <use  "../../images/pokemon/giratina_o.png" >
-Overfull \vbox (1.45047pt too high) detected at line 585
+Overfull \vbox (1.45047pt too high) detected at line 625
  []
 
 File: ../../images/type/background/dragon.png Graphic file (type QTm)
@@ -2465,7 +2469,7 @@ File: ../../images/type/full/Water.png Graphic file (type QTm)
 File: ../../images/type/full/Grass.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Grass.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 631--631
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 671--671
  [] 
  []
 
@@ -2492,7 +2496,7 @@ File: ../../images/type/full/Steel.png Graphic file (type QTm)
 File: ../../images/type/full/Rock.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Rock.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 631--631
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 671--671
  [][] 
  []
 
@@ -2528,12 +2532,12 @@ File: ../../images/type/full/Steel.png Graphic file (type QTm)
 File: ../../images/type/full/Rock.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Rock.png" >
-Overfull \hbox (4.52107pt too wide) in paragraph at lines 631--631
+Overfull \hbox (4.52107pt too wide) in paragraph at lines 671--671
 [][] [] []  [] [] []| 
  []
 
 
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 631--631
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 671--671
  [][] 
  []
 
@@ -2548,7 +2552,7 @@ File: ../../images/pokemon/mewtwo.png Graphic file (type QTm)
 File: ../../images/type/simplified/psy.png Graphic file (type QTm)
 
 <use  "../../images/type/simplified/psy.png" >
-Overfull \vbox (11.0pt too high) detected at line 631
+Overfull \vbox (11.0pt too high) detected at line 671
  []
 
 File: ../../images/type/simplified/ice.png Graphic file (type QTm)
@@ -2562,7 +2566,7 @@ File: ../../images/type/full/Dark.png Graphic file (type QTm)
 File: ../../images/type/full/Bug.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Bug.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 631--631
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 671--671
  [][] 
  []
 
@@ -2627,7 +2631,7 @@ File: ../../images/type/full/Grass.png Graphic file (type QTm)
 File: ../../images/type/full/Ground.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Ground.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 676--676
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 716--716
  [] 
  []
 
@@ -2669,12 +2673,12 @@ File: ../../images/type/full/Steel.png Graphic file (type QTm)
 File: ../../images/type/full/Ground.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Ground.png" >
-Overfull \hbox (19.50096pt too wide) in paragraph at lines 676--676
+Overfull \hbox (19.50096pt too wide) in paragraph at lines 716--716
 [][] [] []  [] [] [] []| 
  []
 
 
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 676--676
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 716--716
  [][] 
  []
 
@@ -2689,7 +2693,7 @@ File: ../../images/pokemon/rhyperior.png Graphic file (type QTm)
 File: ../../images/type/simplified/rock.png Graphic file (type QTm)
 
 <use  "../../images/type/simplified/rock.png" >
-Overfull \vbox (11.0pt too high) detected at line 676
+Overfull \vbox (11.0pt too high) detected at line 716
  []
 
 File: ../../images/type/simplified/rock.png Graphic file (type QTm)
@@ -2712,12 +2716,12 @@ File: ../../images/type/full/Steel.png Graphic file (type QTm)
 File: ../../images/type/full/Ice.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Ice.png" >
-Overfull \hbox (2.54774pt too wide) in paragraph at lines 676--676
+Overfull \hbox (2.54774pt too wide) in paragraph at lines 716--716
 [][] [] [] [] [] []| 
  []
 
 
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 676--676
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 716--716
  [][] 
  []
 
@@ -2767,7 +2771,7 @@ File: ../../images/type/simplified/ground.png Graphic file (type QTm)
 File: ../../images/type/full/Ground.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Ground.png" >
-Overfull \vbox (22.0pt too high) detected at line 723
+Overfull \vbox (22.0pt too high) detected at line 763
  []
 
 File: ../../images/type/simplified/ground.png Graphic file (type QTm)
@@ -2781,7 +2785,7 @@ File: ../../images/type/full/Grass.png Graphic file (type QTm)
 File: ../../images/type/full/Ice.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Ice.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 723--723
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 763--763
  [] 
  []
 
@@ -2811,7 +2815,7 @@ File: ../../images/type/full/Fairy.png Graphic file (type QTm)
 File: ../../images/type/full/Dragon.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Dragon.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 723--723
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 763--763
  [][] 
  []
 
@@ -2826,7 +2830,7 @@ File: ../../images/pokemon/rhyperior.png Graphic file (type QTm)
 File: ../../images/type/simplified/ground.png Graphic file (type QTm)
 
 <use  "../../images/type/simplified/ground.png" >
-Overfull \vbox (11.0pt too high) detected at line 723
+Overfull \vbox (11.0pt too high) detected at line 763
  []
 
 File: ../../images/type/simplified/ground.png Graphic file (type QTm)
@@ -2849,12 +2853,12 @@ File: ../../images/type/full/Steel.png Graphic file (type QTm)
 File: ../../images/type/full/Ice.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Ice.png" >
-Overfull \hbox (2.54774pt too wide) in paragraph at lines 723--723
+Overfull \hbox (2.54774pt too wide) in paragraph at lines 763--763
 [][] [] [] [] [] []| 
  []
 
 
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 723--723
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 763--763
  [][] 
  []
 
@@ -2869,7 +2873,7 @@ File: ../../images/pokemon/mamoswine.png Graphic file (type QTm)
 File: ../../images/type/simplified/ground.png Graphic file (type QTm)
 
 <use  "../../images/type/simplified/ground.png" >
-Overfull \vbox (11.0pt too high) detected at line 723
+Overfull \vbox (11.0pt too high) detected at line 763
  []
 
 File: ../../images/type/simplified/ground.png Graphic file (type QTm)
@@ -2889,7 +2893,7 @@ File: ../../images/type/full/Water.png Graphic file (type QTm)
 File: ../../images/type/full/Grass.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Grass.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 723--723
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 763--763
  [][] 
  []
 
@@ -2933,7 +2937,7 @@ File: ../../images/type/simplified/electric.png Graphic file (type QTm)
 File: ../../images/type/full/Ground.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Ground.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 774--774
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 814--814
  [] 
  []
 
@@ -2948,7 +2952,7 @@ File: ../../images/pokemon/magnezone.png Graphic file (type QTm)
 File: ../../images/type/simplified/electric.png Graphic file (type QTm)
 
 <use  "../../images/type/simplified/electric.png" >
-Overfull \vbox (11.0pt too high) detected at line 774
+Overfull \vbox (11.0pt too high) detected at line 814
  []
 
 File: ../../images/type/simplified/electric.png Graphic file (type QTm)
@@ -2962,7 +2966,7 @@ File: ../../images/type/full/Fighting.png Graphic file (type QTm)
 File: ../../images/type/full/Fire.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Fire.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 774--774
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 814--814
  [][] 
  []
 
@@ -2980,7 +2984,7 @@ File: ../../images/type/simplified/electric.png Graphic file (type QTm)
 File: ../../images/type/full/Ground.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Ground.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 774--774
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 814--814
  [][] 
  []
 
@@ -3007,7 +3011,7 @@ File: ../../images/type/full/Dark.png Graphic file (type QTm)
 File: ../../images/type/full/Bug.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Bug.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 774--774
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 814--814
  [][] 
  []
 
@@ -3069,7 +3073,7 @@ File: ../../images/type/full/Flying.png Graphic file (type QTm)
 File: ../../images/type/full/Psychic.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Psychic.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 819--819
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 859--859
  [] 
  []
 
@@ -3084,7 +3088,7 @@ File: ../../images/pokemon/venusaur.png Graphic file (type QTm)
 File: ../../images/type/simplified/grass.png Graphic file (type QTm)
 
 <use  "../../images/type/simplified/grass.png" >
-Overfull \vbox (11.0pt too high) detected at line 819
+Overfull \vbox (11.0pt too high) detected at line 859
  []
 
 File: ../../images/type/simplified/grass.png Graphic file (type QTm)
@@ -3101,7 +3105,7 @@ File: ../../images/type/full/Flying.png Graphic file (type QTm)
 File: ../../images/type/full/Psychic.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Psychic.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 819--819
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 859--859
  [][] 
  []
 
@@ -3131,7 +3135,7 @@ File: ../../images/type/full/Poison.png Graphic file (type QTm)
 File: ../../images/type/full/Bug.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Bug.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 819--819
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 859--859
  [][] 
  []
 
@@ -3140,7 +3144,7 @@ File: ../../images/type/full/Grass.png Graphic file (type QTm)
 File: ../../images/type/full/Dragon.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Dragon.png" >
-Underfull \hbox (badness 10000) in paragraph at lines 819--819
+Underfull \hbox (badness 10000) in paragraph at lines 859--859
 []\T1/lmss/bx/n/8.64 Exeggutor
  []
 
@@ -3179,12 +3183,12 @@ File: ../../images/type/full/Fairy.png Graphic file (type QTm)
 File: ../../images/type/full/Poison.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Poison.png" >
-Overfull \hbox (2.54774pt too wide) in paragraph at lines 819--819
+Overfull \hbox (2.54774pt too wide) in paragraph at lines 859--859
 [][] [] [] [] [] []| 
  []
 
 
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 819--819
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 859--859
  [][] 
  []
 
@@ -3234,7 +3238,7 @@ File: ../../images/type/full/Grass.png Graphic file (type QTm)
 File: ../../images/type/full/Electric.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Electric.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 864--864
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 904--904
  [] 
  []
 
@@ -3255,7 +3259,7 @@ File: ../../images/type/simplified/water.png Graphic file (type QTm)
 File: ../../images/type/full/Water.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Water.png" >
-Overfull \vbox (11.0pt too high) detected at line 864
+Overfull \vbox (11.0pt too high) detected at line 904
  []
 
 File: ../../images/type/simplified/water.png Graphic file (type QTm)
@@ -3263,7 +3267,7 @@ File: ../../images/type/simplified/water.png Graphic file (type QTm)
 File: ../../images/type/full/Grass.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Grass.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 864--864
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 904--904
  [][] 
  []
 
@@ -3284,7 +3288,7 @@ File: ../../images/type/full/Grass.png Graphic file (type QTm)
 File: ../../images/type/full/Electric.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Electric.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 864--864
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 904--904
  [][] 
  []
 
@@ -3305,7 +3309,7 @@ File: ../../images/type/full/Electric.png Graphic file (type QTm)
 File: ../../images/type/full/Rock.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Rock.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 864--864
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 904--904
  [][] 
  []
 
@@ -3355,7 +3359,7 @@ File: ../../images/type/full/Electric.png Graphic file (type QTm)
 File: ../../images/type/full/Water.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Water.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 913--913
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 953--953
  [] 
  []
 
@@ -3379,7 +3383,7 @@ File: ../../images/type/full/Ground.png Graphic file (type QTm)
 File: ../../images/type/full/Water.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Water.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 913--913
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 953--953
  [][] 
  []
 
@@ -3412,7 +3416,7 @@ File: ../../images/type/full/Ground.png Graphic file (type QTm)
 File: ../../images/type/full/Water.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Water.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 913--913
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 953--953
  [][] 
  []
 
@@ -3442,7 +3446,7 @@ File: ../../images/type/full/Electric.png Graphic file (type QTm)
 File: ../../images/type/full/Water.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Water.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 913--913
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 953--953
  [][] 
  []
 
@@ -3501,7 +3505,7 @@ File: ../../images/type/full/Ghost.png Graphic file (type QTm)
 File: ../../images/type/full/Dark.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Dark.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 951--951
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 991--991
  [] 
  []
 
@@ -3525,7 +3529,7 @@ File: ../../images/type/full/Fighting.png Graphic file (type QTm)
 File: ../../images/type/full/Ground.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Ground.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 951--951
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 991--991
  [][] 
  []
 
@@ -3569,7 +3573,7 @@ File: ../../images/type/full/Fairy.png Graphic file (type QTm)
 File: ../../images/type/full/Fairy.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Fairy.png" >
-Overfull \vbox (22.0pt too high) detected at line 998
+Overfull \vbox (22.0pt too high) detected at line 1038
  []
 
 File: ../../images/type/simplified/fairy.png Graphic file (type QTm)
@@ -3583,7 +3587,7 @@ File: ../../images/type/full/Steel.png Graphic file (type QTm)
 File: ../../images/type/full/Poison.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Poison.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 998--998
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 1038--1038
  [] 
  []
 
@@ -3604,7 +3608,7 @@ File: ../../images/type/simplified/dragon.png Graphic file (type QTm)
 File: ../../images/type/full/Fairy.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Fairy.png" >
-Overfull \vbox (22.0pt too high) detected at line 998
+Overfull \vbox (22.0pt too high) detected at line 1038
  []
 
 File: ../../images/type/simplified/fairy.png Graphic file (type QTm)
@@ -3624,7 +3628,7 @@ File: ../../images/type/full/Electric.png Graphic file (type QTm)
 File: ../../images/type/full/Ice.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Ice.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 998--998
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 1038--1038
  [][] 
  []
 
@@ -3642,7 +3646,7 @@ File: ../../images/type/full/Fairy.png Graphic file (type QTm)
 File: ../../images/type/full/Fairy.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Fairy.png" >
-Overfull \vbox (11.0pt too high) detected at line 998
+Overfull \vbox (11.0pt too high) detected at line 1038
  []
 
 File: ../../images/type/simplified/fairy.png Graphic file (type QTm)
@@ -3653,7 +3657,7 @@ File: ../../images/type/full/Steel.png Graphic file (type QTm)
 File: ../../images/type/full/Poison.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Poison.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 998--998
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 1038--1038
  [][] 
  []
 
@@ -3703,7 +3707,7 @@ File: ../../images/type/simplified/psy.png Graphic file (type QTm)
 File: ../../images/type/full/Psychic.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Psychic.png" >
-Overfull \vbox (11.0pt too high) detected at line 1033
+Overfull \vbox (11.0pt too high) detected at line 1073
  []
 
 File: ../../images/type/simplified/psy.png Graphic file (type QTm)
@@ -3717,7 +3721,7 @@ File: ../../images/type/full/Dark.png Graphic file (type QTm)
 File: ../../images/type/full/Bug.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Bug.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 1033--1033
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 1073--1073
  [] 
  []
 
@@ -3741,7 +3745,7 @@ File: ../../images/type/full/Dark.png Graphic file (type QTm)
 File: ../../images/type/full/Bug.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Bug.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 1033--1033
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 1073--1073
  [][] 
  []
 
@@ -3765,7 +3769,7 @@ File: ../../images/type/full/Dark.png Graphic file (type QTm)
 File: ../../images/type/full/Bug.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Bug.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 1033--1033
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 1073--1073
  [][] 
  []
 
@@ -3809,7 +3813,7 @@ File: ../../images/type/full/Electric.png Graphic file (type QTm)
 File: ../../images/type/full/Water.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Water.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 1073--1073
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 1113--1113
  [] 
  []
 
@@ -3842,7 +3846,7 @@ File: ../../images/type/full/Dragon.png Graphic file (type QTm)
 File: ../../images/type/full/Fairy.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Fairy.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 1073--1073
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 1113--1113
  [][] 
  []
 
@@ -3872,7 +3876,7 @@ File: ../../images/type/full/Ice.png Graphic file (type QTm)
 File: ../../images/type/full/Fairy.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Fairy.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 1073--1073
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 1113--1113
  [][] 
  []
 
@@ -3919,7 +3923,7 @@ File: ../../images/type/full/Flying.png Graphic file (type QTm)
 File: ../../images/type/full/Psychic.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Psychic.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 1108--1108
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 1148--1148
  [] 
  []
 
@@ -3937,7 +3941,7 @@ File: ../../images/pokemon/gengar.png Graphic file (type QTm)
 File: ../../images/type/simplified/ghost.png Graphic file (type QTm)
 
 <use  "../../images/type/simplified/ghost.png" >
-Overfull \hbox (1.85544pt too wide) in paragraph at lines 1108--1108
+Overfull \hbox (1.85544pt too wide) in paragraph at lines 1148--1148
 [][] \T1/lmss/m/n/8.64 Lick$[]$(5) / S.Claw$[]$(9)| 
  []
 
@@ -3955,7 +3959,7 @@ File: ../../images/type/full/Dark.png Graphic file (type QTm)
 File: ../../images/type/full/Ground.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Ground.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 1108--1108
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 1148--1148
  [][] 
  []
 
@@ -3982,7 +3986,7 @@ File: ../../images/type/full/Ground.png Graphic file (type QTm)
 File: ../../images/type/full/Flying.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Flying.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 1108--1108
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 1148--1148
  [][] 
  []
 
@@ -4017,7 +4021,7 @@ File: ../../images/type/simplified/bug.png Graphic file (type QTm)
 File: ../../images/type/full/Fire.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Fire.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 1153--1153
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 1193--1193
  [] 
  []
 
@@ -4044,7 +4048,7 @@ File: ../../images/type/full/Flying.png Graphic file (type QTm)
 File: ../../images/type/full/Rock.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Rock.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 1153--1153
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 1193--1193
  [][] 
  []
 
@@ -4080,7 +4084,7 @@ File: ../../images/type/full/Electric.png Graphic file (type QTm)
 File: ../../images/type/full/Ice.png Graphic file (type QTm)
 
 <use  "../../images/type/full/Ice.png" >
-Overfull \hbox (21.85652pt too wide) in paragraph at lines 1153--1153
+Overfull \hbox (21.85652pt too wide) in paragraph at lines 1193--1193
  [][] 
  []
 
@@ -4175,7 +4179,7 @@ File: ../../images/type/simplified/ice.png Graphic file (type QTm)
 File: ../../images/type/simplified/ghost.png Graphic file (type QTm)
 
 <use  "../../images/type/simplified/ghost.png" >
-Overfull \hbox (3.8981pt too wide) in paragraph at lines 1204--1204
+Overfull \hbox (3.8981pt too wide) in paragraph at lines 1244--1244
  [] 
  []
 
@@ -4238,7 +4242,7 @@ File: ../../images/type/simplified/rock.png Graphic file (type QTm)
 File: ../../images/type/simplified/dark.png Graphic file (type QTm)
 
 <use  "../../images/type/simplified/dark.png" >
-Overfull \hbox (3.8981pt too wide) in paragraph at lines 1204--1204
+Overfull \hbox (3.8981pt too wide) in paragraph at lines 1244--1244
  [][] 
  []
 
@@ -4298,7 +4302,7 @@ File: ../../images/type/simplified/psy.png Graphic file (type QTm)
 File: ../../images/type/simplified/fighting.png Graphic file (type QTm)
 
 <use  "../../images/type/simplified/fighting.png" >
-Overfull \hbox (3.8981pt too wide) in paragraph at lines 1204--1204
+Overfull \hbox (3.8981pt too wide) in paragraph at lines 1244--1244
  [][] 
  []
 
@@ -4315,11 +4319,11 @@ File: ../../images/type/background/normal.png Graphic file (type QTm)
 \tf@snm=\write8
 \openout8 = `Counters.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1209.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1209.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1249.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1249.
  (./Counters.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1209.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1209.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 1249.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 1249.
 
 
 LaTeX Font Warning: Size substitutions with differences
@@ -4328,15 +4332,15 @@ LaTeX Font Warning: Size substitutions with differences
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1209.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1249.
  ) 
 Here is how much of TeX's memory you used:
- 25671 strings out of 495534
- 477541 string characters out of 6185783
- 654393 words of memory out of 5000000
- 28251 multiletter control sequences out of 15000+600000
+ 25690 strings out of 495534
+ 477930 string characters out of 6185783
+ 653317 words of memory out of 5000000
+ 28270 multiletter control sequences out of 15000+600000
  105005 words of font info for 94 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 48i,17n,66p,496b,1153s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 48i,17n,66p,496b,1152s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on Counters.pdf (19 pages).
