@@ -145,7 +145,7 @@
 \renewcommand{\baselinestretch}{1.1}
 
 \newcommand*{\colorbar}[2]{
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.15,-0.1) rectangle (1.8,0.1);
 \draw [line width=7.pt,color=#1] (0.,0.)-- (#2/200,0.);
 \draw[color=white] (0.2,0.) node {\scriptsize{$#2$}};
 \end{tikzpicture}
@@ -157,19 +157,19 @@
 \newcommand*{\stamina}[1]{\colorbar{lightgreen}{#1}}
 
 \newcommand*{\dps}[1]{
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.15,-0.1) rectangle (1.8,0.1);
 \draw [line width=7.pt,color=black] (0.,0.)-- (#1/12.,0.);
 \draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
 \end{tikzpicture}
 }
 \newcommand*{\survival}[1]{
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.15,-0.1) rectangle (1.8,0.1);
 \draw [line width=7.pt,color=black] (0.,0.)-- (#1/25.,0.);
 \draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
 \end{tikzpicture}
 }
 \newcommand*{\tdo}[1]{
-\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.1,-0.1) rectangle (1.8,0.1);
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.0cm,y=1.0cm]\clip(-0.15,-0.1) rectangle (1.8,0.1);
 \draw [line width=7.pt,color=black] (0.,0.)-- (#1/390.,0.);
 \draw[color=white] (0.3,0.) node {\scriptsize{$#1$}};
 \end{tikzpicture}
@@ -271,12 +271,12 @@
 \begin{block}{}
 \begin{footnotesize}
 \begin{itemize}
-  \item Three statistics define a Pok\'emon: the attack statistic defines the damage your Pokémon will do, the defence statistic defines the speed at which your Pokémon will die, the HP is your Pokémon's Health Points.
+  \item Three statistics define a Pok\'emon: the attack statistic defines the damage your Pokémon will do, the defence statistic defines the speed at which your Pokémon will die, the HP is your Pokémon's Hit Points.
 
   \item We consider the example of Mewtwo. Mewtwo's base statistics are:
 
 \begin{center}
-\begin{tabular}{rp{2cm}} 
+\begin{tabular}{rp{3cm}} 
     & \textbf{Mewtwo} \hfill  \psychicfull  \\ 
 %    &  \multicolumn{1}{c}{\includegraphics[width=2cm]{../../images/pokemon/Mewtwo}} \\ \hline
   Base\_ATK &  \attack{300} \\
@@ -289,7 +289,7 @@
 
 Assume you are very lucky, and you caught a perfect Mewtwo, with (ATK\_IV, DEF\_IV, HP\_IV) = (15, 15, 15). Your perfect Mewtwo's  stats are:
 \begin{center}
-\begin{tabular}{rp{2cm}} 
+\begin{tabular}{rp{3cm}} 
   Base\_ATK + ATK\_IV  &  \attack{315} \\
   Base\_DEF + DEF\_IV & \defense{197} \\
   Base\_HP + HP\_IV & \stamina{229} \\ % \hline
@@ -307,14 +307,14 @@ Assume you are very lucky, and you caught a perfect Mewtwo, with (ATK\_IV, DEF\_
 
 This table tells that: at level 25, your Pokemon is at 84.5\% of its capacity; at level 30, your Pokemon is at 92.6\% of its capacity; at level 35, your Pokemon is at 96.4\% of its capacity. Coming back to Mewtwo, if you level up it to level 30, its statistics are finally:
 \begin{center}
-\begin{tabular}{rp{2cm}} 
+\begin{tabular}{rp{3cm}} 
 ATK =  (ATT + ATK\_IV) at level 30  &  \attack{230} \\
 DEF =  (DEF + DEF\_IV) at level 30 & \defense{144} \\
 HP =  (HP + HP\_IV) at level 30 & \stamina{167} \\ % \hline
 \end{tabular}   
 \end{center}
 
-\item CP formula is:
+\item The Combat Power (CP) formula is:
 \begin{center}
 CP = $\text{floor}\left(\frac{\text{ATT} \times \sqrt{\text{DEF} \times \text{HP}}}{10} \right) = \text{floor}\left( \frac{230 \times \sqrt{144\times 167}}{10}\right) = 3566$ 
 \end{center}
@@ -333,7 +333,7 @@ CP = $\text{floor}\left(\frac{\text{ATT} \times \sqrt{\text{DEF} \times \text{HP
 \begin{itemize}
   \item We use the \textbf{effective health} (EH) defined by : EH $\propto$ DEF $\times$ HP. The higher the score is, the bulkier the Pok\'emon is. For instance: 
 \begin{center}
-\begin{tabular}{rp{2cm}p{2cm}} 
+\begin{tabular}{rp{3cm}p{3cm}} 
     & \textbf{Tangrowth} \hfill  \grassfull &\textbf{Exeggutor (A)} \hfill  \grassfull~\dragonfull    \\ 
     & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/tangrowth.png}} & \multicolumn{1}{c}{\includegraphics[width=1.5cm]{../../images/pokemon/exeggutor_a.png}} \\
   Base\_ATK &  \attack{207} &\attack{230}  \\
@@ -567,7 +567,7 @@ Difficulty & HP & Time \\ \hline
 For example, Kyogre's base statistics are:
 
 \begin{center}
-\begin{tabular}{rp{2cm}} 
+\begin{tabular}{rp{3cm}} 
     & \textbf{Kyogre} \hfill  \waterfull  \\ 
   Base\_ATK &  \attack{270} \\
   Base\_DEF & \defense{228} \\
@@ -579,7 +579,7 @@ For example, Kyogre's base statistics are:
 As a raid boss, they will be:
 
 \begin{center}
-\begin{tabular}{rp{2cm}} 
+\begin{tabular}{rp{3cm}} 
     & \textbf{Kyogre} \hfill  \waterfull  \\ 
   ATT &  \attack{225} \\
   DEF & \defense{192} \\
