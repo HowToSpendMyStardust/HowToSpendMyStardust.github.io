@@ -285,18 +285,18 @@
 \end{tabular}   
 \end{center}
 
-(source: \url{https://pokemon.gameinfo.io/fr/pokemon/150-mewtwo}). 
+%(source: \url{https://pokemon.gameinfo.io/fr/pokemon/150-mewtwo}). 
 
-Assume you are very lucky, and you caught a perfect Mewtwo, with (ATK\_IV, DEF\_IV, HP\_IV) = (15, 15, 15). Your perfect Mewtwo's  stats are:
+Assume you are very lucky, and you caught a perfect Mewtwo, with (ATK\_IV, DEF\_IV, HP\_IV) = (15, 15, 15). Your perfect Mewtwo's stats are:
 \begin{center}
 \begin{tabular}{rp{3cm}} 
-  Base\_ATK + ATK\_IV  &  \attack{315} \\
-  Base\_DEF + DEF\_IV & \defense{197} \\
-  Base\_HP + HP\_IV & \stamina{229} \\ % \hline
+  ATK =  (Base\_ATK + ATK\_IV)   &  \attack{315} \\
+  DEF =  (Base\_DEF + DEF\_IV)  & \defense{197} \\
+  HP =  (Base\_HP + HP\_IV) & \stamina{229} \\ % \hline
 \end{tabular}   
 \end{center}
 
-  \item Depending on the level of your Pokémon, you will multiply all these stats by a coefficients given in the following table:
+  \item Depending on the level of your Pokémon, you will multiply all these stats by a coefficient:
 
 \begin{center}
 \begin{tabular}{cccccc} 
@@ -305,19 +305,35 @@ Assume you are very lucky, and you caught a perfect Mewtwo, with (ATK\_IV, DEF\_
 \end{tabular}   
 \end{center}
 
-This table tells that: at level 25, your Pokemon is at 84.5\% of its capacity; at level 30, your Pokemon is at 92.6\% of its capacity; at level 35, your Pokemon is at 96.4\% of its capacity. Coming back to Mewtwo, if you level up it to level 30, its statistics are finally:
+This table says that at level 25, your Pokemon is at 84.5\% of its capacity; at level 30, your Pokemon is at 92.6\% of its capacity; at level 35, your Pokemon is at 96.4\% of its capacity. Coming back to your perfect Mewtwo, if you level up it to level 40, its statistics are finally:
 \begin{center}
 \begin{tabular}{rp{3cm}} 
-ATK =  (ATT + ATK\_IV) at level 30  &  \attack{230} \\
-DEF =  (DEF + DEF\_IV) at level 30 & \defense{144} \\
-HP =  (HP + HP\_IV) at level 30 & \stamina{167} \\ % \hline
+ATK at level 40  &  \attack{248} \\
+DEF at level 40 & \defense{155} \\
+HP at level 40 & \stamina{180} \\ % \hline
 \end{tabular}   
 \end{center}
 
+Your friend caught a Mewtwo with (ATK\_IV, DEF\_IV, HP\_IV) = (14, 15, 14). If we do the same calculations as previous, its Mewtwo, at level 40, will have the following statistics:
+\begin{center}
+\begin{tabular}{rp{3cm}} 
+ATK at level 40  &  \attack{248} \\
+DEF at level 40 & \defense{155} \\
+HP at level 40 & \stamina{180} \\ % \hline
+\end{tabular}   
+\end{center}
+
+Surprisingly, Mewtwo (14, 15, 14) at level 40 and (15, 15, 15) at level 40 both have exactly the same statistics! 
+
 \item The Combat Power (CP) formula is:
 \begin{center}
-CP = $\text{floor}\left(\frac{\text{ATT} \times \sqrt{\text{DEF} \times \text{HP}}}{10} \right) = \text{floor}\left( \frac{230 \times \sqrt{144\times 167}}{10}\right) = 3566$ 
+CP = $\text{floor}\left(\frac{\text{ATK} \times \sqrt{\text{DEF} \times \text{HP}}}{10} \times \text{coeff}\_\text{level}^2 \right)$
 \end{center}
+
+\begin{itemize}
+\item \footnotesize For Mewtwo (15, 15, 15), at level 40, its CP is $\text{floor}\left(\frac{315 \times \sqrt{197 \times 229}}{10} \times 0.7903^2 \right) = 4178$
+\item \footnotesize For Mewtwo (14, 15, 14), at level 40, its CP is $\text{floor}\left(\frac{314 \times \sqrt{197 \times 228}}{10} \times 0.7903^2 \right) = 4156$
+\end{itemize}
 \end{itemize}
 
 \end{footnotesize}
