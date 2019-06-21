@@ -23,7 +23,17 @@ cd ..
 cd iv_determined_at_go/
 xelatex iv_determined_at_go.tex
 pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 iv_determined_at_go.pdf
-cd ../..
+cd ..
+
+cd vf/guide_fr
+xelatex Guide.tex
+pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 Guide.pdf
+cd ..
+
+cd iv_determined_at_go_fr/
+xelatex iv_determined_at_go.tex
+pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 iv_determined_at_go.pdf
+cd ../../..
 
 cd pvp/counters
 xelatex pvp.tex
