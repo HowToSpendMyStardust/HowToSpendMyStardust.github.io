@@ -25,7 +25,7 @@ xelatex iv_determined_at_go.tex
 pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 iv_determined_at_go.pdf
 cd ..
 
-cd vf/guide_fr
+cd fr/guide_fr
 xelatex Guide.tex
 pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 Guide.pdf
 cd ..

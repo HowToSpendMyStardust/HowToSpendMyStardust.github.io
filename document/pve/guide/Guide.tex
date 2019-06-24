@@ -442,9 +442,9 @@ If Exeggutor's level is 40, its attack statistic is $\text{floor}((230+15)\times
 \begin{block}{}
 \begin{footnotesize}
 \begin{itemize}
-  \item Each Pokemon has a fast move and a charged move. Both together define the damage the Pok\'emon will realise.
-  \item Each move is defined by the damage it realises, its duration and the energy it generates (for fast moves) or uses (for charged moves).
-  \item Charged move energies are defined by the number of bars:
+  \item Each Pokemon has a fast move and a charge move. Both together define the damage the Pok\'emon will realise.
+  \item Each move is defined by the damage it realises, its duration and the energy it generates (for fast moves) or uses (for charge moves).
+  \item charge move energies are defined by the number of bars:
   \begin{center}
 \begin{tabular}{ccc}
 %3-bar move&  2-bar move & 1-bar move \\
@@ -486,7 +486,7 @@ EPS & -19.2 &-37 \\
 DPS stands for the damage per second for this move (= Base damage/Move duration), whereas EPS is the energy used per second (= Base damage/Energy).
 
 Both attacks realise 100 as base damage, and have similar Move duration. However Meteor Mash needs less energy than Flash Cannon; a player will launch two Meteor Mash for one Flash Cannon $-$ for the same amount of energy $-$, and realise twice more damage in the same time. This is reflected in the EPS. Therefore, Meteor Mash is much more interesting than Flash Cannon.
-\item We usually compute the global and neutral DPS for each couple (fast, charge) to see the damage per second the Pok\'emon realises by combining its fast and charged moves. Computation is complex, as it needs to consider also the damage realised by the opponent which brings energy to the giver when it launches its charged move. The DPS must also consider  "Same Type Attack Bonus" (STAB, 25\% damage boost of a move when it is the same type as one of the types of the Pokémon using the move). 
+\item We usually compute the global and neutral DPS for each couple (fast, charge) to see the damage per second the Pok\'emon realises by combining its fast and charge moves. Computation is complex, as it needs to consider also the damage realised by the opponent which brings energy to the giver when it launches its charge move. The DPS must also consider  "Same Type Attack Bonus" (STAB, 25\% damage boost of a move when it is the same type as one of the types of the Pokémon using the move). 
 
 \begin{center}
    \href{https://pokemongo.gamepress.gg/tdo-how-calculate-pokemon-ability-outdated}{\beamergotobutton{How DPS is computed?}} \quad \quad 
@@ -496,7 +496,7 @@ Both attacks realise 100 as base damage, and have similar Move duration. However
 For Metagross, DPS of (Bullet Punch, Meteor Mash) is much higher than DPS of (Bullet Punch, Flash Cannon):
 \begin{center}
 \begin{tabular}{ccccccc}
-Pokemon & Fast Move & Charged Move & DPS & TDO & DPS$^3 \times$ TDO & CP \\ \hline
+Pokemon & Fast Move & charge Move & DPS & TDO & DPS$^3 \times$ TDO & CP \\ \hline
 Metagross	 & \steelsimp~Bullet Punch	& \steelsimp~Meteor Mash&	17.983	&621.7	&3615.5	&3791\\
 %Metagross	& \psysimp~Zen Headbutt	& \steelsimp~Meteor Mash	&17.437	&602.8	&3195.7&	3791\\
 Metagross	& \steelsimp~Bullet Punch	& \steelsimp~Flash Cannon&	13.563	&468.9	1&169.7&	3791\\
@@ -521,7 +521,7 @@ Metagross	& \steelsimp~Bullet Punch	& \steelsimp~Flash Cannon&	13.563	&468.9	1&1
 
 To compare two Pok\'emon, we use several measures:
 \begin{itemize}
-  \item Damage Per Second (DPS) defined by their fast and charged move: it represents how much damage a Pok\'emon can make in a second.
+  \item Damage Per Second (DPS) defined by their fast and charge move: it represents how much damage a Pok\'emon can make in a second.
   \item Effective Health (EH) is computed via the formula (at level 40):
 \begin{center}
 EH $=$ (base DEF + DEF\_IV)$\times$ (base HP + HP\_IV) $\times \frac{0.7903^2}{900}$
@@ -537,7 +537,7 @@ EH $=$ (base DEF + DEF\_IV)$\times$ (base HP + HP\_IV) $\times \frac{0.7903^2}{9
 For instance, if we compare the two best \ghostfull~type Pokémon:
 \begin{center}
 \begin{tabular}{ccccccc}
-Pokemon & Fast Move & Charged Move & DPS & TDO & DPS$^3 \times$ TDO & CP \\ \hline
+Pokemon & Fast Move & charge Move & DPS & TDO & DPS$^3 \times$ TDO & CP \\ \hline
 Gengar&	\ghostsimp~Lick	&\ghostsimp~Shadow Ball	&18.109	&350.4	&2080.9	&2878\\ 
 Giratina (Origin)&	\ghostsimp~Shadow Claw	&\ghostsimp~Shadow Ball&	15.814	&662.8	&2621.4	&3683\\ 
 \end{tabular}
@@ -548,7 +548,7 @@ Gengar has a monstrous DPS, but low TDO, whereas Giratina (O) has excellent EH a
 Note also that weaknesses are not taken in this spreadsheet, as we compute the neutral DPS. If we choose "Mewtwo" with (Confusion, Psychic) as opponent, the spreadsheet becomes:
 \begin{center}
 \begin{tabular}{ccccccc}
-Pokemon & Fast Move & Charged Move & DPS & TDO & DPS$^3 \times$ TDO & CP \\ \hline
+Pokemon & Fast Move & charge Move & DPS & TDO & DPS$^3 \times$ TDO & CP \\ \hline
 Gengar&	\ghostsimp~Lick	&\ghostsimp~Shadow Ball	&27.547& 194.4 & 4063.3& 2878\\ 
 Giratina (Origin)&	\ghostsimp~Shadow Claw	&\ghostsimp~Shadow Ball&	26.415	&641.9	&11829.9	&3683\\ 
 \end{tabular}
@@ -650,7 +650,7 @@ Level 20 $\xrightarrow[\text{\stardust 31,000}]{\text{\candy~28}}$ Level 25 $\xr
 \end{center}
 There is an ideal level depending on each Pok\'emon (and it is related to its opponent): 
 \begin{itemize}
-  \item above a certain level, it will not be more resistant (its opponent will be able to inflige a certain number of fast and charged attacks until your Pok\'emon dies). It is called the \textit{bulkpoint}.
+  \item above a certain level, it will not be more resistant (its opponent will be able to inflige a certain number of fast and charge attacks until your Pok\'emon dies). It is called the \textit{bulkpoint}.
   \item above a certain level (usually different from the bulkpoint), your Pok\'emon fast attack will do exactly the same damage (it's due to the floor in the damage formula). It is called the \textit{breakpoint}.
 \end{itemize}
 
