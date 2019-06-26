@@ -77,6 +77,10 @@ xelatex second_charged_moves.tex
 pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 second_charged_moves.pdf
 cd ..
 
+cd name/
+pdf2htmlex --zoom 1.1 --hdpi 432 --vdpi 432 name.pdf
+cd ..
+
 
 cd ..
 
