@@ -404,7 +404,7 @@ Pour illustrer cette formule, prenons l'exemple de Noadkoko (A) parfait au nivea
   \item Multipliers sont des multiplieurs comme  STAB, WAB, FAB et Effectiveness.
   \item STAB est l'acronyme pour Same Type Attack Bonus. Si un Pok\'emon utilise une attaque correspondant à l'un de ses types, alors l'attaque reçoit une multiplicateur de $1.2$.
   \item WAB est l'acronyme pour Weather Attack Bonus. Si un Pok\'emon utilise une attaque du même type que la météo, alors l'attaque reçoit une multiplicateur de $1.2$.
-  \item FAB est l'acronyme pour Friendship Attack Bonus. Le bonus d'amitié est de 3\%, 5\%, 7\% or 10\%, dépendant du niveau d'amitié.
+  \item FAB est l'acronyme pour Friendship Attack Bonus. Le multiplicateur est de 1.03, 1.05, 1.07 ou 1.1, suivant le niveau d'amitié.
   \item Effectiveness réfère à un multiplicateur lié à l'efficacité de l'attaque (Super efficace, Peu efficace).
 
 \begin{center}
@@ -440,13 +440,12 @@ Si Noadkoko est au niveau 40, sa statistique d'attaque serait $\text{floor}((230
 \begin{block}{}
 \begin{footnotesize}
 \begin{itemize}
-  \item Chaque Pok\'emon a une attaque rapide et chargée. Ces deux attaques définissent ensemble les dégâts qu'il va réaliser.
+  \item Chaque Pok\'emon a une attaque rapide et chargée. Ces deux attaques définissent ensemble les dégâts qu'il va réaliser. Chaque attaque est définit par les dégâts qu'il réalise, sa durée et l'énergie qu'il génère (attaque rapide) ou qu'il utilise (attaque chargée). 
   
  \begin{center}
    \href{https://pokemongo.gamepress.gg/pve-fast-moves}{\beamergotobutton{Attaques rapides}}\quad\quad\quad
    \href{https://pokemongo.gamepress.gg/pve-charge-moves}{\beamergotobutton{Attaques chargées}}
    \end{center}
-  \item Chaque attaque est définit par les dégâts qu'il réalise, sa durée et l'énergie qu'il génère (attaque rapide) ou qu'il utilise (attaque chargée). 
   \item L'énergie nécessaire pour les attaques chargées est définie par le nombre de barres:
   \begin{center}
 \begin{tabular}{ccc}
@@ -468,7 +467,7 @@ Si Noadkoko est au niveau 40, sa statistique d'attaque serait $\text{floor}((230
 \clip(-0.1,-0.05) rectangle (0.9,0.05);
 \draw [line width=2pt] (0.,0.)-- (0.8,0.);
 \end{tikzpicture} \\  \hline
-energy of 33.33& energy of 50 & energy of 100 \\
+énergie de 33.33& énergie de 50 & énergie de 100 \\
 \end{tabular}
 \end{center}
 
