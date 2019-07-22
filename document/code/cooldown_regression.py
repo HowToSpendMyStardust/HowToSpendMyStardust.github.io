@@ -20,15 +20,16 @@ x = data[:, 0] # distance
 y = data[:, 1] # time
 z = x/(y/60.)
 
-plt.plot(x,y, '+')
+plt.plot(x,z, '+')
 plt.show()
 
-res = scipy.optimize.curve_fit(lambda t,a,b: a*t**b,  x,  y)
+import scipy.optimize
+res = scipy.optimize.curve_fit(lambda t,a,b: a*t**b,  x[11:],  z[11:])
 
 a = res[0][0]
 b = res[0][1]
-plt.plot(x,y, '+')
-plt.plot(x,a*x**(b))
+plt.plot(x[9:],z[9:], '+')
+plt.plot(x[9:],19.3*x[9:]**(0.5))
 plt.show()
 
 def cooldown(distance):
