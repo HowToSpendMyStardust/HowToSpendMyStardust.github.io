@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <meta charset="utf-8">
+    <meta property="og:url" content="https://picturepan2.github.io/spectre/experimentals/viewer-360.html">
+        <meta property="og:title" content="How to spend my stardust">
+            <meta property="og:description" content="How to spend my stardust">
+                <link rel="shortcut icon" href="../img/favicons/favicon.ico">
+                    <link rel="icon" href="../img/favicons/favicon.png">
+                        <link rel="stylesheet" href="spectre.min.css">
+                            <link rel="stylesheet" href="spectre-icons.min.css">
+                                <link rel="stylesheet" href="spectre-exp.min.css">
+                                    <link rel="stylesheet" href="docs.min.css">
+                                        <link rel="canonical" href="https://picturepan2.github.io/spectre/experimentals/viewer-360.html">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+                .collapsible {
+                    background-color: #777;
+                    color: white;
+                    cursor: pointer;
+                    padding: 18px;
+                    width: 100%;
+                    border: none;
+                    text-align: left;
+                    outline: none;
+                    font-size: 15px;
+                }
+            
+            .active, .collapsible:hover {
+                background-color: #555;
+            }
+            
+            .content {
+                padding: 0 18px;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+                background-color: #f1f1f1;
+            }
+            </style>
+    </head>
+    <body>
+        
+        <div class="off-canvas-content">
+            <div class="docs-content" id="content">
+        <br/>
+        <h3>Les meilleurs Pokémon du jeu par type</h3>
+        <br/>
+        
+        
+        <button class="collapsible"><h6>Combat</h6></button>
+        <div class="content">
+            
+            <br/>
+            
+            
+            <table>
+                <tr><td><b>Mackogneur</b></td></tr>
+                <tr><td><img src="document/images/pokemon/machamp.png" style="height:150px;"></img></td>
+                    <td>
+                    <table>
+                        <tr><td>ATK:</td></tr>
+                        <tr><td>DEF:</td></tr>
+                        <tr><td>PV:</td></tr>
+                        <tr><td>Attaques:</td><td><img src="document/images/type/simplified/fighting.png" style="height:12px;"></img> Riposte</td></tr>
+                        <tr><td></td><td><img src="document/images/type/simplified/fighting.png" style="height:12px;"></img> Dynamo-Poing</td></tr>
+                        <tr><td>Faiblesses:</td><td><img src="document/images/type/full/psychic.png" style="height:12px;"></img><img src="document/images/type/simplified/fairy.png" style="height:12px;"></img><img src="document/images/type/simplified/flying.png" style="height:12px;"></img></td></tr>
+                    </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td>DPS:</td></tr>
+                            <tr><td>Vie:</td></tr>
+                            <tr><td>TDO:</td></tr>
+                            <tr><td>Commentaires:</td><td></td></tr>
+                            <tr><td>d</td><td></td></tr>
+                            <tr><td>d</td><td></td></tr>
+                        </table>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                                         this.classList.toggle("active");
+                                         var content = this.nextElementSibling;
+                                         if (content.style.maxHeight){
+                                         content.style.maxHeight = null;
+                                         } else {
+                                         content.style.maxHeight = content.scrollHeight + "px";
+                                         } 
+                                         });
+            }
+        </script>
+</div></div>
+
+
+<p><br/><br/></p>
