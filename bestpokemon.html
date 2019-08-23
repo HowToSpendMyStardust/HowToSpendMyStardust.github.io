@@ -1,87 +1,145 @@
 <!DOCTYPE html>
-<html lang="fr">
-    <meta charset="utf-8">
-    <meta property="og:url" content="https://picturepan2.github.io/spectre/experimentals/viewer-360.html">
-        <meta property="og:title" content="How to spend my stardust">
-            <meta property="og:description" content="How to spend my stardust">
-                <link rel="shortcut icon" href="../img/favicons/favicon.ico">
-                    <link rel="icon" href="../img/favicons/favicon.png">
-                        <link rel="stylesheet" href="spectre.min.css">
-                            <link rel="stylesheet" href="spectre-icons.min.css">
-                                <link rel="stylesheet" href="spectre-exp.min.css">
-                                    <link rel="stylesheet" href="docs.min.css">
-                                        <link rel="canonical" href="https://picturepan2.github.io/spectre/experimentals/viewer-360.html">
+<html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-            <style>
-                .collapsible {
-                    background-color: #777;
-                    color: white;
-                    cursor: pointer;
-                    padding: 18px;
-                    width: 100%;
-                    border: none;
-                    text-align: left;
-                    outline: none;
-                    font-size: 15px;
+        <title>Spoofer sur Pokémon GO</title>
+        <meta charset="utf-8">
+            <meta name="robots" content="index, follow">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+                    <meta http-equiv="x-ua-compatible" content="ie=edge">
+                        <meta name="description" content="Spoofer sur Pokémon GO">
+                            <meta name="author" content="">
+                                <meta property="og:title" content="Spoofer sur Pokémon GO">
+                                    <meta property="og:description" content="Spoofer sur Pokémon GO">
+                                        <link rel="shortcut icon" href="../img/favicons/favicon.ico">
+                                            <meta name="viewport" content="width=device-width, initial-scale=1">
+                                                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                                                    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+                                                        </head>
+    
+    <body class="w3-light-grey">
+        
+        <style>
+            html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+            .w3-sidebar {
+                z-index: 3;
+                width: 250px;
+                top: 43px;
+                bottom: 0;
+                height: inherit;
+            }
+        </style>
+        
+        <script>
+            function copyToClipboard(el) {
+                
+                // resolve the element
+                el = (typeof el === 'string') ? document.querySelector(el) : el;
+                
+                // handle iOS as a special case
+                if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
+                    
+                    // save current contentEditable/readOnly status
+                    var editable = el.contentEditable;
+                    var readOnly = el.readOnly;
+                    
+                    // convert to editable with readonly to stop iOS keyboard opening
+                    el.contentEditable = true;
+                    el.readOnly = true;
+                    
+                    // create a selectable range
+                    var range = document.createRange();
+                    range.selectNodeContents(el);
+                    
+                    // select the range
+                    var selection = window.getSelection();
+                    selection.removeAllRanges();
+                    selection.addRange(range);
+                    el.setSelectionRange(0, 999999);
+                    
+                    // restore contentEditable/readOnly to original state
+                    el.contentEditable = editable;
+                    el.readOnly = readOnly;
                 }
-            
-            .active, .collapsible:hover {
-                background-color: #555;
+                else {
+                    el.select();
+                }
+                
+                // execute copy command
+                document.execCommand('copy');
             }
-            
-            .content {
-                padding: 0 18px;
-                max-height: 0;
-                overflow: hidden;
-                transition: max-height 0.2s ease-out;
-                background-color: #f1f1f1;
+        </script>
+        
+        <script>
+            function myFunction(id) {
+                var x = document.getElementById(id);
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
             }
-            </style>
-    </head>
-    <body>
+        </script>
         
-        <div class="off-canvas-content">
-            <div class="docs-content" id="content">
+        
+        <br/><br/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        <center>
+            <h3>Spoofer sur Pokémon GO</h3>
+        </center>
         <br/>
-        <h3>Les meilleurs Pokémon du jeu par type</h3>
-        <br/>
         
         
-        <button class="collapsible"><h6>Combat</h6></button>
-        <div class="content">
-            
+        <div class="w3-container">
+            <button onclick="myFunction('combat')" class="w3-btn w3-block w3-black w3-left-align">Combat</button>
+            <div id="combat" class="w3-container w3-white w3-hide">
+                
             <br/>
-            
             
             <table>
                 <tr><td><b>Mackogneur</b></td></tr>
                 <tr><td><img src="document/images/pokemon/machamp.png" style="height:150px;"></img></td>
                     <td>
-                    <table>
-                        <tr><td>ATK:</td></tr>
-                        <tr><td>DEF:</td></tr>
-                        <tr><td>PV:</td></tr>
-                        <tr><td>Attaques:</td><td><img src="document/images/type/simplified/fighting.png" style="height:12px;"></img> Riposte</td></tr>
-                        <tr><td></td><td><img src="document/images/type/simplified/fighting.png" style="height:12px;"></img> Dynamo-Poing</td></tr>
-                        <tr><td>Faiblesses:</td><td><img src="document/images/type/full/psychic.png" style="height:12px;"></img><img src="document/images/type/simplified/fairy.png" style="height:12px;"></img><img src="document/images/type/simplified/flying.png" style="height:12px;"></img></td></tr>
-                    </table>
-                    </td>
-                    <td>
                         <table>
+                            <tr><td>ATK:</td></tr>
+                            <tr><td>DEF:</td></tr>
+                            <tr><td>PV:</td></tr>
                             <tr><td>DPS:</td></tr>
                             <tr><td>Vie:</td></tr>
                             <tr><td>TDO:</td></tr>
-                            <tr><td>Commentaires:</td><td></td></tr>
-                            <tr><td>d</td><td></td></tr>
-                            <tr><td>d</td><td></td></tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <table>
+                            <tr><td><img src="document/images/type/simplified/fighting.png" style="height:12px;"></img> Riposte</td></tr>
+                            <tr><td><img src="document/images/type/simplified/fighting.png" style="height:12px;"></img> Dynamo-poing</td></tr>
+                            <tr><td>Faible à <img src="document/images/type/simplified/psy.png" style="height:12px;"></img>&nbsp;<img src="document/images/type/simplified/fairy.png" style="height:12px;"></img>&nbsp;<img src="document/images/type/simplified/flying.png" style="height:12px;"></img></td></tr>
+                        </table>
+                    </td>
+                    <td>
+                        <table>
+                            <tr><td>Commentaire:</td></tr>
                         </table>
                     </td>
                 </tr>
             </table>
         </div>
+        </div>
         
         
+        <div class="header-stats">
+            <span class="stat-text">ATK
+            <span id="max-atk">234</span>
+            </span>
+            <span class="stat-ranking stat-text" id="atk-rank" style="float:right; margin-right:5px;"></span>
+            <span id="attack-bar"></span>
+        </div>
+
+
         <script>
             var coll = document.getElementsByClassName("collapsible");
             var i;
