@@ -15,7 +15,8 @@
                                                 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
                                                     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
                                                         </head>
-    
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
     <style>
         .tableaux{
             margin-left:10px;
@@ -27,10 +28,10 @@
             horizontal-align:center;
         }
     </style>
-    
-    
+
+
     <body class="w3-light-grey">
-        
+
         <style>
             html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
             .w3-sidebar {
@@ -41,34 +42,34 @@
                 height: inherit;
             }
         </style>
-        
+
         <script>
             function copyToClipboard(el) {
-                
+
                 // resolve the element
                 el = (typeof el === 'string') ? document.querySelector(el) : el;
-                
+
                 // handle iOS as a special case
                 if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
-                    
+
                     // save current contentEditable/readOnly status
                     var editable = el.contentEditable;
                     var readOnly = el.readOnly;
-                    
+
                     // convert to editable with readonly to stop iOS keyboard opening
                     el.contentEditable = true;
                     el.readOnly = true;
-                    
+
                     // create a selectable range
                     var range = document.createRange();
                     range.selectNodeContents(el);
-                    
+
                     // select the range
                     var selection = window.getSelection();
                     selection.removeAllRanges();
                     selection.addRange(range);
                     el.setSelectionRange(0, 999999);
-                    
+
                     // restore contentEditable/readOnly to original state
                     el.contentEditable = editable;
                     el.readOnly = readOnly;
@@ -76,12 +77,12 @@
                 else {
                     el.select();
                 }
-                
+
                 // execute copy command
                 document.execCommand('copy');
             }
         </script>
-        
+
         <script>
             function myFunction(id) {
                 var x = document.getElementById(id);
@@ -92,25 +93,76 @@
                 }
             }
         </script>
-        
-        
+
+
         <br/><br/>
-        
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        
-        
+
+
         <center>
             <h3>Meilleurs Pokémon pour Raids</h3>
         </center>
         <br/>
-        
-        
+
+
+
         <div class="w3-container">
-            <button onclick="myFunction('combat')" class="w3-btn w3-block w3-black w3-left-align">Combat</button>
+            <button onclick="myFunction('note')" class="w3-btn w3-block w3-black w3-left-align">Méthodologie</button>
+            <div id="note" class="w3-container w3-white w3-hide">
+
+            <ul>
+                <li>Les Pokémon aux noms barrés sont non disponibles dans le jeu.</li>
+                <li>Les attaques avec le symbole &#10013; signifie que l'attaque est legacy.</li>
+                <li>megaevol signifie que le Pokémon pourra méga-évoluer dans la génération 6.</li>
+                <li>Le DPS neutre, la vie effective et le TDO sont calculés au niveau 40, pour des Pokémons parfaits.</li>
+                <li>Le DPS neutre (dégâts par seconde) représente combien de dégâts un Pokémon peut réaliser en une seconde. Elle dépend de la statistique d'attaque du Pokémon (ATK), et des attaques rapide et chargée du Pokémon. Ces attaques définissent ensemble l'énergie et les dégâts que le Pokémon va réaliser. L'attaque rapide génère de l'énergie qui est utilisée pour lancer l'attaque chargée. Elle dépend aussi du STAB (<i>Same Type Attack Bonus</i>), un bonus de 20% donné aux dégâts si le type de l'attaque et le type du Pokémon sont identiques.
+
+                    <center>
+                    <table border>
+                    <tr><td>DPS < 12.5</td><td>mauvais attaquant</td></tr>
+                    <tr><td>12.5 < DPS < 16</td><td>bon attaquant (privilegier ATT IV = 15, niveau 35)</td></tr>
+                    <tr><td>DPS > 16</td><td>excellent attaquant</td></tr>
+                    </table>
+                    </center>
+                </li>
+                <li>La vie effective (ou effective health, EH) définit la résistance du Pokémon. Au niveau 40, elle est égale à
+                \[ \text{EH} = (\text{DEF} + \text{DEF}\_\text{IV}) \times (\text{STA} + \text{STA}\_\text{IV}) \times\frac{0.7903^2}{900}\]
+
+                <center>
+                <table border>
+                <tr><td>EH < 25</td><td>très fragile</td></tr>
+                <tr><td>25 < EH < 30 </td><td>fragile mais viable</td></tr>
+                <tr><td>30 < EH < 35 </td><td>résistant </td></tr>
+                <tr><td>EH > 35 </td><td>très résistant</td></tr>
+                </table>
+                </center>
+                </li>
+
+                </li>
+                <li>Le TDO (Total Damage Output) représente combien de dégâts un Pokémon réalise avant d'être KO. Il est égal à
+                \[\text{TDO} = \text{DPS} \times \text{EH} \]
+                </li>
+                <li><a href="https://pokemongo.gamepress.gg/">Base Statistics</a></li>
+                <li><a href="https://pokegocomplete.com">Base Statistics for generations 5 to 7</a></li>
+                <li><a href="https://pokemongo.gamepress.gg/comprehensive-dps-spreadsheet">Comprehensive DPS/TDO spreadsheet</a></li>
+                <li><a href="https://www.pokebattler.com">Pokébattler Raid simulator</a></li>
+                <li><a href="https://pokemongo.gamepress.gg/pve-fast-moves">PvE fast moves</a></li>
+                <li><a href="https://pokemongo.gamepress.gg/pve-charge-moves">PvE charge moves</a></li>
+                <li><a href="https://imgur.com/a/1nSSUqM">Sheets "Best Pokémon in the game"</a></li>
+            </ul>
+
+
+
+        </div></div>
+
+
+        <div class="w3-container">
+            <button onclick="myFunction('combat')" class="w3-btn w3-block w3-black w3-left-align">Combat <img src="document/images/type/simplified_bis/fighting.png" style="height:12px;"></img></button>
             <div id="combat" class="w3-container w3-white w3-hide">
-                
+
             <br/>
-            
+
             <center>
             <div class="tableaux">
                 <table>
@@ -157,11 +209,11 @@
                 </table>
             </div>
             </center>
-            
+
             <h6>Concurrents (génération 5)</h6>
             <ul><li>Conkeldurr: meilleures ATK et Vie que Mackogneur.</li></ul>
             <br/>
-            
+
             <h6>Utilité contre:</h6>
             <center>
                 <img src="document/images/pokemon/Tyranitar.png" style="height:75px;"></img>
@@ -175,13 +227,13 @@
             <br/>
         </div>
         </div>
-        
-        
-        
+
+
+
         <div class="w3-container">
-            <button onclick="myFunction('spectre')" class="w3-btn w3-block w3-black w3-left-align">Spectre</button>
+            <button onclick="myFunction('spectre')" class="w3-btn w3-block w3-black w3-left-align">Spectre <img src="document/images/type/simplified_bis/ghost.png" style="height:12px;"></img></button>
             <div id="spectre" class="w3-container w3-white w3-hide">
-                
+
                 <br/>
                 <center>
                 <div class="tableaux">
@@ -238,7 +290,7 @@
                                 <table>
                                     <tr><td>Attaques&nbsp;&nbsp;</td>
                                         <td><img src="document/images/type/simplified/ghost.png" style="height:12px;"></img>
-                                            Griffe Ombre&#10013; / Léchouille&#10013;</td></tr>
+                                            Griffe Ombre<sup>&#10013;</sup> / Léchouille<sup>&#10013;</sup></td></tr>
                                     <tr><td></td>
                                         <td><img src="document/images/type/simplified/ghost.png" style="height:12px;"></img>
                                             Ball'Ombre</td></tr>
@@ -281,7 +333,7 @@
                                             Coupe Psycho</td></tr>
                                     <tr><td></td>
                                         <td><img src="document/images/type/simplified/ghost.png" style="height:12px;"></img>
-                                            Ball'Ombre&#10013;</td></tr>
+                                            Ball'Ombre<sup>&#10013;</sup></td></tr>
                                     <tr><td>ATK</td><td><span style="display:block;background:green;width:150px;height:20px;">&nbsp;
                                         <font color="white">300</font></span></td></tr>
                                     <tr><td>DEF</td><td><span style="display:block;background:red;width:91px;height:20px;">&nbsp;
@@ -306,13 +358,13 @@
                         </tr>
                     </table>
                 </div>
-                
+
                 </center>
-                
+
                 <h6>Concurrents (génération 5)</h6>
                 <ul><li>Chandelure: meilleure ATK et Vie que Ectoplasma, mais toujours aussi fragile.</li></ul>
                 <br/>
-                
+
                 <h6>Utilité contre:</h6>
                 <center>
                     <img src="document/images/pokemon/Mewtwo.png" style="height:75px;"></img>
@@ -329,16 +381,16 @@
                     <img src="document/images/pokemon/Giratina_a.png" style="height:75px;"></img>
                 </center>
                 <br/>
-                
+
             </div>
         </div>
-        
-        
-        
+
+
+
         <div class="w3-container">
-            <button onclick="myFunction('dark')" class="w3-btn w3-block w3-black w3-left-align">Ténèbres</button>
+            <button onclick="myFunction('dark')" class="w3-btn w3-block w3-black w3-left-align">Ténèbres <img src="document/images/type/simplified_bis/dark.png" style="height:12px;"></img></button>
             <div id="dark" class="w3-container w3-white w3-hide">
-                
+
                 <br/>
                 <center>
                     <div class="tableaux">
@@ -467,13 +519,13 @@
                             </tr>
                         </table>
                     </div>
-                    
+
                 </center>
-                
+
                 <h6>Concurrents (génération 5)</h6>
                 <ul><li>Hydreigon: similaire à Tyranocif.</li><li>Zoroark: aussi fragile que Dimoret.</li></ul>
                 <br/>
-                
+
                 <h6>Utilité contre:</h6>
                 <center>
                     <img src="document/images/pokemon/Mewtwo.png" style="height:75px;"></img>
@@ -490,19 +542,19 @@
                     <img src="document/images/pokemon/Giratina_a.png" style="height:75px;"></img>
                 </center>
                 <br/>
-                
+
             </div>
         </div>
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
         <div class="w3-container">
-            <button onclick="myFunction('Dragon')" class="w3-btn w3-block w3-black w3-left-align">Dragon</button>
+            <button onclick="myFunction('Dragon')" class="w3-btn w3-block w3-black w3-left-align">Dragon <img src="document/images/type/simplified_bis/dragon.png" style="height:12px;"></img></button>
             <div id="Dragon" class="w3-container w3-white w3-hide">
                 <br/>
                 <center>
@@ -562,7 +614,7 @@
                                             Draco-Queue</td></tr>
                                     <tr><td></td>
                                         <td><img src="document/images/type/simplified/dragon.png" style="height:12px;"></img>
-                                            Colère</td></tr>
+                                            Colère<sup>&#10013;</sup></td></tr>
                                     <tr><td>ATK</td><td><span style="display:block;background:green;width:138.5px;height:20px;">&nbsp;
                                         <font color="white">277</font></span></td></tr>
                                     <tr><td>DEF</td><td><span style="display:block;background:red;width:84px;height:20px;">&nbsp;
@@ -588,9 +640,168 @@
                         </tr>
                     </table>
                 </div>
+                <div class="tableaux">
+                    <table>
+                        <tr><td align="center"><b>Palkia</b>&nbsp;
+                            <img src="document/images/type/simplified/dragon.png" style="height:12px;"></img>&nbsp;
+                            <img src="document/images/type/simplified/water.png" style="height:12px;"></img></td></tr>
+                        <tr><td align="center">
+                            <img src="document/images/pokemon/Palkia.png" style="height:150px;"></img></td></tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr><td>Attaques&nbsp;&nbsp;</td>
+                                        <td><img src="document/images/type/simplified/dragon.png" style="height:12px;"></img>
+                                            Draco-Queue</td></tr>
+                                    <tr><td></td>
+                                        <td><img src="document/images/type/simplified/dragon.png" style="height:12px;"></img>
+                                            Draco Météor</td></tr>
+                                    <tr><td>ATK</td><td><span style="display:block;background:green;width:140px;height:20px;">&nbsp;
+                                        <font color="white">280</font></span></td></tr>
+                                    <tr><td>DEF</td><td><span style="display:block;background:red;width:107.5px;height:20px;">&nbsp;
+                                        <font color="white">215</font></span></td></tr>
+                                    <tr><td>STA</td><td><span style="display:block;background:blue;width:94.5px;height:20px;">&nbsp;
+                                        <font color="white">189</font></span></td></tr>
+                                    <tr><td>DPS</td><td><span style="display:block;background:black;width:143.28px;height:20px;">&nbsp;
+                                        <font color="white">17.91</font></span> </td></tr>
+                                    <tr><td>Vie</td><td><span style="display:block;background:black;width:130.24px;height:20px;">&nbsp;
+                                        <font color="white">32.56</font></span></td></tr>
+                                    <tr><td>TDO</td><td><span style="display:block;background:black;width:194.4px;height:20px;">&nbsp;
+                                        <font color="white">583.2</font></span></td></tr>
+                                    <tr><td>Faiblesses&nbsp;&nbsp;</td><td>
+                                            <img src="document/images/type/full/fairy.png" style="height:12px;"></img>&nbsp;
+                                            <img src="document/images/type/full/dragon.png" style="height:12px;"></img>
+                                        </td></tr>
+                                    <tr><td>Commentaire&nbsp;&nbsp;</td>
+                                        <td>Double résistance aux attaques eau et feu.</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tableaux">
+                    <table>
+                        <tr><td align="center"><b>Carchacroc</b>&nbsp;
+                            <img src="document/images/type/simplified/dragon.png" style="height:12px;"></img>&nbsp;
+                            <img src="document/images/type/simplified/ground.png" style="height:12px;"></img></td></tr>
+                        <tr><td align="center">
+                            <img src="document/images/pokemon/Garchomp.png" style="height:150px;"></img></td></tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr><td>Attaques&nbsp;&nbsp;</td>
+                                        <td><img src="document/images/type/simplified/dragon.png" style="height:12px;"></img>
+                                            Draco-Queue</td></tr>
+                                    <tr><td></td>
+                                        <td><img src="document/images/type/simplified/dragon.png" style="height:12px;"></img>
+                                            Colère</td></tr>
+                                    <tr><td>ATK</td><td><span style="display:block;background:green;width:130.5px;height:20px;">&nbsp;
+                                        <font color="white">261</font></span></td></tr>
+                                    <tr><td>DEF</td><td><span style="display:block;background:red;width:96px;height:20px;">&nbsp;
+                                        <font color="white">192</font></span></td></tr>
+                                    <tr><td>STA</td><td><span style="display:block;background:blue;width:119.5px;height:20px;">&nbsp;
+                                        <font color="white">239</font></span></td></tr>
+                                    <tr><td>DPS</td><td><span style="display:block;background:black;width:137.52px;height:20px;">&nbsp;
+                                        <font color="white">17.19</font></span> </td></tr>
+                                    <tr><td>Vie</td><td><span style="display:block;background:black;width:146.68px;height:20px;">&nbsp;
+                                        <font color="white">36.67</font></span></td></tr>
+                                    <tr><td>TDO</td><td><span style="display:block;background:black;width:210.1px;height:20px;">&nbsp;
+                                        <font color="white">630.3</font></span></td></tr>
+                                    <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                                        <td><img src="document/images/type/full/ice.png" style="height:12px;"></img>&nbsp;
+                                            <img src="document/images/type/full/fairy.png" style="height:12px;"></img>&nbsp;
+                                            <img src="document/images/type/full/dragon.png" style="height:12px;"></img>
+                                        </td></tr>
+                                    <tr><td>Commentaire&nbsp;&nbsp;</td>
+                                        <td>Plus résistant que Dracolosse.</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tableaux">
+                    <table>
+                        <tr><td align="center"><b>Dracolosse</b>&nbsp;
+                            <img src="document/images/type/simplified/dragon.png" style="height:12px;"></img>&nbsp;
+                            <img src="document/images/type/simplified/flying.png" style="height:12px;"></img></td></tr>
+                        <tr><td align="center">
+                            <img src="document/images/pokemon/Dragonite.png" style="height:150px;"></img></td></tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr><td>Attaques&nbsp;&nbsp;</td>
+                                        <td><img src="document/images/type/simplified/dragon.png" style="height:12px;"></img>
+                                            Draco-Queue</td></tr>
+                                    <tr><td></td>
+                                        <td><img src="document/images/type/simplified/dragon.png" style="height:12px;"></img>
+                                            Colère</td></tr>
+                                    <tr><td>ATK</td><td><span style="display:block;background:green;width:131.5px;height:20px;">&nbsp;
+                                        <font color="white">263</font></span></td></tr>
+                                    <tr><td>DEF</td><td><span style="display:block;background:red;width:99px;height:20px;">&nbsp;
+                                        <font color="white">198</font></span></td></tr>
+                                    <tr><td>STA</td><td><span style="display:block;background:blue;width:104.5px;height:20px;">&nbsp;
+                                        <font color="white">209</font></span></td></tr>
+                                    <tr><td>DPS</td><td><span style="display:block;background:black;width:137.84px;height:20px;">&nbsp;
+                                        <font color="white">17.23</font></span> </td></tr>
+                                    <tr><td>Vie</td><td><span style="display:block;background:black;width:132.44px;height:20px;">&nbsp;
+                                        <font color="white">33.11</font></span></td></tr>
+                                    <tr><td>TDO</td><td><span style="display:block;background:black;width:190.16px;height:20px;">&nbsp;
+                                        <font color="white">570.5</font></span></td></tr>
+                                    <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                                        <td><img src="document/images/type/full/ice.png" style="height:12px;"></img>&nbsp;
+                                            <img src="document/images/type/full/fairy.png" style="height:12px;"></img>&nbsp;
+                                            <img src="document/images/type/full/dragon.png" style="height:12px;"></img>&nbsp;
+                                            <img src="document/images/type/full/rock.png" style="height:12px;"></img>
+                                        </td></tr>
+                                    <tr><td>Commentaire&nbsp;&nbsp;</td>
+                                        <td>Mauvais Rayquaza.</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="tableaux">
+                    <table>
+                        <tr><td align="center"><b>Dialga</b>&nbsp;
+                            <img src="document/images/type/simplified/dragon.png" style="height:12px;"></img>&nbsp;
+                            <img src="document/images/type/simplified/steel.png" style="height:12px;"></img></td></tr>
+                        <tr><td align="center">
+                            <img src="document/images/pokemon/Dialga.png" style="height:150px;"></img></td></tr>
+                        <tr>
+                            <td>
+                                <table>
+                                    <tr><td>Attaques&nbsp;&nbsp;</td>
+                                        <td><img src="document/images/type/simplified/dragon.png" style="height:12px;"></img>
+                                            Dracosouffle</td></tr>
+                                    <tr><td></td>
+                                        <td><img src="document/images/type/simplified/dragon.png" style="height:12px;"></img>
+                                            Draco Météor</td></tr>
+                                    <tr><td>ATK</td><td><span style="display:block;background:green;width:137.5px;height:20px;">&nbsp;
+                                        <font color="white">275</font></span></td></tr>
+                                    <tr><td>DEF</td><td><span style="display:block;background:red;width:105.5px;height:20px;">&nbsp;
+                                        <font color="white">211</font></span></td></tr>
+                                    <tr><td>STA</td><td><span style="display:block;background:blue;width:102.5px;height:20px;">&nbsp;
+                                        <font color="white">205</font></span></td></tr>
+                                    <tr><td>DPS</td><td><span style="display:block;background:black;width:136.72px;height:20px;">&nbsp;
+                                        <font color="white">17.09</font></span> </td></tr>
+                                    <tr><td>Vie</td><td><span style="display:block;background:black;width:138.04px;height:20px;">&nbsp;
+                                        <font color="white">34.51</font></span></td></tr>
+                                    <tr><td>TDO</td><td><span style="display:block;background:black;width:196.56px;height:20px;">&nbsp;
+                                        <font color="white">589.7</font></span></td></tr>
+                                    <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                                        <td><img src="document/images/type/full/fighting.png" style="height:12px;"></img>&nbsp;
+                                            <img src="document/images/type/full/ground.png" style="height:12px;"></img>
+                                        </td></tr>
+                                    <tr><td>Commentaire&nbsp;&nbsp;</td>
+                                        <td>Pas de faiblesse dragon.</td></tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
                 </center>
-                
-                
+
+
                 <h6>Utilité contre:</h6>
                 <center>
                     <img src="document/images/pokemon/Latios.png" style="height:75px;"></img>
@@ -600,19 +811,1188 @@
                     <img src="document/images/pokemon/Giratina_a.png" style="height:75px;"></img>
                 </center>
                 <br/>
-                
+
             </div>
         </div>
-        
-        
-        
-        
+
+
+<div class="w3-container">
+    <button onclick="myFunction('ice')" class="w3-btn w3-block w3-black w3-left-align">Glace <img src="document/images/type/simplified_bis/ice.png" style="height:12px;"></img></button>
+    <div id="ice" class="w3-container w3-white w3-hide">
+    <br/>
+    <center>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Mammochon</b>&nbsp;
+                  <img src="document/images/type/simplified/ice.png" style="height:12px;"></img>&nbsp;
+                  <img src="document/images/type/simplified/ground.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Mamoswine.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/ice.png" style="height:12px;"></img>
+                                  Poudreuse</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/ice.png" style="height:12px;"></img>
+                                  Avalanche</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:123.5px;height:20px;">&nbsp;
+                              <font color="white">247</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:73px;height:20px;">&nbsp;
+                              <font color="white">146</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:121px;height:20px;">&nbsp;
+                              <font color="white">242</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:128.16px;height:20px;">&nbsp;
+                              <font color="white">16.02</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:114.88px;height:20px;">&nbsp;
+                              <font color="white">28.72</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:153.29px;height:20px;">&nbsp;
+                              <font color="white">459.9</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/full/fighting.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/fire.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/water.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/grass.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/steel.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Le roi des Pokémon glace</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Givrali</b>&nbsp;
+                  <img src="document/images/type/simplified/ice.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Glaceon.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/ice.png" style="height:12px;"></img>
+                                  Souffle glacé</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/ice.png" style="height:12px;"></img>
+                                  Avalanche</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:119px;height:20px;">&nbsp;
+                              <font color="white">238</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:102.5px;height:20px;">&nbsp;
+                              <font color="white">205</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:81.5px;height:20px;">&nbsp;
+                              <font color="white">163</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:120.64px;height:20px;">&nbsp;
+                              <font color="white">15.08</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:108.72px;height:20px;">&nbsp;
+                              <font color="white">27.18</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:136.57px;height:20px;">&nbsp;
+                              <font color="white">409.7</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/full/fighting.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/fire.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/steel.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/rock.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Inférieur à Mammochon</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Dimoret</b>&nbsp;
+                  <img src="document/images/type/simplified/dark.png" style="height:12px;"></img>&nbsp;
+                  <img src="document/images/type/simplified/ice.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Weavile.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/ice.png" style="height:12px;"></img>
+                                  Eclats glace</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/ice.png" style="height:12px;"></img>
+                                  Avalanche</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:121.5px;height:20px;">&nbsp;
+                              <font color="white">243</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:85.5px;height:20px;">&nbsp;
+                              <font color="white">171</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:86px;height:20px;">&nbsp;
+                              <font color="white">172</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:122.72px;height:20px;">&nbsp;
+                              <font color="white">15.34</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:96.56px;height:20px;">&nbsp;
+                              <font color="white">24.14</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:123.36px;height:20px;">&nbsp;
+                              <font color="white">370.1</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/full/fighting.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/fairy.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/fire.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/steel.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/rock.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/bug.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Inférieur à Mammochon</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Mewtwo</b>&nbsp;
+                  <img src="document/images/type/simplified/psy.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Mewtwo.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/psy.png" style="height:12px;"></img>
+                                  Coupe Psycho</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/ice.png" style="height:12px;"></img>
+                                  Laser Glace</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:150px;height:20px;">&nbsp;
+                              <font color="white">300</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:91px;height:20px;">&nbsp;
+                              <font color="white">182</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:107px;height:20px;">&nbsp;
+                              <font color="white">214</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:107.28px;height:20px;">&nbsp;
+                              <font color="white">13.41*</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:125.24px;height:20px;">&nbsp;
+                              <font color="white">31.31</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:139.97px;height:20px;">&nbsp;
+                              <font color="white">419.9</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/full/bug.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/dark.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/ghost.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Inférieur à Mammochon; <br/>* signifie que le DPS a été corrigé (face aux opposants Dragon)</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+    </center>
+    <br/>
+
+    <h6>Utilité contre:</h6>
+      <center>
+        <img src="document/images/pokemon/Zapdos.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Lugia.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Latias.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Latios.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Rayquaza.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Giratina_o.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Giratina_a.png" style="height:75px;"></img>
+      </center>
+    <br/>
+
+    <br/>
+    </div>
+</div>
+
+
+
+
+<div class="w3-container">
+    <button onclick="myFunction('rock')" class="w3-btn w3-block w3-black w3-left-align">Roche  <img src="document/images/type/simplified_bis/rock.png" style="height:12px;"></img></button>
+    <div id="rock" class="w3-container w3-white w3-hide">
+    <br/>
+    <center>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Charkos</b>&nbsp;
+                  <img src="document/images/type/simplified/rock.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Rampardos.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/rock.png" style="height:12px;"></img>
+                                  Anti Air</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/rock.png" style="height:12px;"></img>
+                                  Eboulement</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:147.5px;height:20px;">&nbsp;
+                              <font color="white">295</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:54.5px;height:20px;">&nbsp;
+                              <font color="white">109</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:109.5px;height:20px;">&nbsp;
+                              <font color="white">219</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:147.28px;height:20px;">&nbsp;
+                              <font color="white">18.41</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:80.56px;height:20px;">&nbsp;
+                              <font color="white">20.14</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:123.6px;height:20px;">&nbsp;
+                              <font color="white">370.8</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/full/fighting.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/water.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/grass.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/ground.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/steel.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Meilleur DPS, mais fragile</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Tyranocif</b>&nbsp;
+                  <img src="document/images/type/simplified/rock.png" style="height:12px;"></img>&nbsp;
+                  <img src="document/images/type/simplified/dark.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Tyranitar.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/rock.png" style="height:12px;"></img>
+                                  Anti Air</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/rock.png" style="height:12px;"></img>
+                                  Lame de Roc</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:125.5px;height:20px;">&nbsp;
+                              <font color="white">251</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:103.5px;height:20px;">&nbsp;
+                              <font color="white">207</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:112.5px;height:20px;">&nbsp;
+                              <font color="white">225</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:114.24px;height:20px;">&nbsp;
+                              <font color="white">14.41</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:147.48px;height:20px;">&nbsp;
+                              <font color="white">36.97</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:175.93px;height:20px;">&nbsp;
+                              <font color="white">532.6</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/full/fighting.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/water.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/grass.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/fairy.png" style="height:12px;"></img><br/>
+                                  <img src="document/images/type/full/steel.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/ground.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/bug.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Très résistant, bon DPS</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Rhinastoc</b>&nbsp;
+                  <img src="document/images/type/simplified/ground.png" style="height:12px;"></img>&nbsp;
+                  <img src="document/images/type/simplified/rock.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Rhyperior.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/rock.png" style="height:12px;"></img>
+                                  Anti Air</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/rock.png" style="height:12px;"></img>
+                                  Lame de Roc</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:120.5px;height:20px;">&nbsp;
+                              <font color="white">241</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:95px;height:20px;">&nbsp;
+                              <font color="white">190</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:125.5px;height:20px;">&nbsp;
+                              <font color="white">251</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:111.84px;height:20px;">&nbsp;
+                              <font color="white">13.98</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:151.36px;height:20px;">&nbsp;
+                              <font color="white">37.84</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:176.33px;height:20px;">&nbsp;
+                              <font color="white">529</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/full/water.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/grass.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/fighting.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/ground.png" style="height:12px;"></img><br/>
+                                  <img src="document/images/type/full/steel.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/ice.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Moins de DPS, mais plus résistant. <br/>Potentiel CD.</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+
+
+    </center>
+    <br/>
+    <h6>Utilité contre:</h6>
+      <center>
+        <img src="document/images/pokemon/Articuno.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Zapdos.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Moltres.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Entei.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Ho-oh.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Lugia.png" style="height:75px;"></img>
+      </center>
+    <br/>
+
+    </div>
+</div>
+
+
+<div class="w3-container">
+    <button onclick="myFunction('ground')" class="w3-btn w3-block w3-black w3-left-align">Sol  <img src="document/images/type/simplified_bis/ground.png" style="height:12px;"></img></button>
+    <div id="ground" class="w3-container w3-white w3-hide">
+    <br/>
+    <center>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Groudon</b>&nbsp;
+                  <img src="document/images/type/simplified/ground.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Groudon.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/ground.png" style="height:12px;"></img>
+                                  Tir de Boue</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/ground.png" style="height:12px;"></img>
+                                  Séisme</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:135px;height:20px;">&nbsp;
+                              <font color="white">270</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:114px;height:20px;">&nbsp;
+                              <font color="white">228</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:102.5px;height:20px;">&nbsp;
+                              <font color="white">205</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:111.68px;height:20px;">&nbsp;
+                              <font color="white">13.96</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:148.4px;height:20px;">&nbsp;
+                              <font color="white">37.10</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:172.6px;height:20px;">&nbsp;
+                              <font color="white">517.8</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/full/water.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/grass.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/ice.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Le roi des Pokémon sol.</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Carchacroc</b>&nbsp;
+                  <img src="document/images/type/simplified/dragon.png" style="height:12px;"></img>&nbsp;
+                  <img src="document/images/type/simplified/ground.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Garchomp.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/ground.png" style="height:12px;"></img>
+                                  Tir de Boue</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/ground.png" style="height:12px;"></img>
+                                  Séisme</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:130.5px;height:20px;">&nbsp;
+                              <font color="white">261</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:96px;height:20px;">&nbsp;
+                              <font color="white">192</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:119.5px;height:20px;">&nbsp;
+                              <font color="white">239</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:137.52px;height:20px;">&nbsp;
+                              <font color="white">13.67</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:109.36px;height:20px;">&nbsp;
+                              <font color="white">36.67</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:167.06px;height:20px;">&nbsp;
+                              <font color="white">501.2</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/full/ice.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/fairy.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/dragon.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Triple résistance aux attaques électriques.</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Rhinastoc</b>&nbsp;
+                  <img src="document/images/type/simplified/ground.png" style="height:12px;"></img>&nbsp;
+                  <img src="document/images/type/simplified/rock.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Rhyperior.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/ground.png" style="height:12px;"></img>
+                                  Coud'Boue</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/ground.png" style="height:12px;"></img>
+                                Séisme</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:120.5px;height:20px;">&nbsp;
+                              <font color="white">241</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:95px;height:20px;">&nbsp;
+                              <font color="white">190</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:125.5px;height:20px;">&nbsp;
+                              <font color="white">251</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:101.28px;height:20px;">&nbsp;
+                              <font color="white">12.66</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:151.36px;height:20px;">&nbsp;
+                              <font color="white">37.84</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:159.63px;height:20px;">&nbsp;
+                              <font color="white">478.9</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/full/water.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/grass.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/fighting.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/ground.png" style="height:12px;"></img><br/>
+                                  <img src="document/images/type/full/steel.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/ice.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Inférieur à Groudon. <br/>Potentiel CD.</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Mammochon</b>&nbsp;
+                  <img src="document/images/type/simplified/ice.png" style="height:12px;"></img>&nbsp;
+                  <img src="document/images/type/simplified/ground.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Mamoswine.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/ground.png" style="height:12px;"></img>
+                                  Coud'Boue</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/ground.png" style="height:12px;"></img>
+                                  Piétisol</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:123.5px;height:20px;">&nbsp;
+                              <font color="white">247</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:73px;height:20px;">&nbsp;
+                              <font color="white">146</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:121px;height:20px;">&nbsp;
+                              <font color="white">242</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:104.96px;height:20px;">&nbsp;
+                              <font color="white">13.12</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:114.88px;height:20px;">&nbsp;
+                              <font color="white">28.72</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:125.6px;height:20px;">&nbsp;
+                              <font color="white">376.8</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/full/fighting.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/fire.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/water.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/grass.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/steel.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Bon DPS (attaque chargée à deux barres)</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+
+
+    </center>
+    <br/>
+    <h6>Utilité contre:</h6>
+      <center>
+        <img src="document/images/pokemon/Raikou.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Heatran.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Dialga.png" style="height:75px;"></img>
+      </center>
+    <br/>
+    </div>
+</div>
+
+
+
+<div class="w3-container">
+    <button onclick="myFunction('electric')" class="w3-btn w3-block w3-black w3-left-align">Electric  <img src="document/images/type/simplified_bis/electric.png" style="height:12px;"></img></button>
+    <div id="electric" class="w3-container w3-white w3-hide">
+    <br/>
+    <center>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Raikou</b>&nbsp;
+                  <img src="document/images/type/simplified/electric.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Raikou.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/electric.png" style="height:12px;"></img>
+                                  Eclair</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/electric.png" style="height:12px;"></img>
+                                  Eclair fou</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:120.5px;height:20px;">&nbsp;
+                              <font color="white">241</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:97.5px;height:20px;">&nbsp;
+                              <font color="white">195</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:103.5px;height:20px;">&nbsp;
+                              <font color="white">207</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:129.04px;height:20px;">&nbsp;
+                              <font color="white">16.13</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:129.44px;height:20px;">&nbsp;
+                              <font color="white">32.36</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:174px;height:20px;">&nbsp;
+                              <font color="white">522</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/full/ground.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Des statistiques équilibrées: bon DPS et TDO.</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Magnezone</b>&nbsp;
+                  <img src="document/images/type/simplified/electric.png" style="height:12px;"></img>&nbsp;
+                  <img src="document/images/type/simplified/steel.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Magnezone.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/electric.png" style="height:12px;"></img>
+                                  Etincelle</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/electric.png" style="height:12px;"></img>
+                                  Eclair fou</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:119.0px;height:20px;">&nbsp;
+                              <font color="white">238</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:102.5px;height:20px;">&nbsp;
+                              <font color="white">205</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:86px;height:20px;">&nbsp;
+                              <font color="white">172</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:125.44px;height:20px;">&nbsp;
+                              <font color="white">15.68</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:114.2px;height:20px;">&nbsp;
+                              <font color="white">28.55</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:149.2px;height:20px;">&nbsp;
+                              <font color="white">447.6</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/full/ground.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/fire.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/fighting.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Beaucoup de résistance.</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Elekable</b>&nbsp;
+                  <img src="document/images/type/simplified/electric.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Electivire.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/electric.png" style="height:12px;"></img>
+                                  Eclair</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/electric.png" style="height:12px;"></img>
+                                Eclair fou</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:124.5px;height:20px;">&nbsp;
+                              <font color="white">249</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:81.5px;height:20px;">&nbsp;
+                              <font color="white">163</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:90.5px;height:20px;">&nbsp;
+                              <font color="white">181</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:133.92px;height:20px;">&nbsp;
+                              <font color="white">16.74</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:96.84px;height:20px;">&nbsp;
+                              <font color="white">24.21</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:135.06px;height:20px;">&nbsp;
+                              <font color="white">405.2</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/full/ground.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Excellent DPS, mais très fragile.</tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Mewtwo</b>&nbsp;
+                  <img src="document/images/type/simplified/psy.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Mewtwo.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/psy.png" style="height:12px;"></img>
+                                  Coupe Psycho</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/electric.png" style="height:12px;"></img>
+                                  Tonnerre</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:150px;height:20px;">&nbsp;
+                              <font color="white">300</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:91px;height:20px;">&nbsp;
+                              <font color="white">182</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:107px;height:20px;">&nbsp;
+                              <font color="white">214</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:118.56px;height:20px;">&nbsp;
+                              <font color="white">14.82*</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:125.24px;height:20px;">&nbsp;
+                              <font color="white">31.31</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:154.7px;height:20px;">&nbsp;
+                              <font color="white">464.1</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/full/bug.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/dark.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/ghost.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Inférieur à Raikou;<br/> * signifie que le DPS a été corrigé (face aux opposants Eau)</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+
+
+
+    </center>
+    <br/>
+    <h6>Utilité contre:</h6>
+      <center>
+        <img src="document/images/pokemon/Suicune.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Lugia.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Ho-Oh.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Kyogre.png" style="height:75px;"></img>
+      </center>
+    <br/>
+    </div>
+</div>
+
+
+
+<div class="w3-container">
+    <button onclick="myFunction('grass')" class="w3-btn w3-block w3-black w3-left-align">Plante  <img src="document/images/type/simplified_bis/grass.png" style="height:12px;"></img></button>
+    <div id="grass" class="w3-container w3-white w3-hide">
+    <br/>
+    <center>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Roserade</b>&nbsp;
+                  <img src="document/images/type/simplified/grass.png" style="height:12px;"></img>&nbsp;
+                  <img src="document/images/type/simplified/poison.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Roserade.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/grass.png" style="height:12px;"></img>
+                                  Tranch'Herbe</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/grass.png" style="height:12px;"></img>
+                                  Noeud herbe</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:121.5px;height:20px;">&nbsp;
+                              <font color="white">243</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:92.5px;height:20px;">&nbsp;
+                              <font color="white">185</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:77.5px;height:20px;">&nbsp;
+                              <font color="white">155</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:126.24px;height:20px;">&nbsp;
+                              <font color="white">15.78</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:94.4px;height:20px;">&nbsp;
+                              <font color="white">23.6</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:124.2px;height:20px;">&nbsp;
+                              <font color="white">372.4</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td>
+                              <img src="document/images/type/full/fire.png" style="height:12px;"></img>&nbsp;
+                              <img src="document/images/type/full/ice.png" style="height:12px;"></img>&nbsp;
+                              <img src="document/images/type/full/flying.png" style="height:12px;"></img>&nbsp;
+                              <img src="document/images/type/full/psychic.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Bon DPS.</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Florizarre</b>&nbsp;
+                  <img src="document/images/type/simplified/grass.png" style="height:12px;"></img>&nbsp;
+                  <img src="document/images/type/simplified/poison.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Venusaur.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/grass.png" style="height:12px;"></img>
+                                  Fouet liances</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/grass.png" style="height:12px;"></img>
+                                  Végé-Attak</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:99.0px;height:20px;">&nbsp;
+                              <font color="white">198</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:94.5px;height:20px;">&nbsp;
+                              <font color="white">189</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:95px;height:20px;">&nbsp;
+                              <font color="white">190</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:118.24px;height:20px;">&nbsp;
+                              <font color="white">14.78</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:116px;height:20px;">&nbsp;
+                              <font color="white">29.01</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:143px;height:20px;">&nbsp;
+                              <font color="white">429</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/full/fire.png" style="height:12px;"></img>&nbsp;
+                              <img src="document/images/type/full/ice.png" style="height:12px;"></img>&nbsp;
+                              <img src="document/images/type/full/flying.png" style="height:12px;"></img>&nbsp;
+                              <img src="document/images/type/full/psychic.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Bon DPS, très bon TDO.</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Jungko</b>&nbsp;
+                  <img src="document/images/type/simplified/grass.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Sceptile.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/grass.png" style="height:12px;"></img>
+                                  Balle graine</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/grass.png" style="height:12px;"></img>
+                                Végé-Attak</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:111.5px;height:20px;">&nbsp;
+                              <font color="white">223</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:84.5px;height:20px;">&nbsp;
+                              <font color="white">169</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:85.5px;height:20px;">&nbsp;
+                              <font color="white">171</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:123.44px;height:20px;">&nbsp;
+                              <font color="white">15.43</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:95px;height:20px;">&nbsp;
+                              <font color="white">23.75</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:122.83px;height:20px;">&nbsp;
+                              <font color="white">368.5</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                            <td><img src="document/images/type/full/fire.png" style="height:12px;"></img>&nbsp;
+                            <img src="document/images/type/full/ice.png" style="height:12px;"></img>&nbsp;
+                            <img src="document/images/type/full/flying.png" style="height:12px;"></img>&nbsp;
+                            <img src="document/images/type/full/poison.png" style="height:12px;"></img>&nbsp;
+                            <img src="document/images/type/full/bug.png" style="height:12px;"></img>
+                            </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Similaire à Roserade.</tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Noadkoko (Alola)</b>&nbsp;
+                  <img src="document/images/type/simplified/grass.png" style="height:12px;"></img>&nbsp;
+                  <img src="document/images/type/simplified/dragon.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Exeggutor_A.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/grass.png" style="height:12px;"></img>
+                                  Balle Graine</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/grass.png" style="height:12px;"></img>
+                                  Lance Soleil</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:115px;height:20px;">&nbsp;
+                              <font color="white">230</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:76.5px;height:20px;">&nbsp;
+                              <font color="white">153</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:108px;height:20px;">&nbsp;
+                              <font color="white">216</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:110.56px;height:20px;">&nbsp;
+                              <font color="white">13.82</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:107.72px;height:20px;">&nbsp;
+                              <font color="white">26.93</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:123.93px;height:20px;">&nbsp;
+                              <font color="white">371.8</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                            <td><img src="document/images/type/full/ice.png" style="height:12px;"></img>&nbsp;
+                            <img src="document/images/type/full/flying.png" style="height:12px;"></img>&nbsp;
+                            <img src="document/images/type/full/bug.png" style="height:12px;"></img>&nbsp;
+                            <img src="document/images/type/full/dragon.png" style="height:12px;"></img>&nbsp;
+                            <img src="document/images/type/full/poison.png" style="height:12px;"></img>&nbsp;
+                            <img src="document/images/type/full/fairy.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Double résistance aux attaques eau, plante, électric</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+
+
+
+    </center>
+    <br/>
+    <h6>Utilité contre:</h6>
+      <center>
+        <img src="document/images/pokemon/Suicune.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Kyogre.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Groudon.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Regirock.png" style="height:75px;"></img>
+      </center>
+    <br/>
+    </div>
+</div>
+
+
+
+<div class="w3-container">
+    <button onclick="myFunction('water')" class="w3-btn w3-block w3-black w3-left-align">Eau  <img src="document/images/type/simplified_bis/water.png" style="height:12px;"></img></button>
+    <div id="water" class="w3-container w3-white w3-hide">
+    <br/>
+    <center>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Kyogre</b>&nbsp;
+                  <img src="document/images/type/simplified/water.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Kyogre.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/water.png" style="height:12px;"></img>
+                                  Cascade</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/water.png" style="height:12px;"></img>
+                                  Hydrocanon</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:135px;height:20px;">&nbsp;
+                              <font color="white">270</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:114px;height:20px;">&nbsp;
+                              <font color="white">228</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:102.5px;height:20px;">&nbsp;
+                              <font color="white">205</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:127.28px;height:20px;">&nbsp;
+                              <font color="white">15.91</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:148.4px;height:20px;">&nbsp;
+                              <font color="white">37.1</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:196.77px;height:20px;">&nbsp;
+                              <font color="white">590.3</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td>
+                              <img src="document/images/type/full/electric.png" style="height:12px;"></img>&nbsp;
+                              <img src="document/images/type/full/grass.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Le roi des Pokémon eau.</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Laggron</b>&nbsp;
+                  <img src="document/images/type/simplified/water.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Swampert.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/water.png" style="height:12px;"></img>
+                                  Pistolet à O</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/water.png" style="height:12px;"></img>
+                                  Hydroblast</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:104px;height:20px;">&nbsp;
+                              <font color="white">208</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:87.5px;height:20px;">&nbsp;
+                              <font color="white">175</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:112.5px;height:20px;">&nbsp;
+                              <font color="white">225</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:124.88px;height:20px;">&nbsp;
+                              <font color="white">15.61</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:126.6px;height:20px;">&nbsp;
+                              <font color="white">31.65</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:164.66px;height:20px;">&nbsp;
+                              <font color="white">494</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td>
+                              <img src="document/images/type/full/grass.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Meilleur eau non légendaire.</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Krabboss</b>&nbsp;
+                  <img src="document/images/type/simplified/water.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Krabboss.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/water.png" style="height:12px;"></img>
+                                  Ecume</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/water.png" style="height:12px;"></img>
+                                  Pince-Masse</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:120px;height:20px;">&nbsp;
+                              <font color="white">240</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:90.5px;height:20px;">&nbsp;
+                              <font color="white">181</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:73px;height:20px;">&nbsp;
+                              <font color="white">146</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:135.84px;height:20px;">&nbsp;
+                              <font color="white">16.98</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:87.6px;height:20px;">&nbsp;
+                              <font color="white">21.9</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:123.97px;height:20px;">&nbsp;
+                              <font color="white">371.9</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td>
+                              <img src="document/images/type/full/electric.png" style="height:12px;"></img>&nbsp;
+                              <img src="document/images/type/full/grass.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Meilleur DPS eau.</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Léviator</b>&nbsp;
+                  <img src="document/images/type/simplified/water.png" style="height:12px;"></img>&nbsp;
+                      <img src="document/images/type/simplified/flying.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Gyarados.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/water.png" style="height:12px;"></img>
+                                  Cascade</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/water.png" style="height:12px;"></img>
+                                  Hydrocanon</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:118.5px;height:20px;">&nbsp;
+                              <font color="white">237</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:93.5px;height:20px;">&nbsp;
+                              <font color="white">186</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:108.5px;height:20px;">&nbsp;
+                              <font color="white">216</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:113.84px;height:20px;">&nbsp;
+                              <font color="white">14.23</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:128.88px;height:20px;">&nbsp;
+                              <font color="white">32.22</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:152.83px;height:20px;">&nbsp;
+                              <font color="white">458.5</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td>
+                              <img src="document/images/type/full/electric.png" style="height:12px;"></img>&nbsp;
+                              <img src="document/images/type/full/grass.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Utile contre les Pokémon aux attaques sol.</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+
+
+
+    </center>
+    <br/>
+    <h6>Utilité contre:</h6>
+      <center>
+        <img src="document/images/pokemon/Entei.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Groudon.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Regirock.png" style="height:75px;"></img>
+      </center>
+    <br/>
+    </div>
+</div>
+
+
+
+<div class="w3-container">
+    <button onclick="myFunction('steel')" class="w3-btn w3-block w3-black w3-left-align">Acier  <img src="document/images/type/simplified_bis/steel.png" style="height:12px;"></img></button>
+    <div id="steel" class="w3-container w3-white w3-hide">
+    <br/>
+    <center>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Métalosse</b>&nbsp;
+                  <img src="document/images/type/simplified/steel.png" style="height:12px;"></img>&nbsp;
+                  <img src="document/images/type/simplified/psy.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Metagross.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/steel.png" style="height:12px;"></img>
+                                  Pisto-Poing</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/steel.png" style="height:12px;"></img>
+                                  Poing Météore</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:128.5px;height:20px;">&nbsp;
+                              <font color="white">257</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:114px;height:20px;">&nbsp;
+                              <font color="white">228</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:95px;height:20px;">&nbsp;
+                              <font color="white">190</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:143.84px;height:20px;">&nbsp;
+                              <font color="white">17.98</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:138.28px;height:20px;">&nbsp;
+                              <font color="white">34.57</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:207.23px;height:20px;">&nbsp;
+                              <font color="white">621.7</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td>
+                              <img src="document/images/type/full/fire.png" style="height:12px;"></img>&nbsp;
+                              <img src="document/images/type/full/ground.png" style="height:12px;"></img>&nbsp;
+                              <img src="document/images/type/full/ghost.png" style="height:12px;"></img>&nbsp;
+                              <img src="document/images/type/full/dark.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Le roi des Pokémon acier.</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+      <div class="tableaux">
+          <table>
+              <tr><td align="center"><b>Dialga</b>&nbsp;
+                  <img src="document/images/type/simplified/dragon.png" style="height:12px;"></img>&nbsp;
+                  <img src="document/images/type/simplified/steel.png" style="height:12px;"></img></td></tr>
+              <tr><td align="center">
+                  <img src="document/images/pokemon/Dialga.png" style="height:150px;"></img></td></tr>
+              <tr>
+                  <td>
+                      <table>
+                          <tr><td>Attaques&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/simplified/steel.png" style="height:12px;"></img>
+                                  Griffe Acier</td></tr>
+                          <tr><td></td>
+                              <td><img src="document/images/type/simplified/steel.png" style="height:12px;"></img>
+                                  Tête de fer</td></tr>
+                          <tr><td>ATK</td><td><span style="display:block;background:green;width:137.5px;height:20px;">&nbsp;
+                              <font color="white">275</font></span></td></tr>
+                          <tr><td>DEF</td><td><span style="display:block;background:red;width:105.5px;height:20px;">&nbsp;
+                              <font color="white">211</font></span></td></tr>
+                          <tr><td>STA</td><td><span style="display:block;background:blue;width:102.5px;height:20px;">&nbsp;
+                              <font color="white">205</font></span></td></tr>
+                          <tr><td>DPS</td><td><span style="display:block;background:black;width:127.76px;height:20px;">&nbsp;
+                              <font color="white">15.97</font></span> </td></tr>
+                          <tr><td>Vie</td><td><span style="display:block;background:black;width:138.04px;height:20px;">&nbsp;
+                              <font color="white">34.51</font></span></td></tr>
+                          <tr><td>TDO</td><td><span style="display:block;background:black;width:183.66px;height:20px;">&nbsp;
+                              <font color="white">551</font></span></td></tr>
+                          <tr><td>Faiblesses&nbsp;&nbsp;</td>
+                              <td><img src="document/images/type/full/fighting.png" style="height:12px;"></img>&nbsp;
+                                  <img src="document/images/type/full/ground.png" style="height:12px;"></img>
+                              </td></tr>
+                          <tr><td>Commentaire&nbsp;&nbsp;</td>
+                              <td>Inférieur à Métalosse.</td></tr>
+                      </table>
+                  </td>
+              </tr>
+          </table>
+      </div>
+
+
+    </center>
+    <br/>
+    <h6>Utilité contre:</h6>
+      <center>
+        <img src="document/images/pokemon/Regice.png" style="height:75px;"></img>
+        <img src="document/images/pokemon/Regirock.png" style="height:75px;"></img>
+      </center>
+    <br/>
+    </div>
+</div>
+
 
 
         <script>
             var coll = document.getElementsByClassName("collapsible");
             var i;
-            
+
             for (i = 0; i < coll.length; i++) {
                 coll[i].addEventListener("click", function() {
                                          this.classList.toggle("active");
@@ -621,18 +2001,41 @@
                                          content.style.maxHeight = null;
                                          } else {
                                          content.style.maxHeight = content.scrollHeight + "px";
-                                         } 
+                                         }
                                          });
             }
         </script>
 </div></div>
 
 
-<p><br/><br/></p>
 
 
+
+<div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+        <a class="w3-button w3-hover-black" href="index.html"><</a>
+    </div>
+</div>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                                         this.classList.toggle("active");
+                                         var content = this.nextElementSibling;
+                                         if (content.style.maxHeight){
+                                         content.style.maxHeight = null;
+                                         } else {
+                                         content.style.maxHeight = content.scrollHeight + "px";
+                                         }
+                                         });
+            }
+        </script>
+</div></div>
 <!--
 def calcul(atk, df, sta, dps, vie,tdo):
     return atk/2., df/2., sta/2., dps*8., vie*4., tdo/3.
- 
+
 -->

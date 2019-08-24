@@ -1,139 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+    <meta property="og:url" content="https://picturepan2.github.io/spectre/experimentals/viewer-360.html">
+        <meta property="og:title" content="How to spend my stardust">
+            <meta property="og:description" content="How to spend my stardust">
+                <link rel="shortcut icon" href="../img/favicons/favicon.ico">
+                    <link rel="icon" href="../img/favicons/favicon.png">
+                        <link rel="stylesheet" href="spectre.min.css">
+                            <link rel="stylesheet" href="spectre-icons.min.css">
+                                <link rel="stylesheet" href="spectre-exp.min.css">
+                                    <link rel="stylesheet" href="docs.min.css">
+                                        <link rel="canonical" href="https://picturepan2.github.io/spectre/experimentals/viewer-360.html">
     <head>
-        <title>Meilleurs Pokémon</title>
-        <meta charset="utf-8">
-            <meta name="robots" content="index, follow">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-                    <meta http-equiv="x-ua-compatible" content="ie=edge">
-                        <meta name="description" content="Meilleurs Pokémon">
-                            <meta name="author" content="">
-                                <meta property="og:title" content="Meilleurs Pokémon">
-                                    <meta property="og:description" content="Meilleurs Pokémon">
-                                        <link rel="shortcut icon" href="../img/favicons/favicon.ico">
-                                            <meta name="viewport" content="width=device-width, initial-scale=1">
-                                                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-                                                    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-                                                        </head>
-    
-    <style>
-        .tableaux{
-            margin-left:10px;
-            margin-right:10px;
-            margin-bottom:30px;
-            display:inline-block;
-            vertical-align:top;
-            horizontal-align:center;
-        }
-    </style>
-    
-    
-    <body class="w3-light-grey">
-        
-        <style>
-            html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-            .w3-sidebar {
-                z-index: 3;
-                width: 250px;
-                top: 43px;
-                bottom: 0;
-                height: inherit;
-            }
-        </style>
-        
-        <script>
-            function copyToClipboard(el) {
-                
-                // resolve the element
-                el = (typeof el === 'string') ? document.querySelector(el) : el;
-                
-                // handle iOS as a special case
-                if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
-                    
-                    // save current contentEditable/readOnly status
-                    var editable = el.contentEditable;
-                    var readOnly = el.readOnly;
-                    
-                    // convert to editable with readonly to stop iOS keyboard opening
-                    el.contentEditable = true;
-                    el.readOnly = true;
-                    
-                    // create a selectable range
-                    var range = document.createRange();
-                    range.selectNodeContents(el);
-                    
-                    // select the range
-                    var selection = window.getSelection();
-                    selection.removeAllRanges();
-                    selection.addRange(range);
-                    el.setSelectionRange(0, 999999);
-                    
-                    // restore contentEditable/readOnly to original state
-                    el.contentEditable = editable;
-                    el.readOnly = readOnly;
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+            <style>
+                .collapsible {
+                    background-color: #777;
+                    color: white;
+                    cursor: pointer;
+                    padding: 18px;
+                    width: 100%;
+                    border: none;
+                    text-align: left;
+                    outline: none;
+                    font-size: 15px;
                 }
-                else {
-                    el.select();
-                }
-                
-                // execute copy command
-                document.execCommand('copy');
+            
+            .active, .collapsible:hover {
+                background-color: #555;
             }
-        </script>
-        
-        <script>
-            function myFunction(id) {
-                var x = document.getElementById(id);
-                if (x.className.indexOf("w3-show") == -1) {
-                    x.className += " w3-show";
-                } else {
-                    x.className = x.className.replace(" w3-show", "");
-                }
+            
+            .content {
+                padding: 0 18px;
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.2s ease-out;
+                background-color: #f1f1f1;
             }
-        </script>
+            </style>
+    </head>
+    <body>
         
-        
-        <br/><br/>
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-        
-        
-        <center>
-            <h3>Raids dans Pokémon GO</h3>
-        </center>
+        <div class="off-canvas-content">
+            <div class="docs-content" id="content">
+        <br/>
+        <h3>Outils pour Pok&eacute;mon GO</h3>
         <br/>
         
-        
-        <div class="w3-container">
-            <a href="methodologie.html"><button onclick="myFunction('metho')" class="w3-btn w3-block w3-black w3-left-align">Méthodologie: Comment choisir ses Pokémon?</button></a>
+        <button class="collapsible"><h6>Infos</h6></button>
+        <div class="content">
+            <p>
+            <ul>
+                <li><b>The Silph Road: <a href="https://thesilphroad.com">website</a>, <a href="https://www.reddit.com/r/TheSilphRoad/">Reddit</a></b></li>
+                <li>Leek duck: <a href="https://leekduck.com/">website</a>, <a href="https://www.facebook.com/theleekduck/">infographiques</a></b></li>
+                <!--<li>Twitter: <a href="https://twitter.com/pokemongoapp?lang=fr">Pok&eacute;mon GO</a>, <a href="https://twitter.com/niantichelp">Niantic Support</a></li>-->
+                <li><a href="https://p337.info/pokemongo/">Calendrier des &eacute;v&egrave;nements</a></li>
+                <li>Twitter:
+                <center>
+                <a class="twitter-timeline" data-width="300" data-height="300" data-theme="light" href="https://twitter.com/PokemonGoApp?ref_src=twsrc%5Etfw">Tweets by PokemonGoApp</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                
+                <a class="twitter-timeline" data-width="300" data-height="300" data-theme="light" href="https://twitter.com/NianticHelp?ref_src=twsrc%5Etfw">Tweets by NianticHelp</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </center>
+                </li>
+            </ul>
+            </p>
+        </div>
+        <button class="collapsible"><h6>Raids</h6></button>
+        <div class="content">
+            <p>
+            <ul>
+                <li><a href="document/pve/counters/Counters.html"><b>Meilleurs Pokémon pour raids (par type)</b></a></li>
+                <li><a href="document/pve/counters_against_type.jpg"><b>Meilleurs Pokémon pour raids (par adversaire)</b></a></li>
+                <li><a href="https://www.pokebattler.com"><b>Pokébattler (Simulateur de raid)</b></a></li>
+                <li><a href="https://raidestimator.000webhostapp.com"><b>Simulateur de difficult&eacute</b></a></li>
+                <li><a href="document/pve/legendary_raid/Raid_bosses.html"><b>Raid l&eacutegendaires: difficult&eacute</b></a></li>
+                <li><a href="https://goversailles.fr"><b>Carte des raids (Go Versailles)</b></a></li>
+                    <!--<li><a href="https://drive.google.com/open?id=1XiXqB6Aqyw9VPkGV3RgVUrJf-5aKso7B&usp=sharing">Map of gyms in Paris (V, XIII)</a></li>
+                    <li><a href="document/pve/iv_determined_at_go/iv_determined_at_go.html">Why you should not leave a raid battle after the GO</a> [<a href="document/pve/fr/iv_determined_at_go_fr/iv_determined_at_go.html">VF</a>]</li>-->
+                    </ul>
+            
+            </p>
         </div>
         
         
-        <div class="w3-container">
-            <a href="bestpokemon.html"><button onclick="myFunction('table')" class="w3-btn w3-block w3-black w3-left-align">Meilleurs Pokémon pour Raids</button></a>
+        
+        <button class="collapsible"><h6>Aspects techniques</h6></button>
+        <div class="content">
+            <p>
+            <ul>
+                <li><a href="document/pve/fr/guide_fr/Guide.html"><b>Un guide pour comprendre quel Pok&eacutemon maxer</b></a></li>
+                <li><a href="https://pokemongo.gamepress.gg/comprehensive-dps-spreadsheet"><b>Comprehensive DPS/TDO spreadsheet</b></a></li>
+                <li><a href="https://pokemongo.gamepress.gg/pokemon-list">Statistiques de bases et attaques</a>
+                <li><a href="https://docs.google.com/spreadsheets/d/1iwAb2yHHnZhNUrRtMiEjPlQA7dJb7Yqe268F0xZtA_s/edit?usp=sharing">Tables IV/niveau et niveau/coefficient</a>
+                <li>Attaques (PvE): <a href="https://pokemongo.gamepress.gg/pve-fast-moves">rapides</a>, <a href="https://pokemongo.gamepress.gg/pve-charge-moves">charg&eacute;es</a></li>
+                <li><a href="document/pve/gym/Gym.html"><b>Ar&egrave;nes: attaquants et d&eacute;fenseurs</b></a></li>
+            </ul></p>
         </div>
         
         
-    
-        <div class="w3-container">
-            <a href="https://pokemongo.gamepress.gg/comprehensive-dps-spreadsheet"><button onclick="myFunction('tdo')" class="w3-btn w3-block w3-black w3-left-align">Table complète TDO / DPS</button></a>
+        <button class="collapsible"><h6>PvP</h6></button>
+        <div class="content">
+        <p>
+        <ul>
+            <li><a href="document/pvp/counters/pvp.html"><b>Meilleurs Pok&eacute;mon pour PvP</b></a></li>
+            <li><a href="https://pvpoke.com"><b>Simulateur PvP</b></a></li>
+            <li>Attaques (PvP): <a href="https://pokemongo.gamepress.gg/pve-fast-moves">rapides</a>, <a href="https://pokemongo.gamepress.gg/pve-charge-moves">charg&eacute;es</a></li>
+        </ul></p>
         </div>
         
         
-        <div class="w3-container">
-            <a href="https://www.pokebattler.com"><button onclick="myFunction('pokebattler')" class="w3-btn w3-block w3-black w3-left-align">Pokébattler (simulateur de raids)</button></a>
+        <button class="collapsible"><h6>Autres</h6></button>
+        <div class="content">
+        <p>
+        <ul>
+            <li><a href="document/infographics/lucky_trade/Lucky_trade.html">&Eacute;changes chanceux</a></li>
+            <li><a href="document/infographics/power_up_cost/power_up.html">Poussi&egrave;re et bonbons pour maxer un Pokmon</a></li>
+            <li><a href="document/infographics/bag/bag.html">Sac id&eacute;al</a></li>
+            <li><a href="document/infographics/daily_task/daily_task.html">Checklist des t&acirc;ches quotidiennes</a></li>
+            <li><a href="document/infographics/second_charged_moves/second_charged_moves.html">Seconde attaque charg&eacute;e</a></li>
+            <li><a href="document/infographics/name/name.html">Abbr&eacute;viation de types</a></li>
+            <li><a href="https://www.pogoitalianleague.com/ivgenerator/">G&eacute;n&eacute;rateur de Table d'IV</a></li>
+            <li>Dual Sim (Bouygues T&eacute;l&eacute;com): changer le protocole IPv6 vers IPv4 dans APN</li><!--<a href="https://forum.bouyguestelecom.fr/questions/1848542-reseau-data-dual-sim">-->
+            </ul>
+        </p>
         </div>
-        
-        
-        <div class="w3-container">
-            <a href="https://goversailles.fr"><button onclick="myFunction('goversailles')" class="w3-btn w3-block w3-black w3-left-align">GoVersailles (carte des raids)</button></a>
-        </div>
-        
-        <div class="w3-container">
-            <button onclick="myFunction('luckytrade')" class="w3-btn w3-block w3-black w3-left-align">Echanges chanceux</button></a>
-        </div>
-        
-        
         
         <script>
             var coll = document.getElementsByClassName("collapsible");
@@ -152,6 +141,3 @@
             }
         </script>
 </div></div>
-
-
-<p><br/><br/></p>
