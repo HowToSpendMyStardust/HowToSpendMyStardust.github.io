@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Méthodologie</title>
+        <meta charset="utf-8">
+            <meta name="robots" content="index, follow">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+                    <meta http-equiv="x-ua-compatible" content="ie=edge">
+                        <meta name="description" content="Méthodologie">
+                            <meta name="author" content="">
+                                <meta property="og:title" content="Méthodologie">
+                                    <meta property="og:description" content="Méthodologie">
+                                        <link rel="shortcut icon" href="../img/favicons/favicon.ico">
+                                            <meta name="viewport" content="width=device-width, initial-scale=1">
+                                                <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+                                                    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+                                                        </head>
+    
+    <style>
+        .tableaux{
+            margin-left:10px;
+            margin-right:10px;
+            margin-bottom:30px;
+            display:inline-block;
+            vertical-align:top;
+            horizontal-align:center;
+        }
+    </style>
+    
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
+        
+    <body class="w3-light-grey">
+        
+        <style>
+            html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+            .w3-sidebar {
+                z-index: 3;
+                width: 250px;
+                top: 43px;
+                bottom: 0;
+                height: inherit;
+            }
+        </style>
+        
+        <script>
+            function copyToClipboard(el) {
+                
+                // resolve the element
+                el = (typeof el === 'string') ? document.querySelector(el) : el;
+                
+                // handle iOS as a special case
+                if (navigator.userAgent.match(/ipad|ipod|iphone/i)) {
+                    
+                    // save current contentEditable/readOnly status
+                    var editable = el.contentEditable;
+                    var readOnly = el.readOnly;
+                    
+                    // convert to editable with readonly to stop iOS keyboard opening
+                    el.contentEditable = true;
+                    el.readOnly = true;
+                    
+                    // create a selectable range
+                    var range = document.createRange();
+                    range.selectNodeContents(el);
+                    
+                    // select the range
+                    var selection = window.getSelection();
+                    selection.removeAllRanges();
+                    selection.addRange(range);
+                    el.setSelectionRange(0, 999999);
+                    
+                    // restore contentEditable/readOnly to original state
+                    el.contentEditable = editable;
+                    el.readOnly = readOnly;
+                }
+                else {
+                    el.select();
+                }
+                
+                // execute copy command
+                document.execCommand('copy');
+            }
+        </script>
+        
+        <script>
+            function myFunction(id) {
+                var x = document.getElementById(id);
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+        </script>
+        
+        
+        <br/><br/>
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        <center>
+            <h3>Méthodologie: Comment choisir ses Pokémon?</h3>
+        </center>
+        <br/>
+        
+        
+        <div class="w3-container">
+            <button onclick="myFunction('Q1')" class="w3-btn w3-block w3-black w3-left-align">1. Comment les IV (Individual Values) fonctionnent?</button>
+            <div id="Q1" class="w3-container w3-white w3-hide">
+                
+                <ul>
+                    <li>Trois statistiques définissent un Pokémon: la statistique d'attaque (ATK) définit les dégâts qu'un Pokémon va réaliser, la statistique de défense (DEF) définit la vitesse à laquelle un Pokémon va mourrir, et les points de vie (PV) ou hit points (HP) répresente l'endurance du Pokémon.</li>
+                    <li>Prenons l'exemple de Mewtwo. Ses statistiques de base sont:
+                
+                <center>
+                <table>
+                    <tr><td>Base_ATK&nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:150px;height:20px;">&nbsp;<font color="white">300</font></span></td></tr>
+                    <tr><td>Base DEF</td><td><span style="display:block;background:red;width:91px;height:20px;">&nbsp;<font color="white">182</font></span></td></tr>
+                    <tr><td>Base HP</td><td><span style="display:block;background:blue;width:107px;height:20px;">&nbsp;<font color="white">214</font></span></td></tr>
+                </table>
+                </center>
+                
+                Supposons que vous soyez très chanceux et que vous capturez un Mewtwo parfait avec les IV suivant (ATK_IV, DEF_IV, HP_IV) = (15, 15, 15). Les statistiques de base de votre Mewtwo sont:
+                
+                <center>
+                    <table>
+                        <tr><td>ATK = (Base_ATK + ATK_IV)&nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:157.5px;height:20px;">&nbsp;<font color="white">315</font></span></td></tr>
+                        <tr><td>DEF = (Base_DEF + DEF_IV)</td><td><span style="display:block;background:red;width:98.5px;height:20px;">&nbsp;<font color="white">197</font></span></td></tr>
+                        <tr><td>HP = (Base_HP + HP_IV)</td><td><span style="display:block;background:blue;width:114.5px;height:20px;">&nbsp;<font color="white">229</font></span></td></tr>
+                    </table>
+                </center>
+                
+                
+                Dépendant du niveau de votre Mewtwo, vous allez multiplier ces statistiques par un coefficient et prendre la partie entière (floor):
+                
+                <center>
+                    <table border>
+                        <tr><td>Niveau 20</td><td>Niveau 25</td><td>Niveau 30</td><td>Niveau 35</td><td>Niveau 40</td></tr>
+                        <tr><td>0.5974</td><td>0.667934</td><td>0.7317</td><td>0.76156384</td><td>0.7903</td></tr>
+                    </table>
+                </center>
+                
+                Si vous maxez votre Mewtwo parfait au niveau 40, ses statistiques seront:
+                
+                <center>
+                    <table>
+                        <tr><td>ATK au niveau 40&nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:124px;height:20px;">&nbsp;<font color="white">248</font></span></td></tr>
+                        <tr><td>DEF au niveau 40</td><td><span style="display:block;background:red;width:77.5px;height:20px;">&nbsp;<font color="white">155</font></span></td></tr>
+                        <tr><td>HP au niveau 40</td><td><span style="display:block;background:blue;width:90px;height:20px;">&nbsp;<font color="white">180</font></span></td></tr>
+                    </table>
+                </center>
+                
+                Votre meilleur ami a capturé un Mewtwo dont les IV sont (ATK_IV, DEF_IV, HP_IV) = (14, 15, 14). Si on applique la même démarche que précédemment, au niveau 40, son Mewtwo aura les statistiques suivantes:
+                
+                <center>
+                    <table>
+                        <tr><td>ATK au niveau 40&nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:124px;height:20px;">&nbsp;<font color="white">248</font></span></td></tr>
+                        <tr><td>DEF au niveau 40</td><td><span style="display:block;background:red;width:77.5px;height:20px;">&nbsp;<font color="white">155</font></span></td></tr>
+                        <tr><td>HP au niveau 40</td><td><span style="display:block;background:blue;width:90px;height:20px;">&nbsp;<font color="white">180</font></span></td></tr>
+                    </table>
+                </center>
+                Surprenament, les deux Mewtwo (14, 15, 14) et (15, 15, 15) au niveau 40 ont exactement les mêmes statistiques de base.
+                
+                    </li>
+                <li>La formule de calcule de la puissance de combat (PC) est:
+                
+                \[ \text{PC} = \text{floor}\left(\frac{\text{ATK} \times \sqrt{\text{DEF} \times \text{HP}}}{10} \times \text{coeff}\_\text{level}^2 \right) \]
+                
+                <ul>
+                <li>Pour Mewtwo (15, 15, 15), au niveau 40, sa PC est \[ \text{floor}\left(\frac{315 \times \sqrt{197 \times 229}}{10} \times 0.7903^2 \right) = 4178 \]</li>
+                <li>Pour Mewtwo (14, 15, 14), au niveau 40, sa PC est \[\text{floor}\left(\frac{314 \times \sqrt{197 \times 228}}{10} \times 0.7903^2 \right) = 4156\]</li>
+                </li>
+                </ul>
+                
+            </div>
+        </div>
+        
+        
+        
+        <div class="w3-container">
+            <button onclick="myFunction('Q2')" class="w3-btn w3-block w3-black w3-left-align">2. Comment mesurer la résistance d'un Pokémon?</button>
+            <div id="Q2" class="w3-container w3-white w3-hide">
+            <ul>
+            <li>On utilise la vie effective (ou <i>effective health</i>, EH) définie par :
+            
+            \[ \text{EH} = (\text{base DEF} + \text{DEF_IV})\times (\text{base HP} + \text{HP_IV}) \times \frac{0.7903^2}{900}\]
+            
+            Pour simplifier, on pourra prendre:
+            \[ \text{EH} = \text{DEF} \times \text{HP} \] Plus ce score est grand, plus le Pokémon est résistant. Par exemple:
+            
+            <center>
+            <table>
+            <tr><td></td><td>Bouldeneu</td><td>Noadkoko (A)</td></tr>
+            <tr><td>ATK &nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:103.5px;height:20px;">&nbsp;<font color="white">207</font></span></td><td><span style="display:block;background:green;width:115px;height:20px;">&nbsp;<font color="white">230</font></span></td></tr>
+            <tr><td>DEF </td><td><span style="display:block;background:red;width:92px;height:20px;">&nbsp;<font color="white">184</font></span></td><td><span style="display:block;background:red;width:76.5px;height:20px;">&nbsp;<font color="white">153</font></span></td></tr>
+            <tr><td>HP </td><td><span style="display:block;background:blue;width:112.5px;height:20px;">&nbsp;<font color="white">225</font></span></td><td><span style="display:block;background:blue;width:108px;height:20px;">&nbsp;<font color="white">216</font></span></td></tr>
+            </table>
+            </center>
+            
+            La vie effective de Bouldeneu est 184 x 225 = 41400, tandis que celle de Noadkoko (A) est 153 x 216 = 33048. Donc Bouldeneu est de base plus résistant que Noadkoko (A).</li>
+            <li>Cependant, il est aussi important de considérer les adversaires qu'ils vont affronter et leur capacité à résister aux attaques adverses et donc de multiplier la vie effective en conséquence par coefficient de résistance:
+            
+            <center>
+                <table border>
+                    <tr><td>Double faiblesse</td><td> x 0.39</td></tr>
+                    <tr><td>Faiblesse</td><td> x 0.63</td></tr>
+                    <tr><td>Normal</td><td> x 1</td></tr>
+                    <tr><td>Simple résistance</td><td> x 1.6</td></tr>
+                    <tr><td>Double résistance</td><td> x 2.56</td></tr>
+                </table>
+            </center>
+            
+            Comparons ces deux Pokémon face à Kyogre (Cascade + Hydrocanon) :
+            <ul>
+                <li>La vie effective de Bouldeneu est 41400 x 1.6 = 66240</li>
+                <li>La vie effective de Noadkoko (A) est 33048 x 2.56 = 84602.88</li>
+            </ul>
+            Par conséquent, Noadkoko (A) est beaucoup plus résistant face à Kyogre (Hydrocanon) que Bouldeneu.
+            </li></ul>
+            </div>
+        </div>
+        
+        
+        
+        <div class="w3-container">
+        <button onclick="myFunction('Q3')" class="w3-btn w3-block w3-black w3-left-align">3. Comment calculer les dégâts réalisés par un Pokémon?</button>
+        <div id="Q3" class="w3-container w3-white w3-hide">
+        <br/>
+        Les dégâts qu'un Pokémon inflige a son opposant sont donnés par la formule suivante:
+        \[ \text{Dégâts} = \text{floor}\left(\frac{1}{2}\text{Power} \times \frac{\text{ATK}}{\text{OPP_DEF}}\times\text{Multiplier}\right) +1 \]
+        
+        Pour illustrer cette formule, prenons l'exemple de Noadkoko (A) parfait au niveau 30 lançant un Lance-Soleil contre un Kyogre parfait au niveau 40.
+        <ul>
+        <li>floor()+1 garantit que les dégâts de n'importe quelle attaque est 1.</li>
+        <li>Power est la puissance de l'attaque, pour Lance-Soleil elle est de 180.</li>
+        <li>ATK est la statistique d'attaque de celui qui lance l'attaque. Pour Noadkoko (A) au niveau 30 avec 15 en ATK_IV, elle est de floor((230+15) x 0.7317) = 179.</li>
+        <li>OPP_DEF est la statistique de défense de celui qui reçoit l'attaque. Pour Kyogre au niveau 40, avec 15 en DEF_IV, elle est de floor((228+15) x 0.7903) = 192.</li>
+        <li>Multipliers sont des multiplieurs comme STAB, WAB, FAB et Effectiveness.</li>
+        <li>STAB est l'acronyme pour Same Type Attack Bonus. Si un Pokémon utilise une attaque correspondant à l'un de ses types, alors l'attaque reçoit une multiplicateur de 1.2.</li>
+        <li>WAB est l'acronyme pour Weather Attack Bonus. Si un Pokémon utilise une attaque du même type que la météo, alors l'attaque reçoit une multiplicateur de 1.2.</li>
+        <li>FAB est l'acronyme pour Friendship Attack Bonus. Le multiplicateur est de 1.03, 1.05, 1.07 ou 1.1, suivant le niveau d'amitié.</li>
+        <li>Effectiveness réfère à un multiplicateur lié à l'efficacité de l'attaque (Super efficace, Peu efficace).
+        
+        <center>
+        <table border>
+        <tr><td>(Très) peu efficace</td><td> x 0.39</td></tr>
+        <tr><td>Peu efficace</td><td> x 0.63</td></tr>
+        <tr><td>Normal</td><td> x 1</td></tr>
+        <tr><td>Super efficace</td><td> x 1.6</td></tr>
+        <tr><td>(Super!) super efficace</td><td> x 2.56</td></tr>
+        </table>
+        </center>
+        
+        </li>
+        </ul>
+        Sans boost météo, sans bonus d'amitié, les dégâts de Noadkoko sont:
+        \begin{align*}
+        \text{Dégâts} %& = \text{floor}\left(\frac{1}{2}\text{Power} \times \frac{\text{ATT}}{\text{OPP\_DEF}}\times\text{Multiplier}\right) +1  \\
+        & = \text{floor}\left(\frac{1}{2}\text{180} \times \frac{\text{179}}{\text{192}}\times\text{1.2}\times\text{1.6}\right) +1 \\
+        & = 161 + 1 = 162~ \text{PV}
+        \end{align*}
+        
+        Si Noadkoko est au niveau 40, sa statistique d'attaque serait floor((230+15) x 0.7903) = 193 et les dégâts qu'il infligerait seraient:
+        \begin{align*}
+        \text{Dégâts} & = \text{floor}\left(\frac{1}{2}\text{180} \times \frac{\text{193}}{\text{192}}\times\text{1.2}\times\text{1.6}\right) +1 \\
+        & = 173+1 = 174~ \text{PV} \end{align*}
+
+        
+        
+        </div>
+        </div>
+        
+        
+        
+        <div class="w3-container">
+        <button onclick="myFunction('Q4')" class="w3-btn w3-block w3-black w3-left-align">4. Comment choisir les meilleurs attaques?</button>
+        <div id="Q4" class="w3-container w3-white w3-hide">
+        <ul>
+        <li>
+            Chaque Pokémon a une attaque rapide et chargée. Ces deux attaques définissent ensemble les dégâts qu'il va réaliser. Chaque attaque est définit par les dégâts qu'il réalise, sa durée et l'énergie qu'il génère (attaque rapide) ou qu'il utilise (attaque chargée).
+            <ul><li><a href="https://pokemongo.gamepress.gg/pve-fast-moves">Liste des attaques rapides</a></li><li><a href="https://pokemongo.gamepress.gg/pve-charge-moves">Liste des attaques chargées</a></li></ul>
+            </li>
+        <li>L'énergie nécessaire pour les attaques chargées est définie par le nombre de barres:
+            <center>
+            <table border>
+                <tr><td>3-barres</td><td>2-barres</td><td>1-barres</td></tr>
+                <tr><td>énergie de 33.33</td><td>énergie de 50</td><td>énergie de 100</td></tr>
+            </table>
+            </center>
+        </li>
+        <li>Le but est choisir les meilleurs attaques qui réalises le plus de dégâts par secondes (DPS). Considérons l'exemple de Métalosse pour illustration. Est-il plus intéressant qu'il apprenne Poing Météor ou Luminocanon? A partir de <a href="https://pokemon.gameinfo.io"><code>https://pokemon.gameinfo.io</code></a>, on obtient la table suivante:
+        
+            <center>
+             <table border>
+                <tr><td></td><td>Poing Météor</td><td>Luminocanon</td></tr>
+                <tr><td>Dégâts de base</td><td>100</td><td>100</td></tr>
+                <tr><td>Durée de l'attaque</td><td>2600 ms</td><td>2700 ms</td></tr>
+                <tr><td>Fenêtre d'attaque</td><td>2300 - 2500 ms</td><td>1600 - 2500 ms</td></tr>
+                <tr><td>Energie</td><td>-50</td><td>-100</td></tr>
+                <tr><td>DPS</td><td>38.5</td><td>37</td></tr>
+                <tr><td>EPS</td><td>-19.2</td><td>-37</td></tr>
+             </table>
+            </center>
+                    
+            DPS représente les dégâts par seconde pour cette attaque (= Dégâts de base/Durée de l'attaque, alors que EPS est l'énergie utilisée par seconde (= Dégâts de base/Energie).
+                                                                              
+            Les deux attaques ont 100 pour dégâts de base et ont la même la même durée. Cependant, Poing Météor nécessite beaucoup moins d'énergie que Luminocanon; un joueur pourra lancer deux Poing Météor pour un seul Luminoncanon (pour la même énergie), et donc réaliser deux fois plus de dégâts.
+                                                                              
+            Par conséquent, Poing Météor sera plus intéressant que Luminoncanon.</li>
+         <li>Plus généralement, on calcule le DPS neutre gloabl pour chaque couple (rapide, chargée) et on regarde les dégâts par seconde que le Pokémon réalise en combinant ces deux attaques. Les calculs sont complexes et considèrent aussi les dégâts que l'opposant puisse réaliser (puisque l'opposant apporte de l'énergie lorsqu'il lance une attaque chargée).
+         
+             <ul><li><a href="https://pokemongo.gamepress.gg/tdo-how-calculate-pokemon-ability-outdated">Comment le DPS est calculé?</a></li>
+                <li><a href="https://pokemongo.gamepress.gg/comprehensive-dps-spreadsheet">Table complète DPS/TDO</a></li></ul>
+             
+             Pour Métalosse, le DPS de (Pisto-Poing, Poing Météor) est bien plus élevé que celui de (Pisto-Poing, Luminocanon).
+             <center>
+             <table border>
+             <tr><td>Pokémon</td><td>Attaque Rapide</td><td>Attaque Chargée</td><td>DPS</td><td>TDO</td><td>DPS^3 x TDO</td><td>CP</td></tr>
+             <tr><td>Métalosse</td><td>Pisto-Poing</td><td>Poing Météor</td><td>17.983</td><td>621.7</td><td>3615.5</td><td>3791</td></tr>
+             <tr><td>Métalosse</td><td>Pisto-Poing</td><td>Luminocanon</td><td>13.563</td><td>468.9</td><td>1169.7</td><td>3791</td></tr>
+             </table>
+             </center>
+        
+        </div>
+        </div>
+        
+        
+        <div class="w3-container">
+        <button onclick="myFunction('Q5')" class="w3-btn w3-block w3-black w3-left-align">5. Comment comparer deux Pokémon?</button>
+        <div id="Q5" class="w3-container w3-white w3-hide">
+        <br/>
+        
+        Pour comparer deux Pokémon différents, il existe différentes mesures:
+        <ul>
+        <li>les Dégâts Par Seconde (DPS), définies par leurs attaques: ils représentent les dégâts que le Pokémon peut réaliser en une seconde.</li>
+        <li>la Vie Effective (ou Effective Health, EH), représentant la résistance du Pokémon, et qui vaut au niveau 40:
+        \[ \text{EH} = (\text{base DEF} + \text{DEF_IV})\times (\text{base HP} + \text{HP_IV}) \times \frac{0.7903^2}{900}\]
+        </li>
+        <li>le Total des dégâts produits (ou Total Damage Output, TDO) qui représente les dégâts que le Pokémon peut réaliser avant qu'il meurt. Il est calculé par la formule \[ \text{TDO} = \text{DPS} \times \text{EH} \]</li>
+        <li>le DPS^3 x TDO, une formule mathématique sans aucun sens mathématique qui permet d'ordonner les Pokémon en prenant en compte les mesures précédentes.</li>
+        </ul>
+        
+        Toutes ces mesures ont été calculées dans <a href="https://pokemongo.gamepress.gg/comprehensive-dps-spreadsheet">la table complète DPS/TDO</a>
+        
+        Prenons l'exemple des Pokémon spectres. On souhaite les comparer:
+            <center>
+            <table border>
+            <tr><td>Pokémon</td><td>Attaque Rapide</td><td>Attaque Chargée</td><td>DPS</td><td>TDO</td><td>DPS^3 x TDO</td><td>CP</td></tr>
+            <tr><td>Ectoplasma</td><td>Léchouille</td><td>Ball Ombre</td><td>18.109</td><td>350.4</td><td>2080.9	</td><td>2878</td></tr>
+            <tr><td>Giratina (Originelle)</td><td>Griffe Ombre</td><td>Ball Ombre</td><td>15.814</td><td>662.8	</td><td>2621.4</td><td>3683</td></tr>
+            </table>
+            </center>
+            
+        Ectoplasma a un DPS monstrueux, mais un faible TDO. Au contraire, Giratina (O) a une excellente vie et TDO. La mesure globale DPS^3 x TDO recommende Giratina (O).
+            
+        On notera que les faiblesses ne sont pas pris en compte dans cette table, puisqu'on calcule le DPS neutre. Si on choisit Mewtwo avec (Choc Mental, Psyko) comme opposant, la table donne:
+            <center><table border>
+            <tr><td>Pokémon</td><td>Attaque Rapide</td><td>Attaque Chargée</td><td>DPS</td><td>TDO</td><td>DPS^3 x TDO</td><td>CP</td></tr>
+            <tr><td>Ectoplasma</td><td>Léchouille</td><td>Ball Ombre</td><td>27.547</td><td>194.4</td><td>4063.3</td><td>2878</td></tr>
+            <tr><td>Giratina (Originelle)</td><td>Griffe Ombre</td><td>Ball Ombre</td><td>26.415</td><td>641.9	</td><td>11829.9</td><td>3683</td></tr>
+            </table>
+            </center>
+            
+        Le DPS a augmenté par environ 1.6 (car Mewtwo est faible aux attaques spectres), mais le TDO de Ectoplasma a baissé (ce qui est essentiellement du aux attaques de Mewtwo et la faiblesse psy d'Ectoplasma), ce qui ne le rend pas très viable.
+        
+        <br/><br/>
+        </div>
+        </div>
+        
+        
+        
+        <div class="w3-container">
+        <button onclick="myFunction('Q6')" class="w3-btn w3-block w3-black w3-left-align">6. Quelle est la difficulté des boss de raid?</button>
+        <div id="Q6" class="w3-container w3-white w3-hide">
+        
+        <br/>
+        
+        Les boss de raid ont la même statistique d'attaque et de défense qu'un Pokémon parfait au niveau 40, mais leurs points de vie dépend de la difficulté du raid:
+        <center>
+        <table border>
+            <tr><td>Difficulté</td><td>PV</td><td>Temps</td></tr>
+            <td>1 tête</td><td>600 PV</td><td>180 s</td></tr>
+            <td>2 têtes</td><td>1800 PV</td><td>180 s</td></tr>
+            <td>3 têtes</td><td>3600 PV</td><td>180 s</td></tr>
+            <td>4 têtes</td><td>9000 PV</td><td>180 s</td></tr>
+            <td>5 têtes (Légendaires)</td><td>15000 PV</td><td>300 s</td></tr>
+            <td>6 têtes (Mewtwo)</td><td>22500 PV</td><td>300 s</td></tr>
+        </table>
+        </center>
+        
+        Par exemple, les statistiques de base de Kyogre sont:
+        
+            
+            <center>
+            <table>
+            <tr><td>Base ATK&nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:135px;height:20px;">&nbsp;<font color="white">270</font></span></td></tr>
+            <tr><td>Base DEF</td><td><span style="display:block;background:red;width:114px;height:20px;">&nbsp;<font color="white">228</font></span></td></tr>
+            <tr><td>Base HP</td><td><span style="display:block;background:blue;width:102.5px;height:20px;">&nbsp;<font color="white">205</font></span></td></tr>
+            </table>
+            </center>
+            
+            Comme boss de raid, ils seront:
+            
+            <center>
+            <table>
+            <tr><td>Base ATK&nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:112.5px;height:20px;">&nbsp;<font color="white">225</font></span></td></tr>
+            <tr><td>Base DEF</td><td><span style="display:block;background:red;width:96px;height:20px;">&nbsp;<font color="white">192</font></span></td></tr>
+            <tr><td>Base HP</td><td>15000 PV</td></tr>
+            </table>
+            </center>
+                        
+         <ul>
+         <li>Les dégâts réalisés par un boss de raid sont identiques à ceux d'un Pokémon niveau 40 avec ATK_IV = 15.</li>
+         <li>Pour un boss de raid à 5 têtes, il faut lui retirer au moins 15000/300 = 50 PV par seconde; exactement les même PV/seconde à retirer pour un boss de raid à 4 têtes. La difficulté principale des boss de raid à 5 têtes est que comme il a plus de points de vie, il faut par conséquent plus de temps pour le tuer, et donc plus de Pokémon et de potions/rappels.</li>
+         <li>La difficulté d'un boss de raid (en terme de nombres de joueurs) dépend essentiellement de sa statistique de défense (plus la défense est élevée, plus il faut de temps pour le tuer). Le nombre minimal de joueurs (avec les meilleurs contres au niveau 30, niveau d'amitié "meilleurs amis" et météo extrême) est:
+                    <ul>
+                        <li>Si le boss de raid n'a que de simples faiblesses, il est de floor(Base_DEF/80)+1.</li>
+                        <li>Si le boss de raid a une double faiblesse, il est de floor(Base DEF/112)+1.</li>
+                    </ul>
+            </li>
+        <li>Vous devez jouer sur la résistance de vos Pokémon pour utiliser le moins de potions/rappels pour le tuer.</li>
+        <li>Vous devez jouer sur les faiblesses du boss, si vous voulez le tuer rapidement.</li>
+        </ul>
+                        
+
+        
+        
+        </div>
+        </div>
+        
+        
+        
+        <div class="w3-container">
+        <button onclick="myFunction('Q7')" class="w3-btn w3-block w3-black w3-left-align">7. Quels IVs et quel niveau optimal?</button>
+        <div id="Q7" class="w3-container w3-white w3-hide">
+        
+        <br/>
+        Concernant les IV, ils dépendent les statistiques de base du Pokémon.
+        <ul>
+        <li>Si un Pokémon a une statistique de base d'attaque importante, il n'y aura pas de grande différence entre ATK_IV = 14 et ATK_IV = 15.
+        
+        Il est recommandé d'avoir une haute ATK_IV pour un Pokémon avec un faible DPS.</li>
+        <li>Concernant la résistance (DEF_IV et HP_IV), la statistique de défense (DEF) influence la vitesse à laquelle le Pokémon va mourrir. Généralement, il est plus intéressant d'avoir une plus haute DEF_IV que HP_IV.
+        
+        Il est recommandé d'avoir une haute DEF_IV et HP_IV pour un Pokémon avec une faible vie effective.</li>
+        </ul>
+        
+        Il devient très cher de monter un Pokémon jusqu'au niveau 40; le niveau 35 semble excellent (le Pokémon est à 96.4% de ses capacités), mais le niveau 30 est très correct (92.6% de ses capacités).
+        
+        <center>
+        \[ \text{Niv 20} \xrightarrow[\text{31000 poussieres}]{\text{28 bonbons}} \text{Niv 25} \xrightarrow[\text{44000 poussieres}]{\text{38 bonbons}} \text{Niv 30} \xrightarrow[\text{62000 poussieres}]{\text{64 bonbons}} \text{Niv 35} \xrightarrow[\text{88000 poussiere}]{\text{118 bonbons}} \text{Niv 40}\]
+        </center>
+        
+        Il existe un niveau optimal pour chaque Pokémon (et il est lié à son opposant):
+        <ul>
+            <li>à partir d'un certain niveau, il ne sera plus résistant (chaque opposant peu infliger un certain nombre d'attaques rapides et chargées, au délà d'un certain niveau, ce nombre n'augmentera plus). On l'appelle le <i>bulkpoint</i>.</li>
+            <li>à partir d'un certain niveau (généralement indépendant du bulkpoint), l'attaque rapide de votre Pokémon fera exactement le même nombre de dégâts (c'est dû à la partie entière dans la formule des dégâts). On l'appelle le <i>breakpoint</i>.</li>
+        </ul>
+        
+        <b>Pour ceux qui montent leurs Pokémon au-delà du niveau 35</b>, si la statistique de base est environ 125, la différence entre un IV 15 et un IV 14 est de un niveau. Si la statistique de base est environ 265, la différence entre un IV 15 et un IV 14 is un demi-niveau.
+        <br/><br/>
+        </div>
+        </div>
+        
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                                         this.classList.toggle("active");
+                                         var content = this.nextElementSibling;
+                                         if (content.style.maxHeight){
+                                         content.style.maxHeight = null;
+                                         } else {
+                                         content.style.maxHeight = content.scrollHeight + "px";
+                                         } 
+                                         });
+            }
+        </script>
+</div></div>
+
+
+<div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+        <a class="w3-button w3-hover-black" href="index2.html"><</a>
+            </div>
+</div>
+
+
+<p><br/><br/></p>
