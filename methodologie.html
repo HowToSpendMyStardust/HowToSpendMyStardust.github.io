@@ -111,23 +111,23 @@
             <div id="Q1" class="w3-container w3-white w3-hide">
                 
                 <ul>
-                    <li>Trois statistiques définissent un Pokémon: la statistique d'attaque (ATK) définit les dégâts qu'un Pokémon va réaliser, la statistique de défense (DEF) définit la vitesse à laquelle un Pokémon va mourrir, et les points de vie (PV) ou hit points (SHP) répresente l'endurance du Pokémon (STA).</li>
+                    <li>Trois statistiques définissent un Pokémon: la statistique d'attaque (ATK) définit les dégâts qu'un Pokémon va réaliser, la statistique de défense (DEF) définit la vitesse à laquelle un Pokémon va mourrir, et les points de vie (PV) ou hit points (HP) répresente l'endurance du Pokémon (STA).</li>
                     <li>Prenons l'exemple de Mewtwo. Ses statistiques de base sont:
                 
                 <center>
                 <table>
-                    <tr><td>Base ATK&nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:150px;height:20px;">&nbsp;<font color="white">300</font></span></td></tr>
-                    <tr><td>Base DEF</td><td><span style="display:block;background:red;width:91px;height:20px;">&nbsp;<font color="white">182</font></span></td></tr>
-                    <tr><td>Base STA</td><td><span style="display:block;background:blue;width:107px;height:20px;">&nbsp;<font color="white">214</font></span></td></tr>
+                    <tr><td>ATK<sub>Base</sub>&nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:150px;height:20px;">&nbsp;<font color="white">300</font></span></td></tr>
+                    <tr><td>DEF<sub>Base</sub></td><td><span style="display:block;background:red;width:91px;height:20px;">&nbsp;<font color="white">182</font></span></td></tr>
+                    <tr><td>STA<sub>Base</sub></td><td><span style="display:block;background:blue;width:107px;height:20px;">&nbsp;<font color="white">214</font></span></td></tr>
                 </table>
                 </center>
                 
-                Supposons que vous soyez très chanceux et que vous capturez un Mewtwo parfait avec les IV suivant (ATK_IV, DEF_IV, STA_IV) = (15, 15, 15). Les statistiques de base de votre Mewtwo sont:
+                Supposons que vous soyez très chanceux et que vous capturez un Mewtwo parfait avec les IV suivant (ATK<sub>IV</sub>, DEF<sub>IV</sub>, STA<sub>IV</sub>) = (15, 15, 15). Les statistiques de base de votre Mewtwo sont:
                 
                 \begin{align*}
-                \text{ATK} = \text{Base ATK} + \text{ATK}_\text{IV}\\
-                \text{DEF} = \text{Base DEF} + \text{DEF}_\text{IV}\\
-                \text{STA} = \text{Base STA} + \text{STA}_\text{IV}
+                \text{ATK} = \text{ATK}_\text{Base} + \text{ATK}_\text{IV}\\
+                \text{DEF} = \text{DEF}_\text{Base} + \text{DEF}_\text{IV}\\
+                \text{STA} = \text{STA}_\text{Base} + \text{STA}_\text{IV}
                 \end{align*}
                 
                 <center>
@@ -158,13 +158,13 @@
                     </table>
                 </center>
                 
-                Votre meilleur ami a capturé un Mewtwo dont les IV sont (ATK_IV, DEF_IV, STA_IV) = (14, 15, 14). Si on applique la même démarche que précédemment, au niveau 40, son Mewtwo aura les statistiques suivantes:
+                Votre meilleur ami a capturé un Mewtwo dont les IV sont (ATK<sub>IV</sub>, DEF<sub>IV</sub>, STA<sub>IV</sub>) = (14, 15, 14). Si on applique la même démarche que précédemment, au niveau 40, son Mewtwo aura les statistiques suivantes:
                 
                 <center>
                     <table>
                         <tr><td>ATK au niveau 40&nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:124px;height:20px;">&nbsp;<font color="white">248</font></span></td></tr>
                         <tr><td>DEF au niveau 40</td><td><span style="display:block;background:red;width:77.5px;height:20px;">&nbsp;<font color="white">155</font></span></td></tr>
-                        <tr><td>STA au niveau 40</td><td><span style="display:block;background:blue;width:90px;height:20px;">&nbsp;<font color="white">180</font></span></td></tr>
+                        <tr><td>STA au niveau 40</td><td><span style="display:block;background:blue;width:90px;height:20px;">&nbsp;<font color="white">180 PV</font></span></td></tr>
                     </table>
                 </center>
                 Surprenament, les deux Mewtwo (14, 15, 14) et (15, 15, 15) au niveau 40 ont exactement les mêmes statistiques de base.
@@ -172,7 +172,7 @@
                     </li>
                 <li>La formule de calcule de la puissance de combat (PC) est:
                 
-                \[ \text{PC} = \text{floor}\left(\frac{\text{ATK} \times \sqrt{\text{DEF} \times \text{STA}}}{10} \times \text{coeff}\_\text{level}^2 \right) \]
+                \[ \text{PC} = \text{floor}\left(\frac{\text{ATK} \times \sqrt{\text{DEF} \times \text{STA}}}{10} \times \text{coeff}^2 \right) \]
                 
                 <ul>
                 <li>Pour Mewtwo (15, 15, 15), au niveau 40, sa PC est \[ \text{floor}\left(\frac{315 \times \sqrt{197 \times 229}}{10} \times 0.7903^2 \right) = 4178 \]</li>
@@ -199,9 +199,9 @@
             <center>
             <table>
             <tr><td></td><td>Bouldeneu</td><td>Noadkoko (A)</td></tr>
-            <tr><td>ATK &nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:103.5px;height:20px;">&nbsp;<font color="white">207</font></span></td><td><span style="display:block;background:green;width:115px;height:20px;">&nbsp;<font color="white">230</font></span></td></tr>
-            <tr><td>DEF </td><td><span style="display:block;background:red;width:92px;height:20px;">&nbsp;<font color="white">184</font></span></td><td><span style="display:block;background:red;width:76.5px;height:20px;">&nbsp;<font color="white">153</font></span></td></tr>
-            <tr><td>STA </td><td><span style="display:block;background:blue;width:112.5px;height:20px;">&nbsp;<font color="white">225</font></span></td><td><span style="display:block;background:blue;width:108px;height:20px;">&nbsp;<font color="white">216</font></span></td></tr>
+            <tr><td>ATK<sub>Base</sub> &nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:103.5px;height:20px;">&nbsp;<font color="white">207</font></span></td><td><span style="display:block;background:green;width:115px;height:20px;">&nbsp;<font color="white">230</font></span></td></tr>
+            <tr><td>DEF<sub>Base</sub> </td><td><span style="display:block;background:red;width:92px;height:20px;">&nbsp;<font color="white">184</font></span></td><td><span style="display:block;background:red;width:76.5px;height:20px;">&nbsp;<font color="white">153</font></span></td></tr>
+            <tr><td>STA<sub>Base</sub> </td><td><span style="display:block;background:blue;width:112.5px;height:20px;">&nbsp;<font color="white">225</font></span></td><td><span style="display:block;background:blue;width:108px;height:20px;">&nbsp;<font color="white">216</font></span></td></tr>
             </table>
             </center>
             
@@ -235,14 +235,14 @@
         <div id="Q3" class="w3-container w3-white w3-hide">
         <br/>
         Les dégâts qu'un Pokémon inflige a son opposant sont donnés par la formule suivante:
-        \[ \text{Dégâts} = \text{floor}\left(\frac{1}{2}\text{Power} \times \frac{\text{ATK}}{\text{OPP_DEF}}\times\text{Multiplier}\right) +1 \]
+        \[ \text{Dégâts} = \text{floor}\left(\frac{1}{2}\text{Power} \times \frac{\text{ATK}}{\text{DEF}_{\text{OPP}}}\times\text{Multi}\right) +1 \]
         
         Pour illustrer cette formule, prenons l'exemple de Noadkoko (A) parfait au niveau 30 lançant un Lance-Soleil contre un Kyogre parfait au niveau 40.
         <ul>
         <li>floor()+1 garantit que les dégâts de n'importe quelle attaque est 1.</li>
         <li>Power est la puissance de l'attaque, pour Lance-Soleil elle est de 180.</li>
-        <li>ATK est la statistique d'attaque de celui qui lance l'attaque. Pour Noadkoko (A) au niveau 30 avec 15 en ATK_IV, elle est de floor((230+15) x 0.7317) = 179.</li>
-        <li>OPP_DEF est la statistique de défense de celui qui reçoit l'attaque. Pour Kyogre au niveau 40, avec 15 en DEF_IV, elle est de floor((228+15) x 0.7903) = 192.</li>
+        <li>ATK est la statistique d'attaque de celui qui lance l'attaque. Pour Noadkoko (A) au niveau 30 avec 15 en ATK<sub>IV</sub>, elle est de floor((230+15) x 0.7317) = 179.</li>
+        <li>DEF<sub>OPP</sub> est la statistique de défense de celui qui reçoit l'attaque. Pour Kyogre au niveau 40, avec 15 en DEF<sub>IV</sub>, elle est de floor((228+15) x 0.7903) = 192.</li>
         <li>Multipliers sont des multiplieurs comme STAB, WAB, FAB et Effectiveness.</li>
         <li>STAB est l'acronyme pour Same Type Attack Bonus. Si un Pokémon utilise une attaque correspondant à l'un de ses types, alors l'attaque reçoit une multiplicateur de 1.2.</li>
         <li>WAB est l'acronyme pour Weather Attack Bonus. Si un Pokémon utilise une attaque du même type que la météo, alors l'attaque reçoit une multiplicateur de 1.2.</li>
@@ -401,9 +401,9 @@
             
             <center>
             <table>
-            <tr><td>Base ATK&nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:135px;height:20px;">&nbsp;<font color="white">270</font></span></td></tr>
-            <tr><td>Base DEF</td><td><span style="display:block;background:red;width:114px;height:20px;">&nbsp;<font color="white">228</font></span></td></tr>
-            <tr><td>Base STA</td><td><span style="display:block;background:blue;width:102.5px;height:20px;">&nbsp;<font color="white">205</font></span></td></tr>
+            <tr><td>ATK<sub>Base</sub>&nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:135px;height:20px;">&nbsp;<font color="white">270</font></span></td></tr>
+            <tr><td>DEF<sub>Base</sub></td><td><span style="display:block;background:red;width:114px;height:20px;">&nbsp;<font color="white">228</font></span></td></tr>
+            <tr><td>STA<sub>Base</sub></td><td><span style="display:block;background:blue;width:102.5px;height:20px;">&nbsp;<font color="white">205</font></span></td></tr>
             </table>
             </center>
             
@@ -418,12 +418,12 @@
             </center>
                         
          <ul>
-         <li>Les dégâts réalisés par un boss de raid sont identiques à ceux d'un Pokémon niveau 40 avec ATK_IV = 15.</li>
+         <li>Les dégâts réalisés par un boss de raid sont identiques à ceux d'un Pokémon niveau 40 avec ATK<sub>IV</sub> = 15.</li>
          <li>Pour un boss de raid à 5 têtes, il faut lui retirer au moins 15000/300 = 50 PV par seconde; exactement les même PV/seconde à retirer pour un boss de raid à 4 têtes. La difficulté principale des boss de raid à 5 têtes est que comme il a plus de points de vie, il faut par conséquent plus de temps pour le tuer, et donc plus de Pokémon et de potions/rappels.</li>
          <li>La difficulté d'un boss de raid (en terme de nombres de joueurs) dépend essentiellement de sa statistique de défense (plus la défense est élevée, plus il faut de temps pour le tuer). Le nombre minimal de joueurs (avec les meilleurs contres au niveau 30, niveau d'amitié "meilleurs amis" et météo extrême) est:
                     <ul>
-                        <li>Si le boss de raid n'a que de simples faiblesses, il est de floor(Base_DEF/80)+1.</li>
-                        <li>Si le boss de raid a une double faiblesse, il est de floor(Base DEF/112)+1.</li>
+                        <li>Si le boss de raid n'a que de simples faiblesses, il est de floor(DEF<sub>Base</sub>/80)+1.</li>
+                        <li>Si le boss de raid a une double faiblesse, il est de floor(DEF<sub>Base</sub>/112)+1.</li>
                     </ul>
             </li>
         <li>Vous devez jouer sur la résistance de vos Pokémon pour utiliser le moins de potions/rappels pour le tuer.</li>
@@ -445,12 +445,12 @@
         <br/>
         Concernant les IV, ils dépendent les statistiques de base du Pokémon.
         <ul>
-        <li>Si un Pokémon a une statistique de base d'attaque importante, il n'y aura pas de grande différence entre ATK_IV = 14 et ATK_IV = 15.
+        <li>Si un Pokémon a une statistique de base d'attaque importante, il n'y aura pas de grande différence entre ATK<sub>IV</sub> = 14 et ATK<sub>IV</sub> = 15.
         
-        Il est recommandé d'avoir une haute ATK_IV pour un Pokémon avec un faible DPS.</li>
-        <li>Concernant la résistance (DEF_IV et STA_IV), la statistique de défense (DEF) influence la vitesse à laquelle le Pokémon va mourrir. Généralement, il est plus intéressant d'avoir une plus haute DEF_IV que STA_IV.
+        Il est recommandé d'avoir une haute ATK<sub>IV</sub> pour un Pokémon avec un faible DPS.</li>
+        <li>Concernant la résistance (DEF<sub>IV</sub> et STA<sub>IV</sub>), la statistique de défense (DEF) influence la vitesse à laquelle le Pokémon va mourrir. Généralement, il est plus intéressant d'avoir une plus haute DEF<sub>IV</sub> que STA<sub>IV</sub>.
         
-        Il est recommandé d'avoir une haute DEF_IV et STA_IV pour un Pokémon avec une faible vie effective.</li>
+        Il est recommandé d'avoir une haute DEF<sub>IV</sub> et STA<sub>IV</sub> pour un Pokémon avec une faible vie effective.</li>
         </ul>
         
         Il devient très cher de monter un Pokémon jusqu'au niveau 40; le niveau 35 semble excellent (le Pokémon est à 96.4% de ses capacités), mais le niveau 30 est très correct (92.6% de ses capacités).
