@@ -137,7 +137,7 @@
             <div id="Q1" class="w3-container w3-white w3-hide">
                 
                 <ul>
-                    <li>Trois statistiques définissent un Pokémon: la statistique d'attaque (ATK) définit les dégâts qu'un Pokémon va réaliser, la statistique de défense (DEF) définit la vitesse à laquelle un Pokémon va mourrir, et les points de vie (PV) ou hit points (HP) répresente l'endurance du Pokémon (STA).</li>
+                    <li>Trois statistiques définissent un Pokémon: la statistique d'attaque (ATK) définit les dégâts qu'un Pokémon va réaliser, la statistique de défense (DEF) définit la vitesse à laquelle un Pokémon va mourrir, et les points de vie (PV) ou hit points (HP) répresente l'endurance du Pokémon (STA). A chacune de ces statistiques de base, on rajoute une <i>valeur individuelle</i> comprise entre 0 et 15.</li>
                     <li>Prenons l'exemple de Mewtwo. Ses statistiques de base sont:
                 
                 <center>
@@ -198,7 +198,7 @@
                     </li>
                 <li>La formule de calcule de la puissance de combat (PC) est:
                 
-                \[ \text{PC} = \text{floor}\left(\frac{\text{ATK} \times \sqrt{\text{DEF} \times \text{STA}}}{10} \times \text{coeff}^2 \right) \]
+                \[ \text{floor}\left(\frac{\text{ATK} \times \sqrt{\text{DEF} \times \text{STA}}}{10} \times \text{coeff}^2 \right) \]
                 
                 Pour Mewtwo (15, 15, 15), au niveau 40, sa PC est \[ \text{floor}\left(\frac{315 \sqrt{197 \times 229}}{10} 0.7903^2 \right) = 4178 \]
                 Pour Mewtwo (14, 15, 14), au niveau 40, sa PC est \[\text{floor}\left(\frac{314 \sqrt{197 \times 228}}{10} 0.7903^2 \right) = 4156\]</li>
@@ -255,7 +255,7 @@
         
         
         <div class="w3-container">
-        <button onclick="myFunction('Q3')" class="w3-btn w3-block w3-black w3-left-align">3. Comment calculer les dégâts réalisés par un Pokémon?</button>
+        <button onclick="myFunction('Q3')" class="w3-btn w3-block w3-black w3-left-align">3. Comment calculer les dégâts réalisés?</button>
         <div id="Q3" class="w3-container w3-white w3-hide">
         <br/>
         Les dégâts qu'un Pokémon inflige a son opposant sont donnés par la formule suivante:
@@ -506,7 +506,7 @@
                                                                                                                                                                   
                                                                                                                                                                   
         <div class="w3-container">
-        <button onclick="myFunction('Q8')" class="w3-btn w3-block w3-black w3-left-align">8. A quel moment les IV sont déterminés dans un raid?</button>
+        <button onclick="myFunction('Q8')" class="w3-btn w3-block w3-black w3-left-align">8. Quand les IV sont tirés dans un raid?</button>
             <div id="Q8" class="w3-container w3-white w3-hide"><br/>
             Différents éléments définissent un Pokémon:<ul><li>ses IV (ATK<sub>IV</sub>, DEF<sub>IV</sub>, STA<sub>IV</sub>),</li><li>son niveau (20 ou 25) selon la météo,</li><li>sa taille et sa masse, son genre (s'il n'est pas asexué),</li><li>ses attaques (rapide et chargée),</li><li>son caractère chromatique.</li></ul>
                                                                                                                                                                   
