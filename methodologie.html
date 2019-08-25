@@ -193,10 +193,8 @@
                 
                 \[ \text{PC} = \text{floor}\left(\frac{\text{ATK} \times \sqrt{\text{DEF} \times \text{STA}}}{10} \times \text{coeff}^2 \right) \]
                 
-                <ul>
-                <li>Pour Mewtwo (15, 15, 15), au niveau 40, sa PC est \[ \text{floor}\left(\frac{315 \times \sqrt{197 \times 229}}{10} \times 0.7903^2 \right) = 4178 \]</li>
-                <li>Pour Mewtwo (14, 15, 14), au niveau 40, sa PC est \[\text{floor}\left(\frac{314 \times \sqrt{197 \times 228}}{10} \times 0.7903^2 \right) = 4156\]</li>
-                </li>
+                Pour Mewtwo (15, 15, 15), au niveau 40, sa PC est \[ \text{floor}\left(\frac{315 \sqrt{197 \times 229}}{10} 0.7903^2 \right) = 4178 \]
+                Pour Mewtwo (14, 15, 14), au niveau 40, sa PC est \[\text{floor}\left(\frac{314 \sqrt{197 \times 228}}{10} 0.7903^2 \right) = 4156\]</li>
                 </ul>
                 
             </div>
@@ -254,7 +252,7 @@
         <div id="Q3" class="w3-container w3-white w3-hide">
         <br/>
         Les dégâts qu'un Pokémon inflige a son opposant sont donnés par la formule suivante:
-        \[ \text{Dégâts} = \text{floor}\left(\frac{1}{2}\text{Power} \times \frac{\text{ATK}}{\text{DEF}_{\text{OPP}}}\times\text{Multi}\right) +1 \]
+        \[ \text{Dégâts} = \text{floor}\left(\frac{\text{Power}}{2} \times \frac{\text{ATK}}{\text{DEF}_{\text{OPP}}}\times\text{Multi}\right) +1 \]
         
         Pour illustrer cette formule, prenons l'exemple de Noadkoko (A) parfait au niveau 30 lançant un Lance-Soleil contre un Kyogre parfait au niveau 40.
         <ul>
@@ -283,13 +281,13 @@
         Sans boost météo, sans bonus d'amitié, les dégâts de Noadkoko sont:
         \begin{align*}
         \text{Dégâts} %& = \text{floor}\left(\frac{1}{2}\text{Power} \times \frac{\text{ATT}}{\text{OPP\_DEF}}\times\text{Multiplier}\right) +1  \\
-        & = \text{floor}\left(\frac{1}{2}\text{180} \times \frac{\text{179}}{\text{192}}\times\text{1.2}\times\text{1.6}\right) +1 \\
+        & = \text{floor}\left(\frac{180}{2} \times \frac{\text{179}}{\text{192}}\times\text{1.2}\times\text{1.6}\right) +1 \\
         & = 161 + 1 = 162~ \text{PV}
         \end{align*}
         
         Si Noadkoko est au niveau 40, sa statistique d'attaque serait floor((230+15) x 0.7903) = 193 et les dégâts qu'il infligerait seraient:
         \begin{align*}
-        \text{Dégâts} & = \text{floor}\left(\frac{1}{2}\text{180} \times \frac{\text{193}}{\text{192}}\times\text{1.2}\times\text{1.6}\right) +1 \\
+        \text{Dégâts} & = \text{floor}\left(\frac{180}{2} \times \frac{\text{193}}{\text{192}}\times\text{1.2}\times\text{1.6}\right) +1 \\
         & = 173+1 = 174~ \text{PV} \end{align*}
 
         
