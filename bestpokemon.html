@@ -120,21 +120,26 @@ scale: 90
             <div id="note" class="w3-container w3-white w3-hide">
 
             <ul>
-                <li>Les Pokémon aux noms barrés sont non disponibles dans le jeu.</li>
-                <li>Les attaques avec le symbole &#10013; signifie que l'attaque est legacy.</li>
+                <li>Les Pokémon aux noms barrés sont non disponibles dans le jeu.<br/><br/></li>
+                <li>Les attaques avec le symbole &#10013; signifie que l'attaque est legacy.<br/><br/></li>
                 <!--<li>megaevol signifie que le Pokémon pourra méga-évoluer dans la génération 6.</li>-->
-                <li>Le DPS neutre, la vie effective et le TDO sont calculés au niveau 40, pour des Pokémons parfaits.</li>
-                <li>Le DPS neutre (dégâts par seconde) représente combien de dégâts un Pokémon peut réaliser en une seconde. Elle dépend de la statistique d'attaque du Pokémon (ATK), et des attaques rapide et chargée du Pokémon. Ces attaques définissent ensemble l'énergie et les dégâts que le Pokémon va réaliser. L'attaque rapide génère de l'énergie qui est utilisée pour lancer l'attaque chargée. Elle dépend aussi du STAB (<i>Same Type Attack Bonus</i>), un bonus de 20% donné aux dégâts si le type de l'attaque et le type du Pokémon sont identiques.
+                <li>Le DPS neutre, la vie effective et le TDO sont calculés au niveau 40, pour des Pokémons parfaits.<br/><br/></li>
+                <li>Le <b>DPS</b> neutre (<i>dégâts par seconde</i>) représente combien de dégâts un Pokémon peut réaliser en une seconde. Elle dépend:
+                    <ul>
+                    <li>de la statistique d'attaque du Pokémon (ATK),</li>
+                    <li>des attaques rapide et chargée du Pokémon. Ces attaques définissent ensemble l'énergie et les dégâts que le Pokémon va réaliser. L'attaque rapide génère de l'énergie qui est utilisée pour lancer l'attaque chargée.</li>
+                    <li>du STAB (<i>Same Type Attack Bonus</i>), un bonus de 20% donné aux dégâts si le type de l'attaque et le type du Pokémon sont identiques.</li>
+                    </ul><br/>
 
                     <center>
                     <table border>
                     <tr><td>DPS < 12.5</td><td>mauvais attaquant</td></tr>
-                    <tr><td>12.5 < DPS < 16</td><td>bon attaquant (privilegier ATT IV = 15, niveau 35)</td></tr>
+                    <tr><td>12.5 < DPS < 16</td><td>bon attaquant (privilegier ATK<sub>IV</sub> = 15, niveau 35)</td></tr>
                     <tr><td>DPS > 16</td><td>excellent attaquant</td></tr>
                     </table>
-                    </center>
+                    </center><br/>
                 </li>
-                <li>La vie effective (ou effective health, EH) définit la résistance du Pokémon. Au niveau 40, elle est égale à
+                <li>La <b>vie</b> effective (ou effective health, EH) définit la résistance du Pokémon. Au niveau 40, elle est égale à
                 \[ \text{EH} = \text{DEF} \times \text{STA} \times\frac{0.7903^2}{900}\]
 
                 <center>
@@ -144,13 +149,15 @@ scale: 90
                 <tr><td>30 < EH < 35 </td><td>résistant </td></tr>
                 <tr><td>EH > 35 </td><td>très résistant</td></tr>
                 </table>
-                </center>
+                </center><br/>
                 </li>
 
                 </li>
-                <li>Le TDO (Total Damage Output) représente combien de dégâts un Pokémon réalise avant d'être KO. Il est égal à
-                \[\text{TDO} = \text{DPS} \times \text{EH} \]
+                <li>Le <b>TDO</b> (Total Damage Output) représente combien de dégâts un Pokémon réalise avant d'être KO. Il est égal à
+                \[\text{TDO} = \text{DPS} \times \text{EH} \]<br/>
                 </li>
+                <li><b>Ressources</b>
+                    <ul>
                 <li><a href="https://pokemongo.gamepress.gg/">Statistiques de base</a></li>
                 <li><a href="https://pokegocomplete.com">Statistiques de base (générations 5 à 7)</a></li>
                 <li><a href="https://pokemongo.gamepress.gg/comprehensive-dps-spreadsheet">Table globale DPS/TDO</a></li>
@@ -158,6 +165,8 @@ scale: 90
                 <li><a href="https://pokemongo.gamepress.gg/pve-fast-moves">Liste des attaques rapides</a></li>
                 <li><a href="https://pokemongo.gamepress.gg/pve-charge-moves">Liste des attaques chargées</a></li>
                 <li><a href="https://imgur.com/a/1nSSUqM">Fiches "Best Pokémon in the game"</a></li>
+                </ul>
+                    </li>
             </ul>
 
 
