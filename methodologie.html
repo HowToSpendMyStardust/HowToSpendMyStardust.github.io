@@ -27,6 +27,13 @@
         }
     </style>
     
+    <style>
+    table {
+        border-collapse: collapse;
+        border:3px;
+    }
+    
+    </style>
         
     <body class="w3-light-grey">
         
@@ -161,7 +168,7 @@
                 Dépendant du niveau de votre Mewtwo, vous allez multiplier ces statistiques par un coefficient et prendre la partie entière (floor):
                 
                 <center>
-                    <table border>
+                    <table border="1">
                         <tr><td>Niv 20</td><td>Niv 25</td><td>Niv 30</td><td>Niv 35</td><td>Niv 40</td></tr>
                         <tr><td>0.5974</td><td>0.6679</td><td>0.7317</td><td>0.7616</td><td>0.7903</td></tr>
                     </table>
@@ -252,7 +259,7 @@
         <div id="Q3" class="w3-container w3-white w3-hide">
         <br/>
         Les dégâts qu'un Pokémon inflige a son opposant sont donnés par la formule suivante:
-        \[ \text{Dégâts} = \text{floor}\left(\frac{\text{Power}}{2} \times \frac{\text{ATK}}{\text{DEF}_{\text{OPP}}}\times\text{Multi}\right) +1 \]
+        \[ \text{Degat} = \text{floor}\left(\frac{\text{Power}}{2} \times \frac{\text{ATK}}{\text{DEF}_{\text{OPP}}}\times\text{Multi}\right) +1 \]
         
         Pour illustrer cette formule, prenons l'exemple de Noadkoko (A) parfait au niveau 30 lançant un Lance-Soleil contre un Kyogre parfait au niveau 40.
         <ul>
@@ -280,14 +287,14 @@
         </ul>
         Sans boost météo, sans bonus d'amitié, les dégâts de Noadkoko sont:
         \begin{align*}
-        \text{Dégâts} %& = \text{floor}\left(\frac{1}{2}\text{Power} \times \frac{\text{ATT}}{\text{OPP\_DEF}}\times\text{Multiplier}\right) +1  \\
+        \text{Degat} %& = \text{floor}\left(\frac{1}{2}\text{Power} \times \frac{\text{ATT}}{\text{OPP\_DEF}}\times\text{Multiplier}\right) +1  \\
         & = \text{floor}\left(\frac{180}{2} \times \frac{\text{179}}{\text{192}}\times\text{1.2}\times\text{1.6}\right) +1 \\
         & = 161 + 1 = 162~ \text{PV}
         \end{align*}
         
         Si Noadkoko est au niveau 40, sa statistique d'attaque serait floor((230+15) x 0.7903) = 193 et les dégâts qu'il infligerait seraient:
         \begin{align*}
-        \text{Dégâts} & = \text{floor}\left(\frac{180}{2} \times \frac{\text{193}}{\text{192}}\times\text{1.2}\times\text{1.6}\right) +1 \\
+        \text{Degat} & = \text{floor}\left(\frac{180}{2} \times \frac{\text{193}}{\text{192}}\times\text{1.2}\times\text{1.6}\right) +1 \\
         & = 173+1 = 174~ \text{PV} \end{align*}
 
         
@@ -308,8 +315,8 @@
         <li>L'énergie nécessaire pour les attaques chargées est définie par le nombre de barres:
             <center>
             <table border>
-                <tr><td>3-barres</td><td>2-barres</td><td>1-barres</td></tr>
-                <tr><td>énergie de 33.33</td><td>énergie de 50</td><td>énergie de 100</td></tr>
+                <tr><td align="center">3 barres</td><td align="center">2 barres</td><td align="center">1 barre</td></tr>
+                <tr><td align="center">énergie de 33.33</td><td align="center">énergie de 50</td><td align="center">énergie de 100</td></tr>
             </table>
             </center>
         </li>
@@ -317,7 +324,7 @@
         
             <center>
              <table border>
-                <tr><td></td><td>Poing Météor</td><td>Luminocanon</td></tr>
+                <tr><td></td><td><img src="document/images/type/simplified/steel.png" style="height:12px;"></img>  Poing Météor</td><td><img src="document/images/type/simplified/steel.png" style="height:12px;"></img>  Luminocanon</td></tr>
                 <tr><td>Dégâts de base</td><td>100</td><td>100</td></tr>
                 <tr><td>Durée de l'attaque</td><td>2600 ms</td><td>2700 ms</td></tr>
                 <tr><td>Fenêtre d'attaque</td><td>2300 - 2500 ms</td><td>1600 - 2500 ms</td></tr>
@@ -338,13 +345,15 @@
                 <li><a href="https://pokemongo.gamepress.gg/comprehensive-dps-spreadsheet">Table complète DPS/TDO</a></li></ul>
              
              Pour Métalosse, le DPS de (Pisto-Poing, Poing Météor) est bien plus élevé que celui de (Pisto-Poing, Luminocanon).
+             <small>
              <center>
              <table border>
-             <tr><td>Pokémon</td><td>Attaque Rapide</td><td>Attaque Chargée</td><td>DPS</td><td>TDO</td><td>DPS<sup>3</sup> x TDO</td><td>CP</td></tr>
-             <tr><td>Métalosse</td><td>Pisto-Poing</td><td>Poing Météor</td><td>17.983</td><td>621.7</td><td>3615.5</td><td>3791</td></tr>
-             <tr><td>Métalosse</td><td>Pisto-Poing</td><td>Luminocanon</td><td>13.563</td><td>468.9</td><td>1169.7</td><td>3791</td></tr>
+             <tr><td><b>Pokémon</b></td><td><b>Attaque Rapide</b></td><td><b>Attaque Chargée</b></td><td align="center"><b>DPS</b></td><td align="center"><b>TDO</b></td><td><b>DPS<sup>3</sup> x TDO<b></td></tr>
+             <tr><td>Métalosse</td><td><img src="document/images/type/simplified/steel.png" style="height:9px;"></img> Pisto-Poing</td><td><img src="document/images/type/simplified/steel.png" style="height:9px;"></img> Poing Météor</td><td>17.983</td><td>621.7</td><td align="center">3615.5</td></tr>
+             <tr><td>Métalosse</td><td><img src="document/images/type/simplified/steel.png" style="height:9px;"></img> Pisto-Poing</td><td><img src="document/images/type/simplified/steel.png" style="height:9px;"></img> Luminocanon</td><td>13.563</td><td>468.9</td><td align="center">1169.7</td></tr>
              </table>
              </center>
+             </small>
         
         </div>
         </div>
@@ -368,24 +377,28 @@
         Toutes ces mesures ont été calculées dans <a href="https://pokemongo.gamepress.gg/comprehensive-dps-spreadsheet">la table complète DPS/TDO</a>
         
         Prenons l'exemple des Pokémon spectres. On souhaite les comparer:
+            <small>
             <center>
             <table border>
-            <tr><td>Pokémon</td><td>Attaque Rapide</td><td>Attaque Chargée</td><td>DPS</td><td>TDO</td><td>DPS<sup>3</sup> x TDO</td><td>CP</td></tr>
-            <tr><td>Ectoplasma</td><td>Léchouille</td><td>Ball Ombre</td><td>18.109</td><td>350.4</td><td>2080.9	</td><td>2878</td></tr>
-            <tr><td>Giratina (Originelle)</td><td>Griffe Ombre</td><td>Ball Ombre</td><td>15.814</td><td>662.8	</td><td>2621.4</td><td>3683</td></tr>
+            <tr><td><b>Pokémon</b></td><td><b>Attaque Rapide</b></td><td><b>Attaque Chargée</b></td><td align="center"><b>DPS</b></td><td align="center"><b>TDO</b></td><td><b>DPS<sup>3</sup> x TDO<b></td></tr>
+            <tr><td>Ectoplasma</td><td><img src="document/images/type/simplified/ghost.png" style="height:9px;"></img> Léchouille</td><td><img src="document/images/type/simplified/ghost.png" style="height:9px;"></img> Ball Ombre</td><td>18.109</td><td>350.4</td><td align="center">2080.9	</td></tr>
+            <tr><td>Giratina (O)</td><td><img src="document/images/type/simplified/ghost.png" style="height:9px;"></img> Griffe Ombre</td><td><img src="document/images/type/simplified/ghost.png" style="height:9px;"></img> Ball Ombre</td><td>15.814</td><td>662.8	</td><td align="center">2621.4</td></tr>
             </table>
             </center>
-            
+            </small>
         Ectoplasma a un DPS monstrueux, mais un faible TDO. Au contraire, Giratina (O) a une excellente vie et TDO. La mesure globale DPS<sup>3</sup> x TDO recommende Giratina (O).
             
         On notera que les faiblesses ne sont pas pris en compte dans cette table, puisqu'on calcule le DPS neutre. Si on choisit Mewtwo avec (Choc Mental, Psyko) comme opposant, la table donne:
+        
+        <small>
             <center><table border>
-            <tr><td>Pokémon</td><td>Attaque Rapide</td><td>Attaque Chargée</td><td>DPS</td><td>TDO</td><td>DPS<sup>3</sup> x TDO</td><td>CP</td></tr>
-            <tr><td>Ectoplasma</td><td>Léchouille</td><td>Ball Ombre</td><td>27.547</td><td>194.4</td><td>4063.3</td><td>2878</td></tr>
-            <tr><td>Giratina (Originelle)</td><td>Griffe Ombre</td><td>Ball Ombre</td><td>26.415</td><td>641.9	</td><td>11829.9</td><td>3683</td></tr>
+            <tr><td><b>Pokémon</b></td><td><b>Attaque Rapide</b></td><td><b>Attaque Chargée</b></td><td align="center"><b>DPS</b></td><td align="center"><b>TDO</b></td><td><b>DPS<sup>3</sup> x TDO<b></td></tr>
+            <tr><td>Ectoplasma</td><td><img src="document/images/type/simplified/ghost.png" style="height:9px;"></img> Léchouille</td><td><img src="document/images/type/simplified/ghost.png" style="height:9px;"></img> Ball Ombre</td><td>27.547</td><td>194.4</td><td align="center">4063.3</td></tr>
+            <tr><td>Giratina (O)</td><td><img src="document/images/type/simplified/ghost.png" style="height:9px;"></img> Griffe Ombre</td><td><img src="document/images/type/simplified/ghost.png" style="height:9px;"></img> Ball Ombre</td><td>26.415</td><td>641.9	</td><td align="center">11829.9</td></tr>
             </table>
             </center>
-            
+        </small>
+        
         Le DPS a augmenté par environ 1.6 (car Mewtwo est faible aux attaques spectres), mais le TDO de Ectoplasma a baissé (ce qui est essentiellement du aux attaques de Mewtwo et la faiblesse psy d'Ectoplasma), ce qui ne le rend pas très viable.
         
         <br/><br/>
@@ -403,13 +416,13 @@
         Les boss de raid ont la même statistique d'attaque et de défense qu'un Pokémon parfait au niveau 40, mais leurs points de vie dépend de la difficulté du raid:
         <center>
         <table border>
-            <tr><td>Difficulté</td><td>PV</td><td>Temps</td></tr>
-            <td>1 tête</td><td>600 PV</td><td>180 s</td></tr>
-            <td>2 têtes</td><td>1800 PV</td><td>180 s</td></tr>
-            <td>3 têtes</td><td>3600 PV</td><td>180 s</td></tr>
-            <td>4 têtes</td><td>9000 PV</td><td>180 s</td></tr>
-            <td>5 têtes (Légendaires)</td><td>15000 PV</td><td>300 s</td></tr>
-            <td>6 têtes (Mewtwo)</td><td>22500 PV</td><td>300 s</td></tr>
+            <tr><td align="center"><b>Difficulté</b></td><td align="center"><b>PV</b></td><td align="center"><b>&nbsp;Temps&nbsp;</b></td></tr>
+            <td align="center"><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img></td><td align="center">600 PV</td><td align="center">180 s</td></tr>
+            <td align="center"><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img></td><td align="center">1800 PV</td><td align="center">180 s</td></tr>
+            <td align="center"><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img></td><td align="center">3600 PV</td><td align="center">180 s</td></tr>
+            <td align="center"><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img></td><td align="center">9000 PV</td><td align="center">180 s</td></tr>
+            <td align="center">&nbsp;<img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img> (Légendaires)&nbsp;</td><td align="center">15000 PV</td><td align="center">300 s</td></tr>
+            <td align="center"><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img><img src="document/images/Badge_Champion_GOLD_01.png" style="height:12px;"></img> (Mewtwo)</td><td align="center">&nbsp; 22500 PV &nbsp;</td><td align="center">300 s</td></tr>
         </table>
         </center>
         
