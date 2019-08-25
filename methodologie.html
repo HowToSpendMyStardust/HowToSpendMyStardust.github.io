@@ -111,24 +111,30 @@
             <div id="Q1" class="w3-container w3-white w3-hide">
                 
                 <ul>
-                    <li>Trois statistiques définissent un Pokémon: la statistique d'attaque (ATK) définit les dégâts qu'un Pokémon va réaliser, la statistique de défense (DEF) définit la vitesse à laquelle un Pokémon va mourrir, et les points de vie (PV) ou hit points (HP) répresente l'endurance du Pokémon.</li>
+                    <li>Trois statistiques définissent un Pokémon: la statistique d'attaque (ATK) définit les dégâts qu'un Pokémon va réaliser, la statistique de défense (DEF) définit la vitesse à laquelle un Pokémon va mourrir, et les points de vie (PV) ou hit points (SHP) répresente l'endurance du Pokémon (STA).</li>
                     <li>Prenons l'exemple de Mewtwo. Ses statistiques de base sont:
                 
                 <center>
                 <table>
                     <tr><td>Base ATK&nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:150px;height:20px;">&nbsp;<font color="white">300</font></span></td></tr>
                     <tr><td>Base DEF</td><td><span style="display:block;background:red;width:91px;height:20px;">&nbsp;<font color="white">182</font></span></td></tr>
-                    <tr><td>Base HP</td><td><span style="display:block;background:blue;width:107px;height:20px;">&nbsp;<font color="white">214</font></span></td></tr>
+                    <tr><td>Base STA</td><td><span style="display:block;background:blue;width:107px;height:20px;">&nbsp;<font color="white">214</font></span></td></tr>
                 </table>
                 </center>
                 
-                Supposons que vous soyez très chanceux et que vous capturez un Mewtwo parfait avec les IV suivant (ATK_IV, DEF_IV, HP_IV) = (15, 15, 15). Les statistiques de base de votre Mewtwo sont:
+                Supposons que vous soyez très chanceux et que vous capturez un Mewtwo parfait avec les IV suivant (ATK_IV, DEF_IV, STA_IV) = (15, 15, 15). Les statistiques de base de votre Mewtwo sont:
+                
+                \begin{align*}
+                \text{ATK} = \text{Base ATK} + \text{ATK}_\text{IV}\\
+                \text{DEF} = \text{Base DEF} + \text{DEF}_\text{IV}\\
+                \text{STA} = \text{Base STA} + \text{STA}_\text{IV}
+                \end{align*}
                 
                 <center>
                     <table>
-                        <tr><td>ATK = (Base ATK + ATK_IV)&nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:157.5px;height:20px;">&nbsp;<font color="white">315</font></span></td></tr>
-                        <tr><td>DEF = (Base_DEF + DEF_IV)</td><td><span style="display:block;background:red;width:98.5px;height:20px;">&nbsp;<font color="white">197</font></span></td></tr>
-                        <tr><td>HP = (Base_HP + HP_IV)</td><td><span style="display:block;background:blue;width:114.5px;height:20px;">&nbsp;<font color="white">229</font></span></td></tr>
+                        <tr><td>ATK &nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:157.5px;height:20px;">&nbsp;<font color="white">315</font></span></td></tr>
+                        <tr><td>DEF</td><td><span style="display:block;background:red;width:98.5px;height:20px;">&nbsp;<font color="white">197</font></span></td></tr>
+                        <tr><td>STA</td><td><span style="display:block;background:blue;width:114.5px;height:20px;">&nbsp;<font color="white">229 PV</font></span></td></tr>
                     </table>
                 </center>
                 
@@ -148,17 +154,17 @@
                     <table>
                         <tr><td>ATK au niveau 40&nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:124px;height:20px;">&nbsp;<font color="white">248</font></span></td></tr>
                         <tr><td>DEF au niveau 40</td><td><span style="display:block;background:red;width:77.5px;height:20px;">&nbsp;<font color="white">155</font></span></td></tr>
-                        <tr><td>HP au niveau 40</td><td><span style="display:block;background:blue;width:90px;height:20px;">&nbsp;<font color="white">180</font></span></td></tr>
+                        <tr><td>STA au niveau 40</td><td><span style="display:block;background:blue;width:90px;height:20px;">&nbsp;<font color="white">180 PV</font></span></td></tr>
                     </table>
                 </center>
                 
-                Votre meilleur ami a capturé un Mewtwo dont les IV sont (ATK_IV, DEF_IV, HP_IV) = (14, 15, 14). Si on applique la même démarche que précédemment, au niveau 40, son Mewtwo aura les statistiques suivantes:
+                Votre meilleur ami a capturé un Mewtwo dont les IV sont (ATK_IV, DEF_IV, STA_IV) = (14, 15, 14). Si on applique la même démarche que précédemment, au niveau 40, son Mewtwo aura les statistiques suivantes:
                 
                 <center>
                     <table>
                         <tr><td>ATK au niveau 40&nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:124px;height:20px;">&nbsp;<font color="white">248</font></span></td></tr>
                         <tr><td>DEF au niveau 40</td><td><span style="display:block;background:red;width:77.5px;height:20px;">&nbsp;<font color="white">155</font></span></td></tr>
-                        <tr><td>HP au niveau 40</td><td><span style="display:block;background:blue;width:90px;height:20px;">&nbsp;<font color="white">180</font></span></td></tr>
+                        <tr><td>STA au niveau 40</td><td><span style="display:block;background:blue;width:90px;height:20px;">&nbsp;<font color="white">180</font></span></td></tr>
                     </table>
                 </center>
                 Surprenament, les deux Mewtwo (14, 15, 14) et (15, 15, 15) au niveau 40 ont exactement les mêmes statistiques de base.
@@ -166,7 +172,7 @@
                     </li>
                 <li>La formule de calcule de la puissance de combat (PC) est:
                 
-                \[ \text{PC} = \text{floor}\left(\frac{\text{ATK} \times \sqrt{\text{DEF} \times \text{HP}}}{10} \times \text{coeff}\_\text{level}^2 \right) \]
+                \[ \text{PC} = \text{floor}\left(\frac{\text{ATK} \times \sqrt{\text{DEF} \times \text{STA}}}{10} \times \text{coeff}\_\text{level}^2 \right) \]
                 
                 <ul>
                 <li>Pour Mewtwo (15, 15, 15), au niveau 40, sa PC est \[ \text{floor}\left(\frac{315 \times \sqrt{197 \times 229}}{10} \times 0.7903^2 \right) = 4178 \]</li>
@@ -185,17 +191,17 @@
             <ul>
             <li>On utilise la vie effective (ou <i>effective health</i>, EH) définie par :
             
-            \[ \text{EH} = (\text{base DEF} + \text{DEF_IV})\times (\text{base HP} + \text{HP_IV}) \times \frac{0.7903^2}{900}\]
+            \[ \text{EH} = \text{DEF} \times \text{STA} \times \frac{0.7903^2}{900}\]
             
             Pour simplifier, on pourra prendre:
-            \[ \text{EH} = \text{DEF} \times \text{HP} \] Plus ce score est grand, plus le Pokémon est résistant. Par exemple:
+            \[ \text{EH} = \text{DEF} \times \text{STA} \] Plus ce score est grand, plus le Pokémon est résistant. Par exemple:
             
             <center>
             <table>
             <tr><td></td><td>Bouldeneu</td><td>Noadkoko (A)</td></tr>
             <tr><td>ATK &nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:103.5px;height:20px;">&nbsp;<font color="white">207</font></span></td><td><span style="display:block;background:green;width:115px;height:20px;">&nbsp;<font color="white">230</font></span></td></tr>
             <tr><td>DEF </td><td><span style="display:block;background:red;width:92px;height:20px;">&nbsp;<font color="white">184</font></span></td><td><span style="display:block;background:red;width:76.5px;height:20px;">&nbsp;<font color="white">153</font></span></td></tr>
-            <tr><td>HP </td><td><span style="display:block;background:blue;width:112.5px;height:20px;">&nbsp;<font color="white">225</font></span></td><td><span style="display:block;background:blue;width:108px;height:20px;">&nbsp;<font color="white">216</font></span></td></tr>
+            <tr><td>STA </td><td><span style="display:block;background:blue;width:112.5px;height:20px;">&nbsp;<font color="white">225</font></span></td><td><span style="display:block;background:blue;width:108px;height:20px;">&nbsp;<font color="white">216</font></span></td></tr>
             </table>
             </center>
             
@@ -336,7 +342,7 @@
         <ul>
         <li>les Dégâts Par Seconde (DPS), définies par leurs attaques: ils représentent les dégâts que le Pokémon peut réaliser en une seconde.</li>
         <li>la Vie Effective (ou Effective Health, EH), représentant la résistance du Pokémon, et qui vaut au niveau 40:
-        \[ \text{EH} = (\text{base DEF} + \text{DEF_IV})\times (\text{base HP} + \text{HP_IV}) \times \frac{0.7903^2}{900}\]
+        \[ \text{EH} = \text{DEF} \times \text{STA} \times \frac{0.7903^2}{900}\]
         </li>
         <li>le Total des dégâts produits (ou Total Damage Output, TDO) qui représente les dégâts que le Pokémon peut réaliser avant qu'il meurt. Il est calculé par la formule \[ \text{TDO} = \text{DPS} \times \text{EH} \]</li>
         <li>le DPS<sup>3</sup> x TDO, une formule mathématique sans aucun sens mathématique qui permet d'ordonner les Pokémon en prenant en compte les mesures précédentes.</li>
@@ -397,7 +403,7 @@
             <table>
             <tr><td>Base ATK&nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:135px;height:20px;">&nbsp;<font color="white">270</font></span></td></tr>
             <tr><td>Base DEF</td><td><span style="display:block;background:red;width:114px;height:20px;">&nbsp;<font color="white">228</font></span></td></tr>
-            <tr><td>Base HP</td><td><span style="display:block;background:blue;width:102.5px;height:20px;">&nbsp;<font color="white">205</font></span></td></tr>
+            <tr><td>Base STA</td><td><span style="display:block;background:blue;width:102.5px;height:20px;">&nbsp;<font color="white">205</font></span></td></tr>
             </table>
             </center>
             
@@ -405,9 +411,9 @@
             
             <center>
             <table>
-            <tr><td>Base ATK&nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:112.5px;height:20px;">&nbsp;<font color="white">225</font></span></td></tr>
-            <tr><td>Base DEF</td><td><span style="display:block;background:red;width:96px;height:20px;">&nbsp;<font color="white">192</font></span></td></tr>
-            <tr><td>Base HP</td><td>15000 PV</td></tr>
+            <tr><td>ATK&nbsp;&nbsp;&nbsp;</td><td><span style="display:block;background:green;width:112.5px;height:20px;">&nbsp;<font color="white">225</font></span></td></tr>
+            <tr><td>DEF</td><td><span style="display:block;background:red;width:96px;height:20px;">&nbsp;<font color="white">192</font></span></td></tr>
+            <tr><td>STA</td><td>15000 PV</td></tr>
             </table>
             </center>
                         
@@ -442,9 +448,9 @@
         <li>Si un Pokémon a une statistique de base d'attaque importante, il n'y aura pas de grande différence entre ATK_IV = 14 et ATK_IV = 15.
         
         Il est recommandé d'avoir une haute ATK_IV pour un Pokémon avec un faible DPS.</li>
-        <li>Concernant la résistance (DEF_IV et HP_IV), la statistique de défense (DEF) influence la vitesse à laquelle le Pokémon va mourrir. Généralement, il est plus intéressant d'avoir une plus haute DEF_IV que HP_IV.
+        <li>Concernant la résistance (DEF_IV et STA_IV), la statistique de défense (DEF) influence la vitesse à laquelle le Pokémon va mourrir. Généralement, il est plus intéressant d'avoir une plus haute DEF_IV que STA_IV.
         
-        Il est recommandé d'avoir une haute DEF_IV et HP_IV pour un Pokémon avec une faible vie effective.</li>
+        Il est recommandé d'avoir une haute DEF_IV et STA_IV pour un Pokémon avec une faible vie effective.</li>
         </ul>
         
         Il devient très cher de monter un Pokémon jusqu'au niveau 40; le niveau 35 semble excellent (le Pokémon est à 96.4% de ses capacités), mais le niveau 30 est très correct (92.6% de ses capacités).

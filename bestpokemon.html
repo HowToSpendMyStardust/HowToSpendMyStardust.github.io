@@ -114,7 +114,7 @@
             <ul>
                 <li>Les Pokémon aux noms barrés sont non disponibles dans le jeu.</li>
                 <li>Les attaques avec le symbole &#10013; signifie que l'attaque est legacy.</li>
-                <li>megaevol signifie que le Pokémon pourra méga-évoluer dans la génération 6.</li>
+                <!--<li>megaevol signifie que le Pokémon pourra méga-évoluer dans la génération 6.</li>-->
                 <li>Le DPS neutre, la vie effective et le TDO sont calculés au niveau 40, pour des Pokémons parfaits.</li>
                 <li>Le DPS neutre (dégâts par seconde) représente combien de dégâts un Pokémon peut réaliser en une seconde. Elle dépend de la statistique d'attaque du Pokémon (ATK), et des attaques rapide et chargée du Pokémon. Ces attaques définissent ensemble l'énergie et les dégâts que le Pokémon va réaliser. L'attaque rapide génère de l'énergie qui est utilisée pour lancer l'attaque chargée. Elle dépend aussi du STAB (<i>Same Type Attack Bonus</i>), un bonus de 20% donné aux dégâts si le type de l'attaque et le type du Pokémon sont identiques.
 
@@ -127,7 +127,7 @@
                     </center>
                 </li>
                 <li>La vie effective (ou effective health, EH) définit la résistance du Pokémon. Au niveau 40, elle est égale à
-                \[ \text{EH} = (\text{DEF} + \text{DEF}\_\text{IV}) \times (\text{STA} + \text{STA}\_\text{IV}) \times\frac{0.7903^2}{900}\]
+                \[ \text{EH} = \text{DEF} \times \text{STA} \times\frac{0.7903^2}{900}\]
 
                 <center>
                 <table border>
@@ -2232,7 +2232,7 @@
                                   Danse Flamme</td></tr>
                           <tr><td></td>
                               <td><img src="document/images/type/simplified/fire.png" style="height:12px;"></img>
-                                  Rafale feu</td></tr>
+                                  Rafale feu<sup>&#10013;</sup></td></tr>
                           <tr><td>ATK</td><td><span style="display:block;background:green;width:120px;height:20px;">&nbsp;
                               <font color="white">240</font></span></td></tr>
                           <tr><td>DEF</td><td><span style="display:block;background:red;width:70.5px;height:20px;">&nbsp;
@@ -2273,7 +2273,7 @@
                                   Danse Flamme</td></tr>
                           <tr><td></td>
                               <td><img src="document/images/type/simplified/fire.png" style="height:12px;"></img>
-                                  Rafale feu</td></tr>
+                                  Rafale feu<sup>&#10013;</sup></td></tr>
                           <tr><td>ATK</td><td><span style="display:block;background:green;width:111.5px;height:20px;">&nbsp;
                               <font color="white">223</font></span></td></tr>
                           <tr><td>DEF</td><td><span style="display:block;background:red;width:86.5px;height:20px;">&nbsp;
